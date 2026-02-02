@@ -216,6 +216,7 @@ class ObsidianWikiGenerator:
                 'allowed_users': allowed_users,
                 'spoilers': frontmatter.get('spoilers', False),
                 'is_index': is_index,
+                'is_subindex': frontmatter.get('is_subindex', False),
                 'internal_links': internal_links,
                 'content_admin': content_versions['admin'],
                 'content_player': content_versions['player'],
@@ -293,9 +294,6 @@ class ObsidianWikiGenerator:
         print(f"📑 Páginas índice:      {index_count}")
         print(f"🖼️  Imágenes copiadas:   {len(self.copied_images)}")
         print(f"📦 Salida en:           {self.output_dir.absolute()}")
-        print(f"\n💡 Próximo paso:")
-        print(f"   Copia el contenido a tu proyecto Next.js:")
-        print(f"   cp -r {self.output_dir}/* <tu-proyecto>/public/content/")
         print(f"{'='*60}\n")
         
         return True

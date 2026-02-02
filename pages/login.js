@@ -37,8 +37,8 @@ export default function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>🌟 Wiki del Cosmere</h1>
-        <p>Archivo de las Tormentas RPG</p>
+        <h1>📚 Wiki del Cosmere</h1>
+        <p>Archivo de las Tormentas - Campaña RPG</p>
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -71,11 +71,11 @@ export default function Login() {
           
           {error && <p className="error">{error}</p>}
         </form>
-        
-        <div className="hint">
-          <small>
-            Por defecto: admin/admin123 o jugador1/jugador123
-          </small>
+
+        <div className="oath">
+          <p>Vida antes que Muerte</p>
+          <p>Fuerza antes que Debilidad</p>
+          <p>Viaje antes que Destino</p>
         </div>
       </div>
 
@@ -85,28 +85,32 @@ export default function Login() {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #7c2d12 100%);
         }
         
         .login-box {
-          background: white;
+          background: rgba(255, 255, 255, 0.95);
+          backdrop-filter: blur(10px);
           padding: 3rem;
-          border-radius: 12px;
-          box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-          max-width: 400px;
+          border-radius: 16px;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+          max-width: 420px;
           width: 90%;
+          border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         h1 {
           margin: 0 0 0.5rem;
           text-align: center;
-          color: #333;
+          color: #1e3a8a;
+          font-size: 2rem;
         }
         
         p {
           text-align: center;
-          color: #666;
+          color: #059669;
           margin-bottom: 2rem;
+          font-weight: 500;
         }
         
         form {
@@ -122,44 +126,51 @@ export default function Login() {
         }
         
         label {
-          font-weight: 500;
-          color: #333;
+          font-weight: 600;
+          color: #1e3a8a;
           font-size: 0.875rem;
         }
         
         input {
           padding: 0.75rem;
-          border: 2px solid #e2e8f0;
-          border-radius: 6px;
+          border: 2px solid #d1d5db;
+          border-radius: 8px;
           font-size: 1rem;
-          transition: border-color 0.2s;
+          transition: all 0.2s;
+          background: white;
         }
         
         input:focus {
           outline: none;
-          border-color: #667eea;
+          border-color: #059669;
+          box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
         }
         
         input:disabled {
-          background: #f7fafc;
+          background: #f3f4f6;
           cursor: not-allowed;
         }
         
         button {
-          padding: 0.75rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          padding: 0.875rem;
+          background: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #7c2d12 100%);
           color: white;
           border: none;
-          border-radius: 6px;
+          border-radius: 8px;
           font-size: 1rem;
           font-weight: 600;
           cursor: pointer;
-          transition: transform 0.2s;
+          transition: all 0.2s;
           margin-top: 0.5rem;
         }
         
         button:hover:not(:disabled) {
           transform: translateY(-2px);
+          box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        button:active:not(:disabled) {
+          transform: translateY(0);
         }
         
         button:disabled {
@@ -168,16 +179,24 @@ export default function Login() {
         }
         
         .error {
-          color: #e53e3e;
+          color: #dc2626;
           text-align: center;
           margin: 0.5rem 0 0;
           font-size: 0.875rem;
+          font-weight: 500;
         }
         
-        .hint {
-          margin-top: 1.5rem;
-          text-align: center;
-          color: #718096;
+        .oath {
+          margin-top: 2rem;
+          padding-top: 1.5rem;
+          border-top: 1px solid #e5e7eb;
+        }
+
+        .oath p {
+          color: #6b7280;
+          font-size: 0.875rem;
+          margin: 0.25rem 0;
+          font-style: italic;
         }
       `}</style>
     </div>

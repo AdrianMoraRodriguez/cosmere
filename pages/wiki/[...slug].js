@@ -63,7 +63,7 @@ export default function WikiPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 flex items-center justify-center">
         <div className="text-white text-xl">Cargando...</div>
       </div>
     );
@@ -71,7 +71,7 @@ export default function WikiPage() {
   
   if (!page || !user) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 flex items-center justify-center">
         <div className="text-white text-xl">Página no encontrada</div>
       </div>
     );
@@ -80,21 +80,21 @@ export default function WikiPage() {
   const content = user.role === 'admin' ? page.content_admin : page.content_player;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900">
       {/* Header */}
       <header className="bg-black/30 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <Link 
               href="/wiki" 
-              className="text-purple-300 hover:text-white transition-colors flex items-center"
+              className="text-emerald-300 hover:text-white transition-colors flex items-center"
             >
               <span className="mr-2">←</span>
               Volver al índice
             </Link>
             <div className="text-right">
               <p className="text-white font-medium">{user.username}</p>
-              <p className="text-purple-300 text-sm">
+              <p className="text-emerald-300 text-sm">
                 {user.role === 'admin' ? '👑 DM' : '⚔️ Jugador'}
               </p>
             </div>
@@ -102,13 +102,13 @@ export default function WikiPage() {
         </div>
       </header>
 
-      <div className="container mx-auto px-6 py-8 max-w-4xl">
+      <div className="container mx-auto px-6 py-8 max-w-5xl">
         <article className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-8 shadow-2xl">
           {/* Title */}
-          <h1 className="text-4xl font-bold text-white mb-4">{page.title}</h1>
+          <h1 className="text-4xl font-bold text-white mb-4 text-center">{page.title}</h1>
           
           {/* Badges */}
-          <div className="flex flex-wrap gap-2 mb-6">
+          <div className="flex flex-wrap gap-2 mb-6 justify-center">
             {page.spoilers && (
               <span className="bg-yellow-500/20 text-yellow-300 text-sm px-3 py-1 rounded-lg border border-yellow-500/50">
                 ⚠️ Esta página contiene spoilers
@@ -131,7 +131,8 @@ export default function WikiPage() {
             <WikiContent 
               content={content} 
               allPages={allPages} 
-              user={user} 
+              user={user}
+              currentPage={page}
             />
           </div>
         </article>

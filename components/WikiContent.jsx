@@ -2,7 +2,7 @@ import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import Link from 'next/link';
 
-export default function WikiContent({ content, allPages, user }) {
+export default function WikiContent({ content, allPages, user, currentPage }) {
   if (!content) {
     return <div className="p-4 text-gray-300">No hay contenido disponible</div>;
   }
@@ -10,6 +10,8 @@ export default function WikiContent({ content, allPages, user }) {
   if (!allPages || !Array.isArray(allPages)) {
     return <div className="p-4 text-gray-300">Error cargando páginas</div>;
   }
+
+  const isIndexOrSubindex = currentPage?.is_index || currentPage?.is_subindex;
 
   // PRIMERO: Convertir imágenes markdown a HTML con saltos de línea
   let processedContent = content.replace(
@@ -26,7 +28,7 @@ export default function WikiContent({ content, allPages, user }) {
     (match, target, anchor, alias) => {
       const text = alias || target;
       
-      const targetPage = allPages.find(p => {
+      let targetPage = allPages.find(p => {
         if (p.title.toLowerCase() === target.toLowerCase()) return true;
         if (p.slug.toLowerCase() === target.toLowerCase()) return true;
         
@@ -34,12 +36,20 @@ export default function WikiContent({ content, allPages, user }) {
         const lastSlugPart = slugParts[slugParts.length - 1];
         if (lastSlugPart.toLowerCase() === target.toLowerCase()) return true;
         
-        if (p.slug.toLowerCase().includes(target.toLowerCase())) return true;
-        
         return false;
       });
 
       if (!targetPage) {
+        targetPage = allPages.find(p => {
+          const slugLower = p.slug.toLowerCase();
+          const targetLower = target.toLowerCase();
+          const regex = new RegExp(`(^|/)${targetLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(/|$)`, 'i');
+          return regex.test(slugLower);
+        });
+      }
+
+      if (!targetPage) {
+        console.warn('Page not found for:', target);
         return text;
       }
 
@@ -57,6 +67,10 @@ export default function WikiContent({ content, allPages, user }) {
         .join('/');
       
       const anchorPart = anchor ? `#${encodeURIComponent(anchor)}` : '';
+      
+      if (isIndexOrSubindex || targetPage.is_index || targetPage.is_subindex) {
+        return `<index-link href="/wiki/${encodedSlug}${anchorPart}" spoilers="${targetPage.spoilers || false}" private="${targetPage.visibility === 'private'}">${text}</index-link>`;
+      }
       
       return `[${text}](/wiki/${encodedSlug}${anchorPart})`;
     }
@@ -84,15 +98,15 @@ export default function WikiContent({ content, allPages, user }) {
           margin-bottom: 1rem;
         }
         .prose-invert h2 {
-          color: #c084fc;
+          color: #10b981;
           font-weight: bold;
           margin-top: 1.5rem;
           margin-bottom: 0.75rem;
-          border-bottom: 2px solid rgba(192, 132, 252, 0.3);
+          border-bottom: 2px solid rgba(16, 185, 129, 0.3);
           padding-bottom: 0.5rem;
         }
         .prose-invert h3 {
-          color: #a78bfa;
+          color: #34d399;
           font-weight: 600;
           margin-top: 1.25rem;
           margin-bottom: 0.5rem;
@@ -121,11 +135,11 @@ export default function WikiContent({ content, allPages, user }) {
           color: #fbbf24;
         }
         .prose-invert blockquote {
-          border-left: 4px solid #c084fc;
+          border-left: 4px solid #10b981;
           padding-left: 1rem;
           margin-left: 0;
           font-style: italic;
-          color: #d8b4fe;
+          color: #6ee7b7;
         }
       `}</style>
       
@@ -144,12 +158,36 @@ export default function WikiContent({ content, allPages, user }) {
               </div>
             );
           },
+          'index-link': ({ href, children, spoilers, private: isPrivate }) => {
+            return (
+              <div className="flex justify-center my-2">
+                <Link
+                  href={href}
+                  className="inline-block bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg px-6 py-3 hover:bg-white/20 transition-all duration-200 hover:scale-105 min-w-[200px] text-center"
+                >
+                  <span className="font-semibold text-white block">{children}</span>
+                  <div className="flex justify-center gap-2 mt-2">
+                    {spoilers === 'true' && (
+                      <span className="inline-block bg-yellow-500/20 text-yellow-300 text-xs px-2 py-1 rounded border border-yellow-500/50">
+                        ⚠️ Spoilers
+                      </span>
+                    )}
+                    {isPrivate === 'true' && (
+                      <span className="inline-block bg-red-500/20 text-red-300 text-xs px-2 py-1 rounded border border-red-500/50">
+                        🔒 Privado
+                      </span>
+                    )}
+                  </div>
+                </Link>
+              </div>
+            );
+          },
           a: ({ href, children }) => {
             if (href?.startsWith('/wiki/')) {
               return (
                 <Link 
                   href={href} 
-                  className="text-purple-400 hover:text-purple-300 underline decoration-purple-500/50 hover:decoration-purple-300 transition-colors"
+                  className="text-emerald-400 hover:text-emerald-300 underline decoration-emerald-500/50 hover:decoration-emerald-300 transition-colors"
                 >
                   {children}
                 </Link>

@@ -5,3 +5,59 @@
   padding: 0;
   margin: 0;
 }
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Centrar contenedores principales */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1400px; /* Ajusta este valor según prefieras */
+}
+
+/* Centrar títulos */
+h1, h2 {
+  text-align: center;
+}
+
+/* Centrar el grid de páginas índice */
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Centrar la lista de todas las páginas */
+.bg-white\/5 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+/* Centrar artículos individuales */
+article {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Centrar el buscador */
+input[type="text"] {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
