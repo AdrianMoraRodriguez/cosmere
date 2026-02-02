@@ -150,7 +150,7 @@
         "text": "Bocao  Nel (Nico)"
       },
       {
-        "target": "Calki (Dani)",
+        "target": "Calki",
         "text": "Calki (Dani)"
       },
       {
@@ -178,8 +178,8 @@
         "text": "Valisha (Daniela)"
       }
     ],
-    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bocao Nel|Bocao  Nel (Nico)]] \n[[Calki (Dani)]] \n[[Dyr Dyu|Dyr DyuSalva]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
-    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bocao Nel|Bocao  Nel (Nico)]] \n[[Calki (Dani)]] \n[[Dyr Dyu|Dyr DyuSalva]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bocao Nel|Bocao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr DyuSalva]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bocao Nel|Bocao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr DyuSalva]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
     "frontmatter": {
       "title": "Party Principal",
       "visibility": "public",
