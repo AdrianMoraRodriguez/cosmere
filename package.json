@@ -11,6 +11,7 @@
     "watch": "python3 watcher.py"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.94.0",
     "bcryptjs": "^3.0.3",
     "gray-matter": "^4.0.3",
     "next": "16.1.6",

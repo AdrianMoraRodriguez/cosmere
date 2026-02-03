@@ -61,6 +61,15 @@ export default function WikiPage() {
     }
   }, [slug, router]);
 
+  const handleGoBack = () => {
+    // Si hay historial, ir atrás; si no, ir al índice
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      router.push('/wiki');
+    }
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 flex items-center justify-center">
@@ -85,13 +94,22 @@ export default function WikiPage() {
       <header className="bg-black/30 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <Link 
-              href="/wiki" 
-              className="text-emerald-300 hover:text-white transition-colors flex items-center"
-            >
-              <span className="mr-2">←</span>
-              Volver al índice
-            </Link>
+            <div className="flex items-center gap-4">
+              <button
+                onClick={handleGoBack}
+                className="text-emerald-300 hover:text-white transition-colors flex items-center bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg"
+              >
+                <span className="mr-2">←</span>
+                Volver atrás
+              </button>
+              <Link 
+                href="/wiki" 
+                className="text-emerald-300 hover:text-white transition-colors flex items-center"
+              >
+                <span className="mr-2">🏠</span>
+                Índice principal
+              </Link>
+            </div>
             <div className="text-right">
               <p className="text-white font-medium">{user.username}</p>
               <p className="text-emerald-300 text-sm">

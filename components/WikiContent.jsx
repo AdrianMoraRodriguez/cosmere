@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import Link from 'next/link';
+import CampaignNotes from './CampaignNotes';
 
 export default function WikiContent({ content, allPages, user, currentPage }) {
   if (!content) {
@@ -50,7 +51,7 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
 
       if (!targetPage) {
         console.warn('Page not found for:', target);
-        return text;
+        return '';
       }
 
       const canAccess = user?.role === 'admin' ||
@@ -58,7 +59,7 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
                        targetPage.allowed_users?.includes(user?.username);
 
       if (!canAccess) {
-        return text;
+        return '';
       }
 
       const encodedSlug = targetPage.slug
@@ -76,7 +77,18 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
     }
   );
 
-  // TERCERO: Asegurar que dm-section esté en su propia línea
+  // TERCERO: Detectar si hay sección "Sucesos en la Campaña" y agregar marcador
+  const hasCampaignSection = /##\s*Sucesos\s+en\s+la\s+Campaña/i.test(processedContent);
+  
+  if (hasCampaignSection) {
+    // Agregar marcador después del título de la sección
+    processedContent = processedContent.replace(
+      /(##\s*Sucesos\s+en\s+la\s+Campaña)/i,
+      '$1\n\n<campaign-notes-marker></campaign-notes-marker>\n\n'
+    );
+  }
+
+  // CUARTO: Asegurar que dm-section esté en su propia línea
   processedContent = processedContent.replace(
     /<dm-section>/g,
     '\n\n<dm-section>\n\n'
@@ -146,6 +158,16 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
       <ReactMarkdown
         rehypePlugins={[rehypeRaw]}
         components={{
+          'campaign-notes-marker': () => {
+            // Solo mostrar el editor si el usuario tiene permiso de ver la página
+            // (lo cual ya se verificó antes de llegar aquí)
+            return (
+              <CampaignNotes 
+                pageSlug={currentPage?.slug} 
+                username={user?.username} 
+              />
+            );
+          },
           'dm-section': ({ children }) => {
             if (user?.role !== 'admin') return null;
             return (

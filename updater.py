@@ -45,19 +45,30 @@ class ObsidianWikiGenerator:
         """Obtiene la visibilidad del documento"""
         return frontmatter.get('visibility', 'private').lower()
     
-    def get_allowed_users(self, frontmatter):
-        """Obtiene la lista de usuarios permitidos"""
-        allowed = frontmatter.get('allowed_users', [])
-        
-        if isinstance(allowed, str):
-            allowed = [u.strip() for u in allowed.replace('[', '').replace(']', '').split(',')]
-        
-        if not isinstance(allowed, list):
-            allowed = []
-        
-        allowed = [u.strip() for u in allowed if u.strip()]
-        
-        return allowed
+    def parse_allowed_users(self, allowed_users_str):
+        """Parsea la cadena de usuarios permitidos"""
+        if not allowed_users_str:
+            return []
+
+        # Si ya es una lista, devolverla
+        if isinstance(allowed_users_str, list):
+            return allowed_users_str
+        print("No es una lista")
+
+        # Eliminar corchetes y espacios
+        cleaned = allowed_users_str.strip('[]').strip()
+
+        if not cleaned:
+            return []
+        print("Ha sido limpiada")
+        # Separar por comas y limpiar cada usuario
+        users = [user.strip() for user in cleaned.split(',')]
+
+        # Filtrar usuarios vacíos
+        users = [user for user in users if user]
+        print(users)
+
+        return users
     
     def extract_internal_links(self, content):
         """Extrae enlaces internos de Obsidian [[Nota]] o [[Nota|Alias]]"""
@@ -192,7 +203,6 @@ class ObsidianWikiGenerator:
             
             frontmatter, body = self.parse_frontmatter(content)
             visibility = self.get_visibility(frontmatter)
-            allowed_users = self.get_allowed_users(frontmatter)
             is_index = frontmatter.get('is_index', False)
             
             # Extraer enlaces internos (siempre, se usarán en el frontend)
@@ -213,7 +223,7 @@ class ObsidianWikiGenerator:
                 'slug': slug,
                 'title': frontmatter.get('title', rel_path.stem),
                 'visibility': visibility,
-                'allowed_users': allowed_users,
+                'allowed_users': self.parse_allowed_users(frontmatter.get('allowed_users', '')),
                 'spoilers': frontmatter.get('spoilers', False),
                 'is_index': is_index,
                 'is_subindex': frontmatter.get('is_subindex', False),

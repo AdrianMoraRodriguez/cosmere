@@ -1537,6 +1537,10 @@
     "is_subindex": true,
     "internal_links": [
       {
+        "target": "Agente",
+        "text": "Agente"
+      },
+      {
         "target": "Erudito",
         "text": "Erudito"
       },
@@ -1557,8 +1561,8 @@
         "text": "Lider"
       }
     ],
-    "content_admin": "[[Erudito]]\n[[Enviado]]\n[[Cazador]]\n[[Guerrero]]\n[[Lider]]",
-    "content_player": "[[Erudito]]\n[[Enviado]]\n[[Cazador]]\n[[Guerrero]]\n[[Lider]]",
+    "content_admin": "[[Agente]]\n[[Erudito]]\n[[Enviado]]\n[[Cazador]]\n[[Guerrero]]\n[[Lider]]",
+    "content_player": "[[Agente]]\n[[Erudito]]\n[[Enviado]]\n[[Cazador]]\n[[Guerrero]]\n[[Lider]]",
     "frontmatter": {
       "title": "Caminos Heroicos",
       "visibility": "public",
