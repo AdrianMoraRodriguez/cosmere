@@ -210,10 +210,14 @@
       {
         "target": "Portadores del Polvo",
         "text": "Portador del Polvo"
+      },
+      {
+        "target": "Pasted image 20260203123108.png",
+        "text": "Pasted image 20260203123108.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165549.png)\n## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero",
-    "content_player": "![](/Pasted image 20251105165549.png)\n## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.\n## Sucesos en la Campaña\n\n## Caminos\nCazador: Arquero",
+    "content_admin": "![](/Pasted image 20251105165549.png)\n## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero\n\n<dm-section>![](/Pasted image 20260203123108.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165549.png)\n## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.\n## Sucesos en la Campaña\n\n## Caminos\nCazador: Arquero\n\n",
     "frontmatter": {
       "title": "Nor Damoi",
       "visibility": "private",
@@ -239,10 +243,14 @@
       {
         "target": "Corredores del Viento",
         "text": "Corredor del Viento"
+      },
+      {
+        "target": "Pasted image 20260203122750.png",
+        "text": "Pasted image 20260203122750.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165347.png)\n## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Corredores del Viento|Corredor del Viento]]\nTodavía no tiene un Honorspren (Nombre: Rephira)</dm-section>\n## Caminos\nGuerrero: Duelista",
-    "content_player": "![](/Pasted image 20251105165347.png)\n## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.\n## Sucesos en la Campaña\n\n## Caminos\nGuerrero: Duelista",
+    "content_admin": "![](/Pasted image 20251105165347.png)\n## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Corredores del Viento|Corredor del Viento]]\nTodavía no tiene un Honorspren (Nombre: Rephira)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122750.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165347.png)\n## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.\n## Sucesos en la Campaña\n\n## Caminos\nGuerrero: Duelista\n\n",
     "frontmatter": {
       "title": "Arluno'ratha'tu",
       "visibility": "private",
@@ -268,10 +276,14 @@
       {
         "target": "Vigilantes de la Verdad",
         "text": "Vigilante de la Verdad"
+      },
+      {
+        "target": "Pasted image 20260203122853.png",
+        "text": "Pasted image 20260203122853.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165404.png)\n## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad|Vigilante de la Verdad]]\nTodavía no tiene un brumaspren (Nombre: Omi)</dm-section>\n## Caminos\nErudito: Artifabriano",
-    "content_player": "![](/Pasted image 20251105165404.png)\n## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Artifabriano",
+    "content_admin": "![](/Pasted image 20251105165404.png)\n## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad|Vigilante de la Verdad]]\nTodavía no tiene un brumaspren (Nombre: Omi)</dm-section>\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122853.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165404.png)\n## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n",
     "frontmatter": {
       "title": "Bocao Nel",
       "visibility": "private",
@@ -297,10 +309,14 @@
       {
         "target": "Vigilantes de la Verdad#Iluminados",
         "text": "Vigilante de la Verdad Iluminado"
+      },
+      {
+        "target": "Pasted image 20260203122935.png",
+        "text": "Pasted image 20260203122935.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165425.png)\n\n## Lore\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad#Iluminados|Vigilante de la Verdad Iluminado]]\nDe momento no tiene un brumaspren iluminado (Nombre: Veln)</dm-section>\n## Caminos\nErudito: Cirujano",
-    "content_player": "![](/Pasted image 20251105165425.png)\n\n## Lore\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Cirujano",
+    "content_admin": "![](/Pasted image 20251105165425.png)\n\n## Lore\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad#Iluminados|Vigilante de la Verdad Iluminado]]\nDe momento no tiene un brumaspren iluminado (Nombre: Veln)</dm-section>\n## Caminos\nErudito: Cirujano\n\n<dm-section>![](/Pasted image 20260203122935.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165425.png)\n\n## Lore\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Cirujano\n\n",
     "frontmatter": {
       "title": "Calki",
       "visibility": "private",
@@ -330,10 +346,14 @@
       {
         "target": "Tejedores de Luz",
         "text": "Tejedora de Luz"
+      },
+      {
+        "target": "Pasted image 20260203123253.png",
+        "text": "Pasted image 20260203123253.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165605.png)\nSu verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Tejedores de Luz|Tejedora de Luz]]\nDe momento no tiene críptico (Nombre: Entropía $S=−kB​∫ρ(Γ)lnρ(Γ)dΓ$)</dm-section>\n\n## Caminos\nAgente: Espía",
-    "content_player": "![](/Pasted image 20251105165605.png)\nSu verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.\n## Sucesos en la Campaña\n\n\n## Caminos\nAgente: Espía",
+    "content_admin": "![](/Pasted image 20251105165605.png)\nSu verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Tejedores de Luz|Tejedora de Luz]]\nDe momento no tiene críptico (Nombre: Entropía $S=−kB​∫ρ(Γ)lnρ(Γ)dΓ$)</dm-section>\n\n## Caminos\nAgente: Espía\n\n<dm-section>![](/Pasted image 20260203123253.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165605.png)\nSu verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.\n## Sucesos en la Campaña\n\n\n## Caminos\nAgente: Espía\n\n",
     "frontmatter": {
       "title": "Yara Elorin",
       "visibility": "private",
@@ -363,10 +383,14 @@
       {
         "target": "Escultores de Voluntad",
         "text": "Escultor de Voluntad"
+      },
+      {
+        "target": "Pasted image 20260203123140.png",
+        "text": "Pasted image 20260203123140.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165706.png)\n## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.\n## Sucesos en Campaña\n<dm-section>## Avances como [[Escultores de Voluntad|Escultor de Voluntad]]\nDe momento no tiene lumispren (Nombre: Pulso)</dm-section>\n## Caminos\nLider: Político",
-    "content_player": "![](/Pasted image 20251105165706.png)\n## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.\n## Sucesos en Campaña\n\n## Caminos\nLider: Político",
+    "content_admin": "![](/Pasted image 20251105165706.png)\n## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.\n## Sucesos en Campaña\n<dm-section>## Avances como [[Escultores de Voluntad|Escultor de Voluntad]]\nDe momento no tiene lumispren (Nombre: Pulso)</dm-section>\n## Caminos\nLider: Político\n\n<dm-section>![](/Pasted image 20260203123140.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165706.png)\n## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.\n## Sucesos en Campaña\n\n## Caminos\nLider: Político\n\n",
     "frontmatter": {
       "title": "Sidoa Damoi",
       "visibility": "private",
@@ -388,10 +412,14 @@
       {
         "target": "Pasted image 20260202223440.png",
         "text": "Pasted image 20260202223440.png"
+      },
+      {
+        "target": "Pasted image 20260203123033.png",
+        "text": "Pasted image 20260203123033.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260202223440.png)\n## Lore\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[]]\nDe momento no tiene cumbrespren (Nombre: Oa'ren)</dm-section>\n## Caminos\nEnviado: Fiel",
-    "content_player": "![](/Pasted image 20260202223440.png)\n## Lore\n\n## Sucesos en la Campaña\n\n## Caminos\nEnviado: Fiel",
+    "content_admin": "![](/Pasted image 20260202223440.png)\n## Lore\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[]]\nDe momento no tiene cumbrespren (Nombre: Oa'ren)</dm-section>\n## Caminos\nEnviado: Fiel\n\n<dm-section>![](/Pasted image 20260203123033.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260202223440.png)\n## Lore\n\n## Sucesos en la Campaña\n\n## Caminos\nEnviado: Fiel\n\n",
     "frontmatter": {
       "title": "Niffty",
       "visibility": "private",
@@ -417,10 +445,14 @@
       {
         "target": "Rompedores del cielo",
         "text": "Rompedora del cielo"
+      },
+      {
+        "target": "Pasted image 20260203123221.png",
+        "text": "Pasted image 20260203123221.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260127152444.png)\n## Lore\n\n## Sucesos en Campaña\n<dm-section>## Avances como [[Rompedores del cielo|Rompedora del cielo]]\nDe momento no tiene altospren (Nombre: 9)</dm-section>\n## Caminos\nGuerrero: Duelista",
-    "content_player": "![](/Pasted image 20260127152444.png)\n## Lore\n\n## Sucesos en Campaña\n\n## Caminos\nGuerrero: Duelista",
+    "content_admin": "![](/Pasted image 20260127152444.png)\n## Lore\n\n## Sucesos en Campaña\n<dm-section>## Avances como [[Rompedores del cielo|Rompedora del cielo]]\nDe momento no tiene altospren (Nombre: 9)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>![](/Pasted image 20260203123221.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260127152444.png)\n## Lore\n\n## Sucesos en Campaña\n\n## Caminos\nGuerrero: Duelista\n\n",
     "frontmatter": {
       "title": "Valisha",
       "visibility": "private",
@@ -446,10 +478,14 @@
       {
         "target": "Custodios de Piedra",
         "text": "Custodio de Piedra"
+      },
+      {
+        "target": "Pasted image 20260203123004.png",
+        "text": "Pasted image 20260203123004.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165528.png)\n## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Custodios de Piedra|Custodio de Piedra]]\nDe momento no tiene cumbrespren (Nombre: Oa'ren)</dm-section>\n## Caminos\nEnviado: Fiel",
-    "content_player": "![](/Pasted image 20251105165528.png)\n## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.\n## Sucesos en la Campaña\n\n## Caminos\nEnviado: Fiel",
+    "content_admin": "![](/Pasted image 20251105165528.png)\n## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Custodios de Piedra|Custodio de Piedra]]\nDe momento no tiene cumbrespren (Nombre: Oa'ren)</dm-section>\n## Caminos\nEnviado: Fiel\n\n<dm-section>![](/Pasted image 20260203123004.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165528.png)\n## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.\n## Sucesos en la Campaña\n\n## Caminos\nEnviado: Fiel\n\n",
     "frontmatter": {
       "title": "Dyr Dyu",
       "visibility": "private",
@@ -1129,6 +1165,14 @@
         "text": "útil"
       },
       {
+        "target": "Taszo Hijo Clutio",
+        "text": "Taszo Hijo Clutio"
+      },
+      {
+        "target": "Día 1 El asalto a las caravanas#El rescate de Taszo",
+        "text": "\"El rescate de Taszo\""
+      },
+      {
         "target": "Arqueros",
         "text": "Arqueros"
       },
@@ -1147,10 +1191,14 @@
       {
         "target": "Portador de Esquirlada de Élite",
         "text": "Portador de Esquirlada de Élite"
+      },
+      {
+        "target": "Sabueso-hacha",
+        "text": "Sabueso-hacha"
       }
     ],
-    "content_admin": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe  (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 70 marcos (7 marcos de rubí)\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n<dm-section>## Loot útil\n1x vinculacaña de los ojos de Palah\n1x Espada corta\n1x Espada larga\n2x Broam de diamante\n168x Raciones</dm-section>\n# Sucesos en Rol",
-    "content_player": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe  (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 70 marcos (7 marcos de rubí)\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n\n# Sucesos en Rol",
+    "content_admin": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe  (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 70 marcos (7 marcos de rubí). Después de dos o tres días de camino se encuentran con [[Taszo Hijo Clutio]] un shin con un brazo roto que está rodeado por sabuesos-hacha, en este momento ocurre el encuentro [[Día 1 El asalto a las caravanas#El rescate de Taszo|\"El rescate de Taszo\"]]. Una vez terminado Taszo les da las gracias y les dice que tiene una misión muy importante, que ya que le habían salvado si podrían ayudarle con esa misión, asegurándoles que les dará una recompensa.\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n### El rescate de Taszo\n[[Sabueso-hacha]] x4\n## Utilidad\n<dm-section>## Loot útil\n1x vinculacaña de los ojos de Palah\n1x Espada corta\n1x Espada larga\n2x Broam de diamante\n168x Raciones</dm-section>\n# Sucesos en Rol",
+    "content_player": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe  (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 70 marcos (7 marcos de rubí). Después de dos o tres días de camino se encuentran con [[Taszo Hijo Clutio]] un shin con un brazo roto que está rodeado por sabuesos-hacha, en este momento ocurre el encuentro [[Día 1 El asalto a las caravanas#El rescate de Taszo|\"El rescate de Taszo\"]]. Una vez terminado Taszo les da las gracias y les dice que tiene una misión muy importante, que ya que le habían salvado si podrían ayudarle con esa misión, asegurándoles que les dará una recompensa.\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n### El rescate de Taszo\n[[Sabueso-hacha]] x4\n## Utilidad\n\n# Sucesos en Rol",
     "frontmatter": {
       "title": "Día 1: El asalto a las caravanas",
       "visibility": "private",
