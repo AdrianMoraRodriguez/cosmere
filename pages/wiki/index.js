@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import NotesPanel from '../../components/NotesPanel';
+import NotesButton from '../../components/NotesButton';
 
 export default function WikiIndex() {
   const [pages, setPages] = useState([]);
@@ -8,6 +10,7 @@ export default function WikiIndex() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [notesOpen, setNotesOpen] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -193,6 +196,18 @@ export default function WikiIndex() {
           </div>
         </div>
       </div>
+
+      {/* Botón flotante de notas - solo para jugadores */}
+      {user.role !== 'admin' && (
+        <NotesButton onClick={() => setNotesOpen(true)} />
+      )}
+
+      {/* Panel de notas */}
+      <NotesPanel 
+        username={user.username}
+        isOpen={notesOpen}
+        onClose={() => setNotesOpen(false)}
+      />
     </div>
   );
 }

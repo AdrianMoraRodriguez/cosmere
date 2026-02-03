@@ -517,10 +517,14 @@
       {
         "target": "Sprens",
         "text": "Sprens"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
       }
     ],
-    "content_admin": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]",
-    "content_player": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]",
+    "content_admin": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]\n[[Party Principal]]",
+    "content_player": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]\n[[Party Principal]]",
     "frontmatter": {
       "title": "Personajes",
       "visibility": "public",

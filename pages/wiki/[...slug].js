@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import WikiContent from '../../components/WikiContent';
+import NotesPanel from '../../components/NotesPanel';
+import NotesButton from '../../components/NotesButton';
 
 export default function WikiPage() {
   const [page, setPage] = useState(null);
   const [allPages, setAllPages] = useState([]);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [notesOpen, setNotesOpen] = useState(false);
   const router = useRouter();
   const { slug } = router.query;
 
@@ -62,7 +65,6 @@ export default function WikiPage() {
   }, [slug, router]);
 
   const handleGoBack = () => {
-    // Si hay historial, ir atrás; si no, ir al índice
     if (window.history.length > 1) {
       router.back();
     } else {
@@ -122,10 +124,8 @@ export default function WikiPage() {
 
       <div className="container mx-auto px-6 py-8 max-w-5xl">
         <article className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-8 shadow-2xl">
-          {/* Title */}
           <h1 className="text-4xl font-bold text-white mb-4 text-center">{page.title}</h1>
           
-          {/* Badges */}
           <div className="flex flex-wrap gap-2 mb-6 justify-center">
             {page.spoilers && (
               <span className="bg-yellow-500/20 text-yellow-300 text-sm px-3 py-1 rounded-lg border border-yellow-500/50">
@@ -144,7 +144,6 @@ export default function WikiPage() {
             )}
           </div>
 
-          {/* Content */}
           <div className="text-gray-100">
             <WikiContent 
               content={content} 
@@ -155,6 +154,18 @@ export default function WikiPage() {
           </div>
         </article>
       </div>
+
+      {/* Botón flotante de notas - solo para jugadores */}
+      {user.role !== 'admin' && (
+        <NotesButton onClick={() => setNotesOpen(true)} />
+      )}
+
+      {/* Panel de notas */}
+      <NotesPanel 
+        username={user.username}
+        isOpen={notesOpen}
+        onClose={() => setNotesOpen(false)}
+      />
     </div>
   );
 }
