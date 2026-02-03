@@ -1857,7 +1857,7 @@
         "text": "Vigilantes de la Verdad"
       },
       {
-        "target": "Vigilantes de la Verdad#Iluminados",
+        "target": "Vigilantes de la Verdad Iluminado",
         "text": "Vigilantes de la Verdad Iluminados"
       },
       {
@@ -1865,8 +1865,8 @@
         "text": "Nominadores de lo otro"
       }
     ],
-    "content_admin": "[[Corredores del Viento]]\n[[Rompedores del Cielo]]\n[[Custodios de Piedra]]\n[[Escultores de Voluntad]]\n[[Portadores del Polvo]]\n[[Tejedores de Luz]]\n[[Vigilantes de la Verdad]]\n[[Vigilantes de la Verdad#Iluminados|Vigilantes de la Verdad Iluminados]]\n[[Nominadores de lo otro]]",
-    "content_player": "[[Corredores del Viento]]\n[[Rompedores del Cielo]]\n[[Custodios de Piedra]]\n[[Escultores de Voluntad]]\n[[Portadores del Polvo]]\n[[Tejedores de Luz]]\n[[Vigilantes de la Verdad]]\n[[Vigilantes de la Verdad#Iluminados|Vigilantes de la Verdad Iluminados]]\n[[Nominadores de lo otro]]",
+    "content_admin": "[[Corredores del Viento]]\n[[Rompedores del Cielo]]\n[[Custodios de Piedra]]\n[[Escultores de Voluntad]]\n[[Portadores del Polvo]]\n[[Tejedores de Luz]]\n[[Vigilantes de la Verdad]]\n[[Vigilantes de la Verdad Iluminado|Vigilantes de la Verdad Iluminados]]\n[[Nominadores de lo otro]]",
+    "content_player": "[[Corredores del Viento]]\n[[Rompedores del Cielo]]\n[[Custodios de Piedra]]\n[[Escultores de Voluntad]]\n[[Portadores del Polvo]]\n[[Tejedores de Luz]]\n[[Vigilantes de la Verdad]]\n[[Vigilantes de la Verdad Iluminado|Vigilantes de la Verdad Iluminados]]\n[[Nominadores de lo otro]]",
     "frontmatter": {
       "title": "Caminos Radiantes",
       "visibility": "public",
