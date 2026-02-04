@@ -1942,6 +1942,84 @@
     }
   },
   {
+    "slug": "Sistemas/Información Útil/¿Qué Hacer en un Turno de Combate?",
+    "title": "¿Qué Hacer en un Turno de Combate?",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260204152859.png",
+        "text": "Pasted image 20260204152859.png"
+      },
+      {
+        "target": "Pasted image 20260204153004.png",
+        "text": "Pasted image 20260204153004.png"
+      },
+      {
+        "target": "Pasted image 20260204153016.png",
+        "text": "Pasted image 20260204153016.png"
+      },
+      {
+        "target": "Pasted image 20260204153031.png",
+        "text": "Pasted image 20260204153031.png"
+      },
+      {
+        "target": "Pasted image 20260204153106.png",
+        "text": "Pasted image 20260204153106.png"
+      },
+      {
+        "target": "Pasted image 20260204153212.png",
+        "text": "Pasted image 20260204153212.png"
+      },
+      {
+        "target": "Pasted image 20260204153227.png",
+        "text": "Pasted image 20260204153227.png"
+      },
+      {
+        "target": "Pasted image 20260204153305.png",
+        "text": "Pasted image 20260204153305.png"
+      },
+      {
+        "target": "Pasted image 20260204153347.png",
+        "text": "Pasted image 20260204153347.png"
+      },
+      {
+        "target": "Pasted image 20260204153400.png",
+        "text": "Pasted image 20260204153400.png"
+      },
+      {
+        "target": "Pasted image 20260204153453.png",
+        "text": "Pasted image 20260204153453.png"
+      },
+      {
+        "target": "Pasted image 20260204153430.png",
+        "text": "Pasted image 20260204153430.png"
+      },
+      {
+        "target": "Pasted image 20260204153516.png",
+        "text": "Pasted image 20260204153516.png"
+      },
+      {
+        "target": "Pasted image 20260204153536.png",
+        "text": "Pasted image 20260204153536.png"
+      },
+      {
+        "target": "Pasted image 20260204153623.png",
+        "text": "Pasted image 20260204153623.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260204152859.png)\n![](/Pasted image 20260204153004.png)\n![](/Pasted image 20260204153016.png)\n![](/Pasted image 20260204153031.png)\n![](/Pasted image 20260204153106.png)\n![](/Pasted image 20260204153212.png)\n![](/Pasted image 20260204153227.png)\n![](/Pasted image 20260204153305.png)\n![](/Pasted image 20260204153347.png)\n![](/Pasted image 20260204153400.png)\n![](/Pasted image 20260204153453.png)\n![](/Pasted image 20260204153430.png)\n![](/Pasted image 20260204153516.png)\n![](/Pasted image 20260204153536.png)\n![](/Pasted image 20260204153623.png)",
+    "content_player": "![](/Pasted image 20260204152859.png)\n![](/Pasted image 20260204153004.png)\n![](/Pasted image 20260204153016.png)\n![](/Pasted image 20260204153031.png)\n![](/Pasted image 20260204153106.png)\n![](/Pasted image 20260204153212.png)\n![](/Pasted image 20260204153227.png)\n![](/Pasted image 20260204153305.png)\n![](/Pasted image 20260204153347.png)\n![](/Pasted image 20260204153400.png)\n![](/Pasted image 20260204153453.png)\n![](/Pasted image 20260204153430.png)\n![](/Pasted image 20260204153516.png)\n![](/Pasted image 20260204153536.png)\n![](/Pasted image 20260204153623.png)",
+    "frontmatter": {
+      "title": "¿Qué Hacer en un Turno de Combate?",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
     "slug": "Sistemas/Información Útil/Sistema Monetario",
     "title": "Sistema Monetario",
     "visibility": "public",
