@@ -2065,10 +2065,14 @@
       {
         "target": "Subir de Nivel",
         "text": "Subir de Nivel"
+      },
+      {
+        "target": "¿Qué Hacer en un Turno de Combate?",
+        "text": "¿Qué Hacer en un Turno de Combate?"
       }
     ],
-    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]",
-    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]",
+    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]",
+    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]",
     "frontmatter": {
       "title": "Información Útil",
       "visibility": "public",
