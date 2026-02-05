@@ -69,17 +69,22 @@
   },
   {
     "slug": "Caminapiedras/Asociaciones/Ojos de Palah",
-    "title": "Ojos de Palah",
+    "title": "Bandidos del glifo",
     "visibility": "private",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
-    "internal_links": [],
-    "content_admin": "",
-    "content_player": "",
+    "internal_links": [
+      {
+        "target": "Ylt",
+        "text": "Hombre de piel dorada"
+      }
+    ],
+    "content_admin": "## Símbolo principal\n\n## Organización\n### Lider\n[[Ylt|Hombre de piel dorada]]\n## Miembros conocidos\nKaiana\n\n## Apariciones en la Historia\nAtacan la caravana de Bordin, robando la hoja de Taln, matan a Taszo Hijo Clutio",
+    "content_player": "## Símbolo principal\n\n## Organización\n### Lider\n[[Ylt|Hombre de piel dorada]]\n## Miembros conocidos\nKaiana\n\n## Apariciones en la Historia\nAtacan la caravana de Bordin, robando la hoja de Taln, matan a Taszo Hijo Clutio",
     "frontmatter": {
-      "title": "Ojos de Palah",
+      "title": "Bandidos del glifo",
       "visibility": "private",
       "spoilers": false
     }
@@ -541,9 +546,18 @@
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
-    "internal_links": [],
-    "content_admin": "",
-    "content_player": "",
+    "internal_links": [
+      {
+        "target": "Hana",
+        "text": "Hana"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      }
+    ],
+    "content_admin": "Thayleño propietario de un carro, viaja junto a su hija [[Hana]]\n## Sucesos en la Campaña\nSu carro se queda atrapado en el crem y no lo quiere abandonar, la [[Party Principal]] le intenta ayudar",
+    "content_player": "Thayleño propietario de un carro, viaja junto a su hija [[Hana]]\n## Sucesos en la Campaña\nSu carro se queda atrapado en el crem y no lo quiere abandonar, la [[Party Principal]] le intenta ayudar",
     "frontmatter": {
       "title": "Tet Revin",
       "visibility": "private",
@@ -608,10 +622,14 @@
       {
         "target": "Nen",
         "text": "Nen"
+      },
+      {
+        "target": "Hana",
+        "text": "Hana"
       }
     ],
-    "content_admin": "[[Yara]]\n[[Velin]]\n[[Zinden]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]",
-    "content_player": "[[Yara]]\n[[Velin]]\n[[Zinden]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]",
+    "content_admin": "[[Yara]]\n[[Velin]]\n[[Zinden]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]",
+    "content_player": "[[Yara]]\n[[Velin]]\n[[Zinden]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]",
     "frontmatter": {
       "title": "Personajes terciarios",
       "visibility": "public",
@@ -647,6 +665,32 @@
       "visibility": "private",
       "spoilers": false,
       "allowed_users": "[Iker]"
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Resto/Hana",
+    "title": "Hana",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Tet Revin",
+        "text": "Tet Revin"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      }
+    ],
+    "content_admin": "Hija de [[Tet Revin]], niña thayleña de cejas largas y blancas con pelo largo recogido con un moño\n## Sucesos en la campaña\nPide ayuda a la [[Party Principal]] porque su padre no quiere avandonar el carro aunque la tormenta está cerca.",
+    "content_player": "Hija de [[Tet Revin]], niña thayleña de cejas largas y blancas con pelo largo recogido con un moño\n## Sucesos en la campaña\nPide ayuda a la [[Party Principal]] porque su padre no quiere avandonar el carro aunque la tormenta está cerca.",
+    "frontmatter": {
+      "title": "Hana",
+      "visibility": "private",
+      "spoilers": false
     }
   },
   {
@@ -689,8 +733,8 @@
         "text": "Tet Revin"
       }
     ],
-    "content_admin": "Comerciante de telas thayleña de cejas blancas.\n## Sucesos en la campaña\nSe encuentran con ella en la Encrucijada del Concilio. Les pregunta a la [[Party Principal]] si han visto por el camino la caravana de [[Tet Revin]] ya que debería haber llegado hace horas",
-    "content_player": "Comerciante de telas thayleña de cejas blancas.\n## Sucesos en la campaña\nSe encuentran con ella en la Encrucijada del Concilio. Les pregunta a la [[Party Principal]] si han visto por el camino la caravana de [[Tet Revin]] ya que debería haber llegado hace horas",
+    "content_admin": "Comerciante de telas thayleña de cejas blancas caídas y que muestra un comportamiento afectuoso\n## Sucesos en la campaña\nSe encuentran con ella en la Encrucijada del Concilio. Les pregunta a la [[Party Principal]] si han visto por el camino la caravana de su amigo, [[Tet Revin]] ya que debería haber llegado hace horas",
+    "content_player": "Comerciante de telas thayleña de cejas blancas caídas y que muestra un comportamiento afectuoso\n## Sucesos en la campaña\nSe encuentran con ella en la Encrucijada del Concilio. Les pregunta a la [[Party Principal]] si han visto por el camino la caravana de su amigo, [[Tet Revin]] ya que debería haber llegado hace horas",
     "frontmatter": {
       "title": "Svalka",
       "visibility": "private",
@@ -829,16 +873,80 @@
       {
         "target": "Resi (Brillante Señor)",
         "text": "Resi (Brillante Señor)"
+      },
+      {
+        "target": "Veth",
+        "text": "Veth"
       }
     ],
-    "content_admin": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]",
-    "content_player": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]",
+    "content_admin": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]",
+    "content_player": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]",
     "frontmatter": {
       "title": "Personajes Secundarios",
       "visibility": "public",
       "spoilers": false,
       "is_index": false,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Secundarios/Veth",
+    "title": "Veth",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260205195618.png",
+        "text": "Pasted image 20260205195618.png"
+      },
+      {
+        "target": "Ylt",
+        "text": "Hombre de piel dorada"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260205195618.png)\nHumano Alezi con perilla, bigote y calvo que parece cumplir todas las ordenes del [[Ylt|Hombre de piel dorada]].\n## Sucesos en la campaña\nSe enfrenta a la [[Party Principal]] y muere en el intento.",
+    "content_player": "![](/Pasted image 20260205195618.png)\nHumano Alezi con perilla, bigote y calvo que parece cumplir todas las ordenes del [[Ylt|Hombre de piel dorada]].\n## Sucesos en la campaña\nSe enfrenta a la [[Party Principal]] y muere en el intento.",
+    "frontmatter": {
+      "title": "Veth",
+      "visibility": "private",
+      "spoilers": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Principales/Kaiana",
+    "title": "Kaiana",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260205194959.png",
+        "text": "Pasted image 20260205194959.png"
+      },
+      {
+        "target": "Ojos de Palah",
+        "text": "bandidos"
+      },
+      {
+        "target": "Ylt",
+        "text": "Hombre de la piel dorada"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260205194959.png)\nHumana reshi de rasgos redondeados, pelo muy largo y liso de color negro. Tiene el mismo glifo pintado en la cara que los otros [[Ojos de Palah|bandidos]].\n## Sucesos en la Historia\nKaiana roba la espada de Taln y se la da al [[Ylt|Hombre de la piel dorada]], luego de que mate a Taszo, está en desacuerdo de matar a más gente pero le dicen que es necesario",
+    "content_player": "![](/Pasted image 20260205194959.png)\nHumana reshi de rasgos redondeados, pelo muy largo y liso de color negro. Tiene el mismo glifo pintado en la cara que los otros [[Ojos de Palah|bandidos]].\n## Sucesos en la Historia\nKaiana roba la espada de Taln y se la da al [[Ylt|Hombre de la piel dorada]], luego de que mate a Taszo, está en desacuerdo de matar a más gente pero le dicen que es necesario",
+    "frontmatter": {
+      "title": "Kaiana",
+      "visibility": "private",
+      "spoilers": true
     }
   },
   {
@@ -853,16 +961,58 @@
       {
         "target": "Taszo Hijo Clutio",
         "text": "Taszo Hijo Clutio"
+      },
+      {
+        "target": "Ylt",
+        "text": "Hombre de la piel dorada"
+      },
+      {
+        "target": "Kaiana",
+        "text": "Kaiana"
       }
     ],
-    "content_admin": "[[Taszo Hijo Clutio]]",
-    "content_player": "[[Taszo Hijo Clutio]]",
+    "content_admin": "[[Taszo Hijo Clutio]]\n[[Ylt|Hombre de la piel dorada]]\n[[Kaiana]]",
+    "content_player": "[[Taszo Hijo Clutio]]\n[[Ylt|Hombre de la piel dorada]]\n[[Kaiana]]",
     "frontmatter": {
       "title": "Personajes Principales",
       "visibility": "public",
       "spoilers": false,
       "is_index": false,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Principales/Ylt",
+    "title": "¿? Hombre de la piel dorada",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260205194041.png",
+        "text": "Pasted image 20260205194041.png"
+      },
+      {
+        "target": "Ojos de Palah",
+        "text": "bandidos"
+      },
+      {
+        "target": "Kaiana",
+        "text": "Kaiana"
+      },
+      {
+        "target": "Veth",
+        "text": "Veth"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260205194041.png)\nPersona alta y delgada de piel y pelo dorados y con un glifo pintado en la cara de color verde oscuro. \n## Sucesos en la Campaña\nParece ser el líder de los [[Ojos de Palah|bandidos]] que atacaron las caravanas de Bordin y robaron la espada de honor de Taln. Mató a Taszo Hijo Clutio porque tuvo una visión de que atraería a más gente hacia ellos. Se encontraba junto a una [[Kaiana]] y [[Veth]]",
+    "content_player": "![](/Pasted image 20260205194041.png)\nPersona alta y delgada de piel y pelo dorados y con un glifo pintado en la cara de color verde oscuro. \n## Sucesos en la Campaña\nParece ser el líder de los [[Ojos de Palah|bandidos]] que atacaron las caravanas de Bordin y robaron la espada de honor de Taln. Mató a Taszo Hijo Clutio porque tuvo una visión de que atraería a más gente hacia ellos. Se encontraba junto a una [[Kaiana]] y [[Veth]]",
+    "frontmatter": {
+      "title": "¿? Hombre de la piel dorada",
+      "visibility": "private",
+      "spoilers": true
     }
   },
   {
@@ -1069,16 +1219,46 @@
       {
         "target": "Soldados de la Emoción",
         "text": "Soldados"
+      },
+      {
+        "target": "Veth (boss)",
+        "text": "Veth (boss)"
       }
     ],
-    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]",
-    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]",
+    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)]]",
+    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)]]",
     "frontmatter": {
       "title": "Enemigos",
       "visibility": "public",
       "spoilers": false,
       "is_index": true,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Enemigos/Jefes/Veth (boss)",
+    "title": "Veth (boss)",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260205195713.png",
+        "text": "Pasted image 20260205195713.png"
+      },
+      {
+        "target": "Pasted image 20260205195725.png",
+        "text": "Pasted image 20260205195725.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260205195713.png)\n![](/Pasted image 20260205195725.png)",
+    "content_player": "![](/Pasted image 20260205195713.png)\n![](/Pasted image 20260205195725.png)",
+    "frontmatter": {
+      "title": "Veth (boss)",
+      "visibility": "private",
+      "spoilers": true
     }
   },
   {
