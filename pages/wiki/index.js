@@ -3,6 +3,10 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import NotesPanel from '../../components/NotesPanel';
 import NotesButton from '../../components/NotesButton';
+import DMMessenger from '../../components/DMMessenger';
+import PlayerMessages from '../../components/PlayerMessages';
+import MessageButton from '../../components/MessageButton';
+import { supabase } from '../../lib/supabase';
 
 export default function WikiIndex() {
   const [pages, setPages] = useState([]);
@@ -11,6 +15,8 @@ export default function WikiIndex() {
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [notesOpen, setNotesOpen] = useState(false);
+  const [messagesOpen, setMessagesOpen] = useState(false);
+  const [unreadCount, setUnreadCount] = useState(0);
   const router = useRouter();
 
   useEffect(() => {
@@ -35,11 +41,32 @@ export default function WikiIndex() {
           setError(err.message);
           setLoading(false);
         });
+
+      // Cargar mensajes no leídos para jugadores
+      if (parsedUser.role !== 'admin') {
+        loadUnreadCount(parsedUser.username);
+      }
     } catch (err) {
       console.error('Error parsing user data:', err);
       router.push('/login');
     }
   }, [router]);
+
+  const loadUnreadCount = async (username) => {
+    try {
+      const { data, error } = await supabase
+        .from('dm_messages')
+        .select('id')
+        .eq('recipient_username', username)
+        .eq('read', false);
+
+      if (!error && data) {
+        setUnreadCount(data.length);
+      }
+    } catch (err) {
+      console.error('Error loading unread count:', err);
+    }
+  };
 
   if (loading) {
     return (
@@ -197,17 +224,44 @@ export default function WikiIndex() {
         </div>
       </div>
 
-      {/* Botón flotante de notas - solo para jugadores */}
-      {user.role !== 'admin' && (
-        <NotesButton onClick={() => setNotesOpen(true)} />
+      {/* Botones flotantes */}
+      {user.role === 'admin' ? (
+        <>
+          {/* Botón de mensajería DM */}
+          <MessageButton onClick={() => setMessagesOpen(true)} isDM={true} />
+        </>
+      ) : (
+        <>
+          {/* Botón de notas para jugadores */}
+          <NotesButton onClick={() => setNotesOpen(true)} />
+          {/* Botón de mensajes para jugadores */}
+          <MessageButton onClick={() => setMessagesOpen(true)} unreadCount={unreadCount} />
+        </>
       )}
 
-      {/* Panel de notas */}
-      <NotesPanel 
-        username={user.username}
-        isOpen={notesOpen}
-        onClose={() => setNotesOpen(false)}
-      />
+      {/* Paneles */}
+      {user.role === 'admin' ? (
+        <DMMessenger 
+          isOpen={messagesOpen}
+          onClose={() => setMessagesOpen(false)}
+        />
+      ) : (
+        <>
+          <NotesPanel 
+            username={user.username}
+            isOpen={notesOpen}
+            onClose={() => setNotesOpen(false)}
+          />
+          <PlayerMessages 
+            username={user.username}
+            isOpen={messagesOpen}
+            onClose={() => {
+              setMessagesOpen(false);
+              loadUnreadCount(user.username);
+            }}
+          />
+        </>
+      )}
     </div>
   );
 }
