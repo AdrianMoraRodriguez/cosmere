@@ -6,7 +6,7 @@ export default function DMMessenger({ isOpen, onClose }) {
   const [message, setMessage] = useState('');
   const [sending, setSending] = useState(false);
   const [recentMessages, setRecentMessages] = useState([]);
-  const [players] = useState(['Aitor', 'Nico', 'Dani', 'Salva', 'JJ', 'Iker', 'Jose']); // Lista de jugadores
+  const [players] = useState(['Aitor', 'Nico', 'Dani', 'Salva', 'JJ', 'Iker', 'Jose', 'Daniela', 'Val']); // Lista de jugadores
 
   useEffect(() => {
     if (isOpen) {
