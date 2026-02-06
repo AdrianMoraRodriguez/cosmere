@@ -70,22 +70,26 @@
   {
     "slug": "Caminapiedras/Asociaciones/Ojos de Palah",
     "title": "Bandidos del glifo",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260206220139.png",
+        "text": "Pasted image 20260206220139.png"
+      },
+      {
         "target": "Ylt",
         "text": "Hombre de piel dorada"
       }
     ],
-    "content_admin": "## Símbolo principal\n\n## Organización\n### Lider\n[[Ylt|Hombre de piel dorada]]\n## Miembros conocidos\nKaiana\n\n## Apariciones en la Historia\nAtacan la caravana de Bordin, robando la hoja de Taln, matan a Taszo Hijo Clutio",
-    "content_player": "## Símbolo principal\n\n## Organización\n### Lider\n[[Ylt|Hombre de piel dorada]]\n## Miembros conocidos\nKaiana\n\n## Apariciones en la Historia\nAtacan la caravana de Bordin, robando la hoja de Taln, matan a Taszo Hijo Clutio",
+    "content_admin": "## Símbolo principal\n![](/Pasted image 20260206220139.png)\n<dm-section>## Organización\n### Lider\n[[Ylt|Hombre de piel dorada]]\n## Miembros conocidos\nKaiana</dm-section>\n## Apariciones en la Historia\nTaszo dijo que mataron a sus hermanos, encontraron una vinculacaña que decía que habían encontrado el artefacto.\n<dm-section>Atacan la caravana de Bordin, robando la hoja de Taln, matan a Taszo Hijo Clutio</dm-section>",
+    "content_player": "## Símbolo principal\n![](/Pasted image 20260206220139.png)\n\n## Apariciones en la Historia\nTaszo dijo que mataron a sus hermanos, encontraron una vinculacaña que decía que habían encontrado el artefacto.\n",
     "frontmatter": {
       "title": "Bandidos del glifo",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": false
     }
   },
@@ -196,7 +200,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Nor Damoi",
     "title": "Nor Damoi",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "JJ"
     ],
@@ -221,11 +225,11 @@
         "text": "Pasted image 20260203123108.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165549.png)\n## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero\n\n<dm-section>![](/Pasted image 20260203123108.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165549.png)\n## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.\n## Sucesos en la Campaña\n\n## Caminos\nCazador: Arquero\n\n",
+    "content_admin": "![](/Pasted image 20251105165549.png)\n<dm-section>## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero\n\n<dm-section>![](/Pasted image 20260203123108.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165549.png)\n\n## Sucesos en la Campaña\n\n## Caminos\nCazador: Arquero\n\n",
     "frontmatter": {
       "title": "Nor Damoi",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[JJ]"
     }
@@ -233,7 +237,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Arluno'ratha'tu",
     "title": "Arluno'ratha'tu",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Aitor"
     ],
@@ -254,11 +258,11 @@
         "text": "Pasted image 20260203122750.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165347.png)\n## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Corredores del Viento|Corredor del Viento]]\nTodavía no tiene un Honorspren (Nombre: Rephira)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122750.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165347.png)\n## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.\n## Sucesos en la Campaña\n\n## Caminos\nGuerrero: Duelista\n\n",
+    "content_admin": "![](/Pasted image 20251105165347.png)\n<dm-section>## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.</dm-section>\n## Sucesos en la Campaña \n<dm-section>## Avances como [[Corredores del Viento|Corredor del Viento]]\nTodavía no tiene un Honorspren (Nombre: Rephira)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122750.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165347.png)\n\n## Sucesos en la Campaña \n\n## Caminos\nGuerrero: Duelista\n\n",
     "frontmatter": {
       "title": "Arluno'ratha'tu",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Aitor]"
     }
@@ -266,7 +270,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Bocao Nel",
     "title": "Bocao Nel",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Nico"
     ],
@@ -287,11 +291,11 @@
         "text": "Pasted image 20260203122853.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165404.png)\n## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad|Vigilante de la Verdad]]\nTodavía no tiene un brumaspren (Nombre: Omi)</dm-section>\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122853.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165404.png)\n## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n",
+    "content_admin": "![](/Pasted image 20251105165404.png)\n<dm-section>## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad|Vigilante de la Verdad]]\nTodavía no tiene un brumaspren (Nombre: Omi)</dm-section>\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122853.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165404.png)\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n",
     "frontmatter": {
       "title": "Bocao Nel",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Nico]"
     }
@@ -299,7 +303,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Calki",
     "title": "Calki",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Dani"
     ],
@@ -320,11 +324,11 @@
         "text": "Pasted image 20260203122935.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165425.png)\n\n## Lore\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad#Iluminados|Vigilante de la Verdad Iluminado]]\nDe momento no tiene un brumaspren iluminado (Nombre: Veln)</dm-section>\n## Caminos\nErudito: Cirujano\n\n<dm-section>![](/Pasted image 20260203122935.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165425.png)\n\n## Lore\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Cirujano\n\n",
+    "content_admin": "![](/Pasted image 20251105165425.png)\n\n<dm-section>## Lore</dm-section>\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad#Iluminados|Vigilante de la Verdad Iluminado]]\nDe momento no tiene un brumaspren iluminado (Nombre: Veln)</dm-section>\n## Caminos\nErudito: Cirujano\n\n<dm-section>![](/Pasted image 20260203122935.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165425.png)\n\n\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Cirujano\n\n",
     "frontmatter": {
       "title": "Calki",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Dani]"
     }
@@ -332,7 +336,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Yara Elorin",
     "title": "Yara Elorin",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Iker"
     ],
@@ -357,11 +361,11 @@
         "text": "Pasted image 20260203123253.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165605.png)\nSu verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Tejedores de Luz|Tejedora de Luz]]\nDe momento no tiene críptico (Nombre: Entropía $S=−kB​∫ρ(Γ)lnρ(Γ)dΓ$)</dm-section>\n\n## Caminos\nAgente: Espía\n\n<dm-section>![](/Pasted image 20260203123253.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165605.png)\nSu verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.\n## Sucesos en la Campaña\n\n\n## Caminos\nAgente: Espía\n\n",
+    "content_admin": "![](/Pasted image 20251105165605.png)\n<dm-section>Su verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Tejedores de Luz|Tejedora de Luz]]\nDe momento no tiene críptico (Nombre: Entropía $S=−kB​∫ρ(Γ)lnρ(Γ)dΓ$)</dm-section>\n\n## Caminos\nAgente: Espía\n\n<dm-section>![](/Pasted image 20260203123253.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165605.png)\n\n## Sucesos en la Campaña\n\n\n## Caminos\nAgente: Espía\n\n",
     "frontmatter": {
       "title": "Yara Elorin",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Iker]"
     }
@@ -369,7 +373,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Sidoa Damoi",
     "title": "Sidoa Damoi",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Jose"
     ],
@@ -394,11 +398,11 @@
         "text": "Pasted image 20260203123140.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165706.png)\n## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.\n## Sucesos en Campaña\n<dm-section>## Avances como [[Escultores de Voluntad|Escultor de Voluntad]]\nDe momento no tiene lumispren (Nombre: Pulso)</dm-section>\n## Caminos\nLider: Político\n\n<dm-section>![](/Pasted image 20260203123140.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165706.png)\n## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.\n## Sucesos en Campaña\n\n## Caminos\nLider: Político\n\n",
+    "content_admin": "![](/Pasted image 20251105165706.png)\n<dm-section>## Lore\n* **Infancia**: Aprendió a controlar y herir con las palabras, prefiriendo la manipulación verbal a la fuerza física.\n* **Juventud**: Se movió en la política local como tejedor de intrigas: confidente y delator, construyendo poder mediante mentiras y apariencias.\n* **Actualidad**: Político influyente y desconfiable, convencido de que su hermano [[Nor Damoi]] ocultó un asesinato, una sospecha que corrompe su relación y su mirada sobre la verdad.</dm-section>\n## Sucesos en Campaña\n<dm-section>## Avances como [[Escultores de Voluntad|Escultor de Voluntad]]\nDe momento no tiene lumispren (Nombre: Pulso)</dm-section>\n## Caminos\nLider: Político\n\n<dm-section>![](/Pasted image 20260203123140.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165706.png)\n\n## Sucesos en Campaña\n\n## Caminos\nLider: Político\n\n",
     "frontmatter": {
       "title": "Sidoa Damoi",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Jose]"
     }
@@ -435,7 +439,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Valisha",
     "title": "Valisha",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Daniela"
     ],
@@ -456,11 +460,11 @@
         "text": "Pasted image 20260203123221.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260127152444.png)\n## Lore\n\n## Sucesos en Campaña\n<dm-section>## Avances como [[Rompedores del cielo|Rompedora del cielo]]\nDe momento no tiene altospren (Nombre: 9)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>![](/Pasted image 20260203123221.png)</dm-section>",
-    "content_player": "![](/Pasted image 20260127152444.png)\n## Lore\n\n## Sucesos en Campaña\n\n## Caminos\nGuerrero: Duelista\n\n",
+    "content_admin": "![](/Pasted image 20260127152444.png)\n<dm-section>## Lore</dm-section>\n\n## Sucesos en Campaña\n<dm-section>## Avances como [[Rompedores del cielo|Rompedora del cielo]]\nDe momento no tiene altospren (Nombre: 9)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>![](/Pasted image 20260203123221.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260127152444.png)\n\n\n## Sucesos en Campaña\n\n## Caminos\nGuerrero: Duelista\n\n",
     "frontmatter": {
       "title": "Valisha",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Daniela]"
     }
@@ -468,7 +472,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Dyr Dyu",
     "title": "Dyr Dyu",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Salva"
     ],
@@ -489,11 +493,11 @@
         "text": "Pasted image 20260203123004.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165528.png)\n## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Custodios de Piedra|Custodio de Piedra]]\nDe momento no tiene cumbrespren (Nombre: Po'ahu)</dm-section>\n## Caminos\nEnviado: Fiel\n\n<dm-section>![](/Pasted image 20260203123004.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165528.png)\n## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.\n## Sucesos en la Campaña\n\n## Caminos\nEnviado: Fiel\n\n",
+    "content_admin": "![](/Pasted image 20251105165528.png)\n<dm-section>## Lore\n* **Infancia**: Creció con una fe rígida y absoluta, viendo la religión como una estructura que debía proteger de cualquier error.\n* **Juventud**: Descubrió que la verdadera fe no se impone, sino que se vive acompañando y sosteniendo a los demás en silencio y compasión.\n* **Actualidad**: Viaja como consejero espiritual, transmitiendo calma y fortaleza con su sola presencia, siendo un símbolo vivo de fe serena y constante.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Custodios de Piedra|Custodio de Piedra]]\nDe momento no tiene cumbrespren (Nombre: Po'ahu)</dm-section>\n## Caminos\nEnviado: Fiel\n\n<dm-section>![](/Pasted image 20260203123004.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165528.png)\n\n## Sucesos en la Campaña\n\n## Caminos\nEnviado: Fiel\n\n",
     "frontmatter": {
       "title": "Dyr Dyu",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Salva]"
     }
@@ -609,7 +613,7 @@
       },
       {
         "target": "Zinden",
-        "text": "Zinden"
+        "text": "Lider de los bandidos"
       },
       {
         "target": "Svalka",
@@ -628,8 +632,8 @@
         "text": "Hana"
       }
     ],
-    "content_admin": "[[Yara]]\n[[Velin]]\n[[Zinden]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]",
-    "content_player": "[[Yara]]\n[[Velin]]\n[[Zinden]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]",
+    "content_admin": "[[Yara]]\n[[Velin]]\n[[Zinden|Lider de los bandidos]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]",
+    "content_player": "[[Yara]]\n[[Velin]]\n[[Zinden|Lider de los bandidos]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]",
     "frontmatter": {
       "title": "Personajes terciarios",
       "visibility": "public",
@@ -695,8 +699,8 @@
   },
   {
     "slug": "Caminapiedras/Personajes/Resto/Zinden",
-    "title": "Zinden",
-    "visibility": "private",
+    "title": "Líder de los bandidos",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
@@ -707,11 +711,11 @@
         "text": "Pasted image 20251110163717.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251110163717.png)",
-    "content_player": "![](/Pasted image 20251110163717.png)",
+    "content_admin": "![](/Pasted image 20251110163717.png)\n## Sucesos en la campaña\nConspira con Ralanat para hacer perder más reputación a la casa de los Kholin, por ello planean un ataque a las caravanas de Ralanat y planea culpar a los Kholin de ese ataque.",
+    "content_player": "![](/Pasted image 20251110163717.png)\n## Sucesos en la campaña\nConspira con Ralanat para hacer perder más reputación a la casa de los Kholin, por ello planean un ataque a las caravanas de Ralanat y planea culpar a los Kholin de ese ataque.",
     "frontmatter": {
-      "title": "Zinden",
-      "visibility": "private",
+      "title": "Líder de los bandidos",
+      "visibility": "public",
       "spoilers": false
     }
   },
@@ -744,43 +748,77 @@
   {
     "slug": "Caminapiedras/Personajes/Resto/Velin",
     "title": "Velin",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [],
-    "content_admin": "Humano Alezi, su piel arrugada indica su veteranía. Curtido por muchos viajes a las Llanuras Quebradas. Tiene una chaqueta que le llega hasta las rodillas que le dieron cuando sirvió en el ejercito Kholin (chaqueta de Kal).\n# Sucesos en la Campaña\nHabla con los personajes en la hoguera de la señora Ralanat, tras el ataque de los bandidos. les dice a la party que huyan protegiendo a la señora Ralanat. Tras el derrumbe del desfiladero les pide que busquen ayuda, en las llanuras quebradas",
-    "content_player": "Humano Alezi, su piel arrugada indica su veteranía. Curtido por muchos viajes a las Llanuras Quebradas. Tiene una chaqueta que le llega hasta las rodillas que le dieron cuando sirvió en el ejercito Kholin (chaqueta de Kal).\n# Sucesos en la Campaña\nHabla con los personajes en la hoguera de la señora Ralanat, tras el ataque de los bandidos. les dice a la party que huyan protegiendo a la señora Ralanat. Tras el derrumbe del desfiladero les pide que busquen ayuda, en las llanuras quebradas",
+    "content_admin": "Humano Alezi, su piel arrugada indica su veteranía. Curtido por muchos viajes a las Llanuras Quebradas. Tiene una chaqueta que le llega hasta las rodillas que le dieron cuando sirvió en el ejercito Kholin (chaqueta de Kal).\n# Sucesos en la Campaña\nHabla con los personajes en la hoguera de la señora Ralanat, tras el ataque de los bandidos les dice a la party que huyan protegiendo a la señora Ralanat. Tras el derrumbe del desfiladero les pide que le digan a Danilar Kholin lo de la traición de los otros brillantes señores.",
+    "content_player": "Humano Alezi, su piel arrugada indica su veteranía. Curtido por muchos viajes a las Llanuras Quebradas. Tiene una chaqueta que le llega hasta las rodillas que le dieron cuando sirvió en el ejercito Kholin (chaqueta de Kal).\n# Sucesos en la Campaña\nHabla con los personajes en la hoguera de la señora Ralanat, tras el ataque de los bandidos les dice a la party que huyan protegiendo a la señora Ralanat. Tras el derrumbe del desfiladero les pide que le digan a Danilar Kholin lo de la traición de los otros brillantes señores.",
     "frontmatter": {
       "title": "Velin",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": false
     }
   },
   {
     "slug": "Caminapiedras/Personajes/Sprens/Sprens",
     "title": "Sprens",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
     "is_subindex": true,
-    "internal_links": [],
-    "content_admin": "",
-    "content_player": "",
+    "internal_links": [
+      {
+        "target": "Po'Ahu",
+        "text": "Cumbrespren de Taszo"
+      }
+    ],
+    "content_admin": "[[Po'Ahu|Cumbrespren de Taszo]]",
+    "content_player": "[[Po'Ahu|Cumbrespren de Taszo]]",
     "frontmatter": {
       "title": "Sprens",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": false,
       "is_index": false,
       "is_subindex": true
     }
   },
   {
+    "slug": "Caminapiedras/Personajes/Sprens/Po'Ahu",
+    "title": "Cumbrespren de taszo",
+    "visibility": "private",
+    "allowed_users": [
+      "Aitor"
+    ],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Captura de pantalla 2026-02-06 a las 21.50.34.png",
+        "text": "Captura de pantalla 2026-02-06 a las 21.50.34.png"
+      },
+      {
+        "target": "Taszo Hijo Clutio",
+        "text": "Taszo Hijo Clutio"
+      }
+    ],
+    "content_admin": "![](/Captura de pantalla 2026-02-06 a las 21.50.34.png)\n## Sucesos en la Campaña\n[[Taszo Hijo Clutio]] la tenía en su bolsillo y dice que es uno de sus dioses",
+    "content_player": "![](/Captura de pantalla 2026-02-06 a las 21.50.34.png)\n## Sucesos en la Campaña\n[[Taszo Hijo Clutio]] la tenía en su bolsillo y dice que es uno de sus dioses",
+    "frontmatter": {
+      "title": "Cumbrespren de taszo",
+      "visibility": "private",
+      "spoilers": false,
+      "allowed_users": "[Aitor]"
+    }
+  },
+  {
     "slug": "Caminapiedras/Personajes/Secundarios/Resi (Brillante Señor)",
     "title": "Resi",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": true,
     "is_index": false,
@@ -799,14 +837,14 @@
     "content_player": "![](/Pasted image 20251110162332.png)\nDesea humillar a los Kholin y que pierdan poder político para él poder ascender. Para ello se alía con la [[Ralanat (Brillante Señora)|Brillante Señora Ralanat]] para acabar con el pequeño ejército que le cedió Adolin a Ralanat y además, culpar al propio Dalinar de haber enviado a los bandidos. Es un portador de esquirlada completo cuyo color original es amarillo pero la ha pintado para ocultar su identidad. Aunque la haya pintado si te fijas todavía se puede ver el amarillo.",
     "frontmatter": {
       "title": "Resi",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true
     }
   },
   {
     "slug": "Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)",
     "title": "Ralanat",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
@@ -845,15 +883,23 @@
         "text": "Dyr Dyu"
       },
       {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
         "target": "Resi (Brillante Señor)",
         "text": "Brillante Señor Resi"
+      },
+      {
+        "target": "Zinden",
+        "text": "jefe de los bandidos"
       }
     ],
-    "content_admin": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bocao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe.\n<dm-section>En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin.</dm-section>",
-    "content_player": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bocao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe.\n",
+    "content_admin": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bocao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe y con [[Valisha]] que ayuda con la seguridad.\n En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]] y [[Zinden|jefe de los bandidos]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin. \n Después del ataque, el cuerpo de Ralanat no parece estar entre los restos de las caravanas.",
+    "content_player": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bocao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe y con [[Valisha]] que ayuda con la seguridad.\n En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]] y [[Zinden|jefe de los bandidos]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin. \n Después del ataque, el cuerpo de Ralanat no parece estar entre los restos de las caravanas.",
     "frontmatter": {
       "title": "Ralanat",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": false
     }
   },
@@ -1078,9 +1124,9 @@
   {
     "slug": "Caminapiedras/Personajes/Principales/Taszo Hijo Clutio",
     "title": "Taszo Hijo Clutio",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
-    "spoilers": false,
+    "spoilers": true,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [
@@ -1095,14 +1141,18 @@
       {
         "target": "Party Principal",
         "text": "Party Principal"
+      },
+      {
+        "target": "Ojos de Palah",
+        "text": "bandidos con el glifo"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105163947.png)\n<dm-section>**Rasgos**: obligado por su cometido, empático, inquisitivo.\n**Meta**: proteger Roshar entregando la hoja de Honor de Taln a Shinovar.\n**Aspecto**: Taszo-Hijo-Clutio (él) es un humano shin de treinta y pocos años. Es bajo, incluso para ser un shin, tiene la piel rosada y pálida, ojos redondos de color azul oscuro y una espesa mata de pelo rubio. Actualmente tiene un brazo roto. Taszo es compasivo, a veces en su propio detrimento. Quiere ser útil a los PJs (y a cualquier otra persona posible) aunque su brazo roto se lo impide. También siente curiosidad, especialmente por las personas y sus vidas.\n![](/Pasted image 20251105164228.png)</dm-section>\n## Sucesos en la campaña\nConoce a la [[Party Principal]] cuando estos lo salvan de unos sabuesohacha",
-    "content_player": "![](/Pasted image 20251105163947.png)\n\n## Sucesos en la campaña\nConoce a la [[Party Principal]] cuando estos lo salvan de unos sabuesohacha",
+    "content_admin": "![](/Pasted image 20251105163947.png)\n<dm-section>**Rasgos**: obligado por su cometido, empático, inquisitivo.\n**Meta**: proteger Roshar entregando la hoja de Honor de Taln a Shinovar.</dm-section>\n**Aspecto**: Taszo-Hijo-Clutio (él) es un humano shin de treinta y pocos años. Es bajo, incluso para ser un shin, tiene la piel rosada y pálida, ojos redondos de color azul oscuro y una espesa mata de pelo rubio. Actualmente tiene un brazo roto. Taszo es compasivo, a veces en su propio detrimento. Quiere ser útil a los PJs (y a cualquier otra persona posible) aunque su brazo roto se lo impide. También siente curiosidad, especialmente por las personas y sus vidas.\n<dm-section>![](/Pasted image 20251105164228.png)</dm-section>\n## Sucesos en la campaña\nConoce a la [[Party Principal]] cuando estos lo salvan de unos sabuesohacha, les cuenta que tiene una misión importante de recuperar un artefacto que su gente lleva miles de años protegiendo. Iba acompañado de dos chamanes de la piedra pero los [[Ojos de Palah|bandidos con el glifo]] los asesinaron.",
+    "content_player": "![](/Pasted image 20251105163947.png)\n\n**Aspecto**: Taszo-Hijo-Clutio (él) es un humano shin de treinta y pocos años. Es bajo, incluso para ser un shin, tiene la piel rosada y pálida, ojos redondos de color azul oscuro y una espesa mata de pelo rubio. Actualmente tiene un brazo roto. Taszo es compasivo, a veces en su propio detrimento. Quiere ser útil a los PJs (y a cualquier otra persona posible) aunque su brazo roto se lo impide. También siente curiosidad, especialmente por las personas y sus vidas.\n\n## Sucesos en la campaña\nConoce a la [[Party Principal]] cuando estos lo salvan de unos sabuesohacha, les cuenta que tiene una misión importante de recuperar un artefacto que su gente lleva miles de años protegiendo. Iba acompañado de dos chamanes de la piedra pero los [[Ojos de Palah|bandidos con el glifo]] los asesinaron.",
     "frontmatter": {
       "title": "Taszo Hijo Clutio",
-      "visibility": "private",
-      "spoilers": false
+      "visibility": "public",
+      "spoilers": true
     }
   },
   {
@@ -1391,10 +1441,6 @@
         "text": "emboscada de los bandidos"
       },
       {
-        "target": "Pasted image 20260205130739.png",
-        "text": "Pasted image 20260205130739.png"
-      },
-      {
         "target": "Dyr Dyu",
         "text": "Dyr Dyu"
       },
@@ -1403,8 +1449,8 @@
         "text": "Bandidos"
       }
     ],
-    "content_admin": "# Historia\nTras varios días caminando se encuentran con un grupo de caravanas que se está refugiando en la Encrucijada del Concilio ya que se acerca una alta tormenta. Se encuentran con [[Nen]] y [[Svalka]] que les pregunta si por el camino han visto alguna caravana, ya que un amigo ([[Tet Revin]]) dijo que llegaría hace horas. Nen les acribilla a preguntas de qué hacen aquí, <dm-section>si no mienten o le mienten lo suficientemente bien (CD 13)Nen les cuenta un cotilleo</dm-section> (Aquí pueden comerciar tanto con Nen como con Svalka):\n<dm-section>![](/Pasted image 20260123230103.png)</dm-section>\n\nEn las caravanas de los alezi se encuentran con Ellar que está demasiado ocupado haciendo los preparativos para la alta tormenta, y les dice que no tiene tiempo de hablar, que tiene mucho que preparar, que si le ayudasen a lo mejor tendría un rato para hablar. Todos hacen una tirada de agilidad, atlético o de liderazgo si la mitad la supera Ellar se ve agradecido a regañadientes y habla con ellos. Si no superan la tirada Ellar les mira molesto, les permite quedarse por el intento pero dice que les estará vigilando. \n\nMientras ocurre esto ven a una persona que es evitada por todos los de la caravana, se acerca a la party y se presenta como el Sagaz del rey de Alezkar. Hoid se interesa por ellos, y les lleva a parte, les pregunta quienes son y qué hacen aquí (mientras hace esto se toma un trago de una cantimplora), los personajes no confían en él pero se sienten una tranquilidad anormal, incluso sintiendose apelados a contarles todos sus secretos. <dm-section>Si la party quiere mentirle debe superar una tirada de Engaño CD 20. Cuando le mienten o dicen la verdad asiente (dejan de sentir la calma)</dm-section> y les insulta a la vez que los alaga y les dice que deberían hacer caso a las advertencias y que están a punto de tomar un camino muy peligroso. \n\nAl finalizar la conversación escuchan a Ellar gritarle a Taszo que estaba al lado de la caravana diciendo que la persona en la caravana es un blasfemo que dice ser uno de los heraldos y se burla de él: *¿Puedes salvarnos de la tormenta, gran Heraldo? ¿O te vas a quedar ahí sentado hablando contigo mismo?*. [[Bordin]] le para en seco diciendo que no hay tormentosa razón para insultar a un demente. En ese momento Taln les mira y les dice su mantra.\nCuando acabe Taszo les lleva a parte y les pregunta qué les parece los Alezi y las personas que acompañan. Cuando acaben de decir Taszo les dice que ese es un heraldo y que el artefacto que tienen que recuperar es su hoja de honor y les responde a las preguntas que le hagan.\n\nCuando acaben las preguntas se escucha muchísimo jaleo cuando miran es [[Hana]] y les comenta que su padre está a unos kilómetros de ahí y que se ha quedado atascado el carro y su padre no quiere abandonarlo. Svalka cabreada dice que ellos llevan sus vinos y sus armas, que seguro que les sobran algunos soldados para ello. Hana les ofrece 1 marco de esmeralda y si la party duda les ofrece otro. La misión es sacar el carro del crem o convencer a [[Tet Revin]] que abandone el carro (les acompañan 5 soldados).\n\nPara convencer a Revin los jugadores deberán hacer una tirada de persuación de CD 13, si argumentan cosas como la seguridad de Hana tienen ventaja y es más fácil de convencer, por lo general, Revin se resiste y usa 2 de concentración diciendo que en el carro está el sustento de su vida. Si fallan la tirada Revin no quiere dejarlo atrás y tendrán que hacer un empeño 3/3. Si lo logran consiguen sacar el carro justo a tiempo y si no Revin decide avanzar sin el carro porque la tormenta está sobre ellos. \n*Esta escena puede ocurrir en otra parte si los jugadores deciden no ir a ayudar a Revin, en este caso Taszo les dirá de entrar a la caravana de Taln y ver si está la hoja, los personajes deberán hacer un empeño 4/2 si fallan los guardias les pillan y les van a interrogar, si lo consiguen entran en el carro, en ese momento ven a Kaiana robando la espada y cambiandola por otra idéntica. Cuando Kaiana se da cuenta derrepente hay un flash de luz que los deja ciego y cuando vuelven a ver no está. Aquí pueden investigar el carro por dentro.*\n\nOcurre la [[#Emboscada de los bandidos|emboscada de los bandidos]], cuando acaban si revisan los cuerpos encuentran x1 ganzúa y tienen un extraño símbolo que si hacen una tirada de Saber <dm-section>CD 16</dm-section> identifican el glifo como uno de los diez glifos fundamentales de la teología vorin, la variante de \"Palah\" ![](/Pasted image 20260205130739.png)\nSI estaban en las caravanas pueden ver que apenas hay nadie herido y que no hay apenas daños en las caravanas. Al momento Taszo se da cuenta de que la emboscada era una distracción. Taszo dice que los que mataron a sus compañeros tenían ese mismo símbolo en la cara, que no sabe cómo pero tienen que tener la hoja de Honor y sale corriendo hacia la tormenta saltando rocas y arbustos y pareciendo que ya no tiene el brazo roto si alguno supera una tirada de medicina <dm-section>CD 5</dm-section> . Todos los personajes se encuentran determinados. La muralla de la tormenta impacta, aguas heladas y nubes de escombros les azotan. El viento es tan fuerte que aunque haya un muro gigante que les protege, el viento podría llevarse a una persona. Un estruendo enorme suena, una roca gigante cae al lado de la party. Cada jugador debe tirar Atletismo o Supervivencia <dm-section>CD 13, si falla sufre 3 + 1d6 de daño y queda tumbado si la supera la mitad del daño y no queda tumbado</dm-section> [[Dyr Dyu]] ve una extraña piedra pequeña que gira alrededor suya, cuando la mira de repente empieza a rebotar de manera rara pareciendo que les quiere guiar a algún sitio. Si la siguen escuchan dos voces: una aguda y alterada que reclama que no iban a matar más y la segunda más grave y segura diciendo que era necesario Kaiana, que había previsto que conduciría a otros hacia ellos. Un hombre iriali alto, escultural y de piel dorada se yergue tranquilo en medio de la tormenta, con su larga túnica verde ondeando al viento. En sus manos, sostenida casi con ternura, lleva una larga hoja esquirlada con púas. A su lado, una mujer reshi parece disgustada. Su pelo liso y negro azabache enmarca un rostro redondo, y su capa marrón combina con los tonos apagados de las colinas circundantes. Una tercera figura, un hombre alezi con la cabeza rapada, está de pie armado con una espada. El mismo glifo verde adorna los rostros de los tres. Los ojos del hombre de piel dorada resplandecen con un verde brillante y su cabeza se gira de inmediato e la dirección de la party y dice Veth, encárgate de ellos. Ocurre la bossfight Veth. En medio de la bossfight Taszo toma un turno levantándose y yendo a atacar a Veth, mientras grita: Vida antes que Muerte, Fuerza antes que debilidad, Viaje antes que... cuando va a decir la última palabra Veth le apuñala, tumbándolo en la piedra. Cuando acabe la batalla los personajes se acercan a Taszo que les dice que esa espada era su misión y la de sus otros hermanos, que debían prometer que la encontrarían. Les cuenta que tiene un contacto en los campamentos de guerra, se llama Liss y que ella sabrá que hacer. Les dice que el chamanato les recompensará que son caminapiedras, pero puede que sean lo único que se interponga entre este mundo y la próxima Desolación. Les hace jurar con la mano en una piedra que se saca del bolsillo y cuando lo juran suena una voz \"Este juramento no romperás. Por último dice que se alegra de morir con verdaderos amigos alrededor, se pone mirando hacia al cielo ya que no muere avergonzado ni ocultando su rostro a los dioses. Sonrie mientras sus ojos se cierran y su cuerpo se relaja. Al lado encuentran la daga de Veth con un glifo inscrito\n\nBordin les ayuda a hacer un pequeño funeral a Taszo, si han ayudado a Rebin y Hana, los jugadores reciben un arma (jabalina, lanza corta o lanza larga) y si consiguen salvar el carro les da vino rojo <dm-section>150 marcos</dm-section> y les dice que lo busquen en el Chull Gruñón en el campamento de guerra de los Kholin. Si no lo ayudaron Hana explica que su padre murió junto con los lanceros. Si le dicen a Bordin lo del robo va al carro y comprueba diciendo que nunca ha visto como es la hoja y que sólo él sabe la combinación de la caja, cuando la abre ven la misma hoja esquirlada que tenía el hombre de piel dorada en las manos y Bordin descarta todo lo dicho. Cuando pasa la tormenta empieza el viaje a las llanuras quebradas (suben de nivel).\n\n## Encuentros\n### Emboscada de los bandidos\nEn el reojo alguno de los PJ ve un grupo de personas acercándose (40 si están en las caravanas, 10 si están con Revin). La mayoría se van con los otros guardias y 4x [[Bandidos]] se acercan a los jugadores.\nEn las caravanas los jugadores pueden usar las caravanas como cobertura y pueden obtener una jabalina, una lanza corta o una lanza larga si usan una acción sobre un fardo de armas.\n\nEn el carro de Revin pueden ocultarse tras el chull o tras el carro, el **charco de crem es terreno difícil**. Además, cada movimiento a través del crem requiere superar una prueba de Agilidad CD 10. Si falla, el personaje queda Retenido. Un personaje atrapado, u otro personaje que pueda alcanzarlo, podrá Usar una habilidad ▶ para efectuar una prueba de Agilidad o Atletismo CD 10. Si la supera, el personaje queda liberado.\n\n\n<dm-section>## Loot útil</dm-section>\n\n# Sucesos en Rol",
-    "content_player": "# Historia\nTras varios días caminando se encuentran con un grupo de caravanas que se está refugiando en la Encrucijada del Concilio ya que se acerca una alta tormenta. Se encuentran con [[Nen]] y [[Svalka]] que les pregunta si por el camino han visto alguna caravana, ya que un amigo ([[Tet Revin]]) dijo que llegaría hace horas. Nen les acribilla a preguntas de qué hacen aquí,  (Aquí pueden comerciar tanto con Nen como con Svalka):\n\n\nEn las caravanas de los alezi se encuentran con Ellar que está demasiado ocupado haciendo los preparativos para la alta tormenta, y les dice que no tiene tiempo de hablar, que tiene mucho que preparar, que si le ayudasen a lo mejor tendría un rato para hablar. Todos hacen una tirada de agilidad, atlético o de liderazgo si la mitad la supera Ellar se ve agradecido a regañadientes y habla con ellos. Si no superan la tirada Ellar les mira molesto, les permite quedarse por el intento pero dice que les estará vigilando. \n\nMientras ocurre esto ven a una persona que es evitada por todos los de la caravana, se acerca a la party y se presenta como el Sagaz del rey de Alezkar. Hoid se interesa por ellos, y les lleva a parte, les pregunta quienes son y qué hacen aquí (mientras hace esto se toma un trago de una cantimplora), los personajes no confían en él pero se sienten una tranquilidad anormal, incluso sintiendose apelados a contarles todos sus secretos.  y les insulta a la vez que los alaga y les dice que deberían hacer caso a las advertencias y que están a punto de tomar un camino muy peligroso. \n\nAl finalizar la conversación escuchan a Ellar gritarle a Taszo que estaba al lado de la caravana diciendo que la persona en la caravana es un blasfemo que dice ser uno de los heraldos y se burla de él: *¿Puedes salvarnos de la tormenta, gran Heraldo? ¿O te vas a quedar ahí sentado hablando contigo mismo?*. [[Bordin]] le para en seco diciendo que no hay tormentosa razón para insultar a un demente. En ese momento Taln les mira y les dice su mantra.\nCuando acabe Taszo les lleva a parte y les pregunta qué les parece los Alezi y las personas que acompañan. Cuando acaben de decir Taszo les dice que ese es un heraldo y que el artefacto que tienen que recuperar es su hoja de honor y les responde a las preguntas que le hagan.\n\nCuando acaben las preguntas se escucha muchísimo jaleo cuando miran es [[Hana]] y les comenta que su padre está a unos kilómetros de ahí y que se ha quedado atascado el carro y su padre no quiere abandonarlo. Svalka cabreada dice que ellos llevan sus vinos y sus armas, que seguro que les sobran algunos soldados para ello. Hana les ofrece 1 marco de esmeralda y si la party duda les ofrece otro. La misión es sacar el carro del crem o convencer a [[Tet Revin]] que abandone el carro (les acompañan 5 soldados).\n\nPara convencer a Revin los jugadores deberán hacer una tirada de persuación de CD 13, si argumentan cosas como la seguridad de Hana tienen ventaja y es más fácil de convencer, por lo general, Revin se resiste y usa 2 de concentración diciendo que en el carro está el sustento de su vida. Si fallan la tirada Revin no quiere dejarlo atrás y tendrán que hacer un empeño 3/3. Si lo logran consiguen sacar el carro justo a tiempo y si no Revin decide avanzar sin el carro porque la tormenta está sobre ellos. \n*Esta escena puede ocurrir en otra parte si los jugadores deciden no ir a ayudar a Revin, en este caso Taszo les dirá de entrar a la caravana de Taln y ver si está la hoja, los personajes deberán hacer un empeño 4/2 si fallan los guardias les pillan y les van a interrogar, si lo consiguen entran en el carro, en ese momento ven a Kaiana robando la espada y cambiandola por otra idéntica. Cuando Kaiana se da cuenta derrepente hay un flash de luz que los deja ciego y cuando vuelven a ver no está. Aquí pueden investigar el carro por dentro.*\n\nOcurre la [[#Emboscada de los bandidos|emboscada de los bandidos]], cuando acaban si revisan los cuerpos encuentran x1 ganzúa y tienen un extraño símbolo que si hacen una tirada de Saber  identifican el glifo como uno de los diez glifos fundamentales de la teología vorin, la variante de \"Palah\" ![](/Pasted image 20260205130739.png)\nSI estaban en las caravanas pueden ver que apenas hay nadie herido y que no hay apenas daños en las caravanas. Al momento Taszo se da cuenta de que la emboscada era una distracción. Taszo dice que los que mataron a sus compañeros tenían ese mismo símbolo en la cara, que no sabe cómo pero tienen que tener la hoja de Honor y sale corriendo hacia la tormenta saltando rocas y arbustos y pareciendo que ya no tiene el brazo roto si alguno supera una tirada de medicina  . Todos los personajes se encuentran determinados. La muralla de la tormenta impacta, aguas heladas y nubes de escombros les azotan. El viento es tan fuerte que aunque haya un muro gigante que les protege, el viento podría llevarse a una persona. Un estruendo enorme suena, una roca gigante cae al lado de la party. Cada jugador debe tirar Atletismo o Supervivencia  [[Dyr Dyu]] ve una extraña piedra pequeña que gira alrededor suya, cuando la mira de repente empieza a rebotar de manera rara pareciendo que les quiere guiar a algún sitio. Si la siguen escuchan dos voces: una aguda y alterada que reclama que no iban a matar más y la segunda más grave y segura diciendo que era necesario Kaiana, que había previsto que conduciría a otros hacia ellos. Un hombre iriali alto, escultural y de piel dorada se yergue tranquilo en medio de la tormenta, con su larga túnica verde ondeando al viento. En sus manos, sostenida casi con ternura, lleva una larga hoja esquirlada con púas. A su lado, una mujer reshi parece disgustada. Su pelo liso y negro azabache enmarca un rostro redondo, y su capa marrón combina con los tonos apagados de las colinas circundantes. Una tercera figura, un hombre alezi con la cabeza rapada, está de pie armado con una espada. El mismo glifo verde adorna los rostros de los tres. Los ojos del hombre de piel dorada resplandecen con un verde brillante y su cabeza se gira de inmediato e la dirección de la party y dice Veth, encárgate de ellos. Ocurre la bossfight Veth. En medio de la bossfight Taszo toma un turno levantándose y yendo a atacar a Veth, mientras grita: Vida antes que Muerte, Fuerza antes que debilidad, Viaje antes que... cuando va a decir la última palabra Veth le apuñala, tumbándolo en la piedra. Cuando acabe la batalla los personajes se acercan a Taszo que les dice que esa espada era su misión y la de sus otros hermanos, que debían prometer que la encontrarían. Les cuenta que tiene un contacto en los campamentos de guerra, se llama Liss y que ella sabrá que hacer. Les dice que el chamanato les recompensará que son caminapiedras, pero puede que sean lo único que se interponga entre este mundo y la próxima Desolación. Les hace jurar con la mano en una piedra que se saca del bolsillo y cuando lo juran suena una voz \"Este juramento no romperás. Por último dice que se alegra de morir con verdaderos amigos alrededor, se pone mirando hacia al cielo ya que no muere avergonzado ni ocultando su rostro a los dioses. Sonrie mientras sus ojos se cierran y su cuerpo se relaja. Al lado encuentran la daga de Veth con un glifo inscrito\n\nBordin les ayuda a hacer un pequeño funeral a Taszo, si han ayudado a Rebin y Hana, los jugadores reciben un arma (jabalina, lanza corta o lanza larga) y si consiguen salvar el carro les da vino rojo  y les dice que lo busquen en el Chull Gruñón en el campamento de guerra de los Kholin. Si no lo ayudaron Hana explica que su padre murió junto con los lanceros. Si le dicen a Bordin lo del robo va al carro y comprueba diciendo que nunca ha visto como es la hoja y que sólo él sabe la combinación de la caja, cuando la abre ven la misma hoja esquirlada que tenía el hombre de piel dorada en las manos y Bordin descarta todo lo dicho. Cuando pasa la tormenta empieza el viaje a las llanuras quebradas (suben de nivel).\n\n## Encuentros\n### Emboscada de los bandidos\nEn el reojo alguno de los PJ ve un grupo de personas acercándose (40 si están en las caravanas, 10 si están con Revin). La mayoría se van con los otros guardias y 4x [[Bandidos]] se acercan a los jugadores.\nEn las caravanas los jugadores pueden usar las caravanas como cobertura y pueden obtener una jabalina, una lanza corta o una lanza larga si usan una acción sobre un fardo de armas.\n\nEn el carro de Revin pueden ocultarse tras el chull o tras el carro, el **charco de crem es terreno difícil**. Además, cada movimiento a través del crem requiere superar una prueba de Agilidad CD 10. Si falla, el personaje queda Retenido. Un personaje atrapado, u otro personaje que pueda alcanzarlo, podrá Usar una habilidad ▶ para efectuar una prueba de Agilidad o Atletismo CD 10. Si la supera, el personaje queda liberado.\n\n\n\n\n# Sucesos en Rol",
+    "content_admin": "# Historia\nTras varios días caminando se encuentran con un grupo de caravanas que se está refugiando en la Encrucijada del Concilio ya que se acerca una alta tormenta. Se encuentran con [[Nen]] y [[Svalka]] que les pregunta si por el camino han visto alguna caravana, ya que un amigo ([[Tet Revin]]) dijo que llegaría hace horas. Nen les acribilla a preguntas de qué hacen aquí, <dm-section>si no mienten o le mienten lo suficientemente bien (CD 13)Nen les cuenta un cotilleo</dm-section> (Aquí pueden comerciar tanto con Nen como con Svalka):\n<dm-section>![](/Pasted image 20260123230103.png)</dm-section>\n\nEn las caravanas de los alezi se encuentran con Ellar que está demasiado ocupado haciendo los preparativos para la alta tormenta, y les dice que no tiene tiempo de hablar, que tiene mucho que preparar, que si le ayudasen a lo mejor tendría un rato para hablar. Todos hacen una tirada de agilidad, atlético o de liderazgo si la mitad la supera Ellar se ve agradecido a regañadientes y habla con ellos. Si no superan la tirada Ellar les mira molesto, les permite quedarse por el intento pero dice que les estará vigilando. \n\nMientras ocurre esto ven a una persona que es evitada por todos los de la caravana, se acerca a la party y se presenta como el Sagaz del rey de Alezkar. Hoid se interesa por ellos, y les lleva a parte, les pregunta quienes son y qué hacen aquí (mientras hace esto se toma un trago de una cantimplora), los personajes no confían en él pero se sienten una tranquilidad anormal, incluso sintiendose apelados a contarles todos sus secretos. <dm-section>Si la party quiere mentirle debe superar una tirada de Engaño CD 20. Cuando le mienten o dicen la verdad asiente (dejan de sentir la calma)</dm-section> y les insulta a la vez que los alaga y les dice que deberían hacer caso a las advertencias y que están a punto de tomar un camino muy peligroso. \n\nAl finalizar la conversación escuchan a Ellar gritarle a Taszo que estaba al lado de la caravana diciendo que la persona en la caravana es un blasfemo que dice ser uno de los heraldos y se burla de él: *¿Puedes salvarnos de la tormenta, gran Heraldo? ¿O te vas a quedar ahí sentado hablando contigo mismo?*. [[Bordin]] le para en seco diciendo que no hay tormentosa razón para insultar a un demente. En ese momento Taln les mira y les dice su mantra.\nCuando acabe Taszo les lleva a parte y les pregunta qué les parece los Alezi y las personas que acompañan. Cuando acaben de decir Taszo les dice que ese es un heraldo y que el artefacto que tienen que recuperar es su hoja de honor y les responde a las preguntas que le hagan.\n\nCuando acaben las preguntas se escucha muchísimo jaleo cuando miran es [[Hana]] y les comenta que su padre está a unos kilómetros de ahí y que se ha quedado atascado el carro y su padre no quiere abandonarlo. Svalka cabreada dice que ellos llevan sus vinos y sus armas, que seguro que les sobran algunos soldados para ello. Hana les ofrece 1 marco de esmeralda y si la party duda les ofrece otro. La misión es sacar el carro del crem o convencer a [[Tet Revin]] que abandone el carro (les acompañan 5 soldados).\n\nPara convencer a Revin los jugadores deberán hacer una tirada de persuación de CD 13, si argumentan cosas como la seguridad de Hana tienen ventaja y es más fácil de convencer, por lo general, Revin se resiste y usa 2 de concentración diciendo que en el carro está el sustento de su vida. Si fallan la tirada Revin no quiere dejarlo atrás y tendrán que hacer un empeño 3/3. Si lo logran consiguen sacar el carro justo a tiempo y si no Revin decide avanzar sin el carro porque la tormenta está sobre ellos. \n*Esta escena puede ocurrir en otra parte si los jugadores deciden no ir a ayudar a Revin, en este caso Taszo les dirá de entrar a la caravana de Taln y ver si está la hoja, los personajes deberán hacer un empeño 4/2 si fallan los guardias les pillan y les van a interrogar, si lo consiguen entran en el carro, en ese momento ven a Kaiana robando la espada y cambiandola por otra idéntica. Cuando Kaiana se da cuenta derrepente hay un flash de luz que los deja ciego y cuando vuelven a ver no está. Aquí pueden investigar el carro por dentro.*\n\nOcurre la [[#Emboscada de los bandidos|emboscada de los bandidos]], cuando acaban si revisan los cuerpos encuentran x1 ganzúa y tienen un extraño símbolo que si hacen una tirada de Saber <dm-section>CD 16</dm-section> identifican el glifo como uno de los diez glifos fundamentales de la teología vorin, la variante de \"Palah\"\n\nSi estaban en las caravanas pueden ver que apenas hay nadie herido y que no hay apenas daños en las caravanas. Al momento Taszo se da cuenta de que la emboscada era una distracción. Taszo dice que los que mataron a sus compañeros tenían ese mismo símbolo en la cara, que no sabe cómo pero tienen que tener la hoja de Honor y sale corriendo hacia la tormenta saltando rocas y arbustos y pareciendo que ya no tiene el brazo roto si alguno supera una tirada de medicina <dm-section>CD 5</dm-section> . Todos los personajes se encuentran determinados. La muralla de la tormenta impacta, aguas heladas y nubes de escombros les azotan. El viento es tan fuerte que aunque haya un muro gigante que les protege, el viento podría llevarse a una persona. Un estruendo enorme suena, una roca gigante cae al lado de la party. Cada jugador debe tirar Atletismo o Supervivencia <dm-section>CD 13, si falla sufre 3 + 1d6 de daño y queda tumbado si la supera la mitad del daño y no queda tumbado</dm-section> [[Dyr Dyu]] ve una extraña piedra pequeña que gira alrededor suya, cuando la mira de repente empieza a rebotar de manera rara pareciendo que les quiere guiar a algún sitio. Si la siguen escuchan dos voces: una aguda y alterada que reclama que no iban a matar más y la segunda más grave y segura diciendo que era necesario Kaiana, que había previsto que conduciría a otros hacia ellos. Un hombre iriali alto, escultural y de piel dorada se yergue tranquilo en medio de la tormenta, con su larga túnica verde ondeando al viento. En sus manos, sostenida casi con ternura, lleva una larga hoja esquirlada con púas. A su lado, una mujer reshi parece disgustada. Su pelo liso y negro azabache enmarca un rostro redondo, y su capa marrón combina con los tonos apagados de las colinas circundantes. Una tercera figura, un hombre alezi con la cabeza rapada, está de pie armado con una espada. El mismo glifo verde adorna los rostros de los tres. Los ojos del hombre de piel dorada resplandecen con un verde brillante y su cabeza se gira de inmediato e la dirección de la party y dice Veth, encárgate de ellos. Ocurre la bossfight Veth. En medio de la bossfight Taszo toma un turno levantándose y yendo a atacar a Veth, mientras grita: Vida antes que Muerte, Fuerza antes que debilidad, Viaje antes que... cuando va a decir la última palabra Veth le apuñala, tumbándolo en la piedra. Cuando acabe la batalla los personajes se acercan a Taszo que les dice que esa espada era su misión y la de sus otros hermanos, que debían prometer que la encontrarían. Les cuenta que tiene un contacto en los campamentos de guerra, se llama Liss y que ella sabrá que hacer. Les dice que el chamanato les recompensará que son caminapiedras, pero puede que sean lo único que se interponga entre este mundo y la próxima Desolación. Les hace jurar con la mano en una piedra que se saca del bolsillo y cuando lo juran suena una voz \"Este juramento no romperás. Por último dice que se alegra de morir con verdaderos amigos alrededor, se pone mirando hacia al cielo ya que no muere avergonzado ni ocultando su rostro a los dioses. Sonrie mientras sus ojos se cierran y su cuerpo se relaja. Al lado encuentran la daga de Veth con un glifo inscrito\n\nBordin les ayuda a hacer un pequeño funeral a Taszo, si han ayudado a Rebin y Hana, los jugadores reciben un arma (jabalina, lanza corta o lanza larga) y si consiguen salvar el carro les da vino rojo <dm-section>150 marcos</dm-section> y les dice que lo busquen en el Chull Gruñón en el campamento de guerra de los Kholin. Si no lo ayudaron Hana explica que su padre murió junto con los lanceros. Si le dicen a Bordin lo del robo va al carro y comprueba diciendo que nunca ha visto como es la hoja y que sólo él sabe la combinación de la caja, cuando la abre ven la misma hoja esquirlada que tenía el hombre de piel dorada en las manos y Bordin descarta todo lo dicho. Cuando pasa la tormenta empieza el viaje a las llanuras quebradas (suben de nivel).\n\n## Encuentros\n### Emboscada de los bandidos\nEn el reojo alguno de los PJ ve un grupo de personas acercándose (40 si están en las caravanas, 10 si están con Revin). La mayoría se van con los otros guardias y 4x [[Bandidos]] se acercan a los jugadores.\nEn las caravanas los jugadores pueden usar las caravanas como cobertura y pueden obtener una jabalina, una lanza corta o una lanza larga si usan una acción sobre un fardo de armas.\n\nEn el carro de Revin pueden ocultarse tras el chull o tras el carro, el **charco de crem es terreno difícil**. Además, cada movimiento a través del crem requiere superar una prueba de Agilidad CD 10. Si falla, el personaje queda Retenido. Un personaje atrapado, u otro personaje que pueda alcanzarlo, podrá Usar una habilidad ▶ para efectuar una prueba de Agilidad o Atletismo CD 10. Si la supera, el personaje queda liberado.\n\n\n<dm-section>## Loot útil</dm-section>\n\n# Sucesos en Rol",
+    "content_player": "# Historia\nTras varios días caminando se encuentran con un grupo de caravanas que se está refugiando en la Encrucijada del Concilio ya que se acerca una alta tormenta. Se encuentran con [[Nen]] y [[Svalka]] que les pregunta si por el camino han visto alguna caravana, ya que un amigo ([[Tet Revin]]) dijo que llegaría hace horas. Nen les acribilla a preguntas de qué hacen aquí,  (Aquí pueden comerciar tanto con Nen como con Svalka):\n\n\nEn las caravanas de los alezi se encuentran con Ellar que está demasiado ocupado haciendo los preparativos para la alta tormenta, y les dice que no tiene tiempo de hablar, que tiene mucho que preparar, que si le ayudasen a lo mejor tendría un rato para hablar. Todos hacen una tirada de agilidad, atlético o de liderazgo si la mitad la supera Ellar se ve agradecido a regañadientes y habla con ellos. Si no superan la tirada Ellar les mira molesto, les permite quedarse por el intento pero dice que les estará vigilando. \n\nMientras ocurre esto ven a una persona que es evitada por todos los de la caravana, se acerca a la party y se presenta como el Sagaz del rey de Alezkar. Hoid se interesa por ellos, y les lleva a parte, les pregunta quienes son y qué hacen aquí (mientras hace esto se toma un trago de una cantimplora), los personajes no confían en él pero se sienten una tranquilidad anormal, incluso sintiendose apelados a contarles todos sus secretos.  y les insulta a la vez que los alaga y les dice que deberían hacer caso a las advertencias y que están a punto de tomar un camino muy peligroso. \n\nAl finalizar la conversación escuchan a Ellar gritarle a Taszo que estaba al lado de la caravana diciendo que la persona en la caravana es un blasfemo que dice ser uno de los heraldos y se burla de él: *¿Puedes salvarnos de la tormenta, gran Heraldo? ¿O te vas a quedar ahí sentado hablando contigo mismo?*. [[Bordin]] le para en seco diciendo que no hay tormentosa razón para insultar a un demente. En ese momento Taln les mira y les dice su mantra.\nCuando acabe Taszo les lleva a parte y les pregunta qué les parece los Alezi y las personas que acompañan. Cuando acaben de decir Taszo les dice que ese es un heraldo y que el artefacto que tienen que recuperar es su hoja de honor y les responde a las preguntas que le hagan.\n\nCuando acaben las preguntas se escucha muchísimo jaleo cuando miran es [[Hana]] y les comenta que su padre está a unos kilómetros de ahí y que se ha quedado atascado el carro y su padre no quiere abandonarlo. Svalka cabreada dice que ellos llevan sus vinos y sus armas, que seguro que les sobran algunos soldados para ello. Hana les ofrece 1 marco de esmeralda y si la party duda les ofrece otro. La misión es sacar el carro del crem o convencer a [[Tet Revin]] que abandone el carro (les acompañan 5 soldados).\n\nPara convencer a Revin los jugadores deberán hacer una tirada de persuación de CD 13, si argumentan cosas como la seguridad de Hana tienen ventaja y es más fácil de convencer, por lo general, Revin se resiste y usa 2 de concentración diciendo que en el carro está el sustento de su vida. Si fallan la tirada Revin no quiere dejarlo atrás y tendrán que hacer un empeño 3/3. Si lo logran consiguen sacar el carro justo a tiempo y si no Revin decide avanzar sin el carro porque la tormenta está sobre ellos. \n*Esta escena puede ocurrir en otra parte si los jugadores deciden no ir a ayudar a Revin, en este caso Taszo les dirá de entrar a la caravana de Taln y ver si está la hoja, los personajes deberán hacer un empeño 4/2 si fallan los guardias les pillan y les van a interrogar, si lo consiguen entran en el carro, en ese momento ven a Kaiana robando la espada y cambiandola por otra idéntica. Cuando Kaiana se da cuenta derrepente hay un flash de luz que los deja ciego y cuando vuelven a ver no está. Aquí pueden investigar el carro por dentro.*\n\nOcurre la [[#Emboscada de los bandidos|emboscada de los bandidos]], cuando acaban si revisan los cuerpos encuentran x1 ganzúa y tienen un extraño símbolo que si hacen una tirada de Saber  identifican el glifo como uno de los diez glifos fundamentales de la teología vorin, la variante de \"Palah\"\n\nSi estaban en las caravanas pueden ver que apenas hay nadie herido y que no hay apenas daños en las caravanas. Al momento Taszo se da cuenta de que la emboscada era una distracción. Taszo dice que los que mataron a sus compañeros tenían ese mismo símbolo en la cara, que no sabe cómo pero tienen que tener la hoja de Honor y sale corriendo hacia la tormenta saltando rocas y arbustos y pareciendo que ya no tiene el brazo roto si alguno supera una tirada de medicina  . Todos los personajes se encuentran determinados. La muralla de la tormenta impacta, aguas heladas y nubes de escombros les azotan. El viento es tan fuerte que aunque haya un muro gigante que les protege, el viento podría llevarse a una persona. Un estruendo enorme suena, una roca gigante cae al lado de la party. Cada jugador debe tirar Atletismo o Supervivencia  [[Dyr Dyu]] ve una extraña piedra pequeña que gira alrededor suya, cuando la mira de repente empieza a rebotar de manera rara pareciendo que les quiere guiar a algún sitio. Si la siguen escuchan dos voces: una aguda y alterada que reclama que no iban a matar más y la segunda más grave y segura diciendo que era necesario Kaiana, que había previsto que conduciría a otros hacia ellos. Un hombre iriali alto, escultural y de piel dorada se yergue tranquilo en medio de la tormenta, con su larga túnica verde ondeando al viento. En sus manos, sostenida casi con ternura, lleva una larga hoja esquirlada con púas. A su lado, una mujer reshi parece disgustada. Su pelo liso y negro azabache enmarca un rostro redondo, y su capa marrón combina con los tonos apagados de las colinas circundantes. Una tercera figura, un hombre alezi con la cabeza rapada, está de pie armado con una espada. El mismo glifo verde adorna los rostros de los tres. Los ojos del hombre de piel dorada resplandecen con un verde brillante y su cabeza se gira de inmediato e la dirección de la party y dice Veth, encárgate de ellos. Ocurre la bossfight Veth. En medio de la bossfight Taszo toma un turno levantándose y yendo a atacar a Veth, mientras grita: Vida antes que Muerte, Fuerza antes que debilidad, Viaje antes que... cuando va a decir la última palabra Veth le apuñala, tumbándolo en la piedra. Cuando acabe la batalla los personajes se acercan a Taszo que les dice que esa espada era su misión y la de sus otros hermanos, que debían prometer que la encontrarían. Les cuenta que tiene un contacto en los campamentos de guerra, se llama Liss y que ella sabrá que hacer. Les dice que el chamanato les recompensará que son caminapiedras, pero puede que sean lo único que se interponga entre este mundo y la próxima Desolación. Les hace jurar con la mano en una piedra que se saca del bolsillo y cuando lo juran suena una voz \"Este juramento no romperás. Por último dice que se alegra de morir con verdaderos amigos alrededor, se pone mirando hacia al cielo ya que no muere avergonzado ni ocultando su rostro a los dioses. Sonrie mientras sus ojos se cierran y su cuerpo se relaja. Al lado encuentran la daga de Veth con un glifo inscrito\n\nBordin les ayuda a hacer un pequeño funeral a Taszo, si han ayudado a Rebin y Hana, los jugadores reciben un arma (jabalina, lanza corta o lanza larga) y si consiguen salvar el carro les da vino rojo  y les dice que lo busquen en el Chull Gruñón en el campamento de guerra de los Kholin. Si no lo ayudaron Hana explica que su padre murió junto con los lanceros. Si le dicen a Bordin lo del robo va al carro y comprueba diciendo que nunca ha visto como es la hoja y que sólo él sabe la combinación de la caja, cuando la abre ven la misma hoja esquirlada que tenía el hombre de piel dorada en las manos y Bordin descarta todo lo dicho. Cuando pasa la tormenta empieza el viaje a las llanuras quebradas (suben de nivel).\n\n## Encuentros\n### Emboscada de los bandidos\nEn el reojo alguno de los PJ ve un grupo de personas acercándose (40 si están en las caravanas, 10 si están con Revin). La mayoría se van con los otros guardias y 4x [[Bandidos]] se acercan a los jugadores.\nEn las caravanas los jugadores pueden usar las caravanas como cobertura y pueden obtener una jabalina, una lanza corta o una lanza larga si usan una acción sobre un fardo de armas.\n\nEn el carro de Revin pueden ocultarse tras el chull o tras el carro, el **charco de crem es terreno difícil**. Además, cada movimiento a través del crem requiere superar una prueba de Agilidad CD 10. Si falla, el personaje queda Retenido. Un personaje atrapado, u otro personaje que pueda alcanzarlo, podrá Usar una habilidad ▶ para efectuar una prueba de Agilidad o Atletismo CD 10. Si la supera, el personaje queda liberado.\n\n\n\n\n# Sucesos en Rol",
     "frontmatter": {
       "title": "Día 2: Honor más allá de la tormenta",
       "visibility": "private",
@@ -1414,7 +1460,7 @@
   {
     "slug": "Caminapiedras/Historia/Día 1 El asalto a las caravanas",
     "title": "Día 1: El asalto a las caravanas",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": true,
     "is_index": false,
@@ -1429,7 +1475,7 @@
         "text": "Velin"
       },
       {
-        "target": "#Batalla de las caravanas de Ralanat",
+        "target": "Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat",
         "text": "batalla de las caravanas de Ralanat"
       },
       {
@@ -1469,11 +1515,11 @@
         "text": "Sabueso-hacha"
       }
     ],
-    "content_admin": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe  (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 70 marcos (7 marcos de rubí). Después de dos o tres días de camino se encuentran con [[Taszo Hijo Clutio]] un shin con un brazo roto que está rodeado por sabuesos-hacha, en este momento ocurre el encuentro [[Día 1 El asalto a las caravanas#El rescate de Taszo|\"El rescate de Taszo\"]]. Una vez terminado Taszo les da las gracias y les dice que tiene una misión muy importante, que ya que le habían salvado si podrían ayudarle con esa misión, asegurándoles que les dará una recompensa.\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n### El rescate de Taszo\n[[Sabueso-hacha]] x4\n## Utilidad\n<dm-section>## Loot útil\n1x vinculacaña de los ojos de Palah\n1x Espada corta\n1x Espada larga\n2x Broam de diamante\n168x Raciones</dm-section>\n# Sucesos en Rol",
-    "content_player": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe  (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 70 marcos (7 marcos de rubí). Después de dos o tres días de camino se encuentran con [[Taszo Hijo Clutio]] un shin con un brazo roto que está rodeado por sabuesos-hacha, en este momento ocurre el encuentro [[Día 1 El asalto a las caravanas#El rescate de Taszo|\"El rescate de Taszo\"]]. Una vez terminado Taszo les da las gracias y les dice que tiene una misión muy importante, que ya que le habían salvado si podrían ayudarle con esa misión, asegurándoles que les dará una recompensa.\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n### El rescate de Taszo\n[[Sabueso-hacha]] x4\n## Utilidad\n\n# Sucesos en Rol",
+    "content_admin": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 100 marcos (2 marcos de esmeralda). Después de dos o tres días de camino se encuentran con [[Taszo Hijo Clutio]] un shin con un brazo roto que está rodeado por sabuesos-hacha, en este momento ocurre el encuentro [[Día 1 El asalto a las caravanas#El rescate de Taszo|\"El rescate de Taszo\"]]. Una vez terminado Taszo les da las gracias y les dice que tiene una misión muy importante, que ya que le habían salvado si podrían ayudarle con esa misión, asegurándoles que les dará una recompensa.\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n### El rescate de Taszo\n[[Sabueso-hacha]] x4\n## Utilidad\n<dm-section>## Loot útil\n1x vinculacaña de los ojos de Palah\n1x Espada corta\n1x Espada larga\n2x Broam de esmeralda\n168x Raciones</dm-section>\n# Sucesos en Rol\nLos personajes empiezan en la caravana de Ralanat, tras hablar un rato con Velin ocurre un ataque de unos bandidos que parecen demasiado organizados. La party va a salvar a Ralanat pero se dan cuenta de que ella era una de las que organizó ese ataque. Cuando lo descubren aparece un portador de esquirlada que causa un desprendimiento, destrozando todas las caravanas. Cuando se recuperan de la conmoción Velin les pide que le digan a Dalinar Kholin lo de la traición y les da 100 marcos de diamante (en realidad se los dio para salvar a Ralanat).\nTras unos días de viaje se encuentran con Taszo Hijo-Clutio que está rodeado por Sabueso-hacha. La party **aniquila a todos y cada uno de ellos** y Taszo les agradace y les pide si podrían ayudarle a recuperar una reliquia de su religión.",
+    "content_player": "# Historia esperada\nHace semanas desde que salieron de Kholinar en las caravanas de [[Repo/Archivo/Caminapiedras/Personajes/Secundarios/Ralanat (Brillante Señora)|Ralanat (Brillante Señora)]]están en la frontera del principado de Thanadal. Acampan en un desfiladero cercano que protege de los bandidos y de las altas tormentas. Se hacen varias hogueras y *casualmente* la party se sienta en una de ellas. Hay una **conversación** con [[Repo/Archivo/Caminapiedras/Historia/Día 1 El asalto a las caravanas#Velin|Velin]] dónde los personajes se presentan, Velin les empieza a contar que una vez estuvo en el ejercito con un chico que hacía que la mayoría su compañía sobreviviera a todas las batallas cuando suena la señal de alarma. Ocurre la [[Día 1 El asalto a las caravanas#Batalla de las caravanas de Ralanat|batalla de las caravanas de Ralanat]]. Tras el derrumbe (han pasado unas horas con los personajes desmayados) Velin les pide buscar las provisiones que haya en las caravanas o cualquier cosa que pueda ser [[Día 1 El asalto a las caravanas#Loot útil|útil]]. Pasan la noche y al día siguiente los soldados que sobrevivieron al asalto no pueden moverse por lo que les manda a ir a las llanuras quebradas y pedir ayuda, a cambio les da 100 marcos (2 marcos de esmeralda). Después de dos o tres días de camino se encuentran con [[Taszo Hijo Clutio]] un shin con un brazo roto que está rodeado por sabuesos-hacha, en este momento ocurre el encuentro [[Día 1 El asalto a las caravanas#El rescate de Taszo|\"El rescate de Taszo\"]]. Una vez terminado Taszo les da las gracias y les dice que tiene una misión muy importante, que ya que le habían salvado si podrían ayudarle con esa misión, asegurándoles que les dará una recompensa.\n## Encuentros\n### Batalla de las caravanas de Ralanat\n[[Arqueros]] x6\n[[Soldados de la Emoción]] x5\nCuando estén a punto de abatir a alguien Velin les grita que huyan, que vayan a la caravana de Ralanat y la protejan. Cuando llegan a la caravana ven a [[Zinden]] entrando, si deciden hacer sigilo, se les escucha decir que gracias a este \"incidente\" los Kholin seguirán perdiendo credibilidad si no, Ralanat les dirá que no deberían estar aquí y le dice a Zinden que los maten a lo que él responde que no se preocupara, que no viviría mucha gente para contarlo. En ese momento aparece [[Resi (Brillante Señor)]] ([[Portador de Esquirlada de Élite]] x1). Con la emoción del combate Resi provoca el derrumbe del desfiladero matando a la mayoría de personas que estaban en las caravanas.\n### El rescate de Taszo\n[[Sabueso-hacha]] x4\n## Utilidad\n\n# Sucesos en Rol\nLos personajes empiezan en la caravana de Ralanat, tras hablar un rato con Velin ocurre un ataque de unos bandidos que parecen demasiado organizados. La party va a salvar a Ralanat pero se dan cuenta de que ella era una de las que organizó ese ataque. Cuando lo descubren aparece un portador de esquirlada que causa un desprendimiento, destrozando todas las caravanas. Cuando se recuperan de la conmoción Velin les pide que le digan a Dalinar Kholin lo de la traición y les da 100 marcos de diamante (en realidad se los dio para salvar a Ralanat).\nTras unos días de viaje se encuentran con Taszo Hijo-Clutio que está rodeado por Sabueso-hacha. La party **aniquila a todos y cada uno de ellos** y Taszo les agradace y les pide si podrían ayudarle a recuperar una reliquia de su religión.",
     "frontmatter": {
       "title": "Día 1: El asalto a las caravanas",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true
     }
   },
@@ -2367,6 +2413,28 @@
     "content_player": "![](/Pasted image 20260202181916.png)",
     "frontmatter": {
       "title": "Subir de Nivel",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
+    "slug": "Sistemas/Información Útil/Roshar",
+    "title": "Roshar",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260206215526.png",
+        "text": "Pasted image 20260206215526.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260206215526.png)",
+    "content_player": "![](/Pasted image 20260206215526.png)",
+    "frontmatter": {
+      "title": "Roshar",
       "visibility": "public",
       "spoilers": false
     }

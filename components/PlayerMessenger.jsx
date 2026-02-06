@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 
-export default function DMMessenger({ isOpen, onClose }) {
-  const username = 'DM';
+export default function PlayerMessenger({ username, isOpen, onClose }) {
   const [recipient, setRecipient] = useState('');
   const [message, setMessage] = useState('');
   const [sending, setSending] = useState(false);
@@ -12,11 +11,11 @@ export default function DMMessenger({ isOpen, onClose }) {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen && username) {
       loadUsers();
       loadConversations();
     }
-  }, [isOpen]);
+  }, [isOpen, username]);
 
   useEffect(() => {
     if (selectedConversation) {
@@ -29,16 +28,21 @@ export default function DMMessenger({ isOpen, onClose }) {
       const response = await fetch('/content/pages.json');
       const pages = await response.json();
       
-      const allUsers = new Set();
+      const allUsers = new Set(['DM']);
       pages.forEach(page => {
         if (page.allowed_users && Array.isArray(page.allowed_users)) {
-          page.allowed_users.forEach(user => allUsers.add(user));
+          page.allowed_users.forEach(user => {
+            if (user !== username) {
+              allUsers.add(user);
+            }
+          });
         }
       });
       
       setUsers(Array.from(allUsers).sort());
     } catch (err) {
       console.error('Error loading users:', err);
+      setUsers(['DM']);
     }
   };
 
@@ -107,7 +111,7 @@ export default function DMMessenger({ isOpen, onClose }) {
     const targetUser = selectedConversation || recipient;
     
     if (!targetUser || !message.trim()) {
-      alert('Selecciona un jugador y escribe un mensaje');
+      alert('Selecciona un usuario y escribe un mensaje');
       return;
     }
 
@@ -156,11 +160,11 @@ export default function DMMessenger({ isOpen, onClose }) {
         onClick={onClose}
       />
       
-      <div className="fixed right-0 top-0 h-full w-full lg:w-[900px] bg-gradient-to-br from-purple-900 via-red-900 to-purple-900 shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out overflow-hidden flex">
+      <div className="fixed right-0 top-0 h-full w-full lg:w-[900px] bg-gradient-to-br from-blue-900 via-purple-900 to-blue-900 shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out overflow-hidden flex">
         {/* Lista de conversaciones */}
         <div className="w-1/3 border-r border-white/20 flex flex-col">
           <div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-4">
-            <h3 className="text-white font-bold text-lg">👑 Mensajería DM</h3>
+            <h3 className="text-white font-bold text-lg">💬 Mensajes</h3>
           </div>
           
           <div className="flex-1 overflow-y-auto">
@@ -179,7 +183,8 @@ export default function DMMessenger({ isOpen, onClose }) {
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-white font-semibold">
-                      ⚔️ {conv.user}
+                      {conv.user === 'DM' ? '👑 ' : '⚔️ '}
+                      {conv.user}
                     </span>
                     {conv.unread && (
                       <span className="bg-yellow-500 text-yellow-900 text-xs px-2 py-1 rounded-full font-bold">
@@ -210,18 +215,18 @@ export default function DMMessenger({ isOpen, onClose }) {
               {selectedConversation && (
                 <button
                   onClick={handleBack}
-                  className="text-white hover:text-red-300 transition-colors"
+                  className="text-white hover:text-emerald-300 transition-colors"
                   title="Volver a conversaciones"
                 >
-                  ←
+                  ← 
                 </button>
               )}
               {selectedConversation ? (
                 <h2 className="text-white font-bold text-xl flex items-center">
-                  ⚔️ {selectedConversation}
+                  {selectedConversation === 'DM' ? '👑' : '⚔️'} {selectedConversation}
                 </h2>
               ) : (
-                <h2 className="text-white font-bold text-xl">📨 Mensajería DM</h2>
+                <h2 className="text-white font-bold text-xl">📬 Mensajería</h2>
               )}
             </div>
             <button
@@ -246,12 +251,12 @@ export default function DMMessenger({ isOpen, onClose }) {
                       <div
                         className={`max-w-[70%] rounded-lg p-3 ${
                           isMine
-                            ? 'bg-red-600 text-white'
+                            ? 'bg-blue-600 text-white'
                             : 'bg-white/20 text-white'
                         }`}
                       >
                         <p className="whitespace-pre-wrap">{msg.message}</p>
-                        <p className={`text-xs mt-1 ${isMine ? 'text-red-200' : 'text-gray-400'}`}>
+                        <p className={`text-xs mt-1 ${isMine ? 'text-blue-200' : 'text-gray-400'}`}>
                           {new Date(msg.created_at).toLocaleTimeString('es-ES', {
                             hour: '2-digit',
                             minute: '2-digit'
@@ -276,13 +281,13 @@ export default function DMMessenger({ isOpen, onClose }) {
                       }
                     }}
                     placeholder="Escribe un mensaje..."
-                    className="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
+                    className="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                     rows="2"
                   />
                   <button
                     onClick={sendMessage}
                     disabled={sending || !message.trim()}
-                    className="bg-red-600 hover:bg-red-700 disabled:bg-gray-600 text-white px-6 rounded-lg transition-all disabled:cursor-not-allowed"
+                    className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white px-6 rounded-lg transition-all disabled:cursor-not-allowed"
                   >
                     {sending ? '...' : '📤'}
                   </button>
@@ -294,18 +299,18 @@ export default function DMMessenger({ isOpen, onClose }) {
               {/* Nueva conversación */}
               <div className="flex-1 flex items-center justify-center p-8">
                 <div className="text-center max-w-md">
-                  <div className="text-6xl mb-4">📨</div>
-                  <h3 className="text-white text-xl font-bold mb-4">Enviar mensaje a jugador</h3>
+                  <div className="text-6xl mb-4">💬</div>
+                  <h3 className="text-white text-xl font-bold mb-4">Iniciar nueva conversación</h3>
                   
                   <select
                     value={recipient}
                     onChange={(e) => setRecipient(e.target.value)}
-                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-red-500"
+                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
-                    <option value="">Selecciona un jugador...</option>
+                    <option value="">Selecciona un usuario...</option>
                     {users.map(user => (
                       <option key={user} value={user} className="bg-purple-900">
-                        ⚔️ {user}
+                        {user === 'DM' ? '👑 ' : '⚔️ '}{user}
                       </option>
                     ))}
                   </select>
@@ -314,13 +319,13 @@ export default function DMMessenger({ isOpen, onClose }) {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Escribe tu mensaje..."
-                    className="w-full h-32 bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none mb-4"
+                    className="w-full h-32 bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none mb-4"
                   />
 
                   <button
                     onClick={sendMessage}
                     disabled={sending || !recipient || !message.trim()}
-                    className="w-full bg-red-600 hover:bg-red-700 disabled:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all disabled:cursor-not-allowed"
+                    className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all disabled:cursor-not-allowed"
                   >
                     {sending ? 'Enviando...' : '📤 Enviar Mensaje'}
                   </button>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import NotesPanel from '../../components/NotesPanel';
 import NotesButton from '../../components/NotesButton';
 import DMMessenger from '../../components/DMMessenger';
-import PlayerMessages from '../../components/PlayerMessages';
+import PlayerMessenger from '../../components/PlayerMessenger';
 import MessageButton from '../../components/MessageButton';
 import { supabase } from '../../lib/supabase';
 
@@ -252,14 +252,14 @@ export default function WikiIndex() {
             isOpen={notesOpen}
             onClose={() => setNotesOpen(false)}
           />
-          <PlayerMessages 
-            username={user.username}
-            isOpen={messagesOpen}
-            onClose={() => {
-              setMessagesOpen(false);
-              loadUnreadCount(user.username);
-            }}
-          />
+          <PlayerMessenger 
+  username={user.username}
+  isOpen={messagesOpen}
+  onClose={() => {
+    setMessagesOpen(false);
+    loadUnreadCount(user.username);
+  }}
+/>
         </>
       )}
     </div>
