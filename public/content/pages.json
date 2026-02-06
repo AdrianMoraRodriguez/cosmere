@@ -2383,10 +2383,14 @@
       {
         "target": "¿Qué Hacer en un Turno de Combate?",
         "text": "¿Qué Hacer en un Turno de Combate?"
+      },
+      {
+        "target": "Roshar",
+        "text": "Roshar"
       }
     ],
-    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]",
-    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]",
+    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]",
+    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]",
     "frontmatter": {
       "title": "Información Útil",
       "visibility": "public",
