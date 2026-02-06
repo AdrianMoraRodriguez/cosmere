@@ -204,33 +204,35 @@ export default function DMMessenger({ isOpen, onClose }) {
 
         {/* Área de conversación */}
         <div className="flex-1 flex flex-col">
-          {/* Header */}
-          <div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-4 flex justify-between items-center">
-            <div className="flex items-center gap-3">
-              {selectedConversation && (
-                <button
-                  onClick={handleBack}
-                  className="text-white hover:text-red-300 transition-colors"
-                  title="Volver a conversaciones"
-                >
-                  ←
-                </button>
-              )}
-              {selectedConversation ? (
-                <h2 className="text-white font-bold text-xl flex items-center">
-                  ⚔️ {selectedConversation}
-                </h2>
-              ) : (
-                <h2 className="text-white font-bold text-xl">📨 Mensajería DM</h2>
-              )}
-            </div>
-            <button
-              onClick={onClose}
-              className="text-white hover:text-red-300 text-2xl transition-colors hover:bg-red-500/20 rounded-lg p-2"
-            >
-              ✕
-            </button>
-          </div>
+{/* Header */}
+<div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-4 flex justify-between items-center relative">
+  <div className="flex items-center gap-3">
+    {selectedConversation && (
+      <button
+        onClick={handleBack}
+        className="text-white hover:text-red-300 transition-colors"
+        title="Volver a conversaciones"
+      >
+        ←
+      </button>
+    )}
+    {selectedConversation ? (
+      <h2 className="text-white font-bold text-xl flex items-center">
+        ⚔️ {selectedConversation}
+      </h2>
+    ) : (
+      <h2 className="text-white font-bold text-xl">📨 Mensajería DM</h2>
+    )}
+  </div>
+  <button
+    onClick={onClose}
+    className="text-white hover:text-red-300 text-3xl transition-colors hover:bg-red-500/20 rounded-lg p-2 absolute right-4 top-1/2 -translate-y-1/2 z-[80]"
+    style={{ marginRight: '-200px' }}
+    aria-label="Cerrar mensajería"
+  >
+    ✕
+  </button>
+</div>
 
           {selectedConversation ? (
             <>
