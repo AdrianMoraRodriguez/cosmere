@@ -1332,11 +1332,11 @@
       },
       {
         "target": "Veth (boss)",
-        "text": "Veth (boss)"
+        "text": "Veth"
       }
     ],
-    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)]]",
-    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)]]",
+    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]",
+    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]",
     "frontmatter": {
       "title": "Enemigos",
       "visibility": "public",
