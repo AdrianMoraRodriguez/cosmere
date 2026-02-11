@@ -1347,13 +1347,17 @@
   },
   {
     "slug": "Caminapiedras/Enemigos/Jefes/Veth (boss)",
-    "title": "Veth (boss)",
-    "visibility": "private",
+    "title": "Veth",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": true,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [
+      {
+        "target": "Pasted image 20260211165006.png",
+        "text": "Pasted image 20260211165006.png"
+      },
       {
         "target": "Pasted image 20260205195713.png",
         "text": "Pasted image 20260205195713.png"
@@ -1363,11 +1367,11 @@
         "text": "Pasted image 20260205195725.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260205195713.png)\n![](/Pasted image 20260205195725.png)",
-    "content_player": "![](/Pasted image 20260205195713.png)\n![](/Pasted image 20260205195725.png)",
+    "content_admin": "![](/Pasted image 20260211165006.png)\n<dm-section>![](/Pasted image 20260205195713.png)\n![](/Pasted image 20260205195725.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260211165006.png)\n",
     "frontmatter": {
-      "title": "Veth (boss)",
-      "visibility": "private",
+      "title": "Veth",
+      "visibility": "public",
       "spoilers": true
     }
   },
