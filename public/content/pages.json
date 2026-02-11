@@ -142,6 +142,39 @@
     }
   },
   {
+    "slug": "Caminapiedras/Party Principal/Bokao Nel",
+    "title": "Bokao Nel",
+    "visibility": "public",
+    "allowed_users": [
+      "Nico"
+    ],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20251105165404.png",
+        "text": "Pasted image 20251105165404.png"
+      },
+      {
+        "target": "Vigilantes de la Verdad",
+        "text": "Vigilante de la Verdad"
+      },
+      {
+        "target": "Pasted image 20260203122853.png",
+        "text": "Pasted image 20260203122853.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20251105165404.png)\n<dm-section>## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.</dm-section>\n## Sucesos en la Campaña\n### Viaje de tres días hacia la encrucijada\nEs clara el ansia que demuestra a la hora de conseguir financiación. Ha conseguido ocultar con gran agudeza aquello que su mente ansía; sin embargo, se ve en la obligación de revelar su lesión ocular con vistas a afianzar la confianza con esos extraños (además de intentar sacar tajada mediante su condición, obviamente). Espera no haber importunado demasiado con sus principios; en cuyo caso, deberá cambiarlos en pos de su objetivo.\n<dm-section>## Avances como [[Vigilantes de la Verdad|Vigilante de la Verdad]]\nTodavía no tiene un brumaspren (Nombre: Omi)</dm-section>\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122853.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165404.png)\n\n## Sucesos en la Campaña\n### Viaje de tres días hacia la encrucijada\nEs clara el ansia que demuestra a la hora de conseguir financiación. Ha conseguido ocultar con gran agudeza aquello que su mente ansía; sin embargo, se ve en la obligación de revelar su lesión ocular con vistas a afianzar la confianza con esos extraños (además de intentar sacar tajada mediante su condición, obviamente). Espera no haber importunado demasiado con sus principios; en cuyo caso, deberá cambiarlos en pos de su objetivo.\n\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n",
+    "frontmatter": {
+      "title": "Bokao Nel",
+      "visibility": "public",
+      "spoilers": true,
+      "allowed_users": "[Nico]"
+    }
+  },
+  {
     "slug": "Caminapiedras/Party Principal/Party Principal",
     "title": "Party Principal",
     "visibility": "public",
@@ -155,8 +188,8 @@
         "text": "Arluno'ratha'tu (Aitor)"
       },
       {
-        "target": "Bocao Nel",
-        "text": "Bocao  Nel (Nico)"
+        "target": "Bokao Nel",
+        "text": "Bokao  Nel (Nico)"
       },
       {
         "target": "Calki",
@@ -164,7 +197,7 @@
       },
       {
         "target": "Dyr Dyu",
-        "text": "Dyr DyuSalva"
+        "text": "Dyr Dyu (Salva)"
       },
       {
         "target": "Nor Damoi",
@@ -187,8 +220,8 @@
         "text": "Valisha (Daniela)"
       }
     ],
-    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bocao Nel|Bocao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr DyuSalva]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
-    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bocao Nel|Bocao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr DyuSalva]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
     "frontmatter": {
       "title": "Party Principal",
       "visibility": "public",
@@ -258,46 +291,13 @@
         "text": "Pasted image 20260203122750.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165347.png)\n<dm-section>## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.</dm-section>\n## Sucesos en la Campaña \n<dm-section>## Avances como [[Corredores del Viento|Corredor del Viento]]\nTodavía no tiene un Honorspren (Nombre: Rephira)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122750.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165347.png)\n\n## Sucesos en la Campaña \n\n## Caminos\nGuerrero: Duelista\n\n",
+    "content_admin": "![](/Pasted image 20251105165347.png)\n<dm-section>## Lore\n* **Infancia**: Desde niño mostró una conexión misteriosa con el viento y el movimiento, percibiendo cambios en el aire que nadie más notaba.\n* **Juventud**: Salvó a sus compañeros durante una tormenta anticipando la montaña misma, ganándose el nombre sagrado Arluno’ratha’tu, símbolo de su vínculo entre lo sólido y lo fluido.\n* **Actualidad**: Guerrero sereno y enigmático, combate con una intuición casi sobrenatural, guiado por la corriente invisible que parece acompañarlo siempre.</dm-section>\n## Sucesos en la Campaña \n\n### Viaje de tres días a la encrucijada\nAl preguntarle como lucha tan bien contesta que “el aire avisa”, sin dar más explicaciones. Fuera de eso habla poco de sí mismo y evita comentar cualquier asunto relacionado con su pasado.\n<dm-section>## Avances como [[Corredores del Viento|Corredor del Viento]]\nTodavía no tiene un Honorspren (Nombre: Rephira)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122750.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165347.png)\n\n## Sucesos en la Campaña \n\n### Viaje de tres días a la encrucijada\nAl preguntarle como lucha tan bien contesta que “el aire avisa”, sin dar más explicaciones. Fuera de eso habla poco de sí mismo y evita comentar cualquier asunto relacionado con su pasado.\n\n## Caminos\nGuerrero: Duelista\n\n",
     "frontmatter": {
       "title": "Arluno'ratha'tu",
       "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Aitor]"
-    }
-  },
-  {
-    "slug": "Caminapiedras/Party Principal/Bocao Nel",
-    "title": "Bocao Nel",
-    "visibility": "public",
-    "allowed_users": [
-      "Nico"
-    ],
-    "spoilers": true,
-    "is_index": false,
-    "is_subindex": false,
-    "internal_links": [
-      {
-        "target": "Pasted image 20251105165404.png",
-        "text": "Pasted image 20251105165404.png"
-      },
-      {
-        "target": "Vigilantes de la Verdad",
-        "text": "Vigilante de la Verdad"
-      },
-      {
-        "target": "Pasted image 20260203122853.png",
-        "text": "Pasted image 20260203122853.png"
-      }
-    ],
-    "content_admin": "![](/Pasted image 20251105165404.png)\n<dm-section>## Lore\n* **Infancia**: Mostró una curiosidad insaciable por entender el funcionamiento del mundo, siendo visto como un niño extraño con un pie en lo desconocido.\n* **Juventud**: Se formó como erudito en Kharbranth y desarrolló una obsesión por los fabriales, creyendo que sus creaciones no provenían de él, sino de un plano oculto que las “traía” al mundo.\n* **Actualidad**: Trabaja para una señora alezi, convencido de ser solo un canal de una fuerza mayor, buscando en cada invento la verdad velada del universo.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad|Vigilante de la Verdad]]\nTodavía no tiene un brumaspren (Nombre: Omi)</dm-section>\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n<dm-section>## Ficha de personaje\n![](/Pasted image 20260203122853.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165404.png)\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Artifabriano\nTiene un Fabrial\n\n",
-    "frontmatter": {
-      "title": "Bocao Nel",
-      "visibility": "public",
-      "spoilers": true,
-      "allowed_users": "[Nico]"
     }
   },
   {
@@ -324,8 +324,8 @@
         "text": "Pasted image 20260203122935.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165425.png)\n\n<dm-section>## Lore</dm-section>\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad#Iluminados|Vigilante de la Verdad Iluminado]]\nDe momento no tiene un brumaspren iluminado (Nombre: Veln)</dm-section>\n## Caminos\nErudito: Cirujano\n\n<dm-section>![](/Pasted image 20260203122935.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165425.png)\n\n\n\n## Sucesos en la Campaña\n\n## Caminos\nErudito: Cirujano\n\n",
+    "content_admin": "![](/Pasted image 20251105165425.png)\n\n<dm-section>## Lore</dm-section>\n\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Vigilantes de la Verdad#Iluminados|Vigilante de la Verdad Iluminado]]\nDe momento no tiene un brumaspren iluminado (Nombre: Veln)</dm-section>\n### Viaje de tres días a la encrucijada\nTiene cicatrices en la cara cerca de los ojos, está yendo a las llanuras quebradas a investigar sucesos extraños que pasan allí. Viene de una familia de mercaderes Tayleña y estudió en la universidad de Karbranth. Su especialidad es la medicina pero se ha esforzado en aprender la mayoría de los idiomas que hay para poder tener información de más fuentes.\n## Caminos\nErudito: Cirujano\n\n<dm-section>![](/Pasted image 20260203122935.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165425.png)\n\n\n\n## Sucesos en la Campaña\n\n### Viaje de tres días a la encrucijada\nTiene cicatrices en la cara cerca de los ojos, está yendo a las llanuras quebradas a investigar sucesos extraños que pasan allí. Viene de una familia de mercaderes Tayleña y estudió en la universidad de Karbranth. Su especialidad es la medicina pero se ha esforzado en aprender la mayoría de los idiomas que hay para poder tener información de más fuentes.\n## Caminos\nErudito: Cirujano\n\n",
     "frontmatter": {
       "title": "Calki",
       "visibility": "public",
@@ -361,8 +361,8 @@
         "text": "Pasted image 20260203123253.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165605.png)\n<dm-section>Su verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Tejedores de Luz|Tejedora de Luz]]\nDe momento no tiene críptico (Nombre: Entropía $S=−kB​∫ρ(Γ)lnρ(Γ)dΓ$)</dm-section>\n\n## Caminos\nAgente: Espía\n\n<dm-section>![](/Pasted image 20260203123253.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165605.png)\n\n## Sucesos en la Campaña\n\n\n## Caminos\nAgente: Espía\n\n",
+    "content_admin": "![](/Pasted image 20251105165605.png)\n<dm-section>Su verdadero nombre es Sarvena\n## Lore\n* **Infancia**: En un acto de miedo durante una redada, usó el nombre de su amiga [[Yara]] para salvarse, condenándola a muerte y cargando desde entonces con una culpa que marcó su identidad.\n* **Adolescencia**: Se volvió una maestra del engaño, viviendo bajo múltiples identidades para sobrevivir, negando su propio yo y enterrando su culpa bajo las máscaras que la protegían.\n* **Actualidad**: Convertida en espía, vive atrapada entre la mentira y el remordimiento, sabiendo que mientras no enfrente la verdad sobre Yara, nunca podrá ser verdaderamente ella misma.</dm-section>\n## Sucesos en la Campaña\n\n### Viaje de tres días a la encrucijada\nEs una mujer de Kharbranth que quiere recuperar dinero para intentar dejar su vida pasada atrás y escapar de algo. Les diría que robaba para ganarse la vida cuando era más pequeña, pero que ahora trabaja de maneras más éticas, aunque no se niega a aceptar encargos iguales o peores que los de antes. Puede desempeñar un trabajo convencional, como marchar a la guerra tal y como está haciendo ahora, del mismo modo que podría arriesgarse a robar colgantes en casas nobles si la situación lo exigiera.\n<dm-section>## Avances como [[Tejedores de Luz|Tejedora de Luz]]\nDe momento no tiene críptico (Nombre: Entropía $S=−kB​∫ρ(Γ)lnρ(Γ)dΓ$)</dm-section>\n\n## Caminos\nAgente: Espía\n\n<dm-section>![](/Pasted image 20260203123253.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165605.png)\n\n## Sucesos en la Campaña\n\n### Viaje de tres días a la encrucijada\nEs una mujer de Kharbranth que quiere recuperar dinero para intentar dejar su vida pasada atrás y escapar de algo. Les diría que robaba para ganarse la vida cuando era más pequeña, pero que ahora trabaja de maneras más éticas, aunque no se niega a aceptar encargos iguales o peores que los de antes. Puede desempeñar un trabajo convencional, como marchar a la guerra tal y como está haciendo ahora, del mismo modo que podría arriesgarse a robar colgantes en casas nobles si la situación lo exigiera.\n\n\n## Caminos\nAgente: Espía\n\n",
     "frontmatter": {
       "title": "Yara Elorin",
       "visibility": "public",
@@ -460,8 +460,8 @@
         "text": "Pasted image 20260203123221.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260127152444.png)\n<dm-section>## Lore</dm-section>\n\n## Sucesos en Campaña\n<dm-section>## Avances como [[Rompedores del cielo|Rompedora del cielo]]\nDe momento no tiene altospren (Nombre: 9)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>![](/Pasted image 20260203123221.png)</dm-section>",
-    "content_player": "![](/Pasted image 20260127152444.png)\n\n\n## Sucesos en Campaña\n\n## Caminos\nGuerrero: Duelista\n\n",
+    "content_admin": "![](/Pasted image 20260127152444.png)\n<dm-section>## Lore</dm-section>\n\n## Sucesos en Campaña\n\n### Viaje de tres días hacia la encrucijada\nMintió cuando le respondió a Velin sobre el motivo por el que estaba en la caravana con ellos. Tenía miedo, y la respuesta más fácil fue mentir diciendo que estaba buscando a un familiar. Solo puede decir que está buscando a un grupo de personas. De todas formas, se ha pasado todo el tiempo muy callada, apenas hablando de cualquier cosa relacionada con su trasfondo personal y evitando el tema.\n<dm-section>## Avances como [[Rompedores del cielo|Rompedora del cielo]]\nDe momento no tiene altospren (Nombre: 9)</dm-section>\n## Caminos\nGuerrero: Duelista\n\n<dm-section>![](/Pasted image 20260203123221.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260127152444.png)\n\n\n## Sucesos en Campaña\n\n### Viaje de tres días hacia la encrucijada\nMintió cuando le respondió a Velin sobre el motivo por el que estaba en la caravana con ellos. Tenía miedo, y la respuesta más fácil fue mentir diciendo que estaba buscando a un familiar. Solo puede decir que está buscando a un grupo de personas. De todas formas, se ha pasado todo el tiempo muy callada, apenas hablando de cualquier cosa relacionada con su trasfondo personal y evitando el tema.\n\n## Caminos\nGuerrero: Duelista\n\n",
     "frontmatter": {
       "title": "Valisha",
       "visibility": "public",
@@ -859,8 +859,8 @@
         "text": "Nor Damoi"
       },
       {
-        "target": "Bocao Nel",
-        "text": "Bocao Nel"
+        "target": "Bokao Nel",
+        "text": "Bokao Nel"
       },
       {
         "target": "Calki",
@@ -895,8 +895,8 @@
         "text": "jefe de los bandidos"
       }
     ],
-    "content_admin": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bocao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe y con [[Valisha]] que ayuda con la seguridad.\n En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]] y [[Zinden|jefe de los bandidos]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin. \n Después del ataque, el cuerpo de Ralanat no parece estar entre los restos de las caravanas.",
-    "content_player": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bocao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe y con [[Valisha]] que ayuda con la seguridad.\n En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]] y [[Zinden|jefe de los bandidos]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin. \n Después del ataque, el cuerpo de Ralanat no parece estar entre los restos de las caravanas.",
+    "content_admin": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bokao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe y con [[Valisha]] que ayuda con la seguridad.\n En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]] y [[Zinden|jefe de los bandidos]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin. \n Después del ataque, el cuerpo de Ralanat no parece estar entre los restos de las caravanas.",
+    "content_player": "![](/Pasted image 20251110162150.png)\n## Sucesos de la Campaña\nContrata a [[Nor Damoi]] como guardaespaldas, a [[Bokao Nel]] como artifabriano, a [[Calki]] como cirujano y un pequeño ejército en el que se encuentra [[Arluno'ratha'tu]]. A este grupo se une por necesidad de ir a las llanuras quebradas [[Sidoa Damoi]]. [[Yara Elorin]] también se encuentra en el grupo actuando como espía. Por el camino, se encuentran a [[Dyr Dyu]] que se une para ayudar a los desesperados con su fe y con [[Valisha]] que ayuda con la seguridad.\n En secreto, Ralanat quiere destruir las caravanas y culpar a los Kholin para que pierdan poder político, esta trama la urde junto al [[Resi (Brillante Señor)|Brillante Señor Resi]] y [[Zinden|jefe de los bandidos]]. Para ello contratan un ejército de bandidos y los visten con los colores de los Kholin. \n Después del ataque, el cuerpo de Ralanat no parece estar entre los restos de las caravanas.",
     "frontmatter": {
       "title": "Ralanat",
       "visibility": "public",
