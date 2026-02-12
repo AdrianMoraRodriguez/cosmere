@@ -201,7 +201,7 @@
       },
       {
         "target": "Nor Damoi",
-        "text": "Nor Damoi (JJ)"
+        "text": "??? (JJ)"
       },
       {
         "target": "Yara Elorin",
@@ -220,8 +220,8 @@
         "text": "Valisha (Daniela)"
       }
     ],
-    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
-    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|??? (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|??? (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
     "frontmatter": {
       "title": "Party Principal",
       "visibility": "public",
@@ -232,7 +232,7 @@
   },
   {
     "slug": "Caminapiedras/Party Principal/Nor Damoi",
-    "title": "Nor Damoi",
+    "title": "??? Damoi",
     "visibility": "public",
     "allowed_users": [
       "JJ"
@@ -258,10 +258,10 @@
         "text": "Pasted image 20260203123108.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20251105165549.png)\n<dm-section>## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.</dm-section>\n## Sucesos en la Campaña\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero\n\n<dm-section>![](/Pasted image 20260203123108.png)</dm-section>",
-    "content_player": "![](/Pasted image 20251105165549.png)\n\n## Sucesos en la Campaña\n\n## Caminos\nCazador: Arquero\n\n",
+    "content_admin": "![](/Pasted image 20251105165549.png)\n<dm-section>## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.</dm-section>\n## Sucesos en la Campaña\n### Viaje de tres días a la encrucijada\nHerdaziano con una disciplina férrea y de pocas palabras. A diferencia de su hermano, tiene presencia distante y vigilante, se comunica con sus acciones, ocultando tras un estoicismo absoluto a un hombre que solo confía en su concepto del deber y desconfiando de cualquier elocuencia.\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero\n\n<dm-section>![](/Pasted image 20260203123108.png)</dm-section>",
+    "content_player": "![](/Pasted image 20251105165549.png)\n\n## Sucesos en la Campaña\n### Viaje de tres días a la encrucijada\nHerdaziano con una disciplina férrea y de pocas palabras. A diferencia de su hermano, tiene presencia distante y vigilante, se comunica con sus acciones, ocultando tras un estoicismo absoluto a un hombre que solo confía en su concepto del deber y desconfiando de cualquier elocuencia.\n\n## Caminos\nCazador: Arquero\n\n",
     "frontmatter": {
-      "title": "Nor Damoi",
+      "title": "??? Damoi",
       "visibility": "public",
       "spoilers": true,
       "allowed_users": "[JJ]"
