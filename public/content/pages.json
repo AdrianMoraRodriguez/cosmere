@@ -232,7 +232,7 @@
   },
   {
     "slug": "Caminapiedras/Party Principal/Nor Damoi",
-    "title": "??? Damoi",
+    "title": "???",
     "visibility": "public",
     "allowed_users": [
       "JJ"
@@ -261,7 +261,7 @@
     "content_admin": "![](/Pasted image 20251105165549.png)\n<dm-section>## Lore\n* **Infancia**: Un accidente durante un juego provocó la muerte de su primo, dejándolo marcado por una culpa profunda que definió toda su niñez.\n* **Juventud**: Se aisló en los bosques, volviéndose cazador y aprendiendo a controlar su fuerza como forma de redención y disciplina.\n* **Actualidad**: Trabaja como guardia en la caravana de la señora Alezi, donde el reencuentro con su hermano [[Sidoa Damoi]] reaviva viejas heridas y la sospecha de una traición que nunca perdonó.</dm-section>\n## Sucesos en la Campaña\n### Viaje de tres días a la encrucijada\nHerdaziano con una disciplina férrea y de pocas palabras. A diferencia de su hermano, tiene presencia distante y vigilante, se comunica con sus acciones, ocultando tras un estoicismo absoluto a un hombre que solo confía en su concepto del deber y desconfiando de cualquier elocuencia.\n<dm-section>## Avances como [[Portadores del Polvo|Portador del Polvo]]\nDe momento no tiene un cenizaspren (Nombre: Lumbre)</dm-section>\n## Caminos\nCazador: Arquero\n\n<dm-section>![](/Pasted image 20260203123108.png)</dm-section>",
     "content_player": "![](/Pasted image 20251105165549.png)\n\n## Sucesos en la Campaña\n### Viaje de tres días a la encrucijada\nHerdaziano con una disciplina férrea y de pocas palabras. A diferencia de su hermano, tiene presencia distante y vigilante, se comunica con sus acciones, ocultando tras un estoicismo absoluto a un hombre que solo confía en su concepto del deber y desconfiando de cualquier elocuencia.\n\n## Caminos\nCazador: Arquero\n\n",
     "frontmatter": {
-      "title": "??? Damoi",
+      "title": "???",
       "visibility": "public",
       "spoilers": true,
       "allowed_users": "[JJ]"
