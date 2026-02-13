@@ -2396,6 +2396,96 @@
     }
   },
   {
+    "slug": "Sistemas/Información Útil/Habilidad (Tiradas)",
+    "title": "Habilidad (Tiradas)",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260213115203.png",
+        "text": "Pasted image 20260213115203.png"
+      },
+      {
+        "target": "Pasted image 20260213115223.png",
+        "text": "Pasted image 20260213115223.png"
+      },
+      {
+        "target": "Pasted image 20260213115252.png",
+        "text": "Pasted image 20260213115252.png"
+      },
+      {
+        "target": "Pasted image 20260213115334.png",
+        "text": "Pasted image 20260213115334.png"
+      },
+      {
+        "target": "Pasted image 20260213115405.png",
+        "text": "Pasted image 20260213115405.png"
+      },
+      {
+        "target": "Pasted image 20260213115431.png",
+        "text": "Pasted image 20260213115431.png"
+      },
+      {
+        "target": "Pasted image 20260213115456.png",
+        "text": "Pasted image 20260213115456.png"
+      },
+      {
+        "target": "Pasted image 20260213115515.png",
+        "text": "Pasted image 20260213115515.png"
+      },
+      {
+        "target": "Pasted image 20260213115534.png",
+        "text": "Pasted image 20260213115534.png"
+      },
+      {
+        "target": "Pasted image 20260213115651.png",
+        "text": "Pasted image 20260213115651.png"
+      },
+      {
+        "target": "Pasted image 20260213115709.png",
+        "text": "Pasted image 20260213115709.png"
+      },
+      {
+        "target": "Pasted image 20260213115731.png",
+        "text": "Pasted image 20260213115731.png"
+      },
+      {
+        "target": "Pasted image 20260213115803.png",
+        "text": "Pasted image 20260213115803.png"
+      },
+      {
+        "target": "Pasted image 20260213115814.png",
+        "text": "Pasted image 20260213115814.png"
+      },
+      {
+        "target": "Pasted image 20260213115835.png",
+        "text": "Pasted image 20260213115835.png"
+      },
+      {
+        "target": "Pasted image 20260213115854.png",
+        "text": "Pasted image 20260213115854.png"
+      },
+      {
+        "target": "Pasted image 20260213115918.png",
+        "text": "Pasted image 20260213115918.png"
+      },
+      {
+        "target": "Pasted image 20260213115936.png",
+        "text": "Pasted image 20260213115936.png"
+      },
+      {
+        "target": "Pasted image 20260213115959.png",
+        "text": "Pasted image 20260213115959.png"
+      }
+    ],
+    "content_admin": "\n\n## Agilidad\n![](/Pasted image 20260213115203.png)\n## Armamento Ligero\n![](/Pasted image 20260213115223.png)\n## Armamento Pesado\n![](/Pasted image 20260213115252.png)\n## Atletismo\n![](/Pasted image 20260213115334.png)\n## Deducción\n![](/Pasted image 20260213115405.png)\n## Disciplina\n![](/Pasted image 20260213115431.png)\n## Engaño\n![](/Pasted image 20260213115456.png)\n## Hurto\n![](/Pasted image 20260213115515.png)\n## Intimidación\n![](/Pasted image 20260213115534.png)\n## Liderazgo\n![](/Pasted image 20260213115651.png)\n## Manufactura\n![](/Pasted image 20260213115709.png)\n## Medicina\n![](/Pasted image 20260213115731.png)\n## Percepción\n![](/Pasted image 20260213115803.png)\n![](/Pasted image 20260213115814.png)\n## Perspicacia\n![](/Pasted image 20260213115835.png)\n## Persuasión\n![](/Pasted image 20260213115854.png)\n## Saber\n![](/Pasted image 20260213115918.png)\n## Sigilo\n![](/Pasted image 20260213115936.png)\n## Supervivencia\n![](/Pasted image 20260213115959.png)",
+    "content_player": "\n\n## Agilidad\n![](/Pasted image 20260213115203.png)\n## Armamento Ligero\n![](/Pasted image 20260213115223.png)\n## Armamento Pesado\n![](/Pasted image 20260213115252.png)\n## Atletismo\n![](/Pasted image 20260213115334.png)\n## Deducción\n![](/Pasted image 20260213115405.png)\n## Disciplina\n![](/Pasted image 20260213115431.png)\n## Engaño\n![](/Pasted image 20260213115456.png)\n## Hurto\n![](/Pasted image 20260213115515.png)\n## Intimidación\n![](/Pasted image 20260213115534.png)\n## Liderazgo\n![](/Pasted image 20260213115651.png)\n## Manufactura\n![](/Pasted image 20260213115709.png)\n## Medicina\n![](/Pasted image 20260213115731.png)\n## Percepción\n![](/Pasted image 20260213115803.png)\n![](/Pasted image 20260213115814.png)\n## Perspicacia\n![](/Pasted image 20260213115835.png)\n## Persuasión\n![](/Pasted image 20260213115854.png)\n## Saber\n![](/Pasted image 20260213115918.png)\n## Sigilo\n![](/Pasted image 20260213115936.png)\n## Supervivencia\n![](/Pasted image 20260213115959.png)",
+    "frontmatter": {}
+  },
+  {
     "slug": "Sistemas/Información Útil/Sistema Monetario",
     "title": "Sistema Monetario",
     "visibility": "public",
