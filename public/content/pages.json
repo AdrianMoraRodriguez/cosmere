@@ -1733,9 +1733,14 @@
     "spoilers": false,
     "is_index": true,
     "is_subindex": true,
-    "internal_links": [],
-    "content_admin": "",
-    "content_player": "",
+    "internal_links": [
+      {
+        "target": "Drenador de Bokao",
+        "text": "Drenador de Bokao"
+      }
+    ],
+    "content_admin": "[[Drenador de Bokao]]",
+    "content_player": "[[Drenador de Bokao]]",
     "frontmatter": {
       "title": "Fabriales",
       "visibility": "public",
