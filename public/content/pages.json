@@ -1752,7 +1752,7 @@
   {
     "slug": "Sistemas/Fabriales/Drenador de Bokao",
     "title": "Drenador de Bokao",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
@@ -1777,7 +1777,11 @@
     ],
     "content_admin": "![](/Pasted image 20260212171555.png)\n![](/Pasted image 20260212171743.png)\n## Ventajas y Desventajas\n\n![](/Pasted image 20260212171651.png)\n![](/Pasted image 20260212171758.png)",
     "content_player": "![](/Pasted image 20260212171555.png)\n![](/Pasted image 20260212171743.png)\n## Ventajas y Desventajas\n\n![](/Pasted image 20260212171651.png)\n![](/Pasted image 20260212171758.png)",
-    "frontmatter": {}
+    "frontmatter": {
+      "title": "Drenador de Bokao",
+      "visibility": "public",
+      "spoilers": false
+    }
   },
   {
     "slug": "Sistemas/Caminos/Guerrero",
