@@ -1791,12 +1791,12 @@
     "is_subindex": true,
     "internal_links": [
       {
-        "target": "Drenador de Bokao",
-        "text": "Drenador de Bokao"
+        "target": "Dolorial de Bokao",
+        "text": "Dolorial de Bokao"
       }
     ],
-    "content_admin": "[[Drenador de Bokao]]",
-    "content_player": "[[Drenador de Bokao]]",
+    "content_admin": "[[Dolorial de Bokao]]",
+    "content_player": "[[Dolorial de Bokao]]",
     "frontmatter": {
       "title": "Fabriales",
       "visibility": "public",
@@ -1806,7 +1806,7 @@
     }
   },
   {
-    "slug": "Sistemas/Fabriales/Drenador de Bokao",
+    "slug": "Sistemas/Fabriales/Dolorial de Bokao",
     "title": "Drenador de Bokao",
     "visibility": "public",
     "allowed_users": [],
@@ -1819,20 +1819,24 @@
         "text": "Pasted image 20260212171555.png"
       },
       {
-        "target": "Pasted image 20260212171743.png",
-        "text": "Pasted image 20260212171743.png"
+        "target": "Pasted image 20260220143554.png",
+        "text": "Pasted image 20260220143554.png"
       },
       {
-        "target": "Pasted image 20260212171651.png",
-        "text": "Pasted image 20260212171651.png"
+        "target": "Pasted image 20260220143644.png",
+        "text": "Pasted image 20260220143644.png"
       },
       {
-        "target": "Pasted image 20260212171758.png",
-        "text": "Pasted image 20260212171758.png"
+        "target": "Pasted image 20260220143656.png",
+        "text": "Pasted image 20260220143656.png"
+      },
+      {
+        "target": "Pasted image 20260220143720.png",
+        "text": "Pasted image 20260220143720.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260212171555.png)\n![](/Pasted image 20260212171743.png)\n## Ventajas y Desventajas\n\n![](/Pasted image 20260212171651.png)\n![](/Pasted image 20260212171758.png)",
-    "content_player": "![](/Pasted image 20260212171555.png)\n![](/Pasted image 20260212171743.png)\n## Ventajas y Desventajas\n\n![](/Pasted image 20260212171651.png)\n![](/Pasted image 20260212171758.png)",
+    "content_admin": "![](/Pasted image 20260212171555.png)\n![](/Pasted image 20260220143554.png)\n## Ventajas y Desventajas\n![](/Pasted image 20260220143644.png)\n![](/Pasted image 20260220143656.png)\n![](/Pasted image 20260220143720.png)",
+    "content_player": "![](/Pasted image 20260212171555.png)\n![](/Pasted image 20260220143554.png)\n## Ventajas y Desventajas\n![](/Pasted image 20260220143644.png)\n![](/Pasted image 20260220143656.png)\n![](/Pasted image 20260220143720.png)",
     "frontmatter": {
       "title": "Drenador de Bokao",
       "visibility": "public",
