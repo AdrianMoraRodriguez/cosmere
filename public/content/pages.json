@@ -1186,6 +1186,32 @@
     }
   },
   {
+    "slug": "Caminapiedras/Enemigos/Guardias",
+    "title": "Guardias",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260226192124.png",
+        "text": "Pasted image 20260226192124.png"
+      },
+      {
+        "target": "Pasted image 20260226192143.png",
+        "text": "Pasted image 20260226192143.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260226192124.png)\n<dm-section>![](/Pasted image 20260226192143.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260226192124.png)\n",
+    "frontmatter": {
+      "title": "Guardias",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
     "slug": "Caminapiedras/Enemigos/Parshendi en forma de guerra y diestra",
     "title": "Parshendi en forma de guerra",
     "visibility": "public",
@@ -1268,6 +1294,36 @@
     }
   },
   {
+    "slug": "Caminapiedras/Enemigos/Ladrón",
+    "title": "Ladrón",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260226192428.png",
+        "text": "Pasted image 20260226192428.png"
+      },
+      {
+        "target": "Pasted image 20260226192400.png",
+        "text": "Pasted image 20260226192400.png"
+      },
+      {
+        "target": "Pasted image 20260226192440.png",
+        "text": "Pasted image 20260226192440.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260226192428.png)\n<dm-section>![](/Pasted image 20260226192400.png)\n![](/Pasted image 20260226192440.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260226192428.png)\n",
+    "frontmatter": {
+      "title": "Ladrón",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
     "slug": "Caminapiedras/Enemigos/Sabueso-Hacha",
     "title": "Sabueso-Hacha",
     "visibility": "public",
@@ -1293,6 +1349,32 @@
     "content_player": "![](/Pasted image 20251110121332.png)\n",
     "frontmatter": {
       "title": "Sabueso-Hacha",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
+    "slug": "Caminapiedras/Enemigos/Espinablanca",
+    "title": "Espinablanca",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260226192032.png",
+        "text": "Pasted image 20260226192032.png"
+      },
+      {
+        "target": "Pasted image 20260226191959.png",
+        "text": "Pasted image 20260226191959.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260226192032.png)\n<dm-section>![](/Pasted image 20260226191959.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260226192032.png)\n",
+    "frontmatter": {
+      "title": "Espinablanca",
       "visibility": "public",
       "spoilers": false
     }
@@ -1363,16 +1445,58 @@
       {
         "target": "Parshendi en forma de guerra y diestra",
         "text": "Parshendi en forma de guerra y diestra"
+      },
+      {
+        "target": "Espinablanca",
+        "text": "Espinablanca"
+      },
+      {
+        "target": "Guardias",
+        "text": "Guardias"
+      },
+      {
+        "target": "Brillante Señor Amaram",
+        "text": "Brillante Señor Amaram"
       }
     ],
-    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]",
-    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]",
+    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]",
+    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]",
     "frontmatter": {
       "title": "Enemigos",
       "visibility": "public",
       "spoilers": false,
       "is_index": true,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Enemigos/Jefes/Brillante Señor Amaram",
+    "title": "Brillante Señor Amaram",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260226192229.png",
+        "text": "Pasted image 20260226192229.png"
+      },
+      {
+        "target": "Pasted image 20260226192256.png",
+        "text": "Pasted image 20260226192256.png"
+      },
+      {
+        "target": "Pasted image 20260226192310.png",
+        "text": "Pasted image 20260226192310.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260226192229.png)\n<dm-section>![](/Pasted image 20260226192256.png)\n![](/Pasted image 20260226192310.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260226192229.png)\n",
+    "frontmatter": {
+      "title": "Brillante Señor Amaram",
+      "visibility": "public",
+      "spoilers": false
     }
   },
   {
@@ -1435,6 +1559,76 @@
       "spoilers": true,
       "is_index": true,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Historia/Día 4 Tras la Pista de Doliente",
+    "title": "Día 4 Tras la Pista de Doliente",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Bordin",
+        "text": "Bordin"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
+        "target": "Día 3 La Radiancia",
+        "text": "día 3"
+      },
+      {
+        "target": "Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca",
+        "text": "encuentro con los espinablanca"
+      },
+      {
+        "target": "Día 4 Tras la Pista de Doliente#Encuentro con los ladrones",
+        "text": "encuentro con los ladrones"
+      },
+      {
+        "target": "Dyr Dyu",
+        "text": "Dyr Dyu"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Día 4 Tras la Pista de Doliente#Encuentro con Amaram",
+        "text": "encuentro con Amaram"
+      },
+      {
+        "target": "Espinablanca",
+        "text": "Espinablanca"
+      },
+      {
+        "target": "Ladrón",
+        "text": "Ladrones"
+      },
+      {
+        "target": "Bokao Nel",
+        "text": "Bokao Nel"
+      },
+      {
+        "target": "???",
+        "text": "Damoi"
+      },
+      {
+        "target": "Brillante Señor Amaram",
+        "text": "Brillante Señor Amaram"
+      }
+    ],
+    "content_admin": "# Historia\nEmpieza la sesión con un flashback para saber qué estaban haciendo los personajes que no vinieron a la anterior sesión en el momento de llegada a los campamentos y en el tiempo que les de [[Bordin]]. En este tiempo, antes de ir al Chull Gruñón [[Valisha]] se choca con una mujer que le dice que se le cayó una carta y la mujer se va sin responder a nada de lo que se le dice. Después de eso ocurren los sucesos del Chull gruñón del [[Día 3 La Radiancia|día 3]]. En este momento pueden ir a comprar o a explorar.\n\nAcabado el flashback, se encuentran en el Chull Gruón y los personajes deben investigar por los campamentos de guerra quién es el contacto de los chamanes de piedra y dónde encontrarlo. Al salir de la taberna escuchan unos gritos de un carro que no habían visto antes. \"Pasen y vean, criaturas de todo Roshar podrán ver en mi carreta. Venid a ver desde el pequeño cremlino hasta el tambaleante Gran Caparazón. Tenemos todo lo que te puedes imaginar, raros peces de lagopuro, espinablancas que en una pelea os podrían matar e incluso excepcionales y raros pollos de Shinovar de todos los colores. Pasen y vean damas y caballeros\". Un personaje que se fije puede notar que los pollos son pollos normales con las plumas teñidas. Si se acercan el personaje que gritaba les da la bienvenida y se presenta: se llama Ryvlk. Mientras miran todas las \"maravillas\" que trae, dos espinablancas se escapan de las jaulas ocurriendo el [[Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca|encuentro con los espinablanca]]. Ryvlk les da las gracias y les da 70 marcos por pararlos junto con información de que él consiguió los pollos de Shinovar de un contacto Shin que se enteró que estaba en los campamentos en el búnker de Bettani que ella tiene un registro de quién entra y sale de los campamentos. Justo cuando acaban la conversación aparece un joven rubio, medianamente alto y dice: \"mira que te metes en problemas Valisha, tormentosa mujer\" mientras sonrie. Es Adolin que, mientras se acerca en su Ryshadio pueden ver como tiene una cría de una criatura con alas. Adolin le pregunta qué como le va todo y que si no ha tenido más problemas con lo que ella ya sabía. Al final de la conversación Adolin le da la cría a Valisha.\n\nEn el búnker de Bettani cuando entran ven a una mujer alezi de ojos claros con un havah verde azulado y la manga de su mano segura está deshilachada por el uso excesivo. Aquí los personajes le explican lo que quieren y ella dice que está muy ocupada, que se le ha roto la vinculacaña y que la necesitaba para hacer unos tratos comerciales con el campamento de guerra de Sebarial antes que sus rivales consigan los tratos y saben el precio.Si los personajes le deciden ayudar ella les dará dos opciones, ir al campamento de Sebarial con una misiva o reparar el vinculacañas. Pase lo que pase les deja los libros de entradas y salidas de los campamentos y les extraña un nombre en particular: Doliente. Todos los demás parecen ser nombres normales pero esto parece un pseudónimo. En los registros pone que ha entrado y salido varias veces de este campamento y que la última entrada fue ayer al campamento Aladar.\n\nCuando vayan al campamento Aladar se ve claramente que no es como el de los Kholin, los guardias, si bien apuntan los nombres de los que entran y salen, no les parece importar mucho quienes entran y salen. Al entrar notan que en cierta parte es parecido al campamento de los Kholin en estructura, tiene un palacio que esta vez sí está más decorado, un mercado, una zona de fervorosos, otra de artefabrianos y otra de vivienda. Si exploran/preguntan/descubren al espía de Doliente les dirán que vayan a El Rocabrote Rojo, que ahí se juntan todos los maleantes. Cuando llegan hay mucha gente bebiendo y jugando. Después de jugar una partida les dicen que el lugar dónde se reúnen los informantes es en una panadería de los mercados exteriores llamada Horno de Crem.\n\nEn la panadería encuentran a Doliente que se presenta como Liss que al principio les amenaza diciendo que hablen bien. Si los personajes les dejan claro que no están ahí para atar cabos Liss les cuenta que, por si se les había olvidado, queremos recuperar la hoja de Honor de Taln y llevársela a la hermana de Taszo en el monasterio de los Custodio de Piedra. Si no tienen más pregunta Liss dice que la única forma de localizar la espada actualmente es mediante Taln pero que no sabía cómo hacer que saliera del estado en el que está ahora, a lo que Po'ahu se presenta y les dice que ella sabe una manera pero que habrá que ir a dónde esté sin que nadie se de cuenta. Cuando salen notan que no hay gente alrededor excepto unos ladrones que les atacan directamente en el [[Día 4 Tras la Pista de Doliente#Encuentro con los ladrones|encuentro con los ladrones]].\n\nDespués de ir al campamento de los Kholin y al monasterio del fervor, los personajes tendrán que infiltrarse aquí, para ello deberán moverse por el mapa con sigilo hasta llegar a la celda de Taln y entrar de alguna manera. Una vez dentro Po'ahu les dice que la forma de que un heraldo recupere la conciencia es mediante juramentos, por lo que alguien debe jurar y sabe que [[Dyr Dyu]] está preparado para ello. Taln les empieza a hablar pero hay un momento que dice \"nos tenemos que preparar\" y ahí se le pone la mirada en el infinito y vuelve al mantra. Tras esto Po'ahu se encuentra mal por no poder haberle hecho entrar en razón del todo a lo que [[Calki]] jura también el primer ideal y ahí Taln les dice que deben de llevar la hoja a Shinovar, que ahora la siente en la ciudad de Rathalathar. Cuando salen se encuentran de frente con el Brillante señor Amaram que se presenta como el representante de los hijos de Honor que ellos fueron los que hicieron que los heraldos retornaran para volver a tener los antiguos poderes. Los personajes deben convencer a Amaram que no son una amenaza o si no atacará en el [[Día 4 Tras la Pista de Doliente#Encuentro con Amaram|encuentro con Amaram]]. Tras el combate, o convencerle que no son una amenaza, los personajes vuelven al Chull Gruñón, en el lugar, Liss les dice que les encontrará una forma de ir a la ciudad quemada, que se preparen porque partirán al siguiente día.\n\n## Encuentros\n### Encuentro con los espinablanca\nx2 [[Espinablanca]] \nAl final del combate (o en medio, eso ya lo trabajaré en medio de la sesión), tras ver las mentiras del comerciante, Valisha jura el primer ideal\n### Encuentro con los ladrones\nx6 [[Ladrón|Ladrones]]\nEn este encuentro Liss va a ser muy malherida tal y como Taszo, en ese momento tanto [[Bokao Nel]] como [[???|Damoi]] juran el primer ideal, el primero para sanarla y el segundo para protegerla.\n### Encuentro con Amaram\nEn el caso de que el [[Brillante Señor Amaram]] no confíe en ellos peleará con ellos hasta que le quede 10 de vida, en ese momento llamará a unos guardias para que hagan tiempo mientras él huye.",
+    "content_player": "# Historia\nEmpieza la sesión con un flashback para saber qué estaban haciendo los personajes que no vinieron a la anterior sesión en el momento de llegada a los campamentos y en el tiempo que les de [[Bordin]]. En este tiempo, antes de ir al Chull Gruñón [[Valisha]] se choca con una mujer que le dice que se le cayó una carta y la mujer se va sin responder a nada de lo que se le dice. Después de eso ocurren los sucesos del Chull gruñón del [[Día 3 La Radiancia|día 3]]. En este momento pueden ir a comprar o a explorar.\n\nAcabado el flashback, se encuentran en el Chull Gruón y los personajes deben investigar por los campamentos de guerra quién es el contacto de los chamanes de piedra y dónde encontrarlo. Al salir de la taberna escuchan unos gritos de un carro que no habían visto antes. \"Pasen y vean, criaturas de todo Roshar podrán ver en mi carreta. Venid a ver desde el pequeño cremlino hasta el tambaleante Gran Caparazón. Tenemos todo lo que te puedes imaginar, raros peces de lagopuro, espinablancas que en una pelea os podrían matar e incluso excepcionales y raros pollos de Shinovar de todos los colores. Pasen y vean damas y caballeros\". Un personaje que se fije puede notar que los pollos son pollos normales con las plumas teñidas. Si se acercan el personaje que gritaba les da la bienvenida y se presenta: se llama Ryvlk. Mientras miran todas las \"maravillas\" que trae, dos espinablancas se escapan de las jaulas ocurriendo el [[Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca|encuentro con los espinablanca]]. Ryvlk les da las gracias y les da 70 marcos por pararlos junto con información de que él consiguió los pollos de Shinovar de un contacto Shin que se enteró que estaba en los campamentos en el búnker de Bettani que ella tiene un registro de quién entra y sale de los campamentos. Justo cuando acaban la conversación aparece un joven rubio, medianamente alto y dice: \"mira que te metes en problemas Valisha, tormentosa mujer\" mientras sonrie. Es Adolin que, mientras se acerca en su Ryshadio pueden ver como tiene una cría de una criatura con alas. Adolin le pregunta qué como le va todo y que si no ha tenido más problemas con lo que ella ya sabía. Al final de la conversación Adolin le da la cría a Valisha.\n\nEn el búnker de Bettani cuando entran ven a una mujer alezi de ojos claros con un havah verde azulado y la manga de su mano segura está deshilachada por el uso excesivo. Aquí los personajes le explican lo que quieren y ella dice que está muy ocupada, que se le ha roto la vinculacaña y que la necesitaba para hacer unos tratos comerciales con el campamento de guerra de Sebarial antes que sus rivales consigan los tratos y saben el precio.Si los personajes le deciden ayudar ella les dará dos opciones, ir al campamento de Sebarial con una misiva o reparar el vinculacañas. Pase lo que pase les deja los libros de entradas y salidas de los campamentos y les extraña un nombre en particular: Doliente. Todos los demás parecen ser nombres normales pero esto parece un pseudónimo. En los registros pone que ha entrado y salido varias veces de este campamento y que la última entrada fue ayer al campamento Aladar.\n\nCuando vayan al campamento Aladar se ve claramente que no es como el de los Kholin, los guardias, si bien apuntan los nombres de los que entran y salen, no les parece importar mucho quienes entran y salen. Al entrar notan que en cierta parte es parecido al campamento de los Kholin en estructura, tiene un palacio que esta vez sí está más decorado, un mercado, una zona de fervorosos, otra de artefabrianos y otra de vivienda. Si exploran/preguntan/descubren al espía de Doliente les dirán que vayan a El Rocabrote Rojo, que ahí se juntan todos los maleantes. Cuando llegan hay mucha gente bebiendo y jugando. Después de jugar una partida les dicen que el lugar dónde se reúnen los informantes es en una panadería de los mercados exteriores llamada Horno de Crem.\n\nEn la panadería encuentran a Doliente que se presenta como Liss que al principio les amenaza diciendo que hablen bien. Si los personajes les dejan claro que no están ahí para atar cabos Liss les cuenta que, por si se les había olvidado, queremos recuperar la hoja de Honor de Taln y llevársela a la hermana de Taszo en el monasterio de los Custodio de Piedra. Si no tienen más pregunta Liss dice que la única forma de localizar la espada actualmente es mediante Taln pero que no sabía cómo hacer que saliera del estado en el que está ahora, a lo que Po'ahu se presenta y les dice que ella sabe una manera pero que habrá que ir a dónde esté sin que nadie se de cuenta. Cuando salen notan que no hay gente alrededor excepto unos ladrones que les atacan directamente en el [[Día 4 Tras la Pista de Doliente#Encuentro con los ladrones|encuentro con los ladrones]].\n\nDespués de ir al campamento de los Kholin y al monasterio del fervor, los personajes tendrán que infiltrarse aquí, para ello deberán moverse por el mapa con sigilo hasta llegar a la celda de Taln y entrar de alguna manera. Una vez dentro Po'ahu les dice que la forma de que un heraldo recupere la conciencia es mediante juramentos, por lo que alguien debe jurar y sabe que [[Dyr Dyu]] está preparado para ello. Taln les empieza a hablar pero hay un momento que dice \"nos tenemos que preparar\" y ahí se le pone la mirada en el infinito y vuelve al mantra. Tras esto Po'ahu se encuentra mal por no poder haberle hecho entrar en razón del todo a lo que [[Calki]] jura también el primer ideal y ahí Taln les dice que deben de llevar la hoja a Shinovar, que ahora la siente en la ciudad de Rathalathar. Cuando salen se encuentran de frente con el Brillante señor Amaram que se presenta como el representante de los hijos de Honor que ellos fueron los que hicieron que los heraldos retornaran para volver a tener los antiguos poderes. Los personajes deben convencer a Amaram que no son una amenaza o si no atacará en el [[Día 4 Tras la Pista de Doliente#Encuentro con Amaram|encuentro con Amaram]]. Tras el combate, o convencerle que no son una amenaza, los personajes vuelven al Chull Gruñón, en el lugar, Liss les dice que les encontrará una forma de ir a la ciudad quemada, que se preparen porque partirán al siguiente día.\n\n## Encuentros\n### Encuentro con los espinablanca\nx2 [[Espinablanca]] \nAl final del combate (o en medio, eso ya lo trabajaré en medio de la sesión), tras ver las mentiras del comerciante, Valisha jura el primer ideal\n### Encuentro con los ladrones\nx6 [[Ladrón|Ladrones]]\nEn este encuentro Liss va a ser muy malherida tal y como Taszo, en ese momento tanto [[Bokao Nel]] como [[???|Damoi]] juran el primer ideal, el primero para sanarla y el segundo para protegerla.\n### Encuentro con Amaram\nEn el caso de que el [[Brillante Señor Amaram]] no confíe en ellos peleará con ellos hasta que le quede 10 de vida, en ese momento llamará a unos guardias para que hagan tiempo mientras él huye.",
+    "frontmatter": {
+      "title": "Día 4 Tras la Pista de Doliente",
+      "visibility": "private",
+      "spoilers": true
     }
   },
   {
@@ -2011,7 +2205,7 @@
     "allowed_users": [
       "Aitor"
     ],
-    "spoilers": false,
+    "spoilers": true,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [
@@ -2029,7 +2223,7 @@
     "frontmatter": {
       "title": "Adhesión",
       "visibility": "private",
-      "spoilers": false,
+      "spoilers": true,
       "allowed_users": "[Aitor]"
     }
   },
