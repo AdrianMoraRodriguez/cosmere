@@ -1474,7 +1474,7 @@
     "title": "Brillante Señor Amaram",
     "visibility": "public",
     "allowed_users": [],
-    "spoilers": false,
+    "spoilers": true,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [
@@ -1496,7 +1496,7 @@
     "frontmatter": {
       "title": "Brillante Señor Amaram",
       "visibility": "public",
-      "spoilers": false
+      "spoilers": true
     }
   },
   {
