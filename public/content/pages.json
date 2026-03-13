@@ -3416,10 +3416,14 @@
       {
         "target": "Roshar",
         "text": "Roshar"
+      },
+      {
+        "target": "Perrodracos gemelos (Arma Ambessa)",
+        "text": "Perrodracos gemelos (Arma Ambessa)"
       }
     ],
-    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]",
-    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]",
+    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]\n[[Perrodracos gemelos (Arma Ambessa)]]",
+    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]\n[[Perrodracos gemelos (Arma Ambessa)]]",
     "frontmatter": {
       "title": "Información Útil",
       "visibility": "public",
