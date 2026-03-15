@@ -3591,10 +3591,14 @@
       {
         "target": "Perrodracos gemelos (Arma Ambessa)",
         "text": "Perrodracos gemelos (Arma Ambessa)"
+      },
+      {
+        "target": "Escalado de las potencias",
+        "text": "Escalado de las potencias"
       }
     ],
-    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]\n[[Perrodracos gemelos (Arma Ambessa)]]",
-    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]\n[[Perrodracos gemelos (Arma Ambessa)]]",
+    "content_admin": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]\n[[Perrodracos gemelos (Arma Ambessa)]]\n[[Escalado de las potencias]]",
+    "content_player": "[[Atributos]]\n[[Sistema Monetario]]\n[[Subir de Nivel]]\n[[¿Qué Hacer en un Turno de Combate?]]\n[[Roshar]]\n[[Perrodracos gemelos (Arma Ambessa)]]\n[[Escalado de las potencias]]",
     "frontmatter": {
       "title": "Información Útil",
       "visibility": "public",
