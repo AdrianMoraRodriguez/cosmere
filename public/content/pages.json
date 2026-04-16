@@ -82,11 +82,19 @@
       },
       {
         "target": "Ylt",
-        "text": "Hombre de piel dorada"
+        "text": "Ylt"
+      },
+      {
+        "target": "Kaiana",
+        "text": "Kaiana"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
       }
     ],
-    "content_admin": "## Símbolo principal\n![](/Pasted image 20260206220139.png)\n<dm-section>## Organización\n### Lider\n[[Ylt|Hombre de piel dorada]]\n## Miembros conocidos\nKaiana</dm-section>\n## Apariciones en la Historia\nTaszo dijo que mataron a sus hermanos, encontraron una vinculacaña que decía que habían encontrado el artefacto.\n<dm-section>Atacan la caravana de Bordin, robando la hoja de Taln, matan a Taszo Hijo Clutio</dm-section>",
-    "content_player": "## Símbolo principal\n![](/Pasted image 20260206220139.png)\n\n## Apariciones en la Historia\nTaszo dijo que mataron a sus hermanos, encontraron una vinculacaña que decía que habían encontrado el artefacto.\n",
+    "content_admin": "## Símbolo principal\n![](/Pasted image 20260206220139.png)\n\n## Organización\n### Lider\n[[Ylt]]\n## Miembros conocidos\n[[Kaiana]]\n## Apariciones en la Historia\nTaszo dijo que mataron a sus hermanos, encontraron una vinculacaña que decía que habían encontrado el artefacto. Atacan la caravana de Bordin, robando la hoja de Taln y matando a Taszo Hijo Clutio. Habían tomado la ciudad quemada de Rathalas y consiguieron un pequeño ejército ahí aunque la [[Party Principal]] eliminó a gran parte de este expulsando a los Ojos de Palah de Rathalas.",
+    "content_player": "## Símbolo principal\n![](/Pasted image 20260206220139.png)\n\n## Organización\n### Lider\n[[Ylt]]\n## Miembros conocidos\n[[Kaiana]]\n## Apariciones en la Historia\nTaszo dijo que mataron a sus hermanos, encontraron una vinculacaña que decía que habían encontrado el artefacto. Atacan la caravana de Bordin, robando la hoja de Taln y matando a Taszo Hijo Clutio. Habían tomado la ciudad quemada de Rathalas y consiguieron un pequeño ejército ahí aunque la [[Party Principal]] eliminó a gran parte de este expulsando a los Ojos de Palah de Rathalas.",
     "frontmatter": {
       "title": "Ojos de Palah",
       "visibility": "public",
@@ -96,21 +104,55 @@
   {
     "slug": "Caminapiedras/Asociaciones/Sangre Espectral",
     "title": "Sangre Espectral",
-    "visibility": "private",
-    "allowed_users": [
-      "Daniela"
-    ],
+    "visibility": "public",
+    "allowed_users": [],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
-    "internal_links": [],
-    "content_admin": "",
-    "content_player": "",
+    "internal_links": [
+      {
+        "target": "Pasted image 20260409153238.png",
+        "text": "Pasted image 20260409153238.png"
+      },
+      {
+        "target": "Mraize",
+        "text": "Mraize"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa Damoi"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa Damoi"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      }
+    ],
+    "content_admin": "## Símbolo Principal\n![](/Pasted image 20260409153238.png)\n## Organización\n### Líder\n[[Mraize]]\n### Miembros conocidos\n[[Calki]]\n[[Sidoa Damoi]]\n## Apariciones en la Historia\n[[Adolin]] les dice a la [[Party Principal]] que hay una organización secreta que está intentando interferir en la política planetaria de Roshar por lo que les manda a intentar descubrir algo de ellos. Tras encontrar una de sus sede, los personajes se adentran en ella hasta que, en cierto punto se encuentran con Mraize que dice saber todo de ellos y que les dará un regalo a cada uno de ellos si es que se unen a la organización, aceptando [[Calki]] y [[Sidoa Damoi]]. Aquí también se revela que [[Valisha]] fue torturada y secuestrada desde pequeña después de que los sangre espectral matasen a toda su familia, aunque también se revela que no mataron a la familia sino que fingieron haberlos matados.",
+    "content_player": "## Símbolo Principal\n![](/Pasted image 20260409153238.png)\n## Organización\n### Líder\n[[Mraize]]\n### Miembros conocidos\n[[Calki]]\n[[Sidoa Damoi]]\n## Apariciones en la Historia\n[[Adolin]] les dice a la [[Party Principal]] que hay una organización secreta que está intentando interferir en la política planetaria de Roshar por lo que les manda a intentar descubrir algo de ellos. Tras encontrar una de sus sede, los personajes se adentran en ella hasta que, en cierto punto se encuentran con Mraize que dice saber todo de ellos y que les dará un regalo a cada uno de ellos si es que se unen a la organización, aceptando [[Calki]] y [[Sidoa Damoi]]. Aquí también se revela que [[Valisha]] fue torturada y secuestrada desde pequeña después de que los sangre espectral matasen a toda su familia, aunque también se revela que no mataron a la familia sino que fingieron haberlos matados.",
     "frontmatter": {
       "title": "Sangre Espectral",
-      "visibility": "private",
-      "spoilers": false,
-      "allowed_users": "[Daniela]"
+      "visibility": "public",
+      "spoilers": false
     }
   },
   {
@@ -220,8 +262,8 @@
         "text": "Valisha (Daniela)"
       }
     ],
-    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
-    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]  \n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
     "frontmatter": {
       "title": "Party Principal",
       "visibility": "public",
@@ -545,17 +587,30 @@
   {
     "slug": "Caminapiedras/Personajes/Resto/Lorn",
     "title": "Lorn",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
-    "internal_links": [],
-    "content_admin": "",
-    "content_player": "",
+    "internal_links": [
+      {
+        "target": "Pasted image 20260416152144.png",
+        "text": "Pasted image 20260416152144.png"
+      },
+      {
+        "target": "Ojos de Palah",
+        "text": "Ojos de Palah"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260416152144.png)\nAlezi desdeñado de edad avanzada que es fiel a la Reina Bandida, desertó de Rathalas cuando llegaron los [[Ojos de Palah]].\n## Sucesos en la Campaña\nLa [[Party Principal]] se lo encontró a unos días de llegar a Rathalas, estaba deshidratado y hambriento por lo que la party le dio agua y comida. Tras eso partieron hacia sitios distintos",
+    "content_player": "![](/Pasted image 20260416152144.png)\nAlezi desdeñado de edad avanzada que es fiel a la Reina Bandida, desertó de Rathalas cuando llegaron los [[Ojos de Palah]].\n## Sucesos en la Campaña\nLa [[Party Principal]] se lo encontró a unos días de llegar a Rathalas, estaba deshidratado y hambriento por lo que la party le dio agua y comida. Tras eso partieron hacia sitios distintos",
     "frontmatter": {
       "title": "Lorn",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": false
     }
   },
@@ -767,6 +822,48 @@
     }
   },
   {
+    "slug": "Caminapiedras/Personajes/Resto/Ubo",
+    "title": "Ubo",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260416164910.png",
+        "text": "Pasted image 20260416164910.png"
+      },
+      {
+        "target": "Nor Damoi",
+        "text": "Nor Damoi"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa Damoi"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa Damoi"
+      },
+      {
+        "target": "Nor Damoi",
+        "text": "Nor Damoi"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260416164910.png)\nComerciante herdaziano primo de [[Nor Damoi]] y [[Sidoa Damoi]]\n\n## Sucesos en la Campaña\nLa [[Party Principal]] se encuentran con él en el puerto de la ciudad quemada, tras hablar con [[Sidoa Damoi]] y despreciar a [[Nor Damoi]], les dice que hay gente dispuesta a cambiar las cosas de la ciudad",
+    "content_player": "![](/Pasted image 20260416164910.png)\nComerciante herdaziano primo de [[Nor Damoi]] y [[Sidoa Damoi]]\n\n## Sucesos en la Campaña\nLa [[Party Principal]] se encuentran con él en el puerto de la ciudad quemada, tras hablar con [[Sidoa Damoi]] y despreciar a [[Nor Damoi]], les dice que hay gente dispuesta a cambiar las cosas de la ciudad",
+    "frontmatter": {
+      "title": "Ubo",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
     "slug": "Caminapiedras/Personajes/Resto/Velin",
     "title": "Velin",
     "visibility": "public",
@@ -915,8 +1012,8 @@
         "text": "Captura de pantalla 2026-02-06 a las 21.50.34.png"
       }
     ],
-    "content_admin": "![](/Captura de pantalla 2026-02-06 a las 21.50.34.png)\n## Personalidad",
-    "content_player": "![](/Captura de pantalla 2026-02-06 a las 21.50.34.png)\n## Personalidad",
+    "content_admin": "![](/Captura de pantalla 2026-02-06 a las 21.50.34.png)",
+    "content_player": "![](/Captura de pantalla 2026-02-06 a las 21.50.34.png)",
     "frontmatter": {
       "title": "Po'Ahu",
       "visibility": "public",
@@ -1007,6 +1104,36 @@
     "content_player": "![](/Pasted image 20260304174228.png)",
     "frontmatter": {
       "title": "Lumbre",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Secundarios/Ryvlk",
+    "title": "Ryvlk",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260416152741.png",
+        "text": "Pasted image 20260416152741.png"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260416152741.png)\nMercader thayleño que asegura tener animales de todos los lados del mundo.\n\n## Sucesos en la campaña\nEstaba en el campamento de Dalinar asegurando que tenía animales de todo tipo cuando 2 espinablancas se escapan. La [[Party Principal]] le apresa hasta que llega [[Adolin]] el cual se lo lleva prisionero.",
+    "content_player": "![](/Pasted image 20260416152741.png)\nMercader thayleño que asegura tener animales de todos los lados del mundo.\n\n## Sucesos en la campaña\nEstaba en el campamento de Dalinar asegurando que tenía animales de todo tipo cuando 2 espinablancas se escapan. La [[Party Principal]] le apresa hasta que llega [[Adolin]] el cual se lo lleva prisionero.",
+    "frontmatter": {
+      "title": "Ryvlk",
       "visibility": "public",
       "spoilers": false
     }
@@ -1142,6 +1269,40 @@
     }
   },
   {
+    "slug": "Caminapiedras/Personajes/Secundarios/Teryn",
+    "title": "Teryn",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260416152959.png",
+        "text": "Pasted image 20260416152959.png"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Kaiana",
+        "text": "Kaiana"
+      },
+      {
+        "target": "Ylt",
+        "text": "Ylt"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260416152959.png)\nAlezi que detesta la alta sociedad. Era la lugarteniente de la Reina Bandida\n## Sucesos en la Campaña\nTeryn se encontraba aprisionada en las despensas de la ciudad quemada que ahora se utilizaban como prisión. Cuando la [[Party Principal]] se la encontró, estaba siendo curada por [[Kaiana]] y hablando sobre los motivos de [[Ylt]], pareciendo que ellas eran demasiado cercanas. Kaiana les da las llaves de los barrotes de Teryn y el grupo la libera. Ella convence a los demás prisioneros y guardias en unirse a ellos en la revolución.",
+    "content_player": "![](/Pasted image 20260416152959.png)\nAlezi que detesta la alta sociedad. Era la lugarteniente de la Reina Bandida\n## Sucesos en la Campaña\nTeryn se encontraba aprisionada en las despensas de la ciudad quemada que ahora se utilizaban como prisión. Cuando la [[Party Principal]] se la encontró, estaba siendo curada por [[Kaiana]] y hablando sobre los motivos de [[Ylt]], pareciendo que ellas eran demasiado cercanas. Kaiana les da las llaves de los barrotes de Teryn y el grupo la libera. Ella convence a los demás prisioneros y guardias en unirse a ellos en la revolución.",
+    "frontmatter": {
+      "title": "Teryn",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
     "slug": "Caminapiedras/Personajes/Secundarios/Secundarios",
     "title": "Personajes Secundarios",
     "visibility": "public",
@@ -1169,16 +1330,70 @@
       {
         "target": "Taln",
         "text": "Taln"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      },
+      {
+        "target": "Ryvlk",
+        "text": "Ryvlk"
+      },
+      {
+        "target": "Teryn",
+        "text": "Teryn"
       }
     ],
-    "content_admin": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]",
-    "content_player": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]",
+    "content_admin": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]\n[[Adolin]]\n[[Ryvlk]]\n[[Teryn]]",
+    "content_player": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]\n[[Adolin]]\n[[Ryvlk]]\n[[Teryn]]",
     "frontmatter": {
       "title": "Personajes Secundarios",
       "visibility": "public",
       "spoilers": false,
       "is_index": false,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Secundarios/Adolin",
+    "title": "Adolin",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260416152224.png",
+        "text": "Pasted image 20260416152224.png"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Ryvlk",
+        "text": "Ryvlk"
+      },
+      {
+        "target": "Sangre Espectral",
+        "text": "Sangre Espectral"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260416152224.png)\nPrincipe Alezi de la casa Kholin, hijo de Dalinar Kholin, parece tener una historia con [[Valisha]]\n## Sucesos en la Campaña\n\nLa [[Party Principal]] se encuentra por primera vez a Adolin después del revuelto que hubo con el mercader [[Ryvlk]]. Tras tener una pequeña charla con Valisha, Adolin se retira. A los días Adolín les contacta para que se ocupen de un problema con los [[Sangre Espectral]]. Al volver, se cabrea con [[Calki]] por haber aceptado la oferta y deja de confiar en el grupo, revocándoles todo privilegio dado.",
+    "content_player": "![](/Pasted image 20260416152224.png)\nPrincipe Alezi de la casa Kholin, hijo de Dalinar Kholin, parece tener una historia con [[Valisha]]\n## Sucesos en la Campaña\n\nLa [[Party Principal]] se encuentra por primera vez a Adolin después del revuelto que hubo con el mercader [[Ryvlk]]. Tras tener una pequeña charla con Valisha, Adolin se retira. A los días Adolín les contacta para que se ocupen de un problema con los [[Sangre Espectral]]. Al volver, se cabrea con [[Calki]] por haber aceptado la oferta y deja de confiar en el grupo, revocándoles todo privilegio dado.",
+    "frontmatter": {
+      "title": "Adolin",
+      "visibility": "public",
+      "spoilers": false
     }
   },
   {
@@ -1242,17 +1457,43 @@
     }
   },
   {
-    "slug": "Caminapiedras/Personajes/Principales/Kaiana",
-    "title": "Kaiana",
-    "visibility": "private",
+    "slug": "Caminapiedras/Personajes/Principales/Mraize",
+    "title": "Mraize",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": true,
     "is_index": false,
     "is_subindex": false,
     "internal_links": [
       {
-        "target": "Pasted image 20260205194959.png",
-        "text": "Pasted image 20260205194959.png"
+        "target": "Pasted image 20260409161351.png",
+        "text": "Pasted image 20260409161351.png"
+      },
+      {
+        "target": "Sangre Espectral",
+        "text": "Sangre Espectral"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260409161351.png)\nLíder de los [[Sangre Espectral]] de Roshar\n## Sucesos\nLes propone a los personajes unirse a cambio de algo, dándoles algo a cambio, como muestra de buena fe, les da información sobre su organización. Cuando todos han respondido a su propuesta, les deja irse sin aparente problema.",
+    "content_player": "![](/Pasted image 20260409161351.png)\nLíder de los [[Sangre Espectral]] de Roshar\n## Sucesos\nLes propone a los personajes unirse a cambio de algo, dándoles algo a cambio, como muestra de buena fe, les da información sobre su organización. Cuando todos han respondido a su propuesta, les deja irse sin aparente problema.",
+    "frontmatter": {
+      "title": "Mraize",
+      "visibility": "public",
+      "spoilers": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Principales/Kaiana",
+    "title": "Kaiana",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260409152737.png",
+        "text": "Pasted image 20260409152737.png"
       },
       {
         "target": "Ojos de Palah",
@@ -1261,13 +1502,25 @@
       {
         "target": "Ylt",
         "text": "Hombre de la piel dorada"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Teryn",
+        "text": "Teryn"
+      },
+      {
+        "target": "Ylt",
+        "text": "Ylt"
       }
     ],
-    "content_admin": "![](/Pasted image 20260205194959.png)\nHumana reshi de rasgos redondeados, pelo muy largo y liso de color negro. Tiene el mismo glifo pintado en la cara que los otros [[Ojos de Palah|bandidos]].\n## Sucesos en la Historia\nKaiana roba la espada de Taln y se la da al [[Ylt|Hombre de la piel dorada]], luego de que mate a Taszo, está en desacuerdo de matar a más gente pero le dicen que es necesario.",
-    "content_player": "![](/Pasted image 20260205194959.png)\nHumana reshi de rasgos redondeados, pelo muy largo y liso de color negro. Tiene el mismo glifo pintado en la cara que los otros [[Ojos de Palah|bandidos]].\n## Sucesos en la Historia\nKaiana roba la espada de Taln y se la da al [[Ylt|Hombre de la piel dorada]], luego de que mate a Taszo, está en desacuerdo de matar a más gente pero le dicen que es necesario.",
+    "content_admin": "![](/Pasted image 20260409152737.png)\nHumana reshi de rasgos redondeados, pelo muy largo y liso de color negro. Tiene el mismo glifo pintado en la cara que los otros [[Ojos de Palah|bandidos]].\n## Sucesos en la Historia\nKaiana roba la espada de Taln y se la da al [[Ylt|Hombre de la piel dorada]], luego de que mate a Taszo, está en desacuerdo de matar a más gente pero le dicen que es necesario. En la ciudad quemada la [[Party Principal]] la encuentra curando a [[Teryn]], tras una charla con ella, la party le convencen de intentar evitar que [[Ylt]] siga asesinando a tanta gente aunque sigue diciendo creer que Ylt es la única solución para los problemas que vienen en Roshar.",
+    "content_player": "![](/Pasted image 20260409152737.png)\nHumana reshi de rasgos redondeados, pelo muy largo y liso de color negro. Tiene el mismo glifo pintado en la cara que los otros [[Ojos de Palah|bandidos]].\n## Sucesos en la Historia\nKaiana roba la espada de Taln y se la da al [[Ylt|Hombre de la piel dorada]], luego de que mate a Taszo, está en desacuerdo de matar a más gente pero le dicen que es necesario. En la ciudad quemada la [[Party Principal]] la encuentra curando a [[Teryn]], tras una charla con ella, la party le convencen de intentar evitar que [[Ylt]] siga asesinando a tanta gente aunque sigue diciendo creer que Ylt es la única solución para los problemas que vienen en Roshar.",
     "frontmatter": {
       "title": "Kaiana",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true
     }
   },
@@ -1291,10 +1544,22 @@
       {
         "target": "Bokao Nel",
         "text": "Bokao Nel"
+      },
+      {
+        "target": "Yara Elorin",
+        "text": "Yara Elorin"
+      },
+      {
+        "target": "Bokao Nel",
+        "text": "Bokao Nel"
+      },
+      {
+        "target": "Día 6 Viva la revolución",
+        "text": "día 6"
       }
     ],
-    "content_admin": "![](/Pasted image 20260304151559.png)\nLiss oscila deliberadamente entre un suave acento alezi y un brusco acento bav para mantener el misterio de sus orígenes. Cuando no está “interpretando”, se muestra informal con todas las personas que conoce y no se deja intimidar por el rango ni el título. Siempre es curiosa y está ávida de información.\n## Sucesos en la campaña\nLiss es el contacto de los chamanes de piedra en los campamentos de guerra. Se esconde bajo el nombre de Doliente. Manda a un espía para vigilar al [[Party Principal|grupo]] al cual descubren y les guía hacia ella. Liss les explica la situación y les dice que la única manera de encontrar la hoja de Honor, es hacer que Taln se los diga de alguna manera. Al salir del escondite unos ladrones les atacan hiriendo de muerte a Liss pero [[Bokao Nel]] le cura. Más tarde les enseña dónde está Taln descubriendo que tienen que ir a la ciudad quemada de Rathalas.",
-    "content_player": "![](/Pasted image 20260304151559.png)\nLiss oscila deliberadamente entre un suave acento alezi y un brusco acento bav para mantener el misterio de sus orígenes. Cuando no está “interpretando”, se muestra informal con todas las personas que conoce y no se deja intimidar por el rango ni el título. Siempre es curiosa y está ávida de información.\n## Sucesos en la campaña\nLiss es el contacto de los chamanes de piedra en los campamentos de guerra. Se esconde bajo el nombre de Doliente. Manda a un espía para vigilar al [[Party Principal|grupo]] al cual descubren y les guía hacia ella. Liss les explica la situación y les dice que la única manera de encontrar la hoja de Honor, es hacer que Taln se los diga de alguna manera. Al salir del escondite unos ladrones les atacan hiriendo de muerte a Liss pero [[Bokao Nel]] le cura. Más tarde les enseña dónde está Taln descubriendo que tienen que ir a la ciudad quemada de Rathalas.",
+    "content_admin": "![](/Pasted image 20260304151559.png)\nLiss oscila deliberadamente entre un suave acento alezi y un brusco acento bav para mantener el misterio de sus orígenes. Cuando no está “interpretando”, se muestra informal con todas las personas que conoce y no se deja intimidar por el rango ni el título. Siempre es curiosa y está ávida de información.\n## Sucesos en la campaña\nLiss es el contacto de los chamanes de piedra en los campamentos de guerra. Se esconde bajo el nombre de Doliente. Manda a un espía para vigilar al [[Party Principal|grupo]] al cual descubren y les guía hacia ella. Liss les explica la situación y les dice que la única manera de encontrar la hoja de Honor, es hacer que Taln se los diga de alguna manera. Al salir del escondite unos ladrones les atacan hiriendo de muerte a Liss pero [[Bokao Nel]] le cura. Más tarde les enseña dónde está Taln descubriendo que tienen que ir a la ciudad quemada de Rathalas. En la ciudad quemada, Liss decide ir con [[Yara Elorin]] y con [[Bokao Nel]] por la entrada principal. Antes de la batalla campal del [[Día 6 Viva la revolución|día 6]], también decide quedarse con ellos para ayudarlos con su plan.",
+    "content_player": "![](/Pasted image 20260304151559.png)\nLiss oscila deliberadamente entre un suave acento alezi y un brusco acento bav para mantener el misterio de sus orígenes. Cuando no está “interpretando”, se muestra informal con todas las personas que conoce y no se deja intimidar por el rango ni el título. Siempre es curiosa y está ávida de información.\n## Sucesos en la campaña\nLiss es el contacto de los chamanes de piedra en los campamentos de guerra. Se esconde bajo el nombre de Doliente. Manda a un espía para vigilar al [[Party Principal|grupo]] al cual descubren y les guía hacia ella. Liss les explica la situación y les dice que la única manera de encontrar la hoja de Honor, es hacer que Taln se los diga de alguna manera. Al salir del escondite unos ladrones les atacan hiriendo de muerte a Liss pero [[Bokao Nel]] le cura. Más tarde les enseña dónde está Taln descubriendo que tienen que ir a la ciudad quemada de Rathalas. En la ciudad quemada, Liss decide ir con [[Yara Elorin]] y con [[Bokao Nel]] por la entrada principal. Antes de la batalla campal del [[Día 6 Viva la revolución|día 6]], también decide quedarse con ellos para ayudarlos con su plan.",
     "frontmatter": {
       "title": "Liss",
       "visibility": "public",
@@ -1316,7 +1581,7 @@
       },
       {
         "target": "Ylt",
-        "text": "Hombre de la piel dorada"
+        "text": "Ylt"
       },
       {
         "target": "Kaiana",
@@ -1325,16 +1590,50 @@
       {
         "target": "Liss",
         "text": "Liss"
+      },
+      {
+        "target": "Mraize",
+        "text": "Mraize"
+      },
+      {
+        "target": "Axies el Coleccionista",
+        "text": "Axies el Coleccionista"
       }
     ],
-    "content_admin": "[[Taszo Hijo Clutio]]\n[[Ylt|Hombre de la piel dorada]]\n[[Kaiana]]\n[[Liss]]",
-    "content_player": "[[Taszo Hijo Clutio]]\n[[Ylt|Hombre de la piel dorada]]\n[[Kaiana]]\n[[Liss]]",
+    "content_admin": "[[Taszo Hijo Clutio]]\n[[Ylt]]\n[[Kaiana]]\n[[Liss]]\n[[Mraize]]\n[[Axies el Coleccionista]]",
+    "content_player": "[[Taszo Hijo Clutio]]\n[[Ylt]]\n[[Kaiana]]\n[[Liss]]\n[[Mraize]]\n[[Axies el Coleccionista]]",
     "frontmatter": {
       "title": "Personajes Principales",
       "visibility": "public",
       "spoilers": false,
       "is_index": false,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Principales/Axies el Coleccionista",
+    "title": "Axies el Coleccionista",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260416170417.png",
+        "text": "Pasted image 20260416170417.png"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260416170417.png)\nAimiano que tiene en su cuerpo información sobre todos los sprens raros que ha visto.\n## Sucesos en la campaña\nLa [[Party Principal]] se lo encuentran en la prisión de la ciudad quemada y les promete que les llevará a algo que les interesa si liberan la ciudad. Tras liberarla \"les conduce\" hacia el fondo de la ciudad dónde se encuentra el resto gris. Ahí le pregunta sobre las sombras y sprens de Rall Ellorin.",
+    "content_player": "![](/Pasted image 20260416170417.png)\nAimiano que tiene en su cuerpo información sobre todos los sprens raros que ha visto.\n## Sucesos en la campaña\nLa [[Party Principal]] se lo encuentran en la prisión de la ciudad quemada y les promete que les llevará a algo que les interesa si liberan la ciudad. Tras liberarla \"les conduce\" hacia el fondo de la ciudad dónde se encuentra el resto gris. Ahí le pregunta sobre las sombras y sprens de Rall Ellorin.",
+    "frontmatter": {
+      "title": "Axies el Coleccionista",
+      "visibility": "public",
+      "spoilers": true
     }
   },
   {
@@ -1465,6 +1764,36 @@
     "content_player": "![](/Pasted image 20260226192124.png)\n",
     "frontmatter": {
       "title": "Guardias",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
+    "slug": "Caminapiedras/Enemigos/Fanático",
+    "title": "Fanático",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260401011913.png",
+        "text": "Pasted image 20260401011913.png"
+      },
+      {
+        "target": "Pasted image 20260401011931.png",
+        "text": "Pasted image 20260401011931.png"
+      },
+      {
+        "target": "Pasted image 20260401011942.png",
+        "text": "Pasted image 20260401011942.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260401011913.png)\n<dm-section>![](/Pasted image 20260401011931.png)\n![](/Pasted image 20260401011942.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260401011913.png)\n",
+    "frontmatter": {
+      "title": "Fanático",
       "visibility": "public",
       "spoilers": false
     }
@@ -1715,10 +2044,18 @@
       {
         "target": "Brillante Señor Amaram",
         "text": "Brillante Señor Amaram"
+      },
+      {
+        "target": "Fanático",
+        "text": "Fanático"
+      },
+      {
+        "target": "Ladrón",
+        "text": "Ladrón"
       }
     ],
-    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]",
-    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]",
+    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]\n[[Fanático]]\n[[Ladrón]]",
+    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]\n[[Fanático]]\n[[Ladrón]]",
     "frontmatter": {
       "title": "Enemigos",
       "visibility": "public",
@@ -1845,10 +2182,14 @@
       {
         "target": "Día 5 La Propuesta",
         "text": "Día 5 La Propuesta"
+      },
+      {
+        "target": "Día 6 Viva la revolución",
+        "text": "Día 6 Viva la revolución"
       }
     ],
-    "content_admin": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]",
-    "content_player": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]",
+    "content_admin": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]",
+    "content_player": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]",
     "frontmatter": {
       "title": "Historia",
       "visibility": "public",
@@ -1917,10 +2258,46 @@
       {
         "target": "Brillante Señor Amaram",
         "text": "Brillante Señor Amaram"
+      },
+      {
+        "target": "Ryvlk",
+        "text": "Ryvlk"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      },
+      {
+        "target": "Liss",
+        "text": "Liss"
+      },
+      {
+        "target": "Taln",
+        "text": "Taln"
+      },
+      {
+        "target": "Po'Ahu",
+        "text": "Po'Ahu"
+      },
+      {
+        "target": "Dyr Dyu",
+        "text": "Dyr Dyu"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Brillante Señor Amaram",
+        "text": "Brillante Señor Amaram"
       }
     ],
-    "content_admin": "# Historia\nEmpieza la sesión con un flashback para saber qué estaban haciendo los personajes que no vinieron a la anterior sesión en el momento de llegada a los campamentos y en el tiempo que les de [[Bordin]]. En este tiempo, antes de ir al Chull Gruñón [[Valisha]] se choca con una mujer que le dice que se le cayó una carta y la mujer se va sin responder a nada de lo que se le dice. Después de eso ocurren los sucesos del Chull gruñón del [[Día 3 La Radiancia|día 3]]. En este momento pueden ir a comprar o a explorar.\n\nAcabado el flashback, se encuentran en el Chull Gruón y los personajes deben investigar por los campamentos de guerra quién es el contacto de los chamanes de piedra y dónde encontrarlo. Al salir de la taberna escuchan unos gritos de un carro que no habían visto antes. \"Pasen y vean, criaturas de todo Roshar podrán ver en mi carreta. Venid a ver desde el pequeño cremlino hasta el tambaleante Gran Caparazón. Tenemos todo lo que te puedes imaginar, raros peces de lagopuro, espinablancas que en una pelea os podrían matar e incluso excepcionales y raros pollos de Shinovar de todos los colores. Pasen y vean damas y caballeros\". Un personaje que se fije puede notar que los pollos son pollos normales con las plumas teñidas. Si se acercan el personaje que gritaba les da la bienvenida y se presenta: se llama Ryvlk. Mientras miran todas las \"maravillas\" que trae, dos espinablancas se escapan de las jaulas ocurriendo el [[Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca|encuentro con los espinablanca]]. Ryvlk les da las gracias y les da 70 marcos por pararlos junto con información de que él consiguió los pollos de Shinovar de un contacto Shin que se enteró que estaba en los campamentos en el búnker de Bettani que ella tiene un registro de quién entra y sale de los campamentos. Justo cuando acaban la conversación aparece un joven rubio, medianamente alto y dice: \"mira que te metes en problemas Valisha, tormentosa mujer\" mientras sonrie. Es Adolin que, mientras se acerca en su Ryshadio pueden ver como tiene una cría de una criatura con alas. Adolin le pregunta qué como le va todo y que si no ha tenido más problemas con lo que ella ya sabía. Al final de la conversación Adolin le da la cría a Valisha.\n\nEn el búnker de Bettani cuando entran ven a una mujer alezi de ojos claros con un havah verde azulado y la manga de su mano segura está deshilachada por el uso excesivo. Aquí los personajes le explican lo que quieren y ella dice que está muy ocupada, que se le ha roto la vinculacaña y que la necesitaba para hacer unos tratos comerciales con el campamento de guerra de Sebarial antes que sus rivales consigan los tratos y saben el precio.Si los personajes le deciden ayudar ella les dará dos opciones, ir al campamento de Sebarial con una misiva o reparar el vinculacañas. Pase lo que pase les deja los libros de entradas y salidas de los campamentos y les extraña un nombre en particular: Doliente. Todos los demás parecen ser nombres normales pero esto parece un pseudónimo. En los registros pone que ha entrado y salido varias veces de este campamento y que la última entrada fue ayer al campamento Aladar.\n\nCuando vayan al campamento Aladar se ve claramente que no es como el de los Kholin, los guardias, si bien apuntan los nombres de los que entran y salen, no les parece importar mucho quienes entran y salen. Al entrar notan que en cierta parte es parecido al campamento de los Kholin en estructura, tiene un palacio que esta vez sí está más decorado, un mercado, una zona de fervorosos, otra de artefabrianos y otra de vivienda. Si exploran/preguntan/descubren al espía de Doliente les dirán que vayan a El Rocabrote Rojo, que ahí se juntan todos los maleantes. Cuando llegan hay mucha gente bebiendo y jugando. Después de jugar una partida les dicen que el lugar dónde se reúnen los informantes es en una panadería de los mercados exteriores llamada Horno de Crem.\n\nEn la panadería encuentran a Doliente que se presenta como Liss que al principio les amenaza diciendo que hablen bien. Si los personajes les dejan claro que no están ahí para atar cabos Liss les cuenta que, por si se les había olvidado, queremos recuperar la hoja de Honor de Taln y llevársela a la hermana de Taszo en el monasterio de los Custodio de Piedra. Si no tienen más pregunta Liss dice que la única forma de localizar la espada actualmente es mediante Taln pero que no sabía cómo hacer que saliera del estado en el que está ahora, a lo que Po'ahu se presenta y les dice que ella sabe una manera pero que habrá que ir a dónde esté sin que nadie se de cuenta. Cuando salen notan que no hay gente alrededor excepto unos ladrones que les atacan directamente en el [[Día 4 Tras la Pista de Doliente#Encuentro con los ladrones|encuentro con los ladrones]].\n\nDespués de ir al campamento de los Kholin y al monasterio del fervor, los personajes tendrán que infiltrarse aquí, para ello deberán moverse por el mapa con sigilo hasta llegar a la celda de Taln y entrar de alguna manera, la cerradura está cerrada con unos símbolos que pueden identificar como los símbolos de los caballeros radiantes. Si van inspeccionando las zonas pueden ver varios símbolos radiantes. En la sala de espera está el primero, el segundo en la oficina principal, el tercero en la sala de registros, el cuarto en los aposentos de los fervorosos y el último es el de la órden de Taln, lo que pasa es que no están los símbolos tal cual, sino representaciones de los heraldos. La justificación del orden es que en cada una de las representaciones se ven quee antes era una única imagen pero que ha sido cortada para ponerla en varias zonas. Una vez dentro Po'ahu les dice que la forma de que un heraldo recupere la conciencia es mediante juramentos, por lo que alguien debe jurar y sabe que [[Dyr Dyu]] está preparado para ello. Taln les empieza a hablar pero hay un momento que dice \"nos tenemos que preparar\" y ahí se le pone la mirada en el infinito y vuelve al mantra. Tras esto Po'ahu se encuentra mal por no poder haberle hecho entrar en razón del todo a lo que [[Calki]] jura también el primer ideal y ahí Taln les dice que deben de llevar la hoja a Shinovar, que ahora la siente en la ciudad de Rathalathar. Cuando salen se encuentran de frente con el Brillante señor Amaram que se presenta como el representante de los hijos de Honor que ellos fueron los que hicieron que los heraldos retornaran para volver a tener los antiguos poderes. Los personajes deben convencer a Amaram que no son una amenaza o si no atacará en el [[Día 4 Tras la Pista de Doliente#Encuentro con Amaram|encuentro con Amaram]]. Tras el combate, o convencerle que no son una amenaza, los personajes vuelven al Chull Gruñón, en el lugar, Liss les dice que les encontrará una forma de ir a la ciudad quemada, que se preparen porque partirán al siguiente día.\n\n## Encuentros\n### Encuentro con los espinablanca\nx2 [[Espinablanca]] \nAl final del combate (o en medio, eso ya lo trabajaré en medio de la sesión), tras ver las mentiras del comerciante, Valisha jura el primer ideal\n### Encuentro con los ladrones\nx6 [[Ladrón|Ladrones]]\nEn este encuentro Liss va a ser muy malherida tal y como Taszo, en ese momento tanto [[Bokao Nel]] como [[Nor Damoi|Damoi]] juran el primer ideal, el primero para sanarla y el segundo para protegerla.\n### Encuentro con Amaram\nEn el caso de que el [[Brillante Señor Amaram]] no confíe en ellos peleará con ellos hasta que le quede 10 de vida, en ese momento llamará a unos guardias para que hagan tiempo mientras él huye.",
-    "content_player": "# Historia\nEmpieza la sesión con un flashback para saber qué estaban haciendo los personajes que no vinieron a la anterior sesión en el momento de llegada a los campamentos y en el tiempo que les de [[Bordin]]. En este tiempo, antes de ir al Chull Gruñón [[Valisha]] se choca con una mujer que le dice que se le cayó una carta y la mujer se va sin responder a nada de lo que se le dice. Después de eso ocurren los sucesos del Chull gruñón del [[Día 3 La Radiancia|día 3]]. En este momento pueden ir a comprar o a explorar.\n\nAcabado el flashback, se encuentran en el Chull Gruón y los personajes deben investigar por los campamentos de guerra quién es el contacto de los chamanes de piedra y dónde encontrarlo. Al salir de la taberna escuchan unos gritos de un carro que no habían visto antes. \"Pasen y vean, criaturas de todo Roshar podrán ver en mi carreta. Venid a ver desde el pequeño cremlino hasta el tambaleante Gran Caparazón. Tenemos todo lo que te puedes imaginar, raros peces de lagopuro, espinablancas que en una pelea os podrían matar e incluso excepcionales y raros pollos de Shinovar de todos los colores. Pasen y vean damas y caballeros\". Un personaje que se fije puede notar que los pollos son pollos normales con las plumas teñidas. Si se acercan el personaje que gritaba les da la bienvenida y se presenta: se llama Ryvlk. Mientras miran todas las \"maravillas\" que trae, dos espinablancas se escapan de las jaulas ocurriendo el [[Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca|encuentro con los espinablanca]]. Ryvlk les da las gracias y les da 70 marcos por pararlos junto con información de que él consiguió los pollos de Shinovar de un contacto Shin que se enteró que estaba en los campamentos en el búnker de Bettani que ella tiene un registro de quién entra y sale de los campamentos. Justo cuando acaban la conversación aparece un joven rubio, medianamente alto y dice: \"mira que te metes en problemas Valisha, tormentosa mujer\" mientras sonrie. Es Adolin que, mientras se acerca en su Ryshadio pueden ver como tiene una cría de una criatura con alas. Adolin le pregunta qué como le va todo y que si no ha tenido más problemas con lo que ella ya sabía. Al final de la conversación Adolin le da la cría a Valisha.\n\nEn el búnker de Bettani cuando entran ven a una mujer alezi de ojos claros con un havah verde azulado y la manga de su mano segura está deshilachada por el uso excesivo. Aquí los personajes le explican lo que quieren y ella dice que está muy ocupada, que se le ha roto la vinculacaña y que la necesitaba para hacer unos tratos comerciales con el campamento de guerra de Sebarial antes que sus rivales consigan los tratos y saben el precio.Si los personajes le deciden ayudar ella les dará dos opciones, ir al campamento de Sebarial con una misiva o reparar el vinculacañas. Pase lo que pase les deja los libros de entradas y salidas de los campamentos y les extraña un nombre en particular: Doliente. Todos los demás parecen ser nombres normales pero esto parece un pseudónimo. En los registros pone que ha entrado y salido varias veces de este campamento y que la última entrada fue ayer al campamento Aladar.\n\nCuando vayan al campamento Aladar se ve claramente que no es como el de los Kholin, los guardias, si bien apuntan los nombres de los que entran y salen, no les parece importar mucho quienes entran y salen. Al entrar notan que en cierta parte es parecido al campamento de los Kholin en estructura, tiene un palacio que esta vez sí está más decorado, un mercado, una zona de fervorosos, otra de artefabrianos y otra de vivienda. Si exploran/preguntan/descubren al espía de Doliente les dirán que vayan a El Rocabrote Rojo, que ahí se juntan todos los maleantes. Cuando llegan hay mucha gente bebiendo y jugando. Después de jugar una partida les dicen que el lugar dónde se reúnen los informantes es en una panadería de los mercados exteriores llamada Horno de Crem.\n\nEn la panadería encuentran a Doliente que se presenta como Liss que al principio les amenaza diciendo que hablen bien. Si los personajes les dejan claro que no están ahí para atar cabos Liss les cuenta que, por si se les había olvidado, queremos recuperar la hoja de Honor de Taln y llevársela a la hermana de Taszo en el monasterio de los Custodio de Piedra. Si no tienen más pregunta Liss dice que la única forma de localizar la espada actualmente es mediante Taln pero que no sabía cómo hacer que saliera del estado en el que está ahora, a lo que Po'ahu se presenta y les dice que ella sabe una manera pero que habrá que ir a dónde esté sin que nadie se de cuenta. Cuando salen notan que no hay gente alrededor excepto unos ladrones que les atacan directamente en el [[Día 4 Tras la Pista de Doliente#Encuentro con los ladrones|encuentro con los ladrones]].\n\nDespués de ir al campamento de los Kholin y al monasterio del fervor, los personajes tendrán que infiltrarse aquí, para ello deberán moverse por el mapa con sigilo hasta llegar a la celda de Taln y entrar de alguna manera, la cerradura está cerrada con unos símbolos que pueden identificar como los símbolos de los caballeros radiantes. Si van inspeccionando las zonas pueden ver varios símbolos radiantes. En la sala de espera está el primero, el segundo en la oficina principal, el tercero en la sala de registros, el cuarto en los aposentos de los fervorosos y el último es el de la órden de Taln, lo que pasa es que no están los símbolos tal cual, sino representaciones de los heraldos. La justificación del orden es que en cada una de las representaciones se ven quee antes era una única imagen pero que ha sido cortada para ponerla en varias zonas. Una vez dentro Po'ahu les dice que la forma de que un heraldo recupere la conciencia es mediante juramentos, por lo que alguien debe jurar y sabe que [[Dyr Dyu]] está preparado para ello. Taln les empieza a hablar pero hay un momento que dice \"nos tenemos que preparar\" y ahí se le pone la mirada en el infinito y vuelve al mantra. Tras esto Po'ahu se encuentra mal por no poder haberle hecho entrar en razón del todo a lo que [[Calki]] jura también el primer ideal y ahí Taln les dice que deben de llevar la hoja a Shinovar, que ahora la siente en la ciudad de Rathalathar. Cuando salen se encuentran de frente con el Brillante señor Amaram que se presenta como el representante de los hijos de Honor que ellos fueron los que hicieron que los heraldos retornaran para volver a tener los antiguos poderes. Los personajes deben convencer a Amaram que no son una amenaza o si no atacará en el [[Día 4 Tras la Pista de Doliente#Encuentro con Amaram|encuentro con Amaram]]. Tras el combate, o convencerle que no son una amenaza, los personajes vuelven al Chull Gruñón, en el lugar, Liss les dice que les encontrará una forma de ir a la ciudad quemada, que se preparen porque partirán al siguiente día.\n\n## Encuentros\n### Encuentro con los espinablanca\nx2 [[Espinablanca]] \nAl final del combate (o en medio, eso ya lo trabajaré en medio de la sesión), tras ver las mentiras del comerciante, Valisha jura el primer ideal\n### Encuentro con los ladrones\nx6 [[Ladrón|Ladrones]]\nEn este encuentro Liss va a ser muy malherida tal y como Taszo, en ese momento tanto [[Bokao Nel]] como [[Nor Damoi|Damoi]] juran el primer ideal, el primero para sanarla y el segundo para protegerla.\n### Encuentro con Amaram\nEn el caso de que el [[Brillante Señor Amaram]] no confíe en ellos peleará con ellos hasta que le quede 10 de vida, en ese momento llamará a unos guardias para que hagan tiempo mientras él huye.",
+    "content_admin": "# Historia\nEmpieza la sesión con un flashback para saber qué estaban haciendo los personajes que no vinieron a la anterior sesión en el momento de llegada a los campamentos y en el tiempo que les de [[Bordin]]. En este tiempo, antes de ir al Chull Gruñón [[Valisha]] se choca con una mujer que le dice que se le cayó una carta y la mujer se va sin responder a nada de lo que se le dice. Después de eso ocurren los sucesos del Chull gruñón del [[Día 3 La Radiancia|día 3]]. En este momento pueden ir a comprar o a explorar.\n\nAcabado el flashback, se encuentran en el Chull Gruón y los personajes deben investigar por los campamentos de guerra quién es el contacto de los chamanes de piedra y dónde encontrarlo. Al salir de la taberna escuchan unos gritos de un carro que no habían visto antes. \"Pasen y vean, criaturas de todo Roshar podrán ver en mi carreta. Venid a ver desde el pequeño cremlino hasta el tambaleante Gran Caparazón. Tenemos todo lo que te puedes imaginar, raros peces de lagopuro, espinablancas que en una pelea os podrían matar e incluso excepcionales y raros pollos de Shinovar de todos los colores. Pasen y vean damas y caballeros\". Un personaje que se fije puede notar que los pollos son pollos normales con las plumas teñidas. Si se acercan el personaje que gritaba les da la bienvenida y se presenta: se llama Ryvlk. Mientras miran todas las \"maravillas\" que trae, dos espinablancas se escapan de las jaulas ocurriendo el [[Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca|encuentro con los espinablanca]]. Ryvlk les da las gracias y les da 70 marcos por pararlos junto con información de que él consiguió los pollos de Shinovar de un contacto Shin que se enteró que estaba en los campamentos en el búnker de Bettani que ella tiene un registro de quién entra y sale de los campamentos. Justo cuando acaban la conversación aparece un joven rubio, medianamente alto y dice: \"mira que te metes en problemas Valisha, tormentosa mujer\" mientras sonrie. Es Adolin que, mientras se acerca en su Ryshadio pueden ver como tiene una cría de una criatura con alas. Adolin le pregunta qué como le va todo y que si no ha tenido más problemas con lo que ella ya sabía. Al final de la conversación Adolin le da la cría a Valisha.\n\nEn el búnker de Bettani cuando entran ven a una mujer alezi de ojos claros con un havah verde azulado y la manga de su mano segura está deshilachada por el uso excesivo. Aquí los personajes le explican lo que quieren y ella dice que está muy ocupada, que se le ha roto la vinculacaña y que la necesitaba para hacer unos tratos comerciales con el campamento de guerra de Sebarial antes que sus rivales consigan los tratos y saben el precio.Si los personajes le deciden ayudar ella les dará dos opciones, ir al campamento de Sebarial con una misiva o reparar el vinculacañas. Pase lo que pase les deja los libros de entradas y salidas de los campamentos y les extraña un nombre en particular: Doliente. Todos los demás parecen ser nombres normales pero esto parece un pseudónimo. En los registros pone que ha entrado y salido varias veces de este campamento y que la última entrada fue ayer al campamento Aladar.\n\nCuando vayan al campamento Aladar se ve claramente que no es como el de los Kholin, los guardias, si bien apuntan los nombres de los que entran y salen, no les parece importar mucho quienes entran y salen. Al entrar notan que en cierta parte es parecido al campamento de los Kholin en estructura, tiene un palacio que esta vez sí está más decorado, un mercado, una zona de fervorosos, otra de artefabrianos y otra de vivienda. Si exploran/preguntan/descubren al espía de Doliente les dirán que vayan a El Rocabrote Rojo, que ahí se juntan todos los maleantes. Cuando llegan hay mucha gente bebiendo y jugando. Después de jugar una partida les dicen que el lugar dónde se reúnen los informantes es en una panadería de los mercados exteriores llamada Horno de Crem.\n\nEn la panadería encuentran a Doliente que se presenta como Liss que al principio les amenaza diciendo que hablen bien. Si los personajes les dejan claro que no están ahí para atar cabos Liss les cuenta que, por si se les había olvidado, queremos recuperar la hoja de Honor de Taln y llevársela a la hermana de Taszo en el monasterio de los Custodio de Piedra. Si no tienen más pregunta Liss dice que la única forma de localizar la espada actualmente es mediante Taln pero que no sabía cómo hacer que saliera del estado en el que está ahora, a lo que Po'ahu se presenta y les dice que ella sabe una manera pero que habrá que ir a dónde esté sin que nadie se de cuenta. Cuando salen notan que no hay gente alrededor excepto unos ladrones que les atacan directamente en el [[Día 4 Tras la Pista de Doliente#Encuentro con los ladrones|encuentro con los ladrones]].\n\nDespués de ir al campamento de los Kholin y al monasterio del fervor, los personajes tendrán que infiltrarse aquí, para ello deberán moverse por el mapa con sigilo hasta llegar a la celda de Taln y entrar de alguna manera, la cerradura está cerrada con unos símbolos que pueden identificar como los símbolos de los caballeros radiantes. Si van inspeccionando las zonas pueden ver varios símbolos radiantes. En la sala de espera está el primero, el segundo en la oficina principal, el tercero en la sala de registros, el cuarto en los aposentos de los fervorosos y el último es el de la órden de Taln, lo que pasa es que no están los símbolos tal cual, sino representaciones de los heraldos. La justificación del orden es que en cada una de las representaciones se ven quee antes era una única imagen pero que ha sido cortada para ponerla en varias zonas. Una vez dentro Po'ahu les dice que la forma de que un heraldo recupere la conciencia es mediante juramentos, por lo que alguien debe jurar y sabe que [[Dyr Dyu]] está preparado para ello. Taln les empieza a hablar pero hay un momento que dice \"nos tenemos que preparar\" y ahí se le pone la mirada en el infinito y vuelve al mantra. Tras esto Po'ahu se encuentra mal por no poder haberle hecho entrar en razón del todo a lo que [[Calki]] jura también el primer ideal y ahí Taln les dice que deben de llevar la hoja a Shinovar, que ahora la siente en la ciudad de Rathalathar. Cuando salen se encuentran de frente con el Brillante señor Amaram que se presenta como el representante de los hijos de Honor que ellos fueron los que hicieron que los heraldos retornaran para volver a tener los antiguos poderes. Los personajes deben convencer a Amaram que no son una amenaza o si no atacará en el [[Día 4 Tras la Pista de Doliente#Encuentro con Amaram|encuentro con Amaram]]. Tras el combate, o convencerle que no son una amenaza, los personajes vuelven al Chull Gruñón, en el lugar, Liss les dice que les encontrará una forma de ir a la ciudad quemada, que se preparen porque partirán al siguiente día.\n\n## Encuentros\n### Encuentro con los espinablanca\nx2 [[Espinablanca]] \nAl final del combate (o en medio, eso ya lo trabajaré en medio de la sesión), tras ver las mentiras del comerciante, Valisha jura el primer ideal\n### Encuentro con los ladrones\nx6 [[Ladrón|Ladrones]]\nEn este encuentro Liss va a ser muy malherida tal y como Taszo, en ese momento tanto [[Bokao Nel]] como [[Nor Damoi|Damoi]] juran el primer ideal, el primero para sanarla y el segundo para protegerla.\n### Encuentro con Amaram\nEn el caso de que el [[Brillante Señor Amaram]] no confíe en ellos peleará con ellos hasta que le quede 10 de vida, en ese momento llamará a unos guardias para que hagan tiempo mientras él huye.\n## Sucesos en Rol\nEl día comienza en el Chull Gruñón cuando escuchan mucho jaleo fuera, causado por [[Ryvlk]] con sus animales. Tras descubrir que los animales estaban pintados, dos espinablancas se escapan. Tras matar a uno y aprisionar a otro [[Valisha]] se acerca a Ryvlk furiosa, jurando el primer ideal. Con la luz tormentosa del ideal, ancla a Ryvlk al suelo impidiendo que se mueva. Le interrogan y él les dice que los pollos los consiguió de un contacto en Shinovar y se enteró de que estaba por aquí en un búnker. Tras esto llega [[Adolin]] y se lleva a Ryvlk, teniendo una pequeña charla con Adolin. El grupo, fue al búnker en el que le pidieron ayuda para entregar una carta mediante vinculaña pero que estaba rota. Una parte del grupo se quedó reparando la vinculacaña (la rompieron más) mientras que otra parte del grupo fue a entregar la carta a mano. Cuando volvieron vieron en los registros que una tal Doliente había entrado en el campamento de Aladar por lo que fuero ahí. \n\nEn el camino se dieron cuenta de que había un espía por lo que tras una persecución consiguen que les dijera que fueran al Rocabrote Rojo. Ahí jugaron una partida de póker con dos personas que les dijeron que habían escuchado que podría encontrarse en una panadería olvidada del mercado exterior.\n\nEn esa panadería se encuentran con [[Liss]] que les amenaza con matarles pero el grupo les habla de Taszo y de su misión y se calma. Les cuenta sobre [[Taln]] y sobre su locura, cuando [[Po'Ahu]] dice que tiene una idea para eliminar temporalmente su locura, pero que tendrían que estar cerca de él. Al salir de la panadería se encuentran con unosbandidos que matan a Liss, a lo que Bokao y Nor juran el primer ideal, curando de la muerte a Liss el primero y el segundo desintegrando a todos los bandidos.\n\nEn el campamento de los Kholin van al devotario dónde tenían como prisionero a Taln. Tras infiltrarse, y descubrir cómo abrir el candado, abren la celda y Po'ahu les dice que la única manera de quitarle la locura es jurar un ideal alrededor suyo. Es por esto que [[Dyr Dyu]] jura el primer ideal pero, tras perder el tiempo con preguntas cuestionables, vuelve su locura por lo que [[Calki]] también jura el primer ideal. Taln, les dice que su espada se encuentra en la de Ralathalas a lo que el grupo supone que es Rathalas. Al salir de la celda, se encuentran con el [[Brillante Señor Amaram]] diciéndoles que están molestando a los hijos de honor. Bokao, con sus poderes recién despiertos, crea una nube de humo para huir sin pelear. El grupo ya sabe dónde ir pero ahora necesitan encontrar un método de transporte.",
+    "content_player": "# Historia\nEmpieza la sesión con un flashback para saber qué estaban haciendo los personajes que no vinieron a la anterior sesión en el momento de llegada a los campamentos y en el tiempo que les de [[Bordin]]. En este tiempo, antes de ir al Chull Gruñón [[Valisha]] se choca con una mujer que le dice que se le cayó una carta y la mujer se va sin responder a nada de lo que se le dice. Después de eso ocurren los sucesos del Chull gruñón del [[Día 3 La Radiancia|día 3]]. En este momento pueden ir a comprar o a explorar.\n\nAcabado el flashback, se encuentran en el Chull Gruón y los personajes deben investigar por los campamentos de guerra quién es el contacto de los chamanes de piedra y dónde encontrarlo. Al salir de la taberna escuchan unos gritos de un carro que no habían visto antes. \"Pasen y vean, criaturas de todo Roshar podrán ver en mi carreta. Venid a ver desde el pequeño cremlino hasta el tambaleante Gran Caparazón. Tenemos todo lo que te puedes imaginar, raros peces de lagopuro, espinablancas que en una pelea os podrían matar e incluso excepcionales y raros pollos de Shinovar de todos los colores. Pasen y vean damas y caballeros\". Un personaje que se fije puede notar que los pollos son pollos normales con las plumas teñidas. Si se acercan el personaje que gritaba les da la bienvenida y se presenta: se llama Ryvlk. Mientras miran todas las \"maravillas\" que trae, dos espinablancas se escapan de las jaulas ocurriendo el [[Día 4 Tras la Pista de Doliente#Encuentro con los espinablanca|encuentro con los espinablanca]]. Ryvlk les da las gracias y les da 70 marcos por pararlos junto con información de que él consiguió los pollos de Shinovar de un contacto Shin que se enteró que estaba en los campamentos en el búnker de Bettani que ella tiene un registro de quién entra y sale de los campamentos. Justo cuando acaban la conversación aparece un joven rubio, medianamente alto y dice: \"mira que te metes en problemas Valisha, tormentosa mujer\" mientras sonrie. Es Adolin que, mientras se acerca en su Ryshadio pueden ver como tiene una cría de una criatura con alas. Adolin le pregunta qué como le va todo y que si no ha tenido más problemas con lo que ella ya sabía. Al final de la conversación Adolin le da la cría a Valisha.\n\nEn el búnker de Bettani cuando entran ven a una mujer alezi de ojos claros con un havah verde azulado y la manga de su mano segura está deshilachada por el uso excesivo. Aquí los personajes le explican lo que quieren y ella dice que está muy ocupada, que se le ha roto la vinculacaña y que la necesitaba para hacer unos tratos comerciales con el campamento de guerra de Sebarial antes que sus rivales consigan los tratos y saben el precio.Si los personajes le deciden ayudar ella les dará dos opciones, ir al campamento de Sebarial con una misiva o reparar el vinculacañas. Pase lo que pase les deja los libros de entradas y salidas de los campamentos y les extraña un nombre en particular: Doliente. Todos los demás parecen ser nombres normales pero esto parece un pseudónimo. En los registros pone que ha entrado y salido varias veces de este campamento y que la última entrada fue ayer al campamento Aladar.\n\nCuando vayan al campamento Aladar se ve claramente que no es como el de los Kholin, los guardias, si bien apuntan los nombres de los que entran y salen, no les parece importar mucho quienes entran y salen. Al entrar notan que en cierta parte es parecido al campamento de los Kholin en estructura, tiene un palacio que esta vez sí está más decorado, un mercado, una zona de fervorosos, otra de artefabrianos y otra de vivienda. Si exploran/preguntan/descubren al espía de Doliente les dirán que vayan a El Rocabrote Rojo, que ahí se juntan todos los maleantes. Cuando llegan hay mucha gente bebiendo y jugando. Después de jugar una partida les dicen que el lugar dónde se reúnen los informantes es en una panadería de los mercados exteriores llamada Horno de Crem.\n\nEn la panadería encuentran a Doliente que se presenta como Liss que al principio les amenaza diciendo que hablen bien. Si los personajes les dejan claro que no están ahí para atar cabos Liss les cuenta que, por si se les había olvidado, queremos recuperar la hoja de Honor de Taln y llevársela a la hermana de Taszo en el monasterio de los Custodio de Piedra. Si no tienen más pregunta Liss dice que la única forma de localizar la espada actualmente es mediante Taln pero que no sabía cómo hacer que saliera del estado en el que está ahora, a lo que Po'ahu se presenta y les dice que ella sabe una manera pero que habrá que ir a dónde esté sin que nadie se de cuenta. Cuando salen notan que no hay gente alrededor excepto unos ladrones que les atacan directamente en el [[Día 4 Tras la Pista de Doliente#Encuentro con los ladrones|encuentro con los ladrones]].\n\nDespués de ir al campamento de los Kholin y al monasterio del fervor, los personajes tendrán que infiltrarse aquí, para ello deberán moverse por el mapa con sigilo hasta llegar a la celda de Taln y entrar de alguna manera, la cerradura está cerrada con unos símbolos que pueden identificar como los símbolos de los caballeros radiantes. Si van inspeccionando las zonas pueden ver varios símbolos radiantes. En la sala de espera está el primero, el segundo en la oficina principal, el tercero en la sala de registros, el cuarto en los aposentos de los fervorosos y el último es el de la órden de Taln, lo que pasa es que no están los símbolos tal cual, sino representaciones de los heraldos. La justificación del orden es que en cada una de las representaciones se ven quee antes era una única imagen pero que ha sido cortada para ponerla en varias zonas. Una vez dentro Po'ahu les dice que la forma de que un heraldo recupere la conciencia es mediante juramentos, por lo que alguien debe jurar y sabe que [[Dyr Dyu]] está preparado para ello. Taln les empieza a hablar pero hay un momento que dice \"nos tenemos que preparar\" y ahí se le pone la mirada en el infinito y vuelve al mantra. Tras esto Po'ahu se encuentra mal por no poder haberle hecho entrar en razón del todo a lo que [[Calki]] jura también el primer ideal y ahí Taln les dice que deben de llevar la hoja a Shinovar, que ahora la siente en la ciudad de Rathalathar. Cuando salen se encuentran de frente con el Brillante señor Amaram que se presenta como el representante de los hijos de Honor que ellos fueron los que hicieron que los heraldos retornaran para volver a tener los antiguos poderes. Los personajes deben convencer a Amaram que no son una amenaza o si no atacará en el [[Día 4 Tras la Pista de Doliente#Encuentro con Amaram|encuentro con Amaram]]. Tras el combate, o convencerle que no son una amenaza, los personajes vuelven al Chull Gruñón, en el lugar, Liss les dice que les encontrará una forma de ir a la ciudad quemada, que se preparen porque partirán al siguiente día.\n\n## Encuentros\n### Encuentro con los espinablanca\nx2 [[Espinablanca]] \nAl final del combate (o en medio, eso ya lo trabajaré en medio de la sesión), tras ver las mentiras del comerciante, Valisha jura el primer ideal\n### Encuentro con los ladrones\nx6 [[Ladrón|Ladrones]]\nEn este encuentro Liss va a ser muy malherida tal y como Taszo, en ese momento tanto [[Bokao Nel]] como [[Nor Damoi|Damoi]] juran el primer ideal, el primero para sanarla y el segundo para protegerla.\n### Encuentro con Amaram\nEn el caso de que el [[Brillante Señor Amaram]] no confíe en ellos peleará con ellos hasta que le quede 10 de vida, en ese momento llamará a unos guardias para que hagan tiempo mientras él huye.\n## Sucesos en Rol\nEl día comienza en el Chull Gruñón cuando escuchan mucho jaleo fuera, causado por [[Ryvlk]] con sus animales. Tras descubrir que los animales estaban pintados, dos espinablancas se escapan. Tras matar a uno y aprisionar a otro [[Valisha]] se acerca a Ryvlk furiosa, jurando el primer ideal. Con la luz tormentosa del ideal, ancla a Ryvlk al suelo impidiendo que se mueva. Le interrogan y él les dice que los pollos los consiguió de un contacto en Shinovar y se enteró de que estaba por aquí en un búnker. Tras esto llega [[Adolin]] y se lleva a Ryvlk, teniendo una pequeña charla con Adolin. El grupo, fue al búnker en el que le pidieron ayuda para entregar una carta mediante vinculaña pero que estaba rota. Una parte del grupo se quedó reparando la vinculacaña (la rompieron más) mientras que otra parte del grupo fue a entregar la carta a mano. Cuando volvieron vieron en los registros que una tal Doliente había entrado en el campamento de Aladar por lo que fuero ahí. \n\nEn el camino se dieron cuenta de que había un espía por lo que tras una persecución consiguen que les dijera que fueran al Rocabrote Rojo. Ahí jugaron una partida de póker con dos personas que les dijeron que habían escuchado que podría encontrarse en una panadería olvidada del mercado exterior.\n\nEn esa panadería se encuentran con [[Liss]] que les amenaza con matarles pero el grupo les habla de Taszo y de su misión y se calma. Les cuenta sobre [[Taln]] y sobre su locura, cuando [[Po'Ahu]] dice que tiene una idea para eliminar temporalmente su locura, pero que tendrían que estar cerca de él. Al salir de la panadería se encuentran con unosbandidos que matan a Liss, a lo que Bokao y Nor juran el primer ideal, curando de la muerte a Liss el primero y el segundo desintegrando a todos los bandidos.\n\nEn el campamento de los Kholin van al devotario dónde tenían como prisionero a Taln. Tras infiltrarse, y descubrir cómo abrir el candado, abren la celda y Po'ahu les dice que la única manera de quitarle la locura es jurar un ideal alrededor suyo. Es por esto que [[Dyr Dyu]] jura el primer ideal pero, tras perder el tiempo con preguntas cuestionables, vuelve su locura por lo que [[Calki]] también jura el primer ideal. Taln, les dice que su espada se encuentra en la de Ralathalas a lo que el grupo supone que es Rathalas. Al salir de la celda, se encuentran con el [[Brillante Señor Amaram]] diciéndoles que están molestando a los hijos de honor. Bokao, con sus poderes recién despiertos, crea una nube de humo para huir sin pelear. El grupo ya sabe dónde ir pero ahora necesitan encontrar un método de transporte.",
     "frontmatter": {
       "title": "Día 4 Tras la Pista de Doliente",
       "visibility": "public",
@@ -1929,8 +2306,8 @@
   },
   {
     "slug": "Caminapiedras/Historia/Día 5 La Propuesta",
-    "title": "Día 4 La Propuesta",
-    "visibility": "private",
+    "title": "Día 5 La Propuesta",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": true,
     "is_index": false,
@@ -1995,13 +2372,61 @@
       {
         "target": "Ladrón",
         "text": "Ladrones"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      },
+      {
+        "target": "Sangre Espectral",
+        "text": "Sangre Espectral"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa Damoi"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Liss",
+        "text": "Liss"
+      },
+      {
+        "target": "Yara Elorin",
+        "text": "Yara Elorin"
+      },
+      {
+        "target": "Mraize",
+        "text": "Mraize"
+      },
+      {
+        "target": "Liss",
+        "text": "Liss"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa Damoi"
       }
     ],
-    "content_admin": "# Historia\nEmpiezan el día en el Chull Gruñón, tienen que ir a Rathalas pero no tienen forma de llegar por lo que tienen que buscar por todos los campamentos de guerra. Mientras hacen la búsqueda [[Valisha]] va a hablar con Adolin. En la reunión Adolin le pregunta por los ojos y por lo que ha pasado desde que no se vieron. Después de que Valisha le cuente todo Adolin le dice que se rumorea que en el campamento del Alto Principe Sadeas hay organizaciones secretas actuando y que él sospecha que son la misma organización. Adolin tiene una idea y le dice a Valisha que le lleve a sus amigos (pero que se quede lejos y que luego llegue ella para que no se den cuenta). Mientras ocurría esto el grupo va preguntando por los mercados si hay alguna carreta dispuesta a llevar a 8 o 9 personas a Rathalas. Cuanto más tiempo pasa más les extraña que hay mucha gente vestida igual que parecen siempre estar a su alrededor que parecen mirarles pero no lo podrían decir con exactitud. Al rato aparece Adolin diciendo que les estaba buscando y preguntando por Valisha a lo que al rato llega y se reune toda la [[Party Principal]]. Adolin les pide un favorcito diciendo que hay una organización que se está intentando esconder y mover los hilos de la política Roshariana para su beneficio. Sabe que una sede importante está en los campamentos de guerra y que es posible que su lider o gente de alto cargo esté en la sede, lo que no sabe dónde está. La misión será infiltrarse en la sede y buscar documentos o cualquier cosa que pueda delatar a los dirigentes de la organización.\n\nEl grupo tiene que buscar alguna forma de conseguir información sobre dónde podría estar a lo que podrían ir al campamento de Sadeas o ir al Rocabrote Rojo a preguntar si alguno sabía dónde se pudiera encontrar. Si van al Rocabrote Rojo (no va a pasar), les dicen que en una callejuela de la zona residencial del campamento de guerra de Sadeas se suele reunir gente con mucha frecuencia, que si bien es una calle sin salida, no parece vérseles después de un tiempo. Si van al campamento de Sadeas, tendrán que ir buscando y preguntando a la gente si han visto algo sospechoso a lo que tras preguntar a un par de personas, le dicen lo mismo que dirían los matones.\n\nUna vez lleguen al callejón verán que, en apariencia, es un callejón normal y corriente, a lo mejor sí parece un poco más deteriorado que los demás pero no se ve nada especial, no hay puertas a ningún sitio, ni ventanas, sólo una pared con un glifoguarda que significa \"Paz\". En realidad este callejón es bastante más grande pero hay un tejido de luz (el muro) tapando parte de este. Cuando atraviesen el muro podrán ver una puerta sin vigilar que está abierta con el logo de los Sangre Espectral pintado en un cartel con varios colores. Aquí empieza la fase de iniltración, en esta fase, todas las tiradas tendrán que ser subiendo la apuesta. Cada éxito de tirada significará que no hacen ruido, cada fallo, será que hacen ruido y que los guardias se acercarán. En caso de que los pillen hay una emboscada en el que les atrapan, si no, van buscando por el lugar tipo Zelda (guardias con conos de vista y cosas así). En la mayoría de habitaciones no parece haber nada, un par de camas con unos cubos metálicos al lado de las camas, una sala de reuniones en otra con un objeto que parece hacer ilusiones como [[Yara Elorin|Yara]] pero planas, otra sala con armas y muñecos pequeños y otra sala con una serie de mapas, en uno pone Roshar, en otro Escadrial, en otro Yolen y en otro pone Sel y debajo de cada mapa un objeto extraño. Tras inspeccionar todo, llegan a un pasillo que no lleva a ninguna parte (ESCALERAS DEL MAPA). Si descubren que es otra ilusión la atraviesan y entran en la sala final dónde hay un escritorio con una silla dada la vuelta, según entran a la habitación, se cierran las puertas (y si no entran todos hay guardias que los empujan dentro) y todas las esferas que tienen en los bolsillos se apagan. Aquí aparece Mraize que se presenta como el líder de la sede Roshariana de los sangre espectral, primero les advierte que, obviamente, decir su nombre a Adolin no iba a surtir ningún efecto ya que tiene infinidad de identidades, al igual que describir su aspecto ya que él también sus propios, secretos, pero que no hacía falta decirles todo eso ya que supone que Valisha ya les ha contado todo. Les cuenta que estuvieron preparando desde niña a Valisha para ser su mejor agente, sin lazos en el exterior de la organización, entrenada para aguantar hasta las peores torturas y combates. Y ahora que tiene lazos exteriores, se tiene que encargar de ellos (empieza a mirarlos a todos). Mraize les promete a cada uno lo que más quiere:\n* [[Dyr Dyu]]: que continue el gran viaje y que su pueblo vaya al siguiente mundo.\n* [[Calki]]: Conocimiento sobre todo el Cosmere, conocimiento que ignoraba que podría llegar a existir.\n* [[Bokao Nel]]: Darle fabriales y descubrir ciencias de otros mundos.\n* [[Sidoa Damoi]]: Que su partido político coja fama a nivel intergaláctico, convirtiéndose en el primer partido político interplanetario, con partidarios en todos los mundos.\n* [[Yara Elorin|Servena]]: Nadie sabrá la verdad\n* [[Nor Damoi|Nor Damoi]] (En este momento dice su nombre, revelando el nombre a la party): Le promete absolución y que todo el mundo supiera lo que verdaderamente ocurrió con su primo.\n* [[Arluno'ratha'tu]]: Enseñarle nuevas tácticas, nuevas armas para poder defender a todo aquél que lo necesite.\n* [[Valisha]]: Su familia, realmente no mataron a sus padres ni a su hermano, si se une a ellos, le promete que no le harán daño.\nLa propuesta de Valisha la dice lenta, regodeándose y explicándole que lleva pudiendo hacer ese tipo de cosas desde hace un tiempo. En este momento cada uno debe decir si sí o si no, pero Mraize, con una sonrisa, les dice que para que la presión de grupo no les pueda, lo hará cada uno en privado. Antes de que salga les da documentos \"como hospitalidad\" que retratan organizaciones cercanas como los hijos de honor, incluyendo páginas de los propios Sangre Espectral (íncluido su nombre y su foto). Tras decidir, Mraize les deja salir.\n\nCuando vuelven con Adolín le cuentan todo y él les proporciona unas caravanas, que no están marcadas con la casa Kholin porque tienen malos recuerdos de este alto principado, por último les dice que les dará suministros suficientes para el viaje hasta la ciudad pero que a partir de aquí todo tendrá que ser a sus gastos así que deben prepararse bien.\n\nEl camino hacia Rathalas dura 20 días los cuales los personajes pueden aprovechar para abrirse más entre ellos si así lo desean. El viaje va más tranquilo de lo normal, lo único que pueden notar es que, según van pasando los días y, por lo tanto, cuanto más se acercan a Rathalas, hay más carretas abandonadas en el camino. Algunas de las carretas parecen estar abandonadas desde hace un tiempo, pero otras parecen ser más recientes. Todas ellas tienen algo en común: son carros con los colores y glifos de los altos príncipes de Alezkar. Cuando quedan 3 días de viaje, ven a una persona sola, caminando en dirección a la ciudad, cuando les ve, parece que hace como señas para que se acerquen. Aparentemente, no tiene armas, por lo que no parece ser un bandido, aunque tampoco tiene provisiones como para sobrevivir, y menos en el estado en el que está actualmente. Se presenta con el nombre de [[Lorn]], dice que desertó de la ciudad debido a que la Reina bandida fue destituida hace unas semanas. Les dice que estaba con 3 compañeros que dijeron que iban a la ciudad a conseguir provisiones de contrabando para poder ir a otra ciudad pero que hace días que no los ve. Si le preguntan por quién fue destituida la reina les dice que por un portador de esquirlada iriali. Si le preguntan que si hay algo más que sepa y superan una tirada <dm-section>CD 12</dm-section> les dice que no todo el mundo está contento con el nuevo líder. Pasa un día y ven a un grupo de 3 personas saliendo de la ciudad, 2 delante de una que tiene un carro y está tirando de él, a lo que Lorn dice que podrían ser sus compañeros. Si se deciden acercar, empieza el encuentro con los [[Día 5 La Propuesta#Ojos de Palah|ojos de Palah]]. \n\nCuando acaban con ellos, en los cadáveres Lorn ve las pertenencias de sus compañeros, por lo que supone lo peor. Tras otro día de viaje llegan a la ciudad de Rathalas, ven un valle en la que algunas casas están sobre formaciones rocosas y puentes colgantes y abajo del todo una pequeña población con un pequeño muelle en el río.\n\n## Encuentros\n### Ojos de Palah\nx1 [[Jefe del Crimen]]\nx2 [[Ladrón|Ladrones]]\n# Sucesos en la Campaña",
-    "content_player": "# Historia\nEmpiezan el día en el Chull Gruñón, tienen que ir a Rathalas pero no tienen forma de llegar por lo que tienen que buscar por todos los campamentos de guerra. Mientras hacen la búsqueda [[Valisha]] va a hablar con Adolin. En la reunión Adolin le pregunta por los ojos y por lo que ha pasado desde que no se vieron. Después de que Valisha le cuente todo Adolin le dice que se rumorea que en el campamento del Alto Principe Sadeas hay organizaciones secretas actuando y que él sospecha que son la misma organización. Adolin tiene una idea y le dice a Valisha que le lleve a sus amigos (pero que se quede lejos y que luego llegue ella para que no se den cuenta). Mientras ocurría esto el grupo va preguntando por los mercados si hay alguna carreta dispuesta a llevar a 8 o 9 personas a Rathalas. Cuanto más tiempo pasa más les extraña que hay mucha gente vestida igual que parecen siempre estar a su alrededor que parecen mirarles pero no lo podrían decir con exactitud. Al rato aparece Adolin diciendo que les estaba buscando y preguntando por Valisha a lo que al rato llega y se reune toda la [[Party Principal]]. Adolin les pide un favorcito diciendo que hay una organización que se está intentando esconder y mover los hilos de la política Roshariana para su beneficio. Sabe que una sede importante está en los campamentos de guerra y que es posible que su lider o gente de alto cargo esté en la sede, lo que no sabe dónde está. La misión será infiltrarse en la sede y buscar documentos o cualquier cosa que pueda delatar a los dirigentes de la organización.\n\nEl grupo tiene que buscar alguna forma de conseguir información sobre dónde podría estar a lo que podrían ir al campamento de Sadeas o ir al Rocabrote Rojo a preguntar si alguno sabía dónde se pudiera encontrar. Si van al Rocabrote Rojo (no va a pasar), les dicen que en una callejuela de la zona residencial del campamento de guerra de Sadeas se suele reunir gente con mucha frecuencia, que si bien es una calle sin salida, no parece vérseles después de un tiempo. Si van al campamento de Sadeas, tendrán que ir buscando y preguntando a la gente si han visto algo sospechoso a lo que tras preguntar a un par de personas, le dicen lo mismo que dirían los matones.\n\nUna vez lleguen al callejón verán que, en apariencia, es un callejón normal y corriente, a lo mejor sí parece un poco más deteriorado que los demás pero no se ve nada especial, no hay puertas a ningún sitio, ni ventanas, sólo una pared con un glifoguarda que significa \"Paz\". En realidad este callejón es bastante más grande pero hay un tejido de luz (el muro) tapando parte de este. Cuando atraviesen el muro podrán ver una puerta sin vigilar que está abierta con el logo de los Sangre Espectral pintado en un cartel con varios colores. Aquí empieza la fase de iniltración, en esta fase, todas las tiradas tendrán que ser subiendo la apuesta. Cada éxito de tirada significará que no hacen ruido, cada fallo, será que hacen ruido y que los guardias se acercarán. En caso de que los pillen hay una emboscada en el que les atrapan, si no, van buscando por el lugar tipo Zelda (guardias con conos de vista y cosas así). En la mayoría de habitaciones no parece haber nada, un par de camas con unos cubos metálicos al lado de las camas, una sala de reuniones en otra con un objeto que parece hacer ilusiones como [[Yara Elorin|Yara]] pero planas, otra sala con armas y muñecos pequeños y otra sala con una serie de mapas, en uno pone Roshar, en otro Escadrial, en otro Yolen y en otro pone Sel y debajo de cada mapa un objeto extraño. Tras inspeccionar todo, llegan a un pasillo que no lleva a ninguna parte (ESCALERAS DEL MAPA). Si descubren que es otra ilusión la atraviesan y entran en la sala final dónde hay un escritorio con una silla dada la vuelta, según entran a la habitación, se cierran las puertas (y si no entran todos hay guardias que los empujan dentro) y todas las esferas que tienen en los bolsillos se apagan. Aquí aparece Mraize que se presenta como el líder de la sede Roshariana de los sangre espectral, primero les advierte que, obviamente, decir su nombre a Adolin no iba a surtir ningún efecto ya que tiene infinidad de identidades, al igual que describir su aspecto ya que él también sus propios, secretos, pero que no hacía falta decirles todo eso ya que supone que Valisha ya les ha contado todo. Les cuenta que estuvieron preparando desde niña a Valisha para ser su mejor agente, sin lazos en el exterior de la organización, entrenada para aguantar hasta las peores torturas y combates. Y ahora que tiene lazos exteriores, se tiene que encargar de ellos (empieza a mirarlos a todos). Mraize les promete a cada uno lo que más quiere:\n* [[Dyr Dyu]]: que continue el gran viaje y que su pueblo vaya al siguiente mundo.\n* [[Calki]]: Conocimiento sobre todo el Cosmere, conocimiento que ignoraba que podría llegar a existir.\n* [[Bokao Nel]]: Darle fabriales y descubrir ciencias de otros mundos.\n* [[Sidoa Damoi]]: Que su partido político coja fama a nivel intergaláctico, convirtiéndose en el primer partido político interplanetario, con partidarios en todos los mundos.\n* [[Yara Elorin|Servena]]: Nadie sabrá la verdad\n* [[Nor Damoi|Nor Damoi]] (En este momento dice su nombre, revelando el nombre a la party): Le promete absolución y que todo el mundo supiera lo que verdaderamente ocurrió con su primo.\n* [[Arluno'ratha'tu]]: Enseñarle nuevas tácticas, nuevas armas para poder defender a todo aquél que lo necesite.\n* [[Valisha]]: Su familia, realmente no mataron a sus padres ni a su hermano, si se une a ellos, le promete que no le harán daño.\nLa propuesta de Valisha la dice lenta, regodeándose y explicándole que lleva pudiendo hacer ese tipo de cosas desde hace un tiempo. En este momento cada uno debe decir si sí o si no, pero Mraize, con una sonrisa, les dice que para que la presión de grupo no les pueda, lo hará cada uno en privado. Antes de que salga les da documentos \"como hospitalidad\" que retratan organizaciones cercanas como los hijos de honor, incluyendo páginas de los propios Sangre Espectral (íncluido su nombre y su foto). Tras decidir, Mraize les deja salir.\n\nCuando vuelven con Adolín le cuentan todo y él les proporciona unas caravanas, que no están marcadas con la casa Kholin porque tienen malos recuerdos de este alto principado, por último les dice que les dará suministros suficientes para el viaje hasta la ciudad pero que a partir de aquí todo tendrá que ser a sus gastos así que deben prepararse bien.\n\nEl camino hacia Rathalas dura 20 días los cuales los personajes pueden aprovechar para abrirse más entre ellos si así lo desean. El viaje va más tranquilo de lo normal, lo único que pueden notar es que, según van pasando los días y, por lo tanto, cuanto más se acercan a Rathalas, hay más carretas abandonadas en el camino. Algunas de las carretas parecen estar abandonadas desde hace un tiempo, pero otras parecen ser más recientes. Todas ellas tienen algo en común: son carros con los colores y glifos de los altos príncipes de Alezkar. Cuando quedan 3 días de viaje, ven a una persona sola, caminando en dirección a la ciudad, cuando les ve, parece que hace como señas para que se acerquen. Aparentemente, no tiene armas, por lo que no parece ser un bandido, aunque tampoco tiene provisiones como para sobrevivir, y menos en el estado en el que está actualmente. Se presenta con el nombre de [[Lorn]], dice que desertó de la ciudad debido a que la Reina bandida fue destituida hace unas semanas. Les dice que estaba con 3 compañeros que dijeron que iban a la ciudad a conseguir provisiones de contrabando para poder ir a otra ciudad pero que hace días que no los ve. Si le preguntan por quién fue destituida la reina les dice que por un portador de esquirlada iriali. Si le preguntan que si hay algo más que sepa y superan una tirada  les dice que no todo el mundo está contento con el nuevo líder. Pasa un día y ven a un grupo de 3 personas saliendo de la ciudad, 2 delante de una que tiene un carro y está tirando de él, a lo que Lorn dice que podrían ser sus compañeros. Si se deciden acercar, empieza el encuentro con los [[Día 5 La Propuesta#Ojos de Palah|ojos de Palah]]. \n\nCuando acaban con ellos, en los cadáveres Lorn ve las pertenencias de sus compañeros, por lo que supone lo peor. Tras otro día de viaje llegan a la ciudad de Rathalas, ven un valle en la que algunas casas están sobre formaciones rocosas y puentes colgantes y abajo del todo una pequeña población con un pequeño muelle en el río.\n\n## Encuentros\n### Ojos de Palah\nx1 [[Jefe del Crimen]]\nx2 [[Ladrón|Ladrones]]\n# Sucesos en la Campaña",
+    "content_admin": "# Historia\nEmpiezan el día en el Chull Gruñón, tienen que ir a Rathalas pero no tienen forma de llegar por lo que tienen que buscar por todos los campamentos de guerra. Mientras hacen la búsqueda [[Valisha]] va a hablar con Adolin. En la reunión Adolin le pregunta por los ojos y por lo que ha pasado desde que no se vieron. Después de que Valisha le cuente todo Adolin le dice que se rumorea que en el campamento del Alto Principe Sadeas hay organizaciones secretas actuando y que él sospecha que son la misma organización. Adolin tiene una idea y le dice a Valisha que le lleve a sus amigos (pero que se quede lejos y que luego llegue ella para que no se den cuenta). Mientras ocurría esto el grupo va preguntando por los mercados si hay alguna carreta dispuesta a llevar a 8 o 9 personas a Rathalas. Cuanto más tiempo pasa más les extraña que hay mucha gente vestida igual que parecen siempre estar a su alrededor que parecen mirarles pero no lo podrían decir con exactitud. Al rato aparece Adolin diciendo que les estaba buscando y preguntando por Valisha a lo que al rato llega y se reune toda la [[Party Principal]]. Adolin les pide un favorcito diciendo que hay una organización que se está intentando esconder y mover los hilos de la política Roshariana para su beneficio. Sabe que una sede importante está en los campamentos de guerra y que es posible que su lider o gente de alto cargo esté en la sede, lo que no sabe dónde está. La misión será infiltrarse en la sede y buscar documentos o cualquier cosa que pueda delatar a los dirigentes de la organización.\n\nEl grupo tiene que buscar alguna forma de conseguir información sobre dónde podría estar a lo que podrían ir al campamento de Sadeas o ir al Rocabrote Rojo a preguntar si alguno sabía dónde se pudiera encontrar. Si van al Rocabrote Rojo (no va a pasar), les dicen que en una callejuela de la zona residencial del campamento de guerra de Sadeas se suele reunir gente con mucha frecuencia, que si bien es una calle sin salida, no parece vérseles después de un tiempo. Si van al campamento de Sadeas, tendrán que ir buscando y preguntando a la gente si han visto algo sospechoso a lo que tras preguntar a un par de personas, le dicen lo mismo que dirían los matones.\n\nUna vez lleguen al callejón verán que, en apariencia, es un callejón normal y corriente, a lo mejor sí parece un poco más deteriorado que los demás pero no se ve nada especial, no hay puertas a ningún sitio, ni ventanas, sólo una pared con un glifoguarda que significa \"Paz\". En realidad este callejón es bastante más grande pero hay un tejido de luz (el muro) tapando parte de este. Cuando atraviesen el muro podrán ver una puerta sin vigilar que está abierta con el logo de los Sangre Espectral pintado en un cartel con varios colores. Aquí empieza la fase de iniltración, en esta fase, todas las tiradas tendrán que ser subiendo la apuesta. Cada éxito de tirada significará que no hacen ruido, cada fallo, será que hacen ruido y que los guardias se acercarán. En caso de que los pillen hay una emboscada en el que les atrapan, si no, van buscando por el lugar tipo Zelda (guardias con conos de vista y cosas así). En la mayoría de habitaciones no parece haber nada, un par de camas con unos cubos metálicos al lado de las camas, una sala de reuniones en otra con un objeto que parece hacer ilusiones como [[Yara Elorin|Yara]] pero planas, otra sala con armas y muñecos pequeños y otra sala con una serie de mapas, en uno pone Roshar, en otro Escadrial, en otro Yolen y en otro pone Sel y debajo de cada mapa un objeto extraño. Tras inspeccionar todo, llegan a un pasillo que no lleva a ninguna parte (ESCALERAS DEL MAPA). Si descubren que es otra ilusión la atraviesan y entran en la sala final dónde hay un escritorio con una silla dada la vuelta, según entran a la habitación, se cierran las puertas (y si no entran todos hay guardias que los empujan dentro) y todas las esferas que tienen en los bolsillos se apagan. Aquí aparece Mraize que se presenta como el líder de la sede Roshariana de los sangre espectral, primero les advierte que, obviamente, decir su nombre a Adolin no iba a surtir ningún efecto ya que tiene infinidad de identidades, al igual que describir su aspecto ya que él también sus propios, secretos, pero que no hacía falta decirles todo eso ya que supone que Valisha ya les ha contado todo. Les cuenta que estuvieron preparando desde niña a Valisha para ser su mejor agente, sin lazos en el exterior de la organización, entrenada para aguantar hasta las peores torturas y combates. Y ahora que tiene lazos exteriores, se tiene que encargar de ellos (empieza a mirarlos a todos). Mraize les promete a cada uno lo que más quiere:\n* [[Dyr Dyu]]: que continue el gran viaje y que su pueblo vaya al siguiente mundo.\n* [[Calki]]: Conocimiento sobre todo el Cosmere, conocimiento que ignoraba que podría llegar a existir.\n* [[Bokao Nel]]: Darle fabriales y descubrir ciencias de otros mundos.\n* [[Sidoa Damoi]]: Que su partido político coja fama a nivel intergaláctico, convirtiéndose en el primer partido político interplanetario, con partidarios en todos los mundos.\n* [[Yara Elorin|Servena]]: Nadie sabrá la verdad\n* [[Nor Damoi|Nor Damoi]] (En este momento dice su nombre, revelando el nombre a la party): Le promete absolución y que todo el mundo supiera lo que verdaderamente ocurrió con su primo.\n* [[Arluno'ratha'tu]]: Enseñarle nuevas tácticas, nuevas armas para poder defender a todo aquél que lo necesite.\n* [[Valisha]]: Su familia, realmente no mataron a sus padres ni a su hermano, si se une a ellos, le promete que no le harán daño.\nLa propuesta de Valisha la dice lenta, regodeándose y explicándole que lleva pudiendo hacer ese tipo de cosas desde hace un tiempo. En este momento cada uno debe decir si sí o si no, pero Mraize, con una sonrisa, les dice que para que la presión de grupo no les pueda, lo hará cada uno en privado. Antes de que salga les da documentos \"como hospitalidad\" que retratan organizaciones cercanas como los hijos de honor, incluyendo páginas de los propios Sangre Espectral (íncluido su nombre y su foto). Tras decidir, Mraize les deja salir.\n\nCuando vuelven con Adolín le cuentan todo y él les proporciona unas caravanas, que no están marcadas con la casa Kholin porque tienen malos recuerdos de este alto principado, por último les dice que les dará suministros suficientes para el viaje hasta la ciudad pero que a partir de aquí todo tendrá que ser a sus gastos así que deben prepararse bien.\n\nEl camino hacia Rathalas dura 20 días los cuales los personajes pueden aprovechar para abrirse más entre ellos si así lo desean. El viaje va más tranquilo de lo normal, lo único que pueden notar es que, según van pasando los días y, por lo tanto, cuanto más se acercan a Rathalas, hay más carretas abandonadas en el camino. Algunas de las carretas parecen estar abandonadas desde hace un tiempo, pero otras parecen ser más recientes. Todas ellas tienen algo en común: son carros con los colores y glifos de los altos príncipes de Alezkar. Cuando quedan 3 días de viaje, ven a una persona sola, caminando en dirección a la ciudad, cuando les ve, parece que hace como señas para que se acerquen. Aparentemente, no tiene armas, por lo que no parece ser un bandido, aunque tampoco tiene provisiones como para sobrevivir, y menos en el estado en el que está actualmente. Se presenta con el nombre de [[Lorn]], dice que desertó de la ciudad debido a que la Reina bandida fue destituida hace unas semanas. Les dice que estaba con 3 compañeros que dijeron que iban a la ciudad a conseguir provisiones de contrabando para poder ir a otra ciudad pero que hace días que no los ve. Si le preguntan por quién fue destituida la reina les dice que por un portador de esquirlada iriali. Si le preguntan que si hay algo más que sepa y superan una tirada <dm-section>CD 12</dm-section> les dice que no todo el mundo está contento con el nuevo líder. Pasa un día y ven a un grupo de 3 personas saliendo de la ciudad, 2 delante de una que tiene un carro y está tirando de él, a lo que Lorn dice que podrían ser sus compañeros. Si se deciden acercar, empieza el encuentro con los [[Día 5 La Propuesta#Ojos de Palah|ojos de Palah]]. \n\nCuando acaban con ellos, en los cadáveres Lorn ve las pertenencias de sus compañeros, por lo que supone lo peor. Tras otro día de viaje llegan a la ciudad de Rathalas, ven un valle en la que algunas casas están sobre formaciones rocosas y puentes colgantes y abajo del todo una pequeña población con un pequeño muelle en el río.\n\n## Encuentros\n### Ojos de Palah\nx1 [[Jefe del Crimen]]\nx2 [[Ladrón|Ladrones]]\n# Sucesos en Rol\nEmpezando en el Chull Gruñón, [[Valisha]] por la noche se escapa para ir a hablar con [[Adolin]] sobre la situación de los [[Sangre Espectral]] a lo que él dice que tiene un plan para que sus compañeros la ayuden sin que se den cuenta de que la están ayudando y así no tiene que contar nada. Al día siguiente parte de la party se encuentran \"casualmente\" con Adolin que les pide si le podrían ayudar con una organización que se está inmiscuyendo en la política y que él no tiene tiempo para encargarse de ello. A cambio de esta ayuda, él les proporcionaría una carreta. Mientras esto ocurría la otra mitad de la party volvieron al Rocabrote Rojo a anunciar que [[Sidoa Damoi]] era el líder del partido político PSOA. El grupo se reencuentra en la taberna no sin antes haber tenido una cita doble [[Valisha]], [[Calki]], [[Liss]] y [[Yara Elorin]]. Cuando se reencuentran pueden ver a gente con muchos brazaletes y anillos intentando escuchar de qué hablan, cuando intentan hablar con ellos, el grupo se siente muy calmado y sin ganas de bronca. En la conversación las personas con anillos les recomiendan ir a la calle \"Tu Puta Madre\" que ahí encontrarían algo. \n\nAl ir a esa calle vieron que tenía un muro falso tras el cual había una puerta abierta. Fueron investigando poco a poco las habitaciones hasta que se encontraron una con algo que mediante luz mostraba imágenes y con unos mapas con nombres extraños. Cuando todos estuvieron en la sala, se cerró la puerta y dentro estaba [[Mraize]] líder de la cepa de Roshar, que les ofreció un trato a cada uno, unirse a cambio de algo que ansiaban y como muestra de buena fe les dió documentos sobre las personas que estaban en la organización y sedes de la misma. Al salir tras la propuesta [[Liss]] les dijo a los personajes si habían aceptado y todos respondieron que no excepto [[Calki]] que dijo que sí. Los personajes, cabreados le contaron todo a Adolin que les volvió a hacer la pregunta a lo que respondieron igual. Calki, para justificarse dijo que iba a jugar a dos bandas, a lo que Valisha le dijo que no sabían lo que habían dicho los demás, por lo que si alguien más había dicho que sí, estaba muerto. Tras un juicio, declararon que no lo matarían porque les podría ser útil en un futuro pero que lo mantendrían vigilado. Adolin, al ya no confiar en ellos les quita el permiso de entrar en los campamentos de guerra y el favor de Dalinar, aunque como había prometido les da unos carros para ir a Rathalas.\n\nA unos días de llegar se encuentran con una persona desnutrida que les pone al día con lo sucedido en Rathalas y les dice que está esperando a unos compañeros. Al día siguiente la party se encuentra con los supuestos compañeros con muchos esclavos, al ver esa escena [[Sidoa Damoi]] jura el primer ideal, liberando a los esclavos. Lo último que ven este día es la ciudad quemada a lo lejos",
+    "content_player": "# Historia\nEmpiezan el día en el Chull Gruñón, tienen que ir a Rathalas pero no tienen forma de llegar por lo que tienen que buscar por todos los campamentos de guerra. Mientras hacen la búsqueda [[Valisha]] va a hablar con Adolin. En la reunión Adolin le pregunta por los ojos y por lo que ha pasado desde que no se vieron. Después de que Valisha le cuente todo Adolin le dice que se rumorea que en el campamento del Alto Principe Sadeas hay organizaciones secretas actuando y que él sospecha que son la misma organización. Adolin tiene una idea y le dice a Valisha que le lleve a sus amigos (pero que se quede lejos y que luego llegue ella para que no se den cuenta). Mientras ocurría esto el grupo va preguntando por los mercados si hay alguna carreta dispuesta a llevar a 8 o 9 personas a Rathalas. Cuanto más tiempo pasa más les extraña que hay mucha gente vestida igual que parecen siempre estar a su alrededor que parecen mirarles pero no lo podrían decir con exactitud. Al rato aparece Adolin diciendo que les estaba buscando y preguntando por Valisha a lo que al rato llega y se reune toda la [[Party Principal]]. Adolin les pide un favorcito diciendo que hay una organización que se está intentando esconder y mover los hilos de la política Roshariana para su beneficio. Sabe que una sede importante está en los campamentos de guerra y que es posible que su lider o gente de alto cargo esté en la sede, lo que no sabe dónde está. La misión será infiltrarse en la sede y buscar documentos o cualquier cosa que pueda delatar a los dirigentes de la organización.\n\nEl grupo tiene que buscar alguna forma de conseguir información sobre dónde podría estar a lo que podrían ir al campamento de Sadeas o ir al Rocabrote Rojo a preguntar si alguno sabía dónde se pudiera encontrar. Si van al Rocabrote Rojo (no va a pasar), les dicen que en una callejuela de la zona residencial del campamento de guerra de Sadeas se suele reunir gente con mucha frecuencia, que si bien es una calle sin salida, no parece vérseles después de un tiempo. Si van al campamento de Sadeas, tendrán que ir buscando y preguntando a la gente si han visto algo sospechoso a lo que tras preguntar a un par de personas, le dicen lo mismo que dirían los matones.\n\nUna vez lleguen al callejón verán que, en apariencia, es un callejón normal y corriente, a lo mejor sí parece un poco más deteriorado que los demás pero no se ve nada especial, no hay puertas a ningún sitio, ni ventanas, sólo una pared con un glifoguarda que significa \"Paz\". En realidad este callejón es bastante más grande pero hay un tejido de luz (el muro) tapando parte de este. Cuando atraviesen el muro podrán ver una puerta sin vigilar que está abierta con el logo de los Sangre Espectral pintado en un cartel con varios colores. Aquí empieza la fase de iniltración, en esta fase, todas las tiradas tendrán que ser subiendo la apuesta. Cada éxito de tirada significará que no hacen ruido, cada fallo, será que hacen ruido y que los guardias se acercarán. En caso de que los pillen hay una emboscada en el que les atrapan, si no, van buscando por el lugar tipo Zelda (guardias con conos de vista y cosas así). En la mayoría de habitaciones no parece haber nada, un par de camas con unos cubos metálicos al lado de las camas, una sala de reuniones en otra con un objeto que parece hacer ilusiones como [[Yara Elorin|Yara]] pero planas, otra sala con armas y muñecos pequeños y otra sala con una serie de mapas, en uno pone Roshar, en otro Escadrial, en otro Yolen y en otro pone Sel y debajo de cada mapa un objeto extraño. Tras inspeccionar todo, llegan a un pasillo que no lleva a ninguna parte (ESCALERAS DEL MAPA). Si descubren que es otra ilusión la atraviesan y entran en la sala final dónde hay un escritorio con una silla dada la vuelta, según entran a la habitación, se cierran las puertas (y si no entran todos hay guardias que los empujan dentro) y todas las esferas que tienen en los bolsillos se apagan. Aquí aparece Mraize que se presenta como el líder de la sede Roshariana de los sangre espectral, primero les advierte que, obviamente, decir su nombre a Adolin no iba a surtir ningún efecto ya que tiene infinidad de identidades, al igual que describir su aspecto ya que él también sus propios, secretos, pero que no hacía falta decirles todo eso ya que supone que Valisha ya les ha contado todo. Les cuenta que estuvieron preparando desde niña a Valisha para ser su mejor agente, sin lazos en el exterior de la organización, entrenada para aguantar hasta las peores torturas y combates. Y ahora que tiene lazos exteriores, se tiene que encargar de ellos (empieza a mirarlos a todos). Mraize les promete a cada uno lo que más quiere:\n* [[Dyr Dyu]]: que continue el gran viaje y que su pueblo vaya al siguiente mundo.\n* [[Calki]]: Conocimiento sobre todo el Cosmere, conocimiento que ignoraba que podría llegar a existir.\n* [[Bokao Nel]]: Darle fabriales y descubrir ciencias de otros mundos.\n* [[Sidoa Damoi]]: Que su partido político coja fama a nivel intergaláctico, convirtiéndose en el primer partido político interplanetario, con partidarios en todos los mundos.\n* [[Yara Elorin|Servena]]: Nadie sabrá la verdad\n* [[Nor Damoi|Nor Damoi]] (En este momento dice su nombre, revelando el nombre a la party): Le promete absolución y que todo el mundo supiera lo que verdaderamente ocurrió con su primo.\n* [[Arluno'ratha'tu]]: Enseñarle nuevas tácticas, nuevas armas para poder defender a todo aquél que lo necesite.\n* [[Valisha]]: Su familia, realmente no mataron a sus padres ni a su hermano, si se une a ellos, le promete que no le harán daño.\nLa propuesta de Valisha la dice lenta, regodeándose y explicándole que lleva pudiendo hacer ese tipo de cosas desde hace un tiempo. En este momento cada uno debe decir si sí o si no, pero Mraize, con una sonrisa, les dice que para que la presión de grupo no les pueda, lo hará cada uno en privado. Antes de que salga les da documentos \"como hospitalidad\" que retratan organizaciones cercanas como los hijos de honor, incluyendo páginas de los propios Sangre Espectral (íncluido su nombre y su foto). Tras decidir, Mraize les deja salir.\n\nCuando vuelven con Adolín le cuentan todo y él les proporciona unas caravanas, que no están marcadas con la casa Kholin porque tienen malos recuerdos de este alto principado, por último les dice que les dará suministros suficientes para el viaje hasta la ciudad pero que a partir de aquí todo tendrá que ser a sus gastos así que deben prepararse bien.\n\nEl camino hacia Rathalas dura 20 días los cuales los personajes pueden aprovechar para abrirse más entre ellos si así lo desean. El viaje va más tranquilo de lo normal, lo único que pueden notar es que, según van pasando los días y, por lo tanto, cuanto más se acercan a Rathalas, hay más carretas abandonadas en el camino. Algunas de las carretas parecen estar abandonadas desde hace un tiempo, pero otras parecen ser más recientes. Todas ellas tienen algo en común: son carros con los colores y glifos de los altos príncipes de Alezkar. Cuando quedan 3 días de viaje, ven a una persona sola, caminando en dirección a la ciudad, cuando les ve, parece que hace como señas para que se acerquen. Aparentemente, no tiene armas, por lo que no parece ser un bandido, aunque tampoco tiene provisiones como para sobrevivir, y menos en el estado en el que está actualmente. Se presenta con el nombre de [[Lorn]], dice que desertó de la ciudad debido a que la Reina bandida fue destituida hace unas semanas. Les dice que estaba con 3 compañeros que dijeron que iban a la ciudad a conseguir provisiones de contrabando para poder ir a otra ciudad pero que hace días que no los ve. Si le preguntan por quién fue destituida la reina les dice que por un portador de esquirlada iriali. Si le preguntan que si hay algo más que sepa y superan una tirada  les dice que no todo el mundo está contento con el nuevo líder. Pasa un día y ven a un grupo de 3 personas saliendo de la ciudad, 2 delante de una que tiene un carro y está tirando de él, a lo que Lorn dice que podrían ser sus compañeros. Si se deciden acercar, empieza el encuentro con los [[Día 5 La Propuesta#Ojos de Palah|ojos de Palah]]. \n\nCuando acaban con ellos, en los cadáveres Lorn ve las pertenencias de sus compañeros, por lo que supone lo peor. Tras otro día de viaje llegan a la ciudad de Rathalas, ven un valle en la que algunas casas están sobre formaciones rocosas y puentes colgantes y abajo del todo una pequeña población con un pequeño muelle en el río.\n\n## Encuentros\n### Ojos de Palah\nx1 [[Jefe del Crimen]]\nx2 [[Ladrón|Ladrones]]\n# Sucesos en Rol\nEmpezando en el Chull Gruñón, [[Valisha]] por la noche se escapa para ir a hablar con [[Adolin]] sobre la situación de los [[Sangre Espectral]] a lo que él dice que tiene un plan para que sus compañeros la ayuden sin que se den cuenta de que la están ayudando y así no tiene que contar nada. Al día siguiente parte de la party se encuentran \"casualmente\" con Adolin que les pide si le podrían ayudar con una organización que se está inmiscuyendo en la política y que él no tiene tiempo para encargarse de ello. A cambio de esta ayuda, él les proporcionaría una carreta. Mientras esto ocurría la otra mitad de la party volvieron al Rocabrote Rojo a anunciar que [[Sidoa Damoi]] era el líder del partido político PSOA. El grupo se reencuentra en la taberna no sin antes haber tenido una cita doble [[Valisha]], [[Calki]], [[Liss]] y [[Yara Elorin]]. Cuando se reencuentran pueden ver a gente con muchos brazaletes y anillos intentando escuchar de qué hablan, cuando intentan hablar con ellos, el grupo se siente muy calmado y sin ganas de bronca. En la conversación las personas con anillos les recomiendan ir a la calle \"Tu Puta Madre\" que ahí encontrarían algo. \n\nAl ir a esa calle vieron que tenía un muro falso tras el cual había una puerta abierta. Fueron investigando poco a poco las habitaciones hasta que se encontraron una con algo que mediante luz mostraba imágenes y con unos mapas con nombres extraños. Cuando todos estuvieron en la sala, se cerró la puerta y dentro estaba [[Mraize]] líder de la cepa de Roshar, que les ofreció un trato a cada uno, unirse a cambio de algo que ansiaban y como muestra de buena fe les dió documentos sobre las personas que estaban en la organización y sedes de la misma. Al salir tras la propuesta [[Liss]] les dijo a los personajes si habían aceptado y todos respondieron que no excepto [[Calki]] que dijo que sí. Los personajes, cabreados le contaron todo a Adolin que les volvió a hacer la pregunta a lo que respondieron igual. Calki, para justificarse dijo que iba a jugar a dos bandas, a lo que Valisha le dijo que no sabían lo que habían dicho los demás, por lo que si alguien más había dicho que sí, estaba muerto. Tras un juicio, declararon que no lo matarían porque les podría ser útil en un futuro pero que lo mantendrían vigilado. Adolin, al ya no confiar en ellos les quita el permiso de entrar en los campamentos de guerra y el favor de Dalinar, aunque como había prometido les da unos carros para ir a Rathalas.\n\nA unos días de llegar se encuentran con una persona desnutrida que les pone al día con lo sucedido en Rathalas y les dice que está esperando a unos compañeros. Al día siguiente la party se encuentra con los supuestos compañeros con muchos esclavos, al ver esa escena [[Sidoa Damoi]] jura el primer ideal, liberando a los esclavos. Lo último que ven este día es la ciudad quemada a lo lejos",
     "frontmatter": {
-      "title": "Día 4 La Propuesta",
-      "visibility": "private",
+      "title": "Día 5 La Propuesta",
+      "visibility": "public",
       "spoilers": true
     }
   },
@@ -2075,10 +2500,14 @@
       {
         "target": "Día 3 La Radiancia#Encuentro con los parshendi",
         "text": "encuentro con los parshendi"
+      },
+      {
+        "target": "Perrodracos gemelos (Arma Ambessa)",
+        "text": "perrodracos gemelos"
       }
     ],
-    "content_admin": "# Historia\nEl convoy de carretas les deja en el campamento de guerra de los Kholin, lo primero que se encuentran son unas casas dónde se encuentra el Chull Gruñón, Bordín se ofrece a escoltarlos hasta el complejo de los Kholin y conseguirles una reunión con el Alto Príncipe. En el camino hacia el complejo pueden ver distintos distritos, uno que parece ser un mercado dónde todo tipo de gente está comprando, unos talleres a los que solo se acercan gente que parecen artefabrianos, otro de talleres de construcción de aparatos de guerra y otras cosas varias como carretas, otro de atención médica y a lo lejos, el devotario de la mente dónde suponen que e llevan a Taln. En el camino por los callejones, que están vacíos empieza a escuchar que le llaman pero no por su nombre, sino por el nombre Servana y ve figuras extrañas, como personas con túnicas largas hasta el suelo y con la cara deformada. Cuando llegan al complejo central de los Kholin pueden notar que todo el mundo (incluido en el camino) estaban demasiado organizados (todos de uniforme, preparados para la guerra y sin ningún borracho aparentemente). La puerta dónde se encuentra Dalinar está custodiada por dos personas de uniforme: un joven ojos claros de pelo largo con una marca de peligroso en la frente y un hombre mayor ojos oscuros con un tatuaje extraño en la frente, ambos con lanzas y con un símbolo raro en la chaqueta que no es el de los Kholin, les pillan hablando sobre que el joven debería decirselo a Dalinar pero él se niega. Tras una conversación dónde les pregunta que qué hacen aquí, uno de los dos entra y le avisa a Dalinar. \n\nDalinar les agradece la información de Ralanat y les dice que intenten seguir los códigos de guerra mientras estén en su campamento. Les dice que tengan cuidado, el mundo está cambiando con la información nueva que se tiene de los caballeros radiantes y los portadores del vacío nada va a ser igual. Si los personajes se interesan Dalinar les cuenta que se ha descubierto que la supuesta traición de los caballeros radiantes no había sido porque sí, que hay pruebas fervientes de que abandonaron sus juramentos por un motivo que hemos perdido por culpa de la Hierrocracia. Si los personajes dudan Dalinar apela al sentido común, gente con grandes armas y grandes poderes se deshacen de todo y además no son unos cuantos sino absolutamente todos los radiantes, no tiene sentido. Tanto si se interesan como si no, Dalinar les dice que les puede ayudar con su misión si ellos le ayudan a él. Han encontrado unas ruinas antiguas de las llanuras quebradas, en uno de los abismos. Esta expedición fue financiada por Shansan, una erudita ojos claros pero necesita más personal.\n\nEn la expedición Shansan empieza a hablarles de los caballeros radiantes y les enseña Palabras Radiantes, un libro en el que se habla de los caballeros radiantes, si ellos les mencionan/ enseñan el glifo ella dice que es una versión arcaica del glifo Palah el cual representa a los vigilantes de la verdad. Tras pasar varias veces por encima de los abismos gracias a los puentes (en cada uno de ellos escuchaban como unos rasguños de fondo) aparece un abismoide que rompe el puente. Se caen al abismo y el abismoide les ataca (estoy escribiendo esto antes de la sesión y no sé si están leyendo esto pero por favor huyan). En este momento se ve a una persona a punto de ser aplastada por el abismoide a lo que el viento le dice a Taburete que la salve, si Taburete sigue las indicaciones jura el primer ideal y enlaza al abismoide a la pared lo que les da tiempo de huir, si no lo sigue el abismoide aplasta a la persona pero a la vista le faltan un par de piernas por lo que no es muy rápido y se refugian en una parte dónde parece que no cabe. \n\nShansan les dice que no deberían estar muy lejos de las ruinas que deberían girar al noroeste y caminar media hora y estar ahí. Cuando llegan ven un gran santuario medio enterrado en las paredes de los abismos, desde fuera se puede apreciar que tiene dos pisos a lo que Shansan dice que quiero investigar los dos pisos. Cuando entran no hay suficiente luz como para ver bien pero notan que está todo derrumbando, con columnas partidas a la mitad y paredes y suelo agrietados, si investigan verán el símbolo de los dos ojos del todopoderoso en el suelo  (antiguo símbolo de los caballeros radiantes). En las paredes se pueden ver mosaicos de una mujer que parecen contar una historia (primero mujer labrando la tierra, luego parshmenios atacando la aldea con la chica de fondo, luego la chica con una figura negra pequeña, luego la chica peleando contra los parshmenios) según acaban de ver los murales ven unas escaleras medio derrumbadas hasta el segundo piso. <dm-section>CD 10 de atletics para subir sin pisar los huevos de unos cremlinos, si no la superan un D4 de daño de la mordedura de un cremlino</dm-section>\n\nEn el segundo piso hay una estatua de un caballero radiante con armadura y espada esquirlada, con un mural de fondo de la mujer de los murales de abajo con la armadura y la espada peleando (la estatua es ella). La estatua está sobre un cajón que parece que se puede abrir pero no a la fuerza. En ese cajón hay grabados símbolos de las órdenes de caballeros radiantes. Durante toda la estancia Yara ha ido escuchando cada vez más susurros y figuras altas con túnicas en el rabillo del ojo, en este momento esas voces le empiezan a atormentar. Yara hace el primer juramento y parte de su luz la absorbe el cajón que se abre revelando un moldeador de almas y un pasadizo se abre. Si inspeccionan más la sala se podrán encontrar una gema rara (gema para fabriales). Cuando salen si salen por el camino que estaba desde el principio ocurre el [[Día 3 La Radiancia#Encuentro con los parshendi|encuentro con los parshendi]] pero sorprendidos, si salen por el pasadizo pues ocurre el encuentro sin ser sorprendidos. Después de eso vuelven a los campamentos de guerra y reportan los resultados a Dalinar, si el grupo les da el moldeador de alma Dalinar les da un papel que pone que este grupo tiene el beneplácito de Dalinar Kholin y sus aliados. Si no se los dan, Dalinar les agradece haber acompañado a Shansan y les dice que le ayudará en todo lo que pueda sin aumentar sospechas ya que últimamente no hay mucha confianza en su persona.\n## Encuentros\n### Encuentro con los parshendi\nEs una expedición de 2 en forma de guerra y 3 en forma diestra. El líder les dice que entreguen todo lo que encontraron con una voz que no demuestra expresión pero con una cadencia intensa y rítmica casi cantando. Pueden o convencerles o luchar (Yo sé que van a luchar)\n\n## Sucesos en la campaña",
-    "content_player": "# Historia\nEl convoy de carretas les deja en el campamento de guerra de los Kholin, lo primero que se encuentran son unas casas dónde se encuentra el Chull Gruñón, Bordín se ofrece a escoltarlos hasta el complejo de los Kholin y conseguirles una reunión con el Alto Príncipe. En el camino hacia el complejo pueden ver distintos distritos, uno que parece ser un mercado dónde todo tipo de gente está comprando, unos talleres a los que solo se acercan gente que parecen artefabrianos, otro de talleres de construcción de aparatos de guerra y otras cosas varias como carretas, otro de atención médica y a lo lejos, el devotario de la mente dónde suponen que e llevan a Taln. En el camino por los callejones, que están vacíos empieza a escuchar que le llaman pero no por su nombre, sino por el nombre Servana y ve figuras extrañas, como personas con túnicas largas hasta el suelo y con la cara deformada. Cuando llegan al complejo central de los Kholin pueden notar que todo el mundo (incluido en el camino) estaban demasiado organizados (todos de uniforme, preparados para la guerra y sin ningún borracho aparentemente). La puerta dónde se encuentra Dalinar está custodiada por dos personas de uniforme: un joven ojos claros de pelo largo con una marca de peligroso en la frente y un hombre mayor ojos oscuros con un tatuaje extraño en la frente, ambos con lanzas y con un símbolo raro en la chaqueta que no es el de los Kholin, les pillan hablando sobre que el joven debería decirselo a Dalinar pero él se niega. Tras una conversación dónde les pregunta que qué hacen aquí, uno de los dos entra y le avisa a Dalinar. \n\nDalinar les agradece la información de Ralanat y les dice que intenten seguir los códigos de guerra mientras estén en su campamento. Les dice que tengan cuidado, el mundo está cambiando con la información nueva que se tiene de los caballeros radiantes y los portadores del vacío nada va a ser igual. Si los personajes se interesan Dalinar les cuenta que se ha descubierto que la supuesta traición de los caballeros radiantes no había sido porque sí, que hay pruebas fervientes de que abandonaron sus juramentos por un motivo que hemos perdido por culpa de la Hierrocracia. Si los personajes dudan Dalinar apela al sentido común, gente con grandes armas y grandes poderes se deshacen de todo y además no son unos cuantos sino absolutamente todos los radiantes, no tiene sentido. Tanto si se interesan como si no, Dalinar les dice que les puede ayudar con su misión si ellos le ayudan a él. Han encontrado unas ruinas antiguas de las llanuras quebradas, en uno de los abismos. Esta expedición fue financiada por Shansan, una erudita ojos claros pero necesita más personal.\n\nEn la expedición Shansan empieza a hablarles de los caballeros radiantes y les enseña Palabras Radiantes, un libro en el que se habla de los caballeros radiantes, si ellos les mencionan/ enseñan el glifo ella dice que es una versión arcaica del glifo Palah el cual representa a los vigilantes de la verdad. Tras pasar varias veces por encima de los abismos gracias a los puentes (en cada uno de ellos escuchaban como unos rasguños de fondo) aparece un abismoide que rompe el puente. Se caen al abismo y el abismoide les ataca (estoy escribiendo esto antes de la sesión y no sé si están leyendo esto pero por favor huyan). En este momento se ve a una persona a punto de ser aplastada por el abismoide a lo que el viento le dice a Taburete que la salve, si Taburete sigue las indicaciones jura el primer ideal y enlaza al abismoide a la pared lo que les da tiempo de huir, si no lo sigue el abismoide aplasta a la persona pero a la vista le faltan un par de piernas por lo que no es muy rápido y se refugian en una parte dónde parece que no cabe. \n\nShansan les dice que no deberían estar muy lejos de las ruinas que deberían girar al noroeste y caminar media hora y estar ahí. Cuando llegan ven un gran santuario medio enterrado en las paredes de los abismos, desde fuera se puede apreciar que tiene dos pisos a lo que Shansan dice que quiero investigar los dos pisos. Cuando entran no hay suficiente luz como para ver bien pero notan que está todo derrumbando, con columnas partidas a la mitad y paredes y suelo agrietados, si investigan verán el símbolo de los dos ojos del todopoderoso en el suelo  (antiguo símbolo de los caballeros radiantes). En las paredes se pueden ver mosaicos de una mujer que parecen contar una historia (primero mujer labrando la tierra, luego parshmenios atacando la aldea con la chica de fondo, luego la chica con una figura negra pequeña, luego la chica peleando contra los parshmenios) según acaban de ver los murales ven unas escaleras medio derrumbadas hasta el segundo piso. \n\nEn el segundo piso hay una estatua de un caballero radiante con armadura y espada esquirlada, con un mural de fondo de la mujer de los murales de abajo con la armadura y la espada peleando (la estatua es ella). La estatua está sobre un cajón que parece que se puede abrir pero no a la fuerza. En ese cajón hay grabados símbolos de las órdenes de caballeros radiantes. Durante toda la estancia Yara ha ido escuchando cada vez más susurros y figuras altas con túnicas en el rabillo del ojo, en este momento esas voces le empiezan a atormentar. Yara hace el primer juramento y parte de su luz la absorbe el cajón que se abre revelando un moldeador de almas y un pasadizo se abre. Si inspeccionan más la sala se podrán encontrar una gema rara (gema para fabriales). Cuando salen si salen por el camino que estaba desde el principio ocurre el [[Día 3 La Radiancia#Encuentro con los parshendi|encuentro con los parshendi]] pero sorprendidos, si salen por el pasadizo pues ocurre el encuentro sin ser sorprendidos. Después de eso vuelven a los campamentos de guerra y reportan los resultados a Dalinar, si el grupo les da el moldeador de alma Dalinar les da un papel que pone que este grupo tiene el beneplácito de Dalinar Kholin y sus aliados. Si no se los dan, Dalinar les agradece haber acompañado a Shansan y les dice que le ayudará en todo lo que pueda sin aumentar sospechas ya que últimamente no hay mucha confianza en su persona.\n## Encuentros\n### Encuentro con los parshendi\nEs una expedición de 2 en forma de guerra y 3 en forma diestra. El líder les dice que entreguen todo lo que encontraron con una voz que no demuestra expresión pero con una cadencia intensa y rítmica casi cantando. Pueden o convencerles o luchar (Yo sé que van a luchar)\n\n## Sucesos en la campaña",
+    "content_admin": "# Historia\nEl convoy de carretas les deja en el campamento de guerra de los Kholin, lo primero que se encuentran son unas casas dónde se encuentra el Chull Gruñón, Bordín se ofrece a escoltarlos hasta el complejo de los Kholin y conseguirles una reunión con el Alto Príncipe. En el camino hacia el complejo pueden ver distintos distritos, uno que parece ser un mercado dónde todo tipo de gente está comprando, unos talleres a los que solo se acercan gente que parecen artefabrianos, otro de talleres de construcción de aparatos de guerra y otras cosas varias como carretas, otro de atención médica y a lo lejos, el devotario de la mente dónde suponen que e llevan a Taln. En el camino por los callejones, que están vacíos empieza a escuchar que le llaman pero no por su nombre, sino por el nombre Servana y ve figuras extrañas, como personas con túnicas largas hasta el suelo y con la cara deformada. Cuando llegan al complejo central de los Kholin pueden notar que todo el mundo (incluido en el camino) estaban demasiado organizados (todos de uniforme, preparados para la guerra y sin ningún borracho aparentemente). La puerta dónde se encuentra Dalinar está custodiada por dos personas de uniforme: un joven ojos claros de pelo largo con una marca de peligroso en la frente y un hombre mayor ojos oscuros con un tatuaje extraño en la frente, ambos con lanzas y con un símbolo raro en la chaqueta que no es el de los Kholin, les pillan hablando sobre que el joven debería decirselo a Dalinar pero él se niega. Tras una conversación dónde les pregunta que qué hacen aquí, uno de los dos entra y le avisa a Dalinar. \n\nDalinar les agradece la información de Ralanat y les dice que intenten seguir los códigos de guerra mientras estén en su campamento. Les dice que tengan cuidado, el mundo está cambiando con la información nueva que se tiene de los caballeros radiantes y los portadores del vacío nada va a ser igual. Si los personajes se interesan Dalinar les cuenta que se ha descubierto que la supuesta traición de los caballeros radiantes no había sido porque sí, que hay pruebas fervientes de que abandonaron sus juramentos por un motivo que hemos perdido por culpa de la Hierrocracia. Si los personajes dudan Dalinar apela al sentido común, gente con grandes armas y grandes poderes se deshacen de todo y además no son unos cuantos sino absolutamente todos los radiantes, no tiene sentido. Tanto si se interesan como si no, Dalinar les dice que les puede ayudar con su misión si ellos le ayudan a él. Han encontrado unas ruinas antiguas de las llanuras quebradas, en uno de los abismos. Esta expedición fue financiada por Shansan, una erudita ojos claros pero necesita más personal.\n\nEn la expedición Shansan empieza a hablarles de los caballeros radiantes y les enseña Palabras Radiantes, un libro en el que se habla de los caballeros radiantes, si ellos les mencionan/ enseñan el glifo ella dice que es una versión arcaica del glifo Palah el cual representa a los vigilantes de la verdad. Tras pasar varias veces por encima de los abismos gracias a los puentes (en cada uno de ellos escuchaban como unos rasguños de fondo) aparece un abismoide que rompe el puente. Se caen al abismo y el abismoide les ataca (estoy escribiendo esto antes de la sesión y no sé si están leyendo esto pero por favor huyan). En este momento se ve a una persona a punto de ser aplastada por el abismoide a lo que el viento le dice a Taburete que la salve, si Taburete sigue las indicaciones jura el primer ideal y enlaza al abismoide a la pared lo que les da tiempo de huir, si no lo sigue el abismoide aplasta a la persona pero a la vista le faltan un par de piernas por lo que no es muy rápido y se refugian en una parte dónde parece que no cabe. \n\nShansan les dice que no deberían estar muy lejos de las ruinas que deberían girar al noroeste y caminar media hora y estar ahí. Cuando llegan ven un gran santuario medio enterrado en las paredes de los abismos, desde fuera se puede apreciar que tiene dos pisos a lo que Shansan dice que quiero investigar los dos pisos. Cuando entran no hay suficiente luz como para ver bien pero notan que está todo derrumbando, con columnas partidas a la mitad y paredes y suelo agrietados, si investigan verán el símbolo de los dos ojos del todopoderoso en el suelo  (antiguo símbolo de los caballeros radiantes). En las paredes se pueden ver mosaicos de una mujer que parecen contar una historia (primero mujer labrando la tierra, luego parshmenios atacando la aldea con la chica de fondo, luego la chica con una figura negra pequeña, luego la chica peleando contra los parshmenios) según acaban de ver los murales ven unas escaleras medio derrumbadas hasta el segundo piso. <dm-section>CD 10 de atletics para subir sin pisar los huevos de unos cremlinos, si no la superan un D4 de daño de la mordedura de un cremlino</dm-section>\n\nEn el segundo piso hay una estatua de un caballero radiante con armadura y espada esquirlada, con un mural de fondo de la mujer de los murales de abajo con la armadura y la espada peleando (la estatua es ella). La estatua está sobre un cajón que parece que se puede abrir pero no a la fuerza. En ese cajón hay grabados símbolos de las órdenes de caballeros radiantes. Durante toda la estancia Yara ha ido escuchando cada vez más susurros y figuras altas con túnicas en el rabillo del ojo, en este momento esas voces le empiezan a atormentar. Yara hace el primer juramento y parte de su luz la absorbe el cajón que se abre revelando un moldeador de almas y un pasadizo se abre. Si inspeccionan más la sala se podrán encontrar una gema rara (gema para fabriales). Cuando salen si salen por el camino que estaba desde el principio ocurre el [[Día 3 La Radiancia#Encuentro con los parshendi|encuentro con los parshendi]] pero sorprendidos, si salen por el pasadizo pues ocurre el encuentro sin ser sorprendidos. Después de eso vuelven a los campamentos de guerra y reportan los resultados a Dalinar, si el grupo les da el moldeador de alma Dalinar les da un papel que pone que este grupo tiene el beneplácito de Dalinar Kholin y sus aliados. Si no se los dan, Dalinar les agradece haber acompañado a Shansan y les dice que le ayudará en todo lo que pueda sin aumentar sospechas ya que últimamente no hay mucha confianza en su persona.\n## Encuentros\n### Encuentro con los parshendi\nEs una expedición de 2 en forma de guerra y 3 en forma diestra. El líder les dice que entreguen todo lo que encontraron con una voz que no demuestra expresión pero con una cadencia intensa y rítmica casi cantando. Pueden o convencerles o luchar (Yo sé que van a luchar)\n\n## Sucesos en Rol\nAl llegar a las llanuras quebradas, la party principal va al Chull Gruñón dónde la posadera les dice que invita la casa la estancia en los días que permanezcan en el campamento de guerra. Después de pasar la noche Bordín les dice que ha arrendado una reunión con Dalinar por la tarde por lo que tenían toda la mañana para hacer compras. \nSidoa fue a comprar chouta y consiguió que el dueño del local se uniese al partido político. Bokao y Yara fueron al devotario ya que Yara quería ayuda con lo que estaba viendo a lo que un fervoroso le dijo que si quemaba una glifoguarda valía para quitarlo. Por otra parte Valisha, Dyr y Taburete fueron a comprar, respectivamente, sus [[Perrodracos gemelos (Arma Ambessa)|perrodracos gemelos]], suministros y una coraza. Calki fue a ver si había algún herido al que curar y Damoi fue a reparar la lanza que se rompió y adornarla con motivos de Taszo (ropa y decoración de Taszo).Después de acompañar a Yara, Bokao fue a ver si le podían contratar como artefabriano, a lo que le dijeron que hablara con Navani. \nPasado la mañana fueron con Dalinar que les dio las gracias por la información. En este momento entra Navani y contrata a Bokao como artefabriano de campo y les dice que una de sus eruditas necesita ayuda con una investigación en las llanuras quebradas a lo que la party acepta.\nEn los carros de las llanuras quebradas la erudita Shanshan les habla de los caballeros radiantes y les da un libro que dice todo lo que se sabe de ellos actualmente. Yara lo lee y meintras apsan en los abismos se escucha como un sonido de garras. Eventualmente aparece un abismoide que tira el puente y hace que se caigan en los abismos. En este momento, al proteger una persona a punto de ser aplastado por un abismoide, Taburete jura el primer ideal, salvando a toda la party, haciendo que el abismoide se aleje y devolviendo a todo el mundo a las llanuras.\nTras caminar por un par de abismos, los personajes se encuentran con un antiguo templo de los caballeros radiantes. En el templo ven la historia de una mujer campesina que se volvió radiante. En este momento Yara empieza a escuchar voces y ver figuras que le dicen que jure el primer ideal. Tras un buen rato, Yara jura el ideal a lo que se abre un cajón con un moldeador de almas. Al salir se encuentran con unos Parshendi que les cuentan la verdad de los caballeros radiantes y de la identidad de los portadores del vacío.\nCuando se vuelven a encontrar con Dalinar, la party le cuenta lo vivido y le dan el moldeador de almas a lo que Dalinar les recompensa dándoles un permiso especial.",
+    "content_player": "# Historia\nEl convoy de carretas les deja en el campamento de guerra de los Kholin, lo primero que se encuentran son unas casas dónde se encuentra el Chull Gruñón, Bordín se ofrece a escoltarlos hasta el complejo de los Kholin y conseguirles una reunión con el Alto Príncipe. En el camino hacia el complejo pueden ver distintos distritos, uno que parece ser un mercado dónde todo tipo de gente está comprando, unos talleres a los que solo se acercan gente que parecen artefabrianos, otro de talleres de construcción de aparatos de guerra y otras cosas varias como carretas, otro de atención médica y a lo lejos, el devotario de la mente dónde suponen que e llevan a Taln. En el camino por los callejones, que están vacíos empieza a escuchar que le llaman pero no por su nombre, sino por el nombre Servana y ve figuras extrañas, como personas con túnicas largas hasta el suelo y con la cara deformada. Cuando llegan al complejo central de los Kholin pueden notar que todo el mundo (incluido en el camino) estaban demasiado organizados (todos de uniforme, preparados para la guerra y sin ningún borracho aparentemente). La puerta dónde se encuentra Dalinar está custodiada por dos personas de uniforme: un joven ojos claros de pelo largo con una marca de peligroso en la frente y un hombre mayor ojos oscuros con un tatuaje extraño en la frente, ambos con lanzas y con un símbolo raro en la chaqueta que no es el de los Kholin, les pillan hablando sobre que el joven debería decirselo a Dalinar pero él se niega. Tras una conversación dónde les pregunta que qué hacen aquí, uno de los dos entra y le avisa a Dalinar. \n\nDalinar les agradece la información de Ralanat y les dice que intenten seguir los códigos de guerra mientras estén en su campamento. Les dice que tengan cuidado, el mundo está cambiando con la información nueva que se tiene de los caballeros radiantes y los portadores del vacío nada va a ser igual. Si los personajes se interesan Dalinar les cuenta que se ha descubierto que la supuesta traición de los caballeros radiantes no había sido porque sí, que hay pruebas fervientes de que abandonaron sus juramentos por un motivo que hemos perdido por culpa de la Hierrocracia. Si los personajes dudan Dalinar apela al sentido común, gente con grandes armas y grandes poderes se deshacen de todo y además no son unos cuantos sino absolutamente todos los radiantes, no tiene sentido. Tanto si se interesan como si no, Dalinar les dice que les puede ayudar con su misión si ellos le ayudan a él. Han encontrado unas ruinas antiguas de las llanuras quebradas, en uno de los abismos. Esta expedición fue financiada por Shansan, una erudita ojos claros pero necesita más personal.\n\nEn la expedición Shansan empieza a hablarles de los caballeros radiantes y les enseña Palabras Radiantes, un libro en el que se habla de los caballeros radiantes, si ellos les mencionan/ enseñan el glifo ella dice que es una versión arcaica del glifo Palah el cual representa a los vigilantes de la verdad. Tras pasar varias veces por encima de los abismos gracias a los puentes (en cada uno de ellos escuchaban como unos rasguños de fondo) aparece un abismoide que rompe el puente. Se caen al abismo y el abismoide les ataca (estoy escribiendo esto antes de la sesión y no sé si están leyendo esto pero por favor huyan). En este momento se ve a una persona a punto de ser aplastada por el abismoide a lo que el viento le dice a Taburete que la salve, si Taburete sigue las indicaciones jura el primer ideal y enlaza al abismoide a la pared lo que les da tiempo de huir, si no lo sigue el abismoide aplasta a la persona pero a la vista le faltan un par de piernas por lo que no es muy rápido y se refugian en una parte dónde parece que no cabe. \n\nShansan les dice que no deberían estar muy lejos de las ruinas que deberían girar al noroeste y caminar media hora y estar ahí. Cuando llegan ven un gran santuario medio enterrado en las paredes de los abismos, desde fuera se puede apreciar que tiene dos pisos a lo que Shansan dice que quiero investigar los dos pisos. Cuando entran no hay suficiente luz como para ver bien pero notan que está todo derrumbando, con columnas partidas a la mitad y paredes y suelo agrietados, si investigan verán el símbolo de los dos ojos del todopoderoso en el suelo  (antiguo símbolo de los caballeros radiantes). En las paredes se pueden ver mosaicos de una mujer que parecen contar una historia (primero mujer labrando la tierra, luego parshmenios atacando la aldea con la chica de fondo, luego la chica con una figura negra pequeña, luego la chica peleando contra los parshmenios) según acaban de ver los murales ven unas escaleras medio derrumbadas hasta el segundo piso. \n\nEn el segundo piso hay una estatua de un caballero radiante con armadura y espada esquirlada, con un mural de fondo de la mujer de los murales de abajo con la armadura y la espada peleando (la estatua es ella). La estatua está sobre un cajón que parece que se puede abrir pero no a la fuerza. En ese cajón hay grabados símbolos de las órdenes de caballeros radiantes. Durante toda la estancia Yara ha ido escuchando cada vez más susurros y figuras altas con túnicas en el rabillo del ojo, en este momento esas voces le empiezan a atormentar. Yara hace el primer juramento y parte de su luz la absorbe el cajón que se abre revelando un moldeador de almas y un pasadizo se abre. Si inspeccionan más la sala se podrán encontrar una gema rara (gema para fabriales). Cuando salen si salen por el camino que estaba desde el principio ocurre el [[Día 3 La Radiancia#Encuentro con los parshendi|encuentro con los parshendi]] pero sorprendidos, si salen por el pasadizo pues ocurre el encuentro sin ser sorprendidos. Después de eso vuelven a los campamentos de guerra y reportan los resultados a Dalinar, si el grupo les da el moldeador de alma Dalinar les da un papel que pone que este grupo tiene el beneplácito de Dalinar Kholin y sus aliados. Si no se los dan, Dalinar les agradece haber acompañado a Shansan y les dice que le ayudará en todo lo que pueda sin aumentar sospechas ya que últimamente no hay mucha confianza en su persona.\n## Encuentros\n### Encuentro con los parshendi\nEs una expedición de 2 en forma de guerra y 3 en forma diestra. El líder les dice que entreguen todo lo que encontraron con una voz que no demuestra expresión pero con una cadencia intensa y rítmica casi cantando. Pueden o convencerles o luchar (Yo sé que van a luchar)\n\n## Sucesos en Rol\nAl llegar a las llanuras quebradas, la party principal va al Chull Gruñón dónde la posadera les dice que invita la casa la estancia en los días que permanezcan en el campamento de guerra. Después de pasar la noche Bordín les dice que ha arrendado una reunión con Dalinar por la tarde por lo que tenían toda la mañana para hacer compras. \nSidoa fue a comprar chouta y consiguió que el dueño del local se uniese al partido político. Bokao y Yara fueron al devotario ya que Yara quería ayuda con lo que estaba viendo a lo que un fervoroso le dijo que si quemaba una glifoguarda valía para quitarlo. Por otra parte Valisha, Dyr y Taburete fueron a comprar, respectivamente, sus [[Perrodracos gemelos (Arma Ambessa)|perrodracos gemelos]], suministros y una coraza. Calki fue a ver si había algún herido al que curar y Damoi fue a reparar la lanza que se rompió y adornarla con motivos de Taszo (ropa y decoración de Taszo).Después de acompañar a Yara, Bokao fue a ver si le podían contratar como artefabriano, a lo que le dijeron que hablara con Navani. \nPasado la mañana fueron con Dalinar que les dio las gracias por la información. En este momento entra Navani y contrata a Bokao como artefabriano de campo y les dice que una de sus eruditas necesita ayuda con una investigación en las llanuras quebradas a lo que la party acepta.\nEn los carros de las llanuras quebradas la erudita Shanshan les habla de los caballeros radiantes y les da un libro que dice todo lo que se sabe de ellos actualmente. Yara lo lee y meintras apsan en los abismos se escucha como un sonido de garras. Eventualmente aparece un abismoide que tira el puente y hace que se caigan en los abismos. En este momento, al proteger una persona a punto de ser aplastado por un abismoide, Taburete jura el primer ideal, salvando a toda la party, haciendo que el abismoide se aleje y devolviendo a todo el mundo a las llanuras.\nTras caminar por un par de abismos, los personajes se encuentran con un antiguo templo de los caballeros radiantes. En el templo ven la historia de una mujer campesina que se volvió radiante. En este momento Yara empieza a escuchar voces y ver figuras que le dicen que jure el primer ideal. Tras un buen rato, Yara jura el ideal a lo que se abre un cajón con un moldeador de almas. Al salir se encuentran con unos Parshendi que les cuentan la verdad de los caballeros radiantes y de la identidad de los portadores del vacío.\nCuando se vuelven a encontrar con Dalinar, la party le cuenta lo vivido y le dan el moldeador de almas a lo que Dalinar les recompensa dándoles un permiso especial.",
     "frontmatter": {
       "title": "Día 3 La Radiancia",
       "visibility": "public",
@@ -2148,6 +2577,156 @@
     "frontmatter": {
       "title": "Día 1: El asalto a las caravanas",
       "visibility": "public",
+      "spoilers": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Historia/Día 6 Viva la revolución",
+    "title": "Día 6 Viva la recolución",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Taln",
+        "text": "Taln"
+      },
+      {
+        "target": "Pasted image 20260331231559.png",
+        "text": "Pasted image 20260331231559.png"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A4",
+        "text": "zona A4"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A5",
+        "text": "zona A5"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A4",
+        "text": "zona A4"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes",
+        "text": "zona A6"
+      },
+      {
+        "target": "Nor Damoi",
+        "text": "Nor Damoi"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A1 El Suelo en el Cañón",
+        "text": "zona A1"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A3 Pared del risco",
+        "text": "zona A3"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes",
+        "text": "zona A6"
+      },
+      {
+        "target": "Pasted image 20260331231457.png",
+        "text": "Pasted image 20260331231457.png"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A2 El Puesto de Vigilancia",
+        "text": "zona A2"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A6",
+        "text": "zona A6"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes",
+        "text": "zona A6"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A8 El corazón de la Fortaleza",
+        "text": "zona A8"
+      },
+      {
+        "target": "Pasted image 20260331232921.png",
+        "text": "Pasted image 20260331232921.png"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A3 Pared del risco",
+        "text": "zona A3"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A4 El taller de Carpintería",
+        "text": "zona A4"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A5 El Devotario",
+        "text": "zona A5"
+      },
+      {
+        "target": "Día 6 Viva la revolución#Zona A7 La Prisión",
+        "text": "zona A7"
+      },
+      {
+        "target": "Pasted image 20260331234006.png",
+        "text": "Pasted image 20260331234006.png"
+      },
+      {
+        "target": "Día 6 Viva la revolución#La revolución llamando a la puerta",
+        "text": "la revolución llamando a la puerta"
+      },
+      {
+        "target": "Pasted image 20260401021210.png",
+        "text": "Pasted image 20260401021210.png"
+      },
+      {
+        "target": "Bokao Nel",
+        "text": "Bokao Nel"
+      },
+      {
+        "target": "Yara Elorin",
+        "text": "Yara Elorin"
+      },
+      {
+        "target": "Liss",
+        "text": "Liss"
+      },
+      {
+        "target": "Ubo",
+        "text": "Ubo"
+      },
+      {
+        "target": "Nor Damoi",
+        "text": "Nor Damoi"
+      },
+      {
+        "target": "Kaiana",
+        "text": "Kaiana"
+      },
+      {
+        "target": "Teryn",
+        "text": "Teryn"
+      },
+      {
+        "target": "Ylt",
+        "text": "Ylt"
+      },
+      {
+        "target": "Axies el Coleccionista",
+        "text": "Axies el Coleccionista"
+      }
+    ],
+    "content_admin": "# Historia\nLa [[Party Principal]] empiezan en las murallas de Rathalas tras la pista de la espada de [[Taln]]. De aquí pueden acceder a las zonas A1, A2 o A3. Aquí describir las tres posibles entradas, un puesto de guardia, una zona por la que se puede bajar al fondo de la ciudad o una parte del muro derrumbado por el que parece que se puede bajar.\n![](/Pasted image 20260331231559.png)\n## Zona A1: El Suelo en el Cañón\nSi alguien explora / mira alrededor puede ver otra entrada en la otra punta del barranco y parece que no está vigilada ([[Día 6 Viva la revolución#Zona A4|zona A4]]).\n## Zona A2: El Puesto de Vigilancia\nEn la muralla pueden ver un puesto de vigilancia en el que si superan una prueba <dm-section>CD 14</dm-section> pueden ver que hay 8 guardias que dejan pasar a una persona con unos ropajes verdes y dorados ([[Día 6 Viva la revolución#Zona A5|zona A5]]), si se acercan tienen que hacer una prueba de engaño <dm-section>CD 17</dm-section>. \n## Zona A3: Pared del risco\n Si una persona investiga el barranco puede ver que hay una sección que ofrece suficientes puntos de apoyo (mirar libro si escogen esta opción) ([[Día 6 Viva la revolución#Zona A4|zona A4]] y [[Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes|zona A6]])\n## Zona A4: El taller de Carpintería\nPueden ver un edificio con el tejado fortificado con un símbolo de carpintería. Aquí se fabrican los asentamientos y embarcaciones. Al lado de un barco pueden ver a un herdaziano Ubo de mediana edad que no siente ningún afecto por Ylt. Reparando el barco se encuentran seis soldados de Ylt que vigilan a la tripulación. (Ocurre conversación del lore en el que Ubo les cuenta a los demás que [[Nor Damoi]] mató a un primo suyo por celos y que todo se lo había contado el único testigo, Perlon) Ubo dice que quiere ayudar al pueblo de Rathalas pero que es demasiado peligroso. Si los personajes le convencen de que no todo está perdido les cuenta algo que ya sabían: que hay gente que no está de acuerdo con Ylt y que quieren que su organización se marche. Si los personajes le preguntan por dónde empezar, él les dice que la antigua lugarteniente de la Reina Bandida, Teryn, está prisionera y que si ella liderara una revolución mucha gente les seguiría. Además les cuenta la disposición de la ciudad por lo que obtienen ventajas en los puentes.\nDe esta zona puedes acceder a la [[Día 6 Viva la revolución#Zona A1 El Suelo en el Cañón|zona A1]], [[Día 6 Viva la revolución#Zona A3 Pared del risco|zona A3]], [[Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes|zona A6]]\n## Zona A5: El Devotario\nCruzan varias rampas y escaleras y llegan a un edificio que parece un devotario, o más bien parecería si no estuviera en ruinas, actualmente parece ser que es una zona dónde los bandidos guardan pertenencias, según se acercan ven una bóveda semiderrumbada y unos bándidos comandados por una ladrona. Ella les mira y les manda a trabajar por lo que empieza un empeño en el que si se les ocurre pueden mirar en las cajas y robar. Si roban sube en 1 los aciertos que tienen que dar en el empeño.\n![](/Pasted image 20260331231457.png)\nSi fallan todos quedan agotados. Si lo superan la ladrona se presenta, su nombre es Nadari y es una persona muy fiel a Ylt por lo que si le mencionan el intentar una revolución aumenta en 1 el evento de los bandidos están atentos y al acabar el descanso les manda a la carpintería aunque esta vez por laberinto de puentes diciéndoles que tengan cuidado porque hay muchos puentes inestables.\nDe esta zona puedes acceder a la [[Día 6 Viva la revolución#Zona A2 El Puesto de Vigilancia|zona A2]], [[Día 6 Viva la revolución#Zona A6|zona A6]], [[Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes|zona A6]] y [[Día 6 Viva la revolución#Zona A8 El corazón de la Fortaleza|zona A8]] aunque a esta última todavía no pueden ir.\n## Zona A6: El Laberinto de Puentes\nVen una gran cantidad de puentes colgando en el desfiladero de Rathalas. Para ello deberán empezar a cruzar los puentes en un orden en específico.\n![](/Pasted image 20260331232921.png)\nSi un mismo personaje pasa por la misma \"isla\" 3 veces empieza les preguntan quién les reclutó y dónde y si no les convencen o fallan la tirada de <dm-section>CD 18</dm-section> Les llevan como prisioneros a la zona A7.\nDe esta zona puedes acceder a la [[Día 6 Viva la revolución#Zona A3 Pared del risco|zona A3]], [[Día 6 Viva la revolución#Zona A4 El taller de Carpintería|zona A4]], [[Día 6 Viva la revolución#Zona A5 El Devotario|zona A5]] y [[Día 6 Viva la revolución#Zona A7 La Prisión|zona A7]] \n## Zona A7: La Prisión\n![](/Pasted image 20260331234006.png)\nEn esta zona hay distintas salas, a la izquierda, una sala de estar dónde parece que pasaban los señores del lugar su día a día, en esta habitación hay una botella de vino. La sala de la derecha está cerrada con unas puertas de madera. Si las abren se encuentran cincuenta personas desnutridas que dicen ser partidarios de la antigua reina bandida. En este grupo destacan dos figuras: Una parshendi en forma diestra y Axies, el coleccionista (Liss cierra las puertas). Todos necesitan atención médica y están desnutridos, excepto Axies y la cantora que parecen ser los últimos que fueron encerrados. Axies se acerca a ellos y se presenta diciendo que viaja por todo Roshar buscando sprens raros y que estaba buscando un cautivospren que no ha visto nunca por mucho que lo haya intentado. Les dice que si le ayudan les llevará a un antiguo spren que está emparentado con la Vigilante Nocturno, pero que ofrece respuestas en lugar de bendiciones. Les dice que Ylt se ha pasado horas preguntados.\nAl final del pasillo hay otra puerta cerrada y pone un cartel de despensa, de ella se escuchan dos voces femeninas. Pueden escuchar como una dice que los bandidos conseguirán grandes logros bajo el liderazgo de Ylt, la otra persona le responde que Ylt es como cualquier otro brillante señor que reclama el poder y abusa de él y le discrimina por el asesinato de la Reina Bandida. La primera voz le dice: \"Tienes razón Teryn\" y le dice que no cree que matar sea el camino correcto y que la violencia está mal pero que aún así cree en Ylt. Si se acercan, ven que una de las voces era Kaiana que se ve con precaución y duda pero no les ataca. Ven que Kaiana antes de ponerse en guardia estaba tocándole la cara a la otra mujer mientras brilla. Los personajes pueden intentar convencer a Kaiana  de que Ylt no es buena persona, discutiendo sobre temas de que las acciones de Ylt son malignas. Si la consiguen convencer Kaiana admite que los PJs han presentado argumentos válidos pero que sigue creyendo que Ylt es demasiado peligroso para que los personajes se enfrenten a él aunque se compromete a oponerse a sus tendencias violentas, aún así insta al grupo a no intervenir directamente. Antes de irse les da las llaves de la celda de Teryn y abandona el lugar. Al intentar salir con todos los bandidos unidos a la revolución aparecen 20 bandidos más a los que pueden convencer para unirse a la revolución. Todos juntos, ya sean con los bandidos nuevos o sin ellos, van al corazón de la Fortaleza.\n## Zona A8: El corazón de la Fortaleza\nCuando llegan al corazón de la Fortaleza, ven una plataforma sostenida por cadenas y encima de la plataforma, está Ylt con Kaiana en una cornisa de piedra. Ahí Teryn reta a Ylt a un duelo por el gobierno de Rathalas lo que Ylt ignora y empieza a ver cómo los túneles y cornisas cercanos se empiezan a llenar de bandidos y fanáticos. Empieza un discurso dirigiendose a la multitud:\n\"Pueblo libre de Rathalas. Habéis sufrido durante décadas a manos de los altos príncipes alezi. Pero no estáis solos, ni carecéis de poder. Con fe en los Heraldos, podéis convertiros en algo nuevo gracias al moldeado de almas\" -Extiende la mano y de la niebla se forma una espada esquirlada (la de Taln) (da una pausa en la que mira a todo el público)-\"Ya viene. La Noche de las Penas, la Auténtica Desolación. La tormenta eterna. Alzaos, parias de Rathalas. Debéis pronunciar de nuevo las antiguas Palabras. Pero primero, deshagámonos de estos intrusos. ¡Vuestro valor será recompensado en los Salones Tranquilos!”.\nDespués de dar el discurso, corta con la espada una de las cadenas que sostenía la plataforma. Mientras la plataforma se tambalea ven como Ylt se aleja por un pasillo, Kaiana les mira preocupada pero Ylt la llama, empieza a brillar y moldea la piedra para tapar el hueco. Tras esto se cae la plataforma si no superan una prueba de atletismo <dm-section>CD 20</dm-section> sufren <dm-section>10 + 2d8</dm-section> de daño físico ocurriendo [[Día 6 Viva la revolución#La revolución llamando a la puerta|la revolución llamando a la puerta]]. \nCuando acabe vuelve a aparecer Axies diciendo que ahora que han liberado la ciudad de los bandidos fieles, podrá gobernar en paz quien sea que sea el siguiente lider, y como lo prometido es deuda les conducirá hacia el resto gris. \n\nAxies intenta guiar hacia la baja Rathalas pero parece que no sabe a dónde va, tras un buen rato dando vueltas llegan a un templo. En el templo se ven unos mosaicos de unos radiantes que luchan con distintas armas esquirladas, no solo espadas. Axies les dice que este mural es anterior a la traición. Conforme se adentran en el templo, acaban llegando a la cámara de los Heraldos, que es una cámara circular sencilla de unos quince metros de ancho y se eleva hasta un techo abovedado. Hay diez nichos distribuidos a lo largo de los muros, cada uno con una estatua de tamaño natural sobre un pedestal elevado. Sólo tres de las estatuas son reconocibles:\n* Taln, heraldo de la guerra: Hombre musculoso makabaki con barba y armadura\n* Nale, heraldo de la Justicia: Hombre makabaki calvo con una marca en forma de medialuna en la mejilla derecha.\n* Piliah. heraldo del conocimiento: Mujer alezi o veden de pelo largo vestida con una túnica similar a la de Ylt.\nUna vez han examinado las estatuas ven como una gota de arcilla húmerda cae al suelo, después de esa gota otra más y otra y otra. Por encima, los paneles empotrados se han llenado de un lodo parecido al crem. La arcilla se retuerce y mueve como si estuviera viva, y entonces, en una inquietante armonía, unos dedos se abren paso desde debajo de la superficie, avanzando hacia los personajes revelando docenas de manos demacradas. Al momento una multitud de brazos se extiende, ya no moviéndose al unísono sino gesticulando con diferentes intenciones: súplica, violencia y desesperación. Una voz áspera y de todo bajo se filtra desde la arcilla: \"Buscan la verdad, como yo, pero esta, debe conllevar dolor\". En este punto el resto gris les responde las preguntas.\n![](/Pasted image 20260401021210.png)\n\"Ahora soy yo el que os ofrece una verdad dolorosa. El camino que se extiende ante vosotros no será fácil. La tormenta eterna se acerca. Los Heraldos caerán. Vosotros y vuestros juramentos seréis puestos a prueba”. Las manos del Resto Gris se detienen repentinamente. “Estoy exhausto y debo descansar. Gracias por vuestro regalo\".\nLos personajes, junto con Axies se dirigen a la nación del Gran Hexi, gracias a unos barcos que les presta Teryn\n## Encuentros\n### La revolución llamando a la puerta\nBandidos x80\nSi han reclutado a los 50 encerrados se reduce en 50 el número, si reclutan a los 20 guardias se eliminan otros 20.\nEstán en un terreno difícil por lo que el movimiento en esta zona se reduce a la mitad. Si son tumbados.\n\n## Sucesos en la Campaña\nEmpiezan por fuera de la ciudad quemada y deciden separarse, por un lado [[Bokao Nel]], [[Yara Elorin]] y [[Liss]] y por otro los demás. Por parte del primer grupo entran por la puerta principal haciéndose pasar por nuevos reclutas llegando al devotario que usan como almacen y les obligan a mover cajas. Por otra parte el otro grupo rodean el cañón y bajan encontrándose con un puerto en el que se encuentran con [[Ubo]] y tienen una conversación en la que revela que [[Nor Damoi]] mató a alguien cuando era pequeño. Tras la charla les dice que hay gente dispuesta a cambiar las tornas de la ciudad y que están presos. Al acabar de hablar el grupo consigue unos uniformes y van al laberinto de puentes para llegar a dónde estaban los otros del grupo.\n\nTras reunirse intercambian información obtenida y se dirigen a la zona dónde tienen a los prisioneros. Dentro, encuentran a [[Kaiana]] curando y hablando con [[Teryn]] sobre las intenciones de [[Ylt]] a lo que se une el grupo convenciendo a Kaiana para que intente parar las intenciones de matar a la gente que no esté de acuerdo. Tras liberar a Teryn, les jura intentar liberar la ciudad, a lo que se unen los otros prisioneros y guardias de la prisión. Uno de los prisioneros dice llamarse [[Axies el Coleccionista]], y que les llevaría con algo especial si es que liberan la ciudad. \n\nAl llegar al centro ven a Ylt dando un discurso y diciendo a sus compañeros que matasen al grupo para ascender. Tras una batalla en la que Bokao dispara a Ylt pero él lo esquiva como sabiendo lo que iba a pasar, el grupo se dirige hacia el fondo de la ciudad en dónde se encuentra el resto gris, un spren antiguo que, a cambio de verdades dolorosas, él daría otras verdades. Les revela a los personajes todo lo que querían saber incluyendo los planes de Ylt, quién juró lealtad a los sangre espectral y la verdad sobre las sombras de Rall Ellorin. El grupo sube a la ciudad y, con la información que les dió el resto gris, se disponen a viajar al valle de la vigilante nocturna",
+    "content_player": "# Historia\nLa [[Party Principal]] empiezan en las murallas de Rathalas tras la pista de la espada de [[Taln]]. De aquí pueden acceder a las zonas A1, A2 o A3. Aquí describir las tres posibles entradas, un puesto de guardia, una zona por la que se puede bajar al fondo de la ciudad o una parte del muro derrumbado por el que parece que se puede bajar.\n![](/Pasted image 20260331231559.png)\n## Zona A1: El Suelo en el Cañón\nSi alguien explora / mira alrededor puede ver otra entrada en la otra punta del barranco y parece que no está vigilada ([[Día 6 Viva la revolución#Zona A4|zona A4]]).\n## Zona A2: El Puesto de Vigilancia\nEn la muralla pueden ver un puesto de vigilancia en el que si superan una prueba  pueden ver que hay 8 guardias que dejan pasar a una persona con unos ropajes verdes y dorados ([[Día 6 Viva la revolución#Zona A5|zona A5]]), si se acercan tienen que hacer una prueba de engaño . \n## Zona A3: Pared del risco\n Si una persona investiga el barranco puede ver que hay una sección que ofrece suficientes puntos de apoyo (mirar libro si escogen esta opción) ([[Día 6 Viva la revolución#Zona A4|zona A4]] y [[Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes|zona A6]])\n## Zona A4: El taller de Carpintería\nPueden ver un edificio con el tejado fortificado con un símbolo de carpintería. Aquí se fabrican los asentamientos y embarcaciones. Al lado de un barco pueden ver a un herdaziano Ubo de mediana edad que no siente ningún afecto por Ylt. Reparando el barco se encuentran seis soldados de Ylt que vigilan a la tripulación. (Ocurre conversación del lore en el que Ubo les cuenta a los demás que [[Nor Damoi]] mató a un primo suyo por celos y que todo se lo había contado el único testigo, Perlon) Ubo dice que quiere ayudar al pueblo de Rathalas pero que es demasiado peligroso. Si los personajes le convencen de que no todo está perdido les cuenta algo que ya sabían: que hay gente que no está de acuerdo con Ylt y que quieren que su organización se marche. Si los personajes le preguntan por dónde empezar, él les dice que la antigua lugarteniente de la Reina Bandida, Teryn, está prisionera y que si ella liderara una revolución mucha gente les seguiría. Además les cuenta la disposición de la ciudad por lo que obtienen ventajas en los puentes.\nDe esta zona puedes acceder a la [[Día 6 Viva la revolución#Zona A1 El Suelo en el Cañón|zona A1]], [[Día 6 Viva la revolución#Zona A3 Pared del risco|zona A3]], [[Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes|zona A6]]\n## Zona A5: El Devotario\nCruzan varias rampas y escaleras y llegan a un edificio que parece un devotario, o más bien parecería si no estuviera en ruinas, actualmente parece ser que es una zona dónde los bandidos guardan pertenencias, según se acercan ven una bóveda semiderrumbada y unos bándidos comandados por una ladrona. Ella les mira y les manda a trabajar por lo que empieza un empeño en el que si se les ocurre pueden mirar en las cajas y robar. Si roban sube en 1 los aciertos que tienen que dar en el empeño.\n![](/Pasted image 20260331231457.png)\nSi fallan todos quedan agotados. Si lo superan la ladrona se presenta, su nombre es Nadari y es una persona muy fiel a Ylt por lo que si le mencionan el intentar una revolución aumenta en 1 el evento de los bandidos están atentos y al acabar el descanso les manda a la carpintería aunque esta vez por laberinto de puentes diciéndoles que tengan cuidado porque hay muchos puentes inestables.\nDe esta zona puedes acceder a la [[Día 6 Viva la revolución#Zona A2 El Puesto de Vigilancia|zona A2]], [[Día 6 Viva la revolución#Zona A6|zona A6]], [[Día 6 Viva la revolución#Zona A6 El Laberinto de Puentes|zona A6]] y [[Día 6 Viva la revolución#Zona A8 El corazón de la Fortaleza|zona A8]] aunque a esta última todavía no pueden ir.\n## Zona A6: El Laberinto de Puentes\nVen una gran cantidad de puentes colgando en el desfiladero de Rathalas. Para ello deberán empezar a cruzar los puentes en un orden en específico.\n![](/Pasted image 20260331232921.png)\nSi un mismo personaje pasa por la misma \"isla\" 3 veces empieza les preguntan quién les reclutó y dónde y si no les convencen o fallan la tirada de  Les llevan como prisioneros a la zona A7.\nDe esta zona puedes acceder a la [[Día 6 Viva la revolución#Zona A3 Pared del risco|zona A3]], [[Día 6 Viva la revolución#Zona A4 El taller de Carpintería|zona A4]], [[Día 6 Viva la revolución#Zona A5 El Devotario|zona A5]] y [[Día 6 Viva la revolución#Zona A7 La Prisión|zona A7]] \n## Zona A7: La Prisión\n![](/Pasted image 20260331234006.png)\nEn esta zona hay distintas salas, a la izquierda, una sala de estar dónde parece que pasaban los señores del lugar su día a día, en esta habitación hay una botella de vino. La sala de la derecha está cerrada con unas puertas de madera. Si las abren se encuentran cincuenta personas desnutridas que dicen ser partidarios de la antigua reina bandida. En este grupo destacan dos figuras: Una parshendi en forma diestra y Axies, el coleccionista (Liss cierra las puertas). Todos necesitan atención médica y están desnutridos, excepto Axies y la cantora que parecen ser los últimos que fueron encerrados. Axies se acerca a ellos y se presenta diciendo que viaja por todo Roshar buscando sprens raros y que estaba buscando un cautivospren que no ha visto nunca por mucho que lo haya intentado. Les dice que si le ayudan les llevará a un antiguo spren que está emparentado con la Vigilante Nocturno, pero que ofrece respuestas en lugar de bendiciones. Les dice que Ylt se ha pasado horas preguntados.\nAl final del pasillo hay otra puerta cerrada y pone un cartel de despensa, de ella se escuchan dos voces femeninas. Pueden escuchar como una dice que los bandidos conseguirán grandes logros bajo el liderazgo de Ylt, la otra persona le responde que Ylt es como cualquier otro brillante señor que reclama el poder y abusa de él y le discrimina por el asesinato de la Reina Bandida. La primera voz le dice: \"Tienes razón Teryn\" y le dice que no cree que matar sea el camino correcto y que la violencia está mal pero que aún así cree en Ylt. Si se acercan, ven que una de las voces era Kaiana que se ve con precaución y duda pero no les ataca. Ven que Kaiana antes de ponerse en guardia estaba tocándole la cara a la otra mujer mientras brilla. Los personajes pueden intentar convencer a Kaiana  de que Ylt no es buena persona, discutiendo sobre temas de que las acciones de Ylt son malignas. Si la consiguen convencer Kaiana admite que los PJs han presentado argumentos válidos pero que sigue creyendo que Ylt es demasiado peligroso para que los personajes se enfrenten a él aunque se compromete a oponerse a sus tendencias violentas, aún así insta al grupo a no intervenir directamente. Antes de irse les da las llaves de la celda de Teryn y abandona el lugar. Al intentar salir con todos los bandidos unidos a la revolución aparecen 20 bandidos más a los que pueden convencer para unirse a la revolución. Todos juntos, ya sean con los bandidos nuevos o sin ellos, van al corazón de la Fortaleza.\n## Zona A8: El corazón de la Fortaleza\nCuando llegan al corazón de la Fortaleza, ven una plataforma sostenida por cadenas y encima de la plataforma, está Ylt con Kaiana en una cornisa de piedra. Ahí Teryn reta a Ylt a un duelo por el gobierno de Rathalas lo que Ylt ignora y empieza a ver cómo los túneles y cornisas cercanos se empiezan a llenar de bandidos y fanáticos. Empieza un discurso dirigiendose a la multitud:\n\"Pueblo libre de Rathalas. Habéis sufrido durante décadas a manos de los altos príncipes alezi. Pero no estáis solos, ni carecéis de poder. Con fe en los Heraldos, podéis convertiros en algo nuevo gracias al moldeado de almas\" -Extiende la mano y de la niebla se forma una espada esquirlada (la de Taln) (da una pausa en la que mira a todo el público)-\"Ya viene. La Noche de las Penas, la Auténtica Desolación. La tormenta eterna. Alzaos, parias de Rathalas. Debéis pronunciar de nuevo las antiguas Palabras. Pero primero, deshagámonos de estos intrusos. ¡Vuestro valor será recompensado en los Salones Tranquilos!”.\nDespués de dar el discurso, corta con la espada una de las cadenas que sostenía la plataforma. Mientras la plataforma se tambalea ven como Ylt se aleja por un pasillo, Kaiana les mira preocupada pero Ylt la llama, empieza a brillar y moldea la piedra para tapar el hueco. Tras esto se cae la plataforma si no superan una prueba de atletismo  sufren  de daño físico ocurriendo [[Día 6 Viva la revolución#La revolución llamando a la puerta|la revolución llamando a la puerta]]. \nCuando acabe vuelve a aparecer Axies diciendo que ahora que han liberado la ciudad de los bandidos fieles, podrá gobernar en paz quien sea que sea el siguiente lider, y como lo prometido es deuda les conducirá hacia el resto gris. \n\nAxies intenta guiar hacia la baja Rathalas pero parece que no sabe a dónde va, tras un buen rato dando vueltas llegan a un templo. En el templo se ven unos mosaicos de unos radiantes que luchan con distintas armas esquirladas, no solo espadas. Axies les dice que este mural es anterior a la traición. Conforme se adentran en el templo, acaban llegando a la cámara de los Heraldos, que es una cámara circular sencilla de unos quince metros de ancho y se eleva hasta un techo abovedado. Hay diez nichos distribuidos a lo largo de los muros, cada uno con una estatua de tamaño natural sobre un pedestal elevado. Sólo tres de las estatuas son reconocibles:\n* Taln, heraldo de la guerra: Hombre musculoso makabaki con barba y armadura\n* Nale, heraldo de la Justicia: Hombre makabaki calvo con una marca en forma de medialuna en la mejilla derecha.\n* Piliah. heraldo del conocimiento: Mujer alezi o veden de pelo largo vestida con una túnica similar a la de Ylt.\nUna vez han examinado las estatuas ven como una gota de arcilla húmerda cae al suelo, después de esa gota otra más y otra y otra. Por encima, los paneles empotrados se han llenado de un lodo parecido al crem. La arcilla se retuerce y mueve como si estuviera viva, y entonces, en una inquietante armonía, unos dedos se abren paso desde debajo de la superficie, avanzando hacia los personajes revelando docenas de manos demacradas. Al momento una multitud de brazos se extiende, ya no moviéndose al unísono sino gesticulando con diferentes intenciones: súplica, violencia y desesperación. Una voz áspera y de todo bajo se filtra desde la arcilla: \"Buscan la verdad, como yo, pero esta, debe conllevar dolor\". En este punto el resto gris les responde las preguntas.\n![](/Pasted image 20260401021210.png)\n\"Ahora soy yo el que os ofrece una verdad dolorosa. El camino que se extiende ante vosotros no será fácil. La tormenta eterna se acerca. Los Heraldos caerán. Vosotros y vuestros juramentos seréis puestos a prueba”. Las manos del Resto Gris se detienen repentinamente. “Estoy exhausto y debo descansar. Gracias por vuestro regalo\".\nLos personajes, junto con Axies se dirigen a la nación del Gran Hexi, gracias a unos barcos que les presta Teryn\n## Encuentros\n### La revolución llamando a la puerta\nBandidos x80\nSi han reclutado a los 50 encerrados se reduce en 50 el número, si reclutan a los 20 guardias se eliminan otros 20.\nEstán en un terreno difícil por lo que el movimiento en esta zona se reduce a la mitad. Si son tumbados.\n\n## Sucesos en la Campaña\nEmpiezan por fuera de la ciudad quemada y deciden separarse, por un lado [[Bokao Nel]], [[Yara Elorin]] y [[Liss]] y por otro los demás. Por parte del primer grupo entran por la puerta principal haciéndose pasar por nuevos reclutas llegando al devotario que usan como almacen y les obligan a mover cajas. Por otra parte el otro grupo rodean el cañón y bajan encontrándose con un puerto en el que se encuentran con [[Ubo]] y tienen una conversación en la que revela que [[Nor Damoi]] mató a alguien cuando era pequeño. Tras la charla les dice que hay gente dispuesta a cambiar las tornas de la ciudad y que están presos. Al acabar de hablar el grupo consigue unos uniformes y van al laberinto de puentes para llegar a dónde estaban los otros del grupo.\n\nTras reunirse intercambian información obtenida y se dirigen a la zona dónde tienen a los prisioneros. Dentro, encuentran a [[Kaiana]] curando y hablando con [[Teryn]] sobre las intenciones de [[Ylt]] a lo que se une el grupo convenciendo a Kaiana para que intente parar las intenciones de matar a la gente que no esté de acuerdo. Tras liberar a Teryn, les jura intentar liberar la ciudad, a lo que se unen los otros prisioneros y guardias de la prisión. Uno de los prisioneros dice llamarse [[Axies el Coleccionista]], y que les llevaría con algo especial si es que liberan la ciudad. \n\nAl llegar al centro ven a Ylt dando un discurso y diciendo a sus compañeros que matasen al grupo para ascender. Tras una batalla en la que Bokao dispara a Ylt pero él lo esquiva como sabiendo lo que iba a pasar, el grupo se dirige hacia el fondo de la ciudad en dónde se encuentra el resto gris, un spren antiguo que, a cambio de verdades dolorosas, él daría otras verdades. Les revela a los personajes todo lo que querían saber incluyendo los planes de Ylt, quién juró lealtad a los sangre espectral y la verdad sobre las sombras de Rall Ellorin. El grupo sube a la ciudad y, con la información que les dió el resto gris, se disponen a viajar al valle de la vigilante nocturna",
+    "frontmatter": {
+      "title": "Día 6 Viva la recolución",
+      "visibility": "private",
       "spoilers": true
     }
   },
