@@ -706,10 +706,14 @@
       {
         "target": "Lorn",
         "text": "Lorn"
+      },
+      {
+        "target": "Ubo",
+        "text": "Ubo"
       }
     ],
-    "content_admin": "[[Yara]]\n[[Velin]]\n[[Zinden|Lider de los bandidos]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]\n[[Lorn]]",
-    "content_player": "[[Yara]]\n[[Velin]]\n[[Zinden|Lider de los bandidos]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]\n[[Lorn]]",
+    "content_admin": "[[Yara]]\n[[Velin]]\n[[Zinden|Lider de los bandidos]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]\n[[Lorn]]\n[[Ubo]]",
+    "content_player": "[[Yara]]\n[[Velin]]\n[[Zinden|Lider de los bandidos]]\n[[Svalka]]\n[[Tet Revin]]\n[[Nen]]\n[[Hana]]\n[[Lorn]]\n[[Ubo]]",
     "frontmatter": {
       "title": "Personajes terciarios",
       "visibility": "public",
