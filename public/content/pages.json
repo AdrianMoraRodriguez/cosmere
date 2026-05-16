@@ -217,6 +217,35 @@
     }
   },
   {
+    "slug": "Caminapiedras/Party Principal/Neshor",
+    "title": "Neshor (Sala)",
+    "visibility": "private",
+    "allowed_users": [
+      "Sala"
+    ],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260516200420.png",
+        "text": "Pasted image 20260516200420.png"
+      },
+      {
+        "target": "Custodios de Piedra",
+        "text": "Custodio de Piedra"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260516200420.png)\n## Sucesos en la Campaña\n## Avances como [[Custodios de Piedra|Custodio de Piedra]]\nNo ha jurado \n## Caminos\nLíder: Oficial",
+    "content_player": "![](/Pasted image 20260516200420.png)\n## Sucesos en la Campaña\n## Avances como [[Custodios de Piedra|Custodio de Piedra]]\nNo ha jurado \n## Caminos\nLíder: Oficial",
+    "frontmatter": {
+      "title": "Neshor (Sala)",
+      "visibility": "private",
+      "spoilers": true,
+      "allowed_users": "[Sala]"
+    }
+  },
+  {
     "slug": "Caminapiedras/Party Principal/Party Principal",
     "title": "Party Principal",
     "visibility": "public",
@@ -260,10 +289,14 @@
       {
         "target": "Valisha",
         "text": "Valisha (Daniela)"
+      },
+      {
+        "target": "Neshor",
+        "text": "Neshor"
       }
     ],
-    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
-    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]",
+    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]\n[[Neshor]]",
+    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]\n[[Neshor]]",
     "frontmatter": {
       "title": "Party Principal",
       "visibility": "public",

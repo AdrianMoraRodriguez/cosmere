@@ -52,6 +52,11 @@ const USERS = {
     username: "Val",
     passwordHash: "$2b$10$rqkTqQFq8uClzI/41bEFpOxKe8kNmuHNrYjY8lgRehbLIoGz1WO6u",
     role: "player"
+  },
+  Sala: {
+    username: "Sala",
+    passwordHash: "$2b$10$4s5dzC1AwekSqoDBF/G.v..0LHqkOnjIULfy6BlYPxqGYUPYXMxYC",
+    role: "player"
   }
 };
 
