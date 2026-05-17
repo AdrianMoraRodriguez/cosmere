@@ -3894,7 +3894,8 @@
     "title": "Lider",
     "visibility": "private",
     "allowed_users": [
-      "Jose"
+      "Jose",
+      "Sala"
     ],
     "spoilers": false,
     "is_index": false,
@@ -3911,7 +3912,7 @@
       "title": "Lider",
       "visibility": "private",
       "spoilers": false,
-      "allowed_users": "[Jose]"
+      "allowed_users": "[Jose,Sala]"
     }
   },
   {
@@ -4097,7 +4098,8 @@
     "title": "Custodios de Piedra",
     "visibility": "private",
     "allowed_users": [
-      "Salva"
+      "Salva",
+      "Sala"
     ],
     "spoilers": true,
     "is_index": false,
@@ -4118,7 +4120,7 @@
       "title": "Custodios de Piedra",
       "visibility": "private",
       "spoilers": true,
-      "allowed_users": "[Salva]"
+      "allowed_users": "[Salva,Sala]"
     }
   },
   {
