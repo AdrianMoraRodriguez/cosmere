@@ -292,11 +292,11 @@
       },
       {
         "target": "Neshor",
-        "text": "Neshor"
+        "text": "Neshor (Sala)"
       }
     ],
-    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]\n[[Neshor]]",
-    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]\n[[Neshor]]",
+    "content_admin": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]\n[[Neshor|Neshor (Sala)]]",
+    "content_player": "[[Arluno'ratha'tu|Arluno'ratha'tu (Aitor)]] \n[[Bokao Nel|Bokao  Nel (Nico)]] \n[[Calki|Calki (Dani)]] \n[[Dyr Dyu|Dyr Dyu (Salva)]] \n[[Nor Damoi|Nor Damoi (JJ)]]\n[[Yara Elorin|Yara Elorin (Iker)]] \n[[Sidoa Damoi|Sidoa Damoi (Jose)]] \n[[Niffty|Niffty (Val)]]\n[[Valisha|Valisha (Daniela)]]\n[[Neshor|Neshor (Sala)]]",
     "frontmatter": {
       "title": "Party Principal",
       "visibility": "public",
