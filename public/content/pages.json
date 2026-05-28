@@ -2541,10 +2541,18 @@
       {
         "target": "Día 7 Poderes Superiores",
         "text": "Día 7 Poderes Superiores"
+      },
+      {
+        "target": "Día 8 Jugadores de un juego que no sabían que jugaban",
+        "text": "Día 8 Jugadores de un juego que no sabían que jugaban"
+      },
+      {
+        "target": "Día 9 Noticias y reencuentros",
+        "text": "Día 9 Noticias y reencuentros"
       }
     ],
-    "content_admin": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]",
-    "content_player": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]",
+    "content_admin": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]\n[[Día 8 Jugadores de un juego que no sabían que jugaban]]\n[[Día 9 Noticias y reencuentros]]",
+    "content_player": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]\n[[Día 8 Jugadores de un juego que no sabían que jugaban]]\n[[Día 9 Noticias y reencuentros]]",
     "frontmatter": {
       "title": "Historia",
       "visibility": "public",
@@ -3184,6 +3192,36 @@
     "frontmatter": {
       "title": "Día 6 Viva la revolución",
       "visibility": "public",
+      "spoilers": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Historia/Día 9 Noticias y reencuentros",
+    "title": "Día 9 Reencuentros",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": true,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Axoq",
+        "text": "Axoq"
+      },
+      {
+        "target": "Nathur",
+        "text": "Nathur"
+      },
+      {
+        "target": "Ralanat (Brillante Señora)",
+        "text": "Ralanat"
+      }
+    ],
+    "content_admin": "# Historia\nEl grupo, después de descansar, viajan hacia al oeste, a través de las montañas, hacia Emul, llegan a un valle que desciende hacia el corazón de Emul, abriendo un camino a través del terreno escarpado. Ven humo que se eleva desde las llamas de un castillo que vigila el paso, en la distancia se oye el estruendo de los soldados marchando y el choque del acero con el acero. Esta guerra es por el control de Sesemalex Dar, para Emul es su patria ancestral, que les fue otorgadas (según ellos) por los mismísimos heraldos. Por otra parte Tukar lucha por el dios-sacerdote Tezim quien considera la ciudad legítimamente suya. Esto no es Sesemalex Dar ya que esa ciudad está a muchos kilómetros al oeste pero esta fortaleza es un punto de importancia ya que defiende el paso de montaña. Un poco alejado se puede ver un pueblo medio destruído en la que ya desde lejos se puede ver a gente herida junto a muchos soladados. En esa ciudad [[Axoq]] les pide que por favor se unan a los Emuli, que los Tukari son unos invasores de esa tierra y que están matando a todos por simplemente vivir ahí.\n\nLos Emuli les dicen que tienen una hora hasta la reunión de intendencia en la que se discutirá el plan, Axoq les dice que vió a este grupo desarmar a un grupo de 6 personas sin que ellos se dieran cuenta y que seguro que eran buenos tácticos. El jefe de intendencia les dice que necesitan hacer un asedio al castillo cuanto antes ya que se estaban quedando sin suministros y que estaban haciendo la guerra de guerrillas, así que contaban con ellos. Durante esta hora los personajes pueden preguntar sobre la política del sitio, observar ñas tácticas militares o incluso encontrar a un espía tukari e interrogarle. Tras esta hora se han podido dar cuenta que los emuli son poco más que campesinos con armaduras improvisadas mientras que los Tukari sí que son un grupo muy organizado con armas y armaduras, además también les parece ver a algún radiante sobrevolando la zona de la fortaleza aunque no lo tienen muy claro. En esta hora, mientras deambulaban por la ciudad pueden ver un parshendi que les suena de algo, es [[Nathur]] uno de los parshmenios que servían a [[Ralanat (Brillante Señora)|Ralanat]] en la carreta, cuando\n## Encuentros\n\n## Sucesos en la Campaña",
+    "content_player": "# Historia\nEl grupo, después de descansar, viajan hacia al oeste, a través de las montañas, hacia Emul, llegan a un valle que desciende hacia el corazón de Emul, abriendo un camino a través del terreno escarpado. Ven humo que se eleva desde las llamas de un castillo que vigila el paso, en la distancia se oye el estruendo de los soldados marchando y el choque del acero con el acero. Esta guerra es por el control de Sesemalex Dar, para Emul es su patria ancestral, que les fue otorgadas (según ellos) por los mismísimos heraldos. Por otra parte Tukar lucha por el dios-sacerdote Tezim quien considera la ciudad legítimamente suya. Esto no es Sesemalex Dar ya que esa ciudad está a muchos kilómetros al oeste pero esta fortaleza es un punto de importancia ya que defiende el paso de montaña. Un poco alejado se puede ver un pueblo medio destruído en la que ya desde lejos se puede ver a gente herida junto a muchos soladados. En esa ciudad [[Axoq]] les pide que por favor se unan a los Emuli, que los Tukari son unos invasores de esa tierra y que están matando a todos por simplemente vivir ahí.\n\nLos Emuli les dicen que tienen una hora hasta la reunión de intendencia en la que se discutirá el plan, Axoq les dice que vió a este grupo desarmar a un grupo de 6 personas sin que ellos se dieran cuenta y que seguro que eran buenos tácticos. El jefe de intendencia les dice que necesitan hacer un asedio al castillo cuanto antes ya que se estaban quedando sin suministros y que estaban haciendo la guerra de guerrillas, así que contaban con ellos. Durante esta hora los personajes pueden preguntar sobre la política del sitio, observar ñas tácticas militares o incluso encontrar a un espía tukari e interrogarle. Tras esta hora se han podido dar cuenta que los emuli son poco más que campesinos con armaduras improvisadas mientras que los Tukari sí que son un grupo muy organizado con armas y armaduras, además también les parece ver a algún radiante sobrevolando la zona de la fortaleza aunque no lo tienen muy claro. En esta hora, mientras deambulaban por la ciudad pueden ver un parshendi que les suena de algo, es [[Nathur]] uno de los parshmenios que servían a [[Ralanat (Brillante Señora)|Ralanat]] en la carreta, cuando\n## Encuentros\n\n## Sucesos en la Campaña",
+    "frontmatter": {
+      "title": "Día 9 Reencuentros",
+      "visibility": "private",
       "spoilers": true
     }
   },
