@@ -638,16 +638,37 @@
       {
         "target": "Party Principal",
         "text": "Party Principal"
+      },
+      {
+        "target": "Resultados de las encuestas de personajes",
+        "text": "Resultados de las encuestas de personajes"
       }
     ],
-    "content_admin": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]\n[[Party Principal]]",
-    "content_player": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]\n[[Party Principal]]",
+    "content_admin": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]\n[[Party Principal]]\n[[Resultados de las encuestas de personajes]]",
+    "content_player": "[[Principales]]\n[[Secundarios]]\n[[Resto]]\n[[Sprens]]\n[[Party Principal]]\n[[Resultados de las encuestas de personajes]]",
     "frontmatter": {
       "title": "Personajes",
       "visibility": "public",
       "spoilers": false,
       "is_index": true,
       "is_subindex": true
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Resultados de las encuestas de personajes",
+    "title": "Resultados de las encuentas de personajes",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [],
+    "content_admin": "1. Peor compañero de cuarto: Bokao\n2. Traicinonar a la party por cena: Sidoa\n3. Más pifias: Bokao\n4. Más críticos: Taburete\n5. Alcoholico del grupo: Yara\n6. Cocinar mejor: Valisha\n7. Culear a un dragón: Dyr\n8. No poder cuidar de una planta: Sidoa\n9. Cometer masacre sin pensar en consecuencias: Sidoa/Nor\n10. Maatarse primero: Yara\n11. Estafa piramidal: Sidoa\n12. Más aguanta el alcohol: Valisha\n13. Menos aguanta el alcohol: Calki\n14. Ser confundido con alguien importante: Yara\n15. Casaría primero: Yara\n16. Loot goblin: Bokao (100%)\n17. Romper con confesión: Yara\n18. Convertirse en el villano: Sidoa\n19. Más Racista: Sidoa\n20. Que se atragante con comida y que se muera: Dyr\n21. Irse de meretrices: Sidoa\n22. Más crímenes de guerra: Bokao\n23. Sacrificarse por la party: Taburete\n24. Salir corriendo por algún bichejo pequeño: Nifty\n25. Confíen en mí antes de un desastre: Dyr y Calki\n26. Dormir abrazado a su arma: Valisha\n27. Empezar discusión filosófica: Bokao\n28. Mejores relaciones con animales y sprens: Taburete\n29. Perder dinero jugando a las carta: Dyr\n30. Más picao: Sidoa\n31. Buscado en varios paises sin saberlo: Sidoa (100%)\n32. Vivir peor si la parte no se hubiera encontrado: Nor\n33. Vivir mejor si la party no se hubiera encontrado: Neshor\n34. Crear identidad falsa: Dyr\n35. Misión sencilla en un crimen internacional: Calki\n36. Tomar droga pensando que es un caramelo: Sidoa/Taburete\n37. Empezar un culto: Bokao\n38. Cumplir su objetivo primero: Sidoa\n39. Sacarse el carné: Bokao/Neshor\n40. Personajes que se fusionan: Taburete/Valisha\n41. Ship favorito: BokaoXDyr ValishaXYara\n42. Incapaz de insultar a alguien de la party: Sidoa\n43. Pegarle a yb alto cargo sin miedo: Valisha\n44. Morir primero en combate: Calki\n45. Transportado a un isekai: Calki\n46. Bajarse más gente en un no-hit: Nor\n47. Vivir vida tranquila: Nor\n48. Pelea en taberna: Sidoa\n49. Activar una bomba sin querer: Dyr/Calki\n50. Transicionar de género: Valisha/Yara/Nifty\n51. Anciano porculero: Sidoa\n52. Exitir IRL: Calki\n53. Responder easy antes de fallar miserablemente: Bokao\n54. Más seguidores en Instagram: Sidoa\n55. Viendo brainrot más tiempo: Dyr\n56. No necesito curación y caiga inconsciente: Dyr\n57. Icono fashion: Yara\n58. Entrada dramática innecesaria: Sidoa\n59. Playlist durante combato: Taburete\n60. Empezar tradición absurda en la party: Calki\n61. Speedrun de las fases del duelo: Bokao\n62. Empezar un incendio y apagarlo como si nada: Sidoa\n63. Qué personajes les gustaría ser: Bokao/Dyr\n64. Más sádico: DM\n65. Más wholesome: Taburete\n66. Más tóxico: Sidoa\n67. Amigo de Hitler sin saber quién es: Calki",
+    "content_player": "1. Peor compañero de cuarto: Bokao\n2. Traicinonar a la party por cena: Sidoa\n3. Más pifias: Bokao\n4. Más críticos: Taburete\n5. Alcoholico del grupo: Yara\n6. Cocinar mejor: Valisha\n7. Culear a un dragón: Dyr\n8. No poder cuidar de una planta: Sidoa\n9. Cometer masacre sin pensar en consecuencias: Sidoa/Nor\n10. Maatarse primero: Yara\n11. Estafa piramidal: Sidoa\n12. Más aguanta el alcohol: Valisha\n13. Menos aguanta el alcohol: Calki\n14. Ser confundido con alguien importante: Yara\n15. Casaría primero: Yara\n16. Loot goblin: Bokao (100%)\n17. Romper con confesión: Yara\n18. Convertirse en el villano: Sidoa\n19. Más Racista: Sidoa\n20. Que se atragante con comida y que se muera: Dyr\n21. Irse de meretrices: Sidoa\n22. Más crímenes de guerra: Bokao\n23. Sacrificarse por la party: Taburete\n24. Salir corriendo por algún bichejo pequeño: Nifty\n25. Confíen en mí antes de un desastre: Dyr y Calki\n26. Dormir abrazado a su arma: Valisha\n27. Empezar discusión filosófica: Bokao\n28. Mejores relaciones con animales y sprens: Taburete\n29. Perder dinero jugando a las carta: Dyr\n30. Más picao: Sidoa\n31. Buscado en varios paises sin saberlo: Sidoa (100%)\n32. Vivir peor si la parte no se hubiera encontrado: Nor\n33. Vivir mejor si la party no se hubiera encontrado: Neshor\n34. Crear identidad falsa: Dyr\n35. Misión sencilla en un crimen internacional: Calki\n36. Tomar droga pensando que es un caramelo: Sidoa/Taburete\n37. Empezar un culto: Bokao\n38. Cumplir su objetivo primero: Sidoa\n39. Sacarse el carné: Bokao/Neshor\n40. Personajes que se fusionan: Taburete/Valisha\n41. Ship favorito: BokaoXDyr ValishaXYara\n42. Incapaz de insultar a alguien de la party: Sidoa\n43. Pegarle a yb alto cargo sin miedo: Valisha\n44. Morir primero en combate: Calki\n45. Transportado a un isekai: Calki\n46. Bajarse más gente en un no-hit: Nor\n47. Vivir vida tranquila: Nor\n48. Pelea en taberna: Sidoa\n49. Activar una bomba sin querer: Dyr/Calki\n50. Transicionar de género: Valisha/Yara/Nifty\n51. Anciano porculero: Sidoa\n52. Exitir IRL: Calki\n53. Responder easy antes de fallar miserablemente: Bokao\n54. Más seguidores en Instagram: Sidoa\n55. Viendo brainrot más tiempo: Dyr\n56. No necesito curación y caiga inconsciente: Dyr\n57. Icono fashion: Yara\n58. Entrada dramática innecesaria: Sidoa\n59. Playlist durante combato: Taburete\n60. Empezar tradición absurda en la party: Calki\n61. Speedrun de las fases del duelo: Bokao\n62. Empezar un incendio y apagarlo como si nada: Sidoa\n63. Qué personajes les gustaría ser: Bokao/Dyr\n64. Más sádico: DM\n65. Más wholesome: Taburete\n66. Más tóxico: Sidoa\n67. Amigo de Hitler sin saber quién es: Calki",
+    "frontmatter": {
+      "title": "Resultados de las encuentas de personajes",
+      "visibility": "public",
+      "spoilers": false
     }
   },
   {
