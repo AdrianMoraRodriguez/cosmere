@@ -312,7 +312,7 @@
   {
     "slug": "Caminapiedras/Party Principal/Nathur",
     "title": "Nathur",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [
       "Manu"
     ],
@@ -329,7 +329,7 @@
     "content_player": "![](/Pasted image 20260528194228.png)\n## Sucesos en la Campaña\n## Avances como ??\nNo ha jurado \n## Caminos\nAgente: Ladrón",
     "frontmatter": {
       "title": "Nathur",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": true,
       "allowed_users": "[Manu]"
     }
