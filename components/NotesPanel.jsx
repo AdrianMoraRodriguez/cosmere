@@ -6,6 +6,7 @@ export default function NotesPanel({ username, isOpen, onClose }) {
   const [isSaving, setIsSaving] = useState(false);
   const [lastSaved, setLastSaved] = useState(null);
   const [saveTimeout, setSaveTimeout] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     if (isOpen && username) {
@@ -14,6 +15,7 @@ export default function NotesPanel({ username, isOpen, onClose }) {
   }, [isOpen, username]);
 
   const loadNotes = async () => {
+    setIsLoading(true);
     try {
       const { data, error } = await supabase
         .from('campaign_notes')
@@ -33,6 +35,8 @@ export default function NotesPanel({ username, isOpen, onClose }) {
       }
     } catch (err) {
       console.error('Error:', err);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -94,15 +98,13 @@ export default function NotesPanel({ username, isOpen, onClose }) {
 
   return (
     <>
-      {/* Overlay oscuro - z-index más alto que el header */}
       <div 
         className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] transition-opacity"
         onClick={onClose}
       />
       
-      {/* Panel lateral - z-index aún más alto */}
       <div className="fixed right-0 top-0 h-full w-full lg:w-[85vw] xl:w-[75vw] bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out overflow-y-auto">
-        {/* Header del panel - z-index más alto aún */}
+        {/* Header del panel */}
         <div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-8 sticky top-0 z-[75]">
           <div className="flex justify-between items-center mb-3">
             <h2 className="text-4xl font-bold text-white flex items-center">
@@ -111,7 +113,8 @@ export default function NotesPanel({ username, isOpen, onClose }) {
             </h2>
             <button
               onClick={onClose}
-              className="text-white hover:text-red-300 text-4xl transition-colors hover:scale-110 transform duration-200 p-2 hover:bg-red-500/20 rounded-lg"
+              className="text-white hover:text-red-300 text-4xl transition-colors hover:scale-110 transform duration-200 p-2 hover:bg-red-500/20 rounded-lg relative z-[80]"
+              style={{ marginRight: '-200px' }}
               aria-label="Cerrar panel de notas"
             >
               ✕
@@ -125,6 +128,9 @@ export default function NotesPanel({ username, isOpen, onClose }) {
               {isSaving ? '💾 Guardando...' : `✅ ${formatLastSaved()}`}
             </p>
           )}
+          {isLoading && (
+            <p className="text-yellow-300 text-sm mt-2">⏳ Cargando notas...</p>
+          )}
         </div>
 
         {/* Contenido del panel */}
@@ -132,6 +138,7 @@ export default function NotesPanel({ username, isOpen, onClose }) {
           <textarea
             value={notes}
             onChange={handleNotesChange}
+            disabled={isLoading}
             placeholder="✍️ Escribe aquí tus notas generales de la campaña...
 
 💡 Algunas ideas de qué escribir:
@@ -147,7 +154,7 @@ export default function NotesPanel({ username, isOpen, onClose }) {
 - ⚔️ Combates memorables
 
 ✨ Se guarda automáticamente cada 2 segundos."
-            className="w-full h-[calc(100vh-280px)] bg-white/10 backdrop-blur-lg border-2 border-white/30 rounded-xl p-6 text-white text-lg placeholder-emerald-300/60 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 focus:border-emerald-400 resize-none transition-all duration-200"
+            className="w-full h-[calc(100vh-280px)] bg-white/10 backdrop-blur-lg border-2 border-white/30 rounded-xl p-6 text-white text-lg placeholder-emerald-300/60 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 focus:border-emerald-400 resize-none transition-all duration-200 disabled:opacity-50"
             style={{ minHeight: '500px', fontSize: '16px', lineHeight: '1.6' }}
           />
         </div>
@@ -175,6 +182,10 @@ export default function NotesPanel({ username, isOpen, onClose }) {
               <li className="flex items-start">
                 <span className="mr-2">•</span>
                 <span>Se guardan automáticamente en la nube - no perderás tu trabajo</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Perfecto para tomar notas durante la sesión en vivo</span>
               </li>
             </ul>
           </div>
