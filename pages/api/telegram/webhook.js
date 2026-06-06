@@ -44,45 +44,65 @@ export default async function handler(req, res) {
       // Si el DM envía un mensaje que empieza con /reply_
       if (userId.toString() === DM_TELEGRAM_ID && text.startsWith('/reply_')) {
   const parts = text.split('\n');
-  const firstLine = parts[0];
-  const responseText = parts.slice(1).join('\n');
+  const firstLine = parts[0]; // /reply_Nico
+  const responseText = parts.slice(1).join('\n'); // El mensaje
 
   const playerUsername = firstLine.replace('/reply_', '').trim();
 
-  if (responseText.trim()) {
-    const { error } = await supabase
+  console.log('DEBUG - Reply detectado:');
+  console.log('First line:', firstLine);
+  console.log('Player username:', playerUsername);
+  console.log('Response text:', responseText);
+  console.log('DM_TELEGRAM_ID:', DM_TELEGRAM_ID);
+  console.log('userId:', userId);
+
+  if (!responseText.trim()) {
+    await sendTelegramMessage(chatId, '⚠️ Escribe el mensaje después de /reply_username\n\nEjemplo:\n/reply_Nico\nTu respuesta aquí');
+    return;
+  }
+
+  try {
+    // Insertar en Supabase
+    const { data, error } = await supabase
       .from('dm_messages')
-      .insert({
+      .insert([{
         sender_username: 'DM',
         recipient_username: playerUsername,
         message: responseText.trim()
-      });
+      }]);
 
-    if (!error) {
-      // NOTIFICAR AL JUGADOR POR TELEGRAM
-      try {
-        const { data: userReg } = await supabase
-          .from('telegram_users')
-          .select('telegram_id')
-          .eq('username', playerUsername)
-          .single();
+    console.log('Insert result:', { data, error });
 
-        if (userReg?.telegram_id) {
-          await sendTelegramMessage(
-            userReg.telegram_id,
-            `👑 <b>Respuesta del DM</b>\n\n<i>${responseText.trim()}</i>`
-          );
-        }
-      } catch (err) {
-        console.error('Error notifying player:', err);
-      }
-
-      await sendTelegramMessage(chatId, '✅ Mensaje enviado a ' + playerUsername);
-    } else {
-      await sendTelegramMessage(chatId, '❌ Error al enviar mensaje');
+    if (error) {
+      console.error('Error saving message:', error);
+      await sendTelegramMessage(chatId, `❌ Error al guardar: ${error.message}`);
+      return;
     }
-  } else {
-    await sendTelegramMessage(chatId, '⚠️ Escribe el mensaje después de /reply_username\n\nEjemplo:\n/reply_Nico\nTu respuesta aquí');
+
+    // Notificar al jugador por Telegram
+    try {
+      const { data: userReg, error: userError } = await supabase
+        .from('telegram_users')
+        .select('telegram_id')
+        .eq('username', playerUsername)
+        .single();
+
+      console.log('User lookup:', { userReg, userError });
+
+      if (userReg?.telegram_id) {
+        await sendTelegramMessage(
+          userReg.telegram_id,
+          `👑 <b>Respuesta del DM</b>\n\n${responseText.trim()}`
+        );
+      }
+    } catch (err) {
+      console.error('Error notifying player:', err);
+    }
+
+    await sendTelegramMessage(chatId, `✅ Mensaje enviado a ${playerUsername}`);
+  } catch (err) {
+    console.error('Exception:', err);
+    await sendTelegramMessage(chatId, `❌ Error: ${err.message}`);
   }
 }
       
