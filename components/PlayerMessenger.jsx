@@ -108,41 +108,56 @@ export default function PlayerMessenger({ username, isOpen, onClose }) {
   };
 
   const sendMessage = async () => {
-    const targetUser = selectedConversation || recipient;
-    
-    if (!targetUser || !message.trim()) {
-      alert('Selecciona un usuario y escribe un mensaje');
-      return;
-    }
+  const targetUser = selectedConversation || recipient;
+  
+  if (!targetUser || !message.trim()) {
+    alert('Selecciona un usuario y escribe un mensaje');
+    return;
+  }
 
-    setSending(true);
+  setSending(true);
 
-    try {
-      const { error } = await supabase
-        .from('dm_messages')
-        .insert({
-          sender_username: username,
-          recipient_username: targetUser,
-          message: message.trim(),
-        });
+  try {
+    const { error } = await supabase
+      .from('dm_messages')
+      .insert({
+        sender_username: username,
+        recipient_username: targetUser,
+        message: message.trim(),
+      });
 
-      if (error) {
-        console.error('Error sending message:', error);
-        alert('Error al enviar el mensaje');
-      } else {
-        setMessage('');
-        if (selectedConversation) {
-          loadMessages(selectedConversation);
-        }
-        loadConversations();
-      }
-    } catch (err) {
-      console.error('Error:', err);
+    if (error) {
+      console.error('Error sending message:', error);
       alert('Error al enviar el mensaje');
-    } finally {
-      setSending(false);
+    } else {
+      // NOTIFICAR POR TELEGRAM AL DESTINATARIO
+      try {
+        await fetch('/api/telegram/notify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            senderUsername: username,
+            recipientUsername: targetUser,
+            message: message.trim()
+          })
+        });
+      } catch (err) {
+        console.error('Error notifying Telegram:', err);
+      }
+
+      setMessage('');
+      if (selectedConversation) {
+        loadMessages(selectedConversation);
+      }
+      loadConversations();
     }
-  };
+  } catch (err) {
+    console.error('Error:', err);
+    alert('Error al enviar el mensaje');
+  } finally {
+    setSending(false);
+  }
+};
 
   const handleBack = () => {
     setSelectedConversation(null);

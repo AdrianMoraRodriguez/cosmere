@@ -70,15 +70,28 @@ export default async function handler(req, res) {
       }
       
       // Si un jugador escribe /register [username]
-      else if (text.startsWith('/register ')) {
-        const playerUsername = text.replace('/register ', '').trim();
-        telegramUsers[playerUsername] = userId;
-        
-        await sendTelegramMessage(
-          chatId,
-          `✅ Registrado como <b>${playerUsername}</b>\n\nAhora puedes enviar mensajes al DM escribiendo aquí.`
-        );
-      }
+else if (text.startsWith('/register ')) {
+  const playerUsername = text.replace('/register ', '').trim();
+  
+  // Guardar en la tabla de Supabase
+  const { error } = await supabase
+    .from('telegram_users')
+    .upsert({
+      username: playerUsername,
+      telegram_id: userId
+    }, {
+      onConflict: 'username'
+    });
+
+  if (!error) {
+    await sendTelegramMessage(
+      chatId,
+      `✅ Registrado como <b>${playerUsername}</b>\n\nAhora puedes recibir mensajes de otros jugadores y del DM aquí.`
+    );
+  } else {
+    await sendTelegramMessage(chatId, '❌ Error al registrar');
+  }
+}
       
       // Si es un jugador enviando un mensaje normal
       else if (!text.startsWith('/')) {
