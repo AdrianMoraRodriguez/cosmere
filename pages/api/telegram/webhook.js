@@ -43,31 +43,48 @@ export default async function handler(req, res) {
 
       // Si el DM envía un mensaje que empieza con /reply_
       if (userId.toString() === DM_TELEGRAM_ID && text.startsWith('/reply_')) {
-        const parts = text.split('\n');
-        const firstLine = parts[0]; // /reply_username
-        const responseText = parts.slice(1).join('\n'); // El resto
+  const parts = text.split('\n');
+  const firstLine = parts[0];
+  const responseText = parts.slice(1).join('\n');
 
-        const playerUsername = firstLine.replace('/reply_', '').trim();
+  const playerUsername = firstLine.replace('/reply_', '').trim();
 
-        if (responseText.trim()) {
-          // Guardar en Supabase
-          const { error } = await supabase
-            .from('dm_messages')
-            .insert({
-              sender_username: 'DM',
-              recipient_username: playerUsername,
-              message: responseText.trim()
-            });
+  if (responseText.trim()) {
+    const { error } = await supabase
+      .from('dm_messages')
+      .insert({
+        sender_username: 'DM',
+        recipient_username: playerUsername,
+        message: responseText.trim()
+      });
 
-          if (!error) {
-            await sendTelegramMessage(chatId, '✅ Mensaje enviado a ' + playerUsername);
-          } else {
-            await sendTelegramMessage(chatId, '❌ Error al enviar mensaje');
-          }
-        } else {
-          await sendTelegramMessage(chatId, '⚠️ Escribe el mensaje después de /reply_username');
+    if (!error) {
+      // NOTIFICAR AL JUGADOR POR TELEGRAM
+      try {
+        const { data: userReg } = await supabase
+          .from('telegram_users')
+          .select('telegram_id')
+          .eq('username', playerUsername)
+          .single();
+
+        if (userReg?.telegram_id) {
+          await sendTelegramMessage(
+            userReg.telegram_id,
+            `👑 <b>Respuesta del DM</b>\n\n<i>${responseText.trim()}</i>`
+          );
         }
+      } catch (err) {
+        console.error('Error notifying player:', err);
       }
+
+      await sendTelegramMessage(chatId, '✅ Mensaje enviado a ' + playerUsername);
+    } else {
+      await sendTelegramMessage(chatId, '❌ Error al enviar mensaje');
+    }
+  } else {
+    await sendTelegramMessage(chatId, '⚠️ Escribe el mensaje después de /reply_username\n\nEjemplo:\n/reply_Nico\nTu respuesta aquí');
+  }
+}
       
       // Si un jugador escribe /register [username]
 else if (text.startsWith('/register ')) {
