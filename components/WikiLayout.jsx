@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useState, useEffect, useRef } from 'react';
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
 
@@ -200,12 +201,64 @@ function getUserInitials(username) {
 
 // ─── Main layout ──────────────────────────────────────────────────────────────
 
-export default function WikiLayout({ user, indexPages = [], children, searchTerm, onSearch, onLogout }) {
+export default function WikiLayout({ user, indexPages = [], allPages = [], children, searchTerm, onSearch, onLogout }) {
   const router = useRouter();
   const isWikiHome = router.pathname === '/wiki';
 
   const mainPages = indexPages.filter(isMainIndexPage);
   const morePages  = indexPages.filter(p => !isMainIndexPage(p));
+
+  // ── Search state ────────────────────────────────────────────────────────────
+  const [localQuery, setLocalQuery] = useState(searchTerm || '');
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const searchWrapRef = useRef(null);
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handler = (e) => {
+      if (searchWrapRef.current && !searchWrapRef.current.contains(e.target)) {
+        setDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  // Close dropdown on route change
+  useEffect(() => {
+    setDropdownOpen(false);
+    setLocalQuery('');
+    onSearch?.('');
+  }, [router.asPath]);
+
+  const canSee = (page) => {
+    if (!user) return false;
+    if (user.role === 'admin') return true;
+    if (page.visibility === 'public') return true;
+    return page.allowed_users?.includes(user.username);
+  };
+
+  const searchResults = localQuery.length >= 2
+    ? allPages
+        .filter(p => canSee(p) && (
+          p.title.toLowerCase().includes(localQuery.toLowerCase()) ||
+          p.slug.toLowerCase().includes(localQuery.toLowerCase())
+        ))
+        .slice(0, 9)
+    : [];
+
+  const handleQueryChange = (val) => {
+    setLocalQuery(val);
+    onSearch?.(val);
+    setDropdownOpen(val.length >= 2);
+  };
+
+  const goToResult = (page) => {
+    setLocalQuery('');
+    setDropdownOpen(false);
+    onSearch?.('');
+    router.push(`/wiki/${encodeWikiSlug(page.slug)}`);
+  };
 
   function checkActive(slug) {
     try {
@@ -306,33 +359,100 @@ export default function WikiLayout({ user, indexPages = [], children, searchTerm
           gap: '16px',
           flexShrink: 0,
         }}>
-          {/* Search */}
-          <div style={{ flex: 1, maxWidth: '480px' }}>
-            <div style={{ position: 'relative' }}>
-              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
-                style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: '#2e4a65', pointerEvents: 'none' }}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <input
-                type="text"
-                placeholder="Buscar páginas..."
-                value={searchTerm || ''}
-                onChange={e => onSearch?.(e.target.value)}
-                style={{
-                  width: '100%',
-                  background: '#0b1628',
-                  border: '1px solid #152030',
-                  borderRadius: '8px',
-                  padding: '6px 12px 6px 30px',
-                  color: '#b8ccdf',
-                  fontSize: '13px',
-                  outline: 'none',
-                  transition: 'border-color 0.15s',
-                }}
-                onFocus={e => { e.target.style.borderColor = '#2563eb'; }}
-                onBlur={e => { e.target.style.borderColor = '#152030'; }}
-              />
-            </div>
+
+          {/* Search with dropdown */}
+          <div ref={searchWrapRef} style={{ flex: 1, maxWidth: '480px', position: 'relative' }}>
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
+              style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: '#2e4a65', pointerEvents: 'none', zIndex: 1 }}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Buscar páginas..."
+              value={localQuery}
+              onChange={e => handleQueryChange(e.target.value)}
+              onFocus={e => {
+                e.target.style.borderColor = '#2563eb';
+                if (localQuery.length >= 2) setDropdownOpen(true);
+              }}
+              onBlur={e => { e.target.style.borderColor = '#152030'; }}
+              onKeyDown={e => {
+                if (e.key === 'Escape') { setDropdownOpen(false); e.target.blur(); }
+                if (e.key === 'Enter' && searchResults.length > 0) goToResult(searchResults[0]);
+              }}
+              style={{
+                width: '100%',
+                background: '#0b1628',
+                border: '1px solid #152030',
+                borderRadius: dropdownOpen && searchResults.length > 0 ? '8px 8px 0 0' : '8px',
+                padding: '6px 12px 6px 30px',
+                color: '#b8ccdf',
+                fontSize: '13px',
+                outline: 'none',
+                transition: 'border-color 0.15s',
+              }}
+            />
+
+            {/* Dropdown */}
+            {dropdownOpen && searchResults.length > 0 && (
+              <div style={{
+                position: 'absolute',
+                top: '100%',
+                left: 0, right: 0,
+                background: '#07101f',
+                border: '1px solid #2563eb',
+                borderTop: 'none',
+                borderRadius: '0 0 8px 8px',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+                zIndex: 200,
+                maxHeight: '320px',
+                overflowY: 'auto',
+              }}>
+                {searchResults.map((page, i) => (
+                  <button
+                    key={page.slug}
+                    onMouseDown={e => { e.preventDefault(); goToResult(page); }}
+                    style={{
+                      width: '100%',
+                      padding: '9px 14px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      gap: '8px',
+                      background: 'transparent',
+                      border: 'none',
+                      borderBottom: i < searchResults.length - 1 ? '1px solid #0a1828' : 'none',
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                      transition: 'background 0.1s',
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.background = '#0c1e38'}
+                    onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                  >
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ color: '#b8ccdf', fontSize: '13px', fontWeight: '500', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {page.title}
+                      </div>
+                      <div style={{ color: '#2e4060', fontSize: '11px', marginTop: '1px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {page.slug}
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', gap: '4px', flexShrink: 0 }}>
+                      {page.spoilers && (
+                        <span style={{ background: 'rgba(245,158,11,0.12)', color: '#f59e0b', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '4px', fontSize: '10px', fontWeight: '600', padding: '1px 5px' }}>
+                          Spoilers
+                        </span>
+                      )}
+                      {page.visibility === 'private' && (
+                        <span style={{ background: 'rgba(239,68,68,0.12)', color: '#f87171', border: '1px solid rgba(239,68,68,0.25)', borderRadius: '4px', fontSize: '10px', fontWeight: '600', padding: '1px 5px' }}>
+                          Privado
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div style={{ flex: 1 }} />

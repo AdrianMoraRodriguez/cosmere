@@ -289,6 +289,7 @@ export default function WikiIndex() {
       <WikiLayout
         user={user}
         indexPages={indexPages}
+        allPages={accessiblePages}
         searchTerm={searchTerm}
         onSearch={setSearchTerm}
         onLogout={handleLogout}

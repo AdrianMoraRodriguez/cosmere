@@ -114,9 +114,7 @@ export default function WikiPage() {
       <WikiLayout
         user={user}
         indexPages={indexPages}
-        onSearch={(term) => {
-          if (term) router.push(`/wiki?q=${encodeURIComponent(term)}`);
-        }}
+        allPages={allPages}
         onLogout={handleLogout}
       >
         <div style={{ padding: '32px 40px', maxWidth: isPhotoGridPage ? '1200px' : '860px' }}>
