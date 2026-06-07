@@ -1,5 +1,68 @@
 import { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { supabase } from '../lib/supabase';
+
+const S = {
+  overlay: { position:'fixed', inset:0, background:'rgba(0,0,0,0.7)', backdropFilter:'blur(4px)', zIndex:60 },
+  panel: {
+    position:'fixed', right:0, top:0, height:'100%', width:'min(960px,100%)',
+    background:'#07101f', borderLeft:'1px solid #0f1e30',
+    boxShadow:'-8px 0 40px rgba(0,0,0,0.6)', zIndex:70,
+    display:'flex', flexDirection:'column', overflow:'hidden',
+    fontFamily:"-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  },
+  header: {
+    height:56, background:'#060c18', borderBottom:'1px solid #0f1e30',
+    display:'flex', alignItems:'center', padding:'0 20px', gap:'12px', flexShrink:0,
+  },
+  headerLeft: { display:'flex', alignItems:'center', gap:'8px', flex:1, minWidth:0 },
+  headerIcon: { color:'#10b981', fontSize:'16px', flexShrink:0 },
+  headerTitle: { color:'#b8ccdf', fontWeight:'700', fontSize:'14px', letterSpacing:'0.01em' },
+  saveStatus: { fontSize:'12px', color:'#3a5878', marginLeft:'auto', whiteSpace:'nowrap', flexShrink:0 },
+  closeBtn: { background:'none', border:'none', color:'#3a5878', fontSize:'18px', cursor:'pointer', padding:'6px', borderRadius:'6px', lineHeight:1, transition:'color 0.15s', flexShrink:0 },
+  tabBar: { display:'flex', borderBottom:'1px solid #0f1e30', background:'#060c18', flexShrink:0 },
+  tab: (active) => ({
+    padding:'10px 20px', fontSize:'13px', fontWeight:'600', cursor:'pointer',
+    border:'none', background:'transparent',
+    color: active ? '#b8ccdf' : '#3a5878',
+    borderBottom: active ? '2px solid #10b981' : '2px solid transparent',
+    transition:'color 0.15s',
+    letterSpacing:'0.02em',
+  }),
+  body: { flex:1, overflow:'hidden', display:'flex', flexDirection:'column' },
+  textarea: {
+    flex:1, resize:'none', outline:'none', border:'none',
+    background:'#07101f', color:'#b8ccdf', fontSize:'14px',
+    padding:'24px 28px', lineHeight:1.75, fontFamily:'inherit',
+    caretColor:'#10b981',
+  },
+  preview: {
+    flex:1, overflowY:'auto', padding:'24px 28px',
+    color:'#9ab4cc', fontSize:'14px', lineHeight:1.75,
+  },
+  footer: {
+    borderTop:'1px solid #0f1e30', padding:'12px 20px',
+    background:'#060c18', display:'flex', gap:'16px', alignItems:'center', flexShrink:0,
+  },
+  tip: { fontSize:'12px', color:'#2e4060' },
+  tipCode: { background:'#0a1628', border:'1px solid #152030', borderRadius:'4px', padding:'1px 5px', color:'#60a5fa', fontFamily:'monospace', fontSize:'11px' },
+};
+
+// Minimal markdown prose styles for the preview pane
+const previewStyles = `
+  .notes-preview p { margin: 0.6rem 0; }
+  .notes-preview strong { color: #f59e0b; font-weight: 600; }
+  .notes-preview em { color: #93b8d8; font-style: italic; }
+  .notes-preview h1 { color: #c8daf0; font-size: 1.4rem; font-weight: 700; margin: 1.4rem 0 0.5rem; }
+  .notes-preview h2 { color: #4d8fd6; font-size: 1.1rem; font-weight: 600; margin: 1.2rem 0 0.4rem; border-bottom: 1px solid #0f1e30; padding-bottom: 0.3rem; }
+  .notes-preview h3 { color: #60a5fa; font-size: 1rem; font-weight: 600; margin: 1rem 0 0.4rem; }
+  .notes-preview ul, .notes-preview ol { padding-left: 1.4rem; margin: 0.5rem 0; }
+  .notes-preview li { margin: 0.3rem 0; }
+  .notes-preview code { background: rgba(255,255,255,0.07); padding: 0.1rem 0.3rem; border-radius: 4px; color: #f59e0b; font-size: 0.88em; }
+  .notes-preview blockquote { border-left: 3px solid #1e4080; padding-left: 1rem; margin-left: 0; font-style: italic; color: #5a7898; }
+  .notes-preview hr { border: none; border-top: 1px solid #0f1e30; margin: 1.2rem 0; }
+  .notes-preview a { color: #4d8fd6; text-decoration: underline; }
+`;
 
 export default function NotesPanel({ username, isOpen, onClose }) {
   const [notes, setNotes] = useState('');
@@ -7,188 +70,117 @@ export default function NotesPanel({ username, isOpen, onClose }) {
   const [lastSaved, setLastSaved] = useState(null);
   const [saveTimeout, setSaveTimeout] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [tab, setTab] = useState('edit');
 
-  useEffect(() => {
-    if (isOpen && username) {
-      loadNotes();
-    }
-  }, [isOpen, username]);
+  useEffect(() => { if (isOpen && username) loadNotes(); }, [isOpen, username]);
 
   const loadNotes = async () => {
     setIsLoading(true);
     try {
-      const { data, error } = await supabase
-        .from('campaign_notes')
-        .select('content, updated_at')
-        .eq('page_slug', 'general_notes')
-        .eq('username', username)
-        .single();
-
-      if (error && error.code !== 'PGRST116') {
-        console.error('Error loading notes:', error);
-        return;
-      }
-
-      if (data) {
-        setNotes(data.content || '');
-        setLastSaved(new Date(data.updated_at));
-      }
-    } catch (err) {
-      console.error('Error:', err);
-    } finally {
-      setIsLoading(false);
-    }
+      const { data, error } = await supabase.from('campaign_notes').select('content, updated_at')
+        .eq('page_slug', 'general_notes').eq('username', username).single();
+      if (error && error.code !== 'PGRST116') { console.error(error); return; }
+      if (data) { setNotes(data.content || ''); setLastSaved(new Date(data.updated_at)); }
+    } finally { setIsLoading(false); }
   };
 
   const saveNotes = async (content) => {
     setIsSaving(true);
-    
     try {
-      const { error } = await supabase
-        .from('campaign_notes')
-        .upsert({
-          page_slug: 'general_notes',
-          username: username,
-          content: content,
-          updated_at: new Date().toISOString()
-        }, {
-          onConflict: 'page_slug,username'
-        });
-
-      if (error) {
-        console.error('Error saving notes:', error);
-      } else {
-        setLastSaved(new Date());
-      }
-    } catch (err) {
-      console.error('Error:', err);
-    } finally {
-      setIsSaving(false);
-    }
+      const { error } = await supabase.from('campaign_notes').upsert(
+        { page_slug: 'general_notes', username, content, updated_at: new Date().toISOString() },
+        { onConflict: 'page_slug,username' }
+      );
+      if (!error) setLastSaved(new Date());
+    } finally { setIsSaving(false); }
   };
 
-  const handleNotesChange = (e) => {
-    const newContent = e.target.value;
-    setNotes(newContent);
-
-    if (saveTimeout) {
-      clearTimeout(saveTimeout);
-    }
-
-    const timeout = setTimeout(() => {
-      saveNotes(newContent);
-    }, 2000);
-
-    setSaveTimeout(timeout);
+  const handleChange = (e) => {
+    const val = e.target.value;
+    setNotes(val);
+    if (saveTimeout) clearTimeout(saveTimeout);
+    setSaveTimeout(setTimeout(() => saveNotes(val), 2000));
   };
 
-  const formatLastSaved = () => {
+  const fmtSaved = () => {
     if (!lastSaved) return '';
-    
-    const now = new Date();
-    const diff = Math.floor((now - lastSaved) / 1000);
-    
-    if (diff < 60) return 'Guardado hace unos segundos';
-    if (diff < 3600) return `Guardado hace ${Math.floor(diff / 60)} minutos`;
-    
-    return `Guardado a las ${lastSaved.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}`;
+    const diff = Math.floor((Date.now() - lastSaved) / 1000);
+    if (diff < 60) return 'Guardado';
+    if (diff < 3600) return `Hace ${Math.floor(diff / 60)}m`;
+    return lastSaved.toLocaleTimeString('es-ES', { hour:'2-digit', minute:'2-digit' });
   };
 
   if (!isOpen) return null;
 
   return (
     <>
-      <div 
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] transition-opacity"
-        onClick={onClose}
-      />
-      
-      <div className="fixed right-0 top-0 h-full w-full lg:w-[85vw] xl:w-[75vw] bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out overflow-y-auto">
-        {/* Header del panel */}
-        <div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-8 sticky top-0 z-[75]">
-          <div className="flex justify-between items-center mb-3">
-            <h2 className="text-4xl font-bold text-white flex items-center">
-              <span className="mr-3 text-5xl">📝</span>
-              Mis Notas de Campaña
-            </h2>
-            <button
-              onClick={onClose}
-              className="text-white hover:text-red-300 text-4xl transition-colors hover:scale-110 transform duration-200 p-2 hover:bg-red-500/20 rounded-lg relative z-[80]"
-              style={{ marginRight: '-200px' }}
-              aria-label="Cerrar panel de notas"
-            >
-              ✕
-            </button>
+      <style>{previewStyles}</style>
+      <div style={S.overlay} onClick={onClose} />
+      <div style={S.panel}>
+
+        {/* Header */}
+        <div style={S.header}>
+          <div style={S.headerLeft}>
+            <span style={S.headerIcon}>📝</span>
+            <span style={S.headerTitle}>Mis Notas</span>
+            {isLoading && <span style={{ color:'#2e4060', fontSize:'12px' }}>cargando...</span>}
           </div>
-          <p className="text-emerald-300 text-lg">
-            Tus notas personales - visibles solo para ti
-          </p>
-          {lastSaved && (
-            <p className="text-blue-300 text-sm mt-3 font-semibold">
-              {isSaving ? '💾 Guardando...' : `✅ ${formatLastSaved()}`}
-            </p>
-          )}
-          {isLoading && (
-            <p className="text-yellow-300 text-sm mt-2">⏳ Cargando notas...</p>
+          <span style={S.saveStatus}>
+            {isSaving ? 'Guardando...' : lastSaved ? fmtSaved() : ''}
+          </span>
+          <button
+            style={S.closeBtn} onClick={onClose}
+            onMouseEnter={e => e.target.style.color='#f87171'}
+            onMouseLeave={e => e.target.style.color='#3a5878'}
+          >✕</button>
+        </div>
+
+        {/* Tabs */}
+        <div style={S.tabBar}>
+          <button style={S.tab(tab === 'edit')} onClick={() => setTab('edit')}>Editar</button>
+          <button style={S.tab(tab === 'preview')} onClick={() => setTab('preview')}>Vista previa</button>
+        </div>
+
+        {/* Body */}
+        <div style={S.body}>
+          {tab === 'edit' ? (
+            <textarea
+              style={S.textarea}
+              value={notes}
+              onChange={handleChange}
+              disabled={isLoading}
+              placeholder="Escribe aquí tus notas de campaña...
+
+Puedes usar markdown:
+  **negrita**   *cursiva*
+  ## Título     > cita
+  - lista       `código`
+
+Se guarda automáticamente."
+            />
+          ) : (
+            <div style={S.preview} className="notes-preview">
+              {notes.trim() ? (
+                <ReactMarkdown>{notes}</ReactMarkdown>
+              ) : (
+                <span style={{ color:'#2e4060', fontStyle:'italic' }}>Nada que previsualizar todavía...</span>
+              )}
+            </div>
           )}
         </div>
 
-        {/* Contenido del panel */}
-        <div className="p-8">
-          <textarea
-            value={notes}
-            onChange={handleNotesChange}
-            disabled={isLoading}
-            placeholder="✍️ Escribe aquí tus notas generales de la campaña...
-
-💡 Algunas ideas de qué escribir:
-
-- 📌 Recordatorios de cosas importantes
-- 🔍 Teorías sobre la trama
-- ❓ Preguntas para el DM
-- 🎯 Objetivos del personaje
-- 👥 Relaciones con otros personajes
-- 📜 Eventos importantes de la sesión
-- 💭 Pensamientos y reflexiones
-- 🗺️ Lugares visitados
-- ⚔️ Combates memorables
-
-✨ Se guarda automáticamente cada 2 segundos."
-            className="w-full h-[calc(100vh-280px)] bg-white/10 backdrop-blur-lg border-2 border-white/30 rounded-xl p-6 text-white text-lg placeholder-emerald-300/60 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 focus:border-emerald-400 resize-none transition-all duration-200 disabled:opacity-50"
-            style={{ minHeight: '500px', fontSize: '16px', lineHeight: '1.6' }}
-          />
-        </div>
-
-        {/* Tips en el footer */}
-        <div className="p-8 pt-0">
-          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
-            <p className="font-bold mb-3 text-white text-lg flex items-center">
-              <span className="mr-2">💡</span>
-              Consejos útiles:
-            </p>
-            <ul className="space-y-2 text-emerald-200">
-              <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Usa <code className="bg-white/20 px-2 py-1 rounded text-sm">**negrita**</code> o <code className="bg-white/20 px-2 py-1 rounded text-sm">*cursiva*</code> para dar formato</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Puedes acceder a tus notas desde cualquier página de la wiki</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Solo tú puedes ver y editar estas notas - son completamente privadas</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Se guardan automáticamente en la nube - no perderás tu trabajo</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Perfecto para tomar notas durante la sesión en vivo</span>
-              </li>
-            </ul>
-          </div>
+        {/* Footer tips */}
+        <div style={S.footer}>
+          <span style={S.tip}>
+            <span style={S.tipCode}>**negrita**</span>
+            {' '}&nbsp;
+            <span style={S.tipCode}>*cursiva*</span>
+            {' '}&nbsp;
+            <span style={S.tipCode}>## título</span>
+            {' '}&nbsp;
+            <span style={S.tipCode}>- lista</span>
+          </span>
+          <span style={{ ...S.tip, marginLeft:'auto' }}>Solo tú puedes ver estas notas · se guardan en la nube</span>
         </div>
       </div>
     </>

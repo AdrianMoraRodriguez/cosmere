@@ -149,7 +149,7 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
       const encodedSlug = targetPage.slug.split('/').map(encodeURIComponent).join('/');
       const anchorPart = anchor ? `#${encodeURIComponent(anchor)}` : '';
 
-      if (isIndexOrSubindex || targetPage.is_index || targetPage.is_subindex) {
+      if (isIndexOrSubindex) {
         resolvedIndexTargets.push(targetPage);
         return `<index-link href="/wiki/${encodedSlug}${anchorPart}" spoilers="${targetPage.spoilers || false}" private="${targetPage.visibility === 'private'}">${text}</index-link>`;
       }

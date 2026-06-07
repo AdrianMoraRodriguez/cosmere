@@ -1,25 +1,37 @@
 export default function MessageButton({ onClick, unreadCount = 0, isDM = false }) {
+  const bottom = isDM ? '32px' : '96px';
+  const bg = isDM
+    ? 'linear-gradient(135deg,#4c1d95,#6d28d9)'
+    : 'linear-gradient(135deg,#1e3a8a,#2563eb)';
+
   return (
     <button
       onClick={onClick}
-      className={`fixed ${isDM ? 'bottom-8 right-8' : 'bottom-32 right-8'} z-30 ${
-        isDM 
-          ? 'bg-gradient-to-br from-purple-600 to-red-600 hover:from-purple-700 hover:to-red-700'
-          : 'bg-gradient-to-br from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700'
-      } text-white rounded-full p-6 shadow-2xl transition-all duration-300 hover:scale-110 group`}
-      title={isDM ? "Enviar mensajes a jugadores" : "Mensajes del DM"}
+      title={isDM ? 'Mensajería DM' : 'Tus mensajes'}
+      style={{
+        position:'fixed', right:'28px', bottom, zIndex:30,
+        background:bg, border:'1px solid rgba(255,255,255,0.1)',
+        borderRadius:'50%', width:'52px', height:'52px',
+        display:'flex', alignItems:'center', justifyContent:'center',
+        boxShadow:'0 4px 20px rgba(0,0,0,0.5)',
+        cursor:'pointer', transition:'transform 0.2s, box-shadow 0.2s',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.transform='scale(1.1)'; e.currentTarget.style.boxShadow='0 6px 28px rgba(0,0,0,0.6)'; }}
+      onMouseLeave={e => { e.currentTarget.style.transform='scale(1)'; e.currentTarget.style.boxShadow='0 4px 20px rgba(0,0,0,0.5)'; }}
     >
-      <div className="relative">
-        <span className="text-5xl">{isDM ? '📨' : '📬'}</span>
-        {unreadCount > 0 && (
-          <span className="absolute -top-2 -right-2 bg-yellow-500 text-yellow-900 font-bold text-sm h-8 w-8 rounded-full flex items-center justify-center animate-bounce">
-            {unreadCount}
-          </span>
-        )}
-      </div>
-      <span className={`absolute ${isDM ? 'left-full ml-4' : 'right-full mr-4'} top-1/2 -translate-y-1/2 bg-black/90 text-white px-4 py-2 rounded-lg text-base font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl`}>
-        {isDM ? '📨 Mensajería DM' : '📬 Tus Mensajes'}
-      </span>
+      <span style={{ fontSize:'20px', lineHeight:1 }}>{isDM ? '📨' : '📬'}</span>
+      {unreadCount > 0 && (
+        <span style={{
+          position:'absolute', top:'-4px', right:'-4px',
+          background:'#f59e0b', color:'#431407',
+          fontWeight:'800', fontSize:'10px',
+          height:'18px', minWidth:'18px', borderRadius:'99px',
+          display:'flex', alignItems:'center', justifyContent:'center',
+          padding:'0 4px',
+        }}>
+          {unreadCount}
+        </span>
+      )}
     </button>
   );
 }

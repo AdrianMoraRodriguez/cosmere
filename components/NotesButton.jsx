@@ -1,19 +1,21 @@
-export default function NotesButton({ onClick, hasUnsavedChanges = false }) {
+export default function NotesButton({ onClick }) {
   return (
     <button
       onClick={onClick}
-      className="fixed bottom-8 right-8 z-30 bg-gradient-to-br from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white rounded-full p-6 shadow-2xl transition-all duration-300 hover:scale-110 group"
       title="Mis notas de campaña"
+      style={{
+        position:'fixed', right:'28px', bottom:'160px', zIndex:30,
+        background:'linear-gradient(135deg,#064e3b,#065f46)',
+        border:'1px solid rgba(255,255,255,0.1)',
+        borderRadius:'50%', width:'52px', height:'52px',
+        display:'flex', alignItems:'center', justifyContent:'center',
+        boxShadow:'0 4px 20px rgba(0,0,0,0.5)',
+        cursor:'pointer', transition:'transform 0.2s, box-shadow 0.2s',
+      }}
+      onMouseEnter={e => { e.currentTarget.style.transform='scale(1.1)'; e.currentTarget.style.boxShadow='0 6px 28px rgba(0,0,0,0.6)'; }}
+      onMouseLeave={e => { e.currentTarget.style.transform='scale(1)'; e.currentTarget.style.boxShadow='0 4px 20px rgba(0,0,0,0.5)'; }}
     >
-      <div className="relative">
-        <span className="text-5xl">📝</span>
-        {hasUnsavedChanges && (
-          <span className="absolute -top-2 -right-2 h-5 w-5 bg-red-500 rounded-full animate-pulse" />
-        )}
-      </div>
-      <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-black/90 text-white px-4 py-2 rounded-lg text-base font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-xl">
-        📝 Mis Notas
-      </span>
+      <span style={{ fontSize:'20px', lineHeight:1 }}>📝</span>
     </button>
   );
 }

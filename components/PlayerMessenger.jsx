@@ -1,5 +1,47 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { supabase } from '../lib/supabase';
+
+const S = {
+  overlay: { position:'fixed', inset:0, background:'rgba(0,0,0,0.7)', backdropFilter:'blur(4px)', zIndex:60 },
+  panel: {
+    position:'fixed', right:0, top:0, height:'100%', width:'min(900px,100%)',
+    background:'#07101f', borderLeft:'1px solid #0f1e30',
+    boxShadow:'-8px 0 40px rgba(0,0,0,0.6)', zIndex:70,
+    display:'flex', overflow:'hidden',
+    fontFamily:"-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  },
+  sidebar: { width:240, flexShrink:0, background:'#060c18', borderRight:'1px solid #0f1e30', display:'flex', flexDirection:'column' },
+  sidebarHeader: { padding:'16px', borderBottom:'1px solid #0f1e30', display:'flex', alignItems:'center', justifyContent:'space-between' },
+  sidebarTitle: { color:'#b8ccdf', fontWeight:'700', fontSize:'13px', letterSpacing:'0.06em', textTransform:'uppercase' },
+  convItem: (active) => ({
+    width:'100%', padding:'12px 14px', borderBottom:'1px solid #0a1828', textAlign:'left',
+    background: active ? '#0f2040' : 'transparent',
+    borderLeft: active ? '2px solid #2563eb' : '2px solid transparent',
+    cursor:'pointer', transition:'background 0.12s',
+  }),
+  convName: { color:'#b8ccdf', fontWeight:'600', fontSize:'13px' },
+  convPreview: { color:'#3a5878', fontSize:'11.5px', marginTop:'3px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', maxWidth:'160px' },
+  convTime: { color:'#2a3d52', fontSize:'10.5px', marginTop:'2px' },
+  unreadBadge: { background:'#f59e0b', color:'#431407', fontSize:'9px', fontWeight:'800', padding:'1px 6px', borderRadius:'99px', letterSpacing:'0.05em' },
+  main: { flex:1, display:'flex', flexDirection:'column', overflow:'hidden', background:'#07101f' },
+  header: { height:56, background:'#060c18', borderBottom:'1px solid #0f1e30', display:'flex', alignItems:'center', padding:'0 16px', gap:'10px', flexShrink:0 },
+  headerTitle: { color:'#b8ccdf', fontWeight:'600', fontSize:'14px', flex:1 },
+  closeBtn: { background:'none', border:'none', color:'#3a5878', fontSize:'18px', cursor:'pointer', padding:'6px', borderRadius:'6px', lineHeight:1, transition:'color 0.15s' },
+  backBtn: { background:'none', border:'none', color:'#3a5878', fontSize:'16px', cursor:'pointer', padding:'4px 8px', borderRadius:'6px', lineHeight:1 },
+  messages: { flex:1, overflowY:'auto', padding:'16px', display:'flex', flexDirection:'column', gap:'10px' },
+  msgMine: { alignSelf:'flex-end', maxWidth:'70%', background:'linear-gradient(135deg,#1e3a8a,#2563eb)', borderRadius:'12px 12px 2px 12px', padding:'10px 14px' },
+  msgOther: { alignSelf:'flex-start', maxWidth:'70%', background:'#0c1e38', border:'1px solid #0f2a45', borderRadius:'12px 12px 12px 2px', padding:'10px 14px' },
+  msgText: { color:'#e2e8f0', fontSize:'13.5px', whiteSpace:'pre-wrap', lineHeight:1.5 },
+  msgTime: { color:'rgba(255,255,255,0.35)', fontSize:'10.5px', marginTop:'4px', textAlign:'right' },
+  inputArea: { borderTop:'1px solid #0f1e30', padding:'12px 16px', display:'flex', gap:'8px', alignItems:'flex-end', background:'#060c18' },
+  textarea: { flex:1, background:'#0b1628', border:'1px solid #152030', borderRadius:'8px', padding:'8px 12px', color:'#b8ccdf', fontSize:'13.5px', resize:'none', outline:'none', fontFamily:'inherit', lineHeight:1.5 },
+  sendBtn: (disabled) => ({ background: disabled ? '#1a2535' : '#2563eb', border:'none', borderRadius:'8px', padding:'8px 16px', color: disabled ? '#2e4060' : 'white', cursor: disabled ? 'not-allowed' : 'pointer', fontSize:'13px', fontWeight:'600', transition:'background 0.15s', whiteSpace:'nowrap' }),
+  emptyState: { flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'32px', gap:'16px' },
+  emptyTitle: { color:'#b8ccdf', fontWeight:'600', fontSize:'16px', textAlign:'center' },
+  select: { width:'100%', background:'#0b1628', border:'1px solid #152030', borderRadius:'8px', padding:'9px 12px', color:'#b8ccdf', fontSize:'13.5px', outline:'none', marginBottom:'10px' },
+  bigTextarea: { width:'100%', height:'120px', background:'#0b1628', border:'1px solid #152030', borderRadius:'8px', padding:'10px 12px', color:'#b8ccdf', fontSize:'13.5px', resize:'none', outline:'none', fontFamily:'inherit', lineHeight:1.5, marginBottom:'10px' },
+  bigSendBtn: (disabled) => ({ width:'100%', background: disabled ? '#1a2535' : '#2563eb', border:'none', borderRadius:'8px', padding:'11px', color: disabled ? '#2e4060' : 'white', cursor: disabled ? 'not-allowed' : 'pointer', fontSize:'14px', fontWeight:'600', transition:'background 0.15s' }),
+};
 
 export default function PlayerMessenger({ username, isOpen, onClose }) {
   const [recipient, setRecipient] = useState('');
@@ -9,346 +51,148 @@ export default function PlayerMessenger({ username, isOpen, onClose }) {
   const [selectedConversation, setSelectedConversation] = useState(null);
   const [messages, setMessages] = useState([]);
   const [users, setUsers] = useState([]);
+  const messagesEndRef = useRef(null);
 
-  useEffect(() => {
-    if (isOpen && username) {
-      loadUsers();
-      loadConversations();
-    }
-  }, [isOpen, username]);
-
-  useEffect(() => {
-    if (selectedConversation) {
-      loadMessages(selectedConversation);
-    }
-  }, [selectedConversation]);
+  useEffect(() => { if (isOpen && username) { loadUsers(); loadConversations(); } }, [isOpen, username]);
+  useEffect(() => { if (selectedConversation) loadMessages(selectedConversation); }, [selectedConversation]);
+  useEffect(() => { messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [messages]);
 
   const loadUsers = async () => {
     try {
-      const response = await fetch('/content/pages.json');
-      const pages = await response.json();
-      
-      const allUsers = new Set(['DM']);
-      pages.forEach(page => {
-        if (page.allowed_users && Array.isArray(page.allowed_users)) {
-          page.allowed_users.forEach(user => {
-            if (user !== username) {
-              allUsers.add(user);
-            }
-          });
-        }
-      });
-      
-      setUsers(Array.from(allUsers).sort());
-    } catch (err) {
-      console.error('Error loading users:', err);
-      setUsers(['DM']);
-    }
+      const pages = await fetch('/content/pages.json').then(r => r.json());
+      const all = new Set(['DM']);
+      pages.forEach(p => p.allowed_users?.forEach(u => { if (u !== username) all.add(u); }));
+      setUsers(Array.from(all).sort());
+    } catch { setUsers(['DM']); }
   };
 
   const loadConversations = async () => {
-    try {
-      const { data, error } = await supabase
-        .from('dm_messages')
-        .select('*')
-        .or(`sender_username.eq.${username},recipient_username.eq.${username}`)
-        .order('created_at', { ascending: false });
-
-      if (error) {
-        console.error('Error loading conversations:', error);
-        return;
+    const { data } = await supabase.from('dm_messages').select('*')
+      .or(`sender_username.eq.${username},recipient_username.eq.${username}`)
+      .order('created_at', { ascending: false });
+    const map = new Map();
+    data?.forEach(msg => {
+      const other = msg.sender_username === username ? msg.recipient_username : msg.sender_username;
+      if (!map.has(other) || new Date(msg.created_at) > new Date(map.get(other).lastTime)) {
+        map.set(other, { user: other, lastMessage: msg.message, lastTime: msg.created_at, unread: msg.recipient_username === username && !msg.read });
       }
-
-      const convMap = new Map();
-      data?.forEach(msg => {
-        const other = msg.sender_username === username ? msg.recipient_username : msg.sender_username;
-        if (!convMap.has(other) || new Date(msg.created_at) > new Date(convMap.get(other).created_at)) {
-          convMap.set(other, {
-            user: other,
-            lastMessage: msg.message,
-            lastTime: msg.created_at,
-            unread: msg.recipient_username === username && !msg.read
-          });
-        }
-      });
-
-      setConversations(Array.from(convMap.values()));
-    } catch (err) {
-      console.error('Error:', err);
-    }
+    });
+    setConversations(Array.from(map.values()));
   };
 
-  const loadMessages = async (otherUser) => {
-    try {
-      const { data, error } = await supabase
-        .from('dm_messages')
-        .select('*')
-        .or(`and(sender_username.eq.${username},recipient_username.eq.${otherUser}),and(sender_username.eq.${otherUser},recipient_username.eq.${username})`)
-        .order('created_at', { ascending: true });
-
-      if (error) {
-        console.error('Error loading messages:', error);
-        return;
-      }
-
-      setMessages(data || []);
-
-      const unreadIds = data?.filter(m => m.recipient_username === username && !m.read).map(m => m.id) || [];
-      if (unreadIds.length > 0) {
-        await supabase
-          .from('dm_messages')
-          .update({ read: true })
-          .in('id', unreadIds);
-        
-        loadConversations();
-      }
-    } catch (err) {
-      console.error('Error:', err);
-    }
+  const loadMessages = async (other) => {
+    const { data } = await supabase.from('dm_messages').select('*')
+      .or(`and(sender_username.eq.${username},recipient_username.eq.${other}),and(sender_username.eq.${other},recipient_username.eq.${username})`)
+      .order('created_at', { ascending: true });
+    setMessages(data || []);
+    const unread = data?.filter(m => m.recipient_username === username && !m.read).map(m => m.id) || [];
+    if (unread.length) { await supabase.from('dm_messages').update({ read: true }).in('id', unread); loadConversations(); }
   };
 
   const sendMessage = async () => {
-  const targetUser = selectedConversation || recipient;
-  
-  if (!targetUser || !message.trim()) {
-    alert('Selecciona un usuario y escribe un mensaje');
-    return;
-  }
-
-  setSending(true);
-
-  try {
-    const { error } = await supabase
-      .from('dm_messages')
-      .insert({
-        sender_username: username,
-        recipient_username: targetUser,
-        message: message.trim(),
-      });
-
-    if (error) {
-      console.error('Error sending message:', error);
-      alert('Error al enviar el mensaje');
-    } else {
-      // NOTIFICAR POR TELEGRAM AL DESTINATARIO
-      try {
-        await fetch('/api/telegram/notify', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            senderUsername: username,
-            recipientUsername: targetUser,
-            message: message.trim()
-          })
-        });
-      } catch (err) {
-        console.error('Error notifying Telegram:', err);
+    const target = selectedConversation || recipient;
+    if (!target || !message.trim()) return;
+    setSending(true);
+    try {
+      const { error } = await supabase.from('dm_messages').insert({ sender_username: username, recipient_username: target, message: message.trim() });
+      if (!error) {
+        try {
+          await fetch('/api/telegram/notify', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ senderUsername: username, recipientUsername: target, message: message.trim() }),
+          });
+        } catch {}
+        setMessage('');
+        if (selectedConversation) loadMessages(selectedConversation);
+        loadConversations();
       }
-
-      setMessage('');
-      if (selectedConversation) {
-        loadMessages(selectedConversation);
-      }
-      loadConversations();
-    }
-  } catch (err) {
-    console.error('Error:', err);
-    alert('Error al enviar el mensaje');
-  } finally {
-    setSending(false);
-  }
-};
-
-  const handleBack = () => {
-    setSelectedConversation(null);
-    setRecipient('');
-    setMessage('');
-    loadConversations();
+    } finally { setSending(false); }
   };
+
+  const handleBack = () => { setSelectedConversation(null); setRecipient(''); setMessage(''); loadConversations(); };
 
   if (!isOpen) return null;
 
+  const fmtTime = (iso) => new Date(iso).toLocaleString('es-ES', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
+
   return (
     <>
-      <div 
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] transition-opacity"
-        onClick={onClose}
-      />
-      
-      <div className="fixed right-0 top-0 h-full w-full lg:w-[900px] bg-gradient-to-br from-blue-900 via-purple-900 to-blue-900 shadow-2xl z-[70] transform transition-transform duration-300 ease-in-out overflow-hidden flex">
-        {/* Lista de conversaciones */}
-        <div className="w-1/3 border-r border-white/20 flex flex-col">
-          <div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-4">
-            <h3 className="text-white font-bold text-lg">💬 Mensajes</h3>
+      <div style={S.overlay} onClick={onClose} />
+      <div style={S.panel}>
+
+        {/* Sidebar */}
+        <div style={S.sidebar}>
+          <div style={S.sidebarHeader}>
+            <span style={S.sidebarTitle}>Mensajes</span>
+            <span style={{ color:'#2563eb', fontSize:'16px' }}>💬</span>
           </div>
-          
-          <div className="flex-1 overflow-y-auto">
+          <div style={{ flex:1, overflowY:'auto' }}>
             {conversations.length === 0 ? (
-              <div className="p-4 text-center text-gray-400 text-sm">
-                No hay conversaciones
-              </div>
-            ) : (
-              conversations.map(conv => (
-                <button
-                  key={conv.user}
-                  onClick={() => setSelectedConversation(conv.user)}
-                  className={`w-full p-4 border-b border-white/10 text-left hover:bg-white/10 transition-all ${
-                    selectedConversation === conv.user ? 'bg-white/20' : ''
-                  }`}
-                >
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-white font-semibold">
-                      {conv.user === 'DM' ? '👑 ' : '⚔️ '}
-                      {conv.user}
-                    </span>
-                    {conv.unread && (
-                      <span className="bg-yellow-500 text-yellow-900 text-xs px-2 py-1 rounded-full font-bold">
-                        NUEVO
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-gray-300 text-sm truncate">{conv.lastMessage}</p>
-                  <p className="text-gray-500 text-xs mt-1">
-                    {new Date(conv.lastTime).toLocaleString('es-ES', { 
-                      day: 'numeric', 
-                      month: 'short',
-                      hour: '2-digit',
-                      minute: '2-digit'
-                    })}
-                  </p>
-                </button>
-              ))
-            )}
+              <div style={{ padding:'24px', textAlign:'center', color:'#2e4060', fontSize:'12px' }}>Sin conversaciones</div>
+            ) : conversations.map(c => (
+              <button key={c.user} onClick={() => setSelectedConversation(c.user)} style={S.convItem(selectedConversation === c.user)}>
+                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
+                  <span style={S.convName}>{c.user === 'DM' ? '👑 ' : ''}{c.user}</span>
+                  {c.unread && <span style={S.unreadBadge}>NUEVO</span>}
+                </div>
+                <div style={S.convPreview}>{c.lastMessage}</div>
+                <div style={S.convTime}>{fmtTime(c.lastTime)}</div>
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Área de conversación */}
-        <div className="flex-1 flex flex-col">
-          {/* Header */}
-<div className="bg-black/40 backdrop-blur-lg border-b border-white/20 p-4 flex justify-between items-center relative">
-  <div className="flex items-center gap-3">
-    {selectedConversation && (
-      <button
-        onClick={handleBack}
-        className="text-white hover:text-emerald-300 transition-colors"
-        title="Volver a conversaciones"
-      >
-        ← 
-      </button>
-    )}
-    {selectedConversation ? (
-      <h2 className="text-white font-bold text-xl flex items-center">
-        {selectedConversation === 'DM' ? '👑' : '⚔️'} {selectedConversation}
-      </h2>
-    ) : (
-      <h2 className="text-white font-bold text-xl">📬 Mensajería</h2>
-    )}
-  </div>
-  <button
-    onClick={onClose}
-    className="text-white hover:text-red-300 text-3xl transition-colors hover:bg-red-500/20 rounded-lg p-2 absolute right-4 top-1/2 -translate-y-1/2 z-[80]"
-    style={{ marginRight: '-200px' }}
-    aria-label="Cerrar mensajería"
-  >
-    ✕
-  </button>
-</div>
+        {/* Main */}
+        <div style={S.main}>
+          <div style={S.header}>
+            {selectedConversation && <button style={S.backBtn} onClick={handleBack}>←</button>}
+            <span style={S.headerTitle}>
+              {selectedConversation ? `${selectedConversation === 'DM' ? '👑 ' : ''}${selectedConversation}` : 'Mensajería'}
+            </span>
+            <button style={S.closeBtn} onClick={onClose} onMouseEnter={e => e.target.style.color='#f87171'} onMouseLeave={e => e.target.style.color='#3a5878'}>✕</button>
+          </div>
 
           {selectedConversation ? (
             <>
-              {/* Mensajes */}
-              <div className="flex-1 overflow-y-auto p-4 space-y-3">
+              <div style={S.messages}>
                 {messages.map(msg => {
-                  const isMine = msg.sender_username === username;
+                  const mine = msg.sender_username === username;
                   return (
-                    <div
-                      key={msg.id}
-                      className={`flex ${isMine ? 'justify-end' : 'justify-start'}`}
-                    >
-                      <div
-                        className={`max-w-[70%] rounded-lg p-3 ${
-                          isMine
-                            ? 'bg-blue-600 text-white'
-                            : 'bg-white/20 text-white'
-                        }`}
-                      >
-                        <p className="whitespace-pre-wrap">{msg.message}</p>
-                        <p className={`text-xs mt-1 ${isMine ? 'text-blue-200' : 'text-gray-400'}`}>
-                          {new Date(msg.created_at).toLocaleTimeString('es-ES', {
-                            hour: '2-digit',
-                            minute: '2-digit'
-                          })}
-                        </p>
-                      </div>
+                    <div key={msg.id} style={mine ? S.msgMine : S.msgOther}>
+                      <div style={S.msgText}>{msg.message}</div>
+                      <div style={S.msgTime}>{new Date(msg.created_at).toLocaleTimeString('es-ES', { hour:'2-digit', minute:'2-digit' })}</div>
                     </div>
                   );
                 })}
+                <div ref={messagesEndRef} />
               </div>
-
-              {/* Input de mensaje */}
-              <div className="border-t border-white/20 p-4">
-                <div className="flex gap-2">
-                  <textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    onKeyPress={(e) => {
-                      if (e.key === 'Enter' && !e.shiftKey) {
-                        e.preventDefault();
-                        sendMessage();
-                      }
-                    }}
-                    placeholder="Escribe un mensaje..."
-                    className="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-                    rows="2"
-                  />
-                  <button
-                    onClick={sendMessage}
-                    disabled={sending || !message.trim()}
-                    className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white px-6 rounded-lg transition-all disabled:cursor-not-allowed"
-                  >
-                    {sending ? '...' : '📤'}
-                  </button>
-                </div>
+              <div style={S.inputArea}>
+                <textarea
+                  style={S.textarea} rows={2} value={message}
+                  onChange={e => setMessage(e.target.value)}
+                  onKeyDown={e => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } }}
+                  placeholder="Escribe un mensaje... (Enter para enviar)"
+                />
+                <button style={S.sendBtn(sending || !message.trim())} onClick={sendMessage} disabled={sending || !message.trim()}>
+                  {sending ? '...' : 'Enviar'}
+                </button>
               </div>
             </>
           ) : (
-            <>
-              {/* Nueva conversación */}
-              <div className="flex-1 flex items-center justify-center p-8">
-                <div className="text-center max-w-md">
-                  <div className="text-6xl mb-4">💬</div>
-                  <h3 className="text-white text-xl font-bold mb-4">Iniciar nueva conversación</h3>
-                  
-                  <select
-                    value={recipient}
-                    onChange={(e) => setRecipient(e.target.value)}
-                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    <option value="">Selecciona un usuario...</option>
-                    {users.map(user => (
-                      <option key={user} value={user} className="bg-purple-900">
-                        {user === 'DM' ? '👑 ' : '⚔️ '}{user}
-                      </option>
-                    ))}
-                  </select>
-
-                  <textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Escribe tu mensaje..."
-                    className="w-full h-32 bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none mb-4"
-                  />
-
-                  <button
-                    onClick={sendMessage}
-                    disabled={sending || !recipient || !message.trim()}
-                    className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white font-bold py-3 rounded-lg transition-all disabled:cursor-not-allowed"
-                  >
-                    {sending ? 'Enviando...' : '📤 Enviar Mensaje'}
-                  </button>
-                </div>
+            <div style={S.emptyState}>
+              <div style={{ fontSize:'40px' }}>💬</div>
+              <div style={S.emptyTitle}>Iniciar conversación</div>
+              <div style={{ width:'100%', maxWidth:'360px' }}>
+                <select style={S.select} value={recipient} onChange={e => setRecipient(e.target.value)}>
+                  <option value="">Selecciona un usuario...</option>
+                  {users.map(u => <option key={u} value={u}>{u === 'DM' ? '👑 ' : ''}{u}</option>)}
+                </select>
+                <textarea style={S.bigTextarea} value={message} onChange={e => setMessage(e.target.value)} placeholder="Escribe tu mensaje..." />
+                <button style={S.bigSendBtn(sending || !recipient || !message.trim())} onClick={sendMessage} disabled={sending || !recipient || !message.trim()}>
+                  {sending ? 'Enviando...' : 'Enviar Mensaje'}
+                </button>
               </div>
-            </>
+            </div>
           )}
         </div>
       </div>
