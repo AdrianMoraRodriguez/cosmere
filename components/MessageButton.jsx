@@ -2,7 +2,7 @@ export default function MessageButton({ onClick, unreadCount = 0, isDM = false }
   return (
     <button
       onClick={onClick}
-      className={`fixed ${isDM ? 'bottom-8 left-8' : 'bottom-32 right-8'} z-30 ${
+      className={`fixed ${isDM ? 'bottom-8 right-8' : 'bottom-32 right-8'} z-30 ${
         isDM 
           ? 'bg-gradient-to-br from-purple-600 to-red-600 hover:from-purple-700 hover:to-red-700'
           : 'bg-gradient-to-br from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700'

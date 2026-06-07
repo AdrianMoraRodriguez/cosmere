@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import WikiContent from '../../components/WikiContent';
+import WikiLayout, { encodeWikiSlug } from '../../components/WikiLayout';
 import NotesPanel from '../../components/NotesPanel';
 import NotesButton from '../../components/NotesButton';
 import DMMessenger from '../../components/DMMessenger';
@@ -22,10 +22,7 @@ export default function WikiPage() {
 
   useEffect(() => {
     const userData = localStorage.getItem('user');
-    if (!userData) {
-      router.push('/login');
-      return;
-    }
+    if (!userData) { router.push('/login'); return; }
 
     try {
       const parsedUser = JSON.parse(userData);
@@ -35,21 +32,18 @@ export default function WikiPage() {
         .then(res => res.json())
         .then(data => {
           setAllPages(data);
-          
-          const fullSlug = Array.isArray(slug) 
-            ? slug.map(part => decodeURIComponent(part)).join('/') 
-            : decodeURIComponent(slug || '');
-          
-          const currentPage = data.find(p => p.slug === fullSlug);
-          
-          if (!currentPage) {
-            router.push('/wiki');
-            return;
-          }
 
-          const canAccess = parsedUser.role === 'admin' ||
-                           currentPage.visibility === 'public' ||
-                           currentPage.allowed_users?.includes(parsedUser.username);
+          const fullSlug = Array.isArray(slug)
+            ? slug.map(part => decodeURIComponent(part)).join('/')
+            : decodeURIComponent(slug || '');
+
+          const currentPage = data.find(p => p.slug === fullSlug);
+          if (!currentPage) { router.push('/wiki'); return; }
+
+          const canAccess =
+            parsedUser.role === 'admin' ||
+            currentPage.visibility === 'public' ||
+            currentPage.allowed_users?.includes(parsedUser.username);
 
           if (!canAccess) {
             alert('No tienes permiso para ver esta página');
@@ -60,17 +54,12 @@ export default function WikiPage() {
           setPage(currentPage);
           setLoading(false);
         })
-        .catch(err => {
-          console.error('Error loading page:', err);
-          setLoading(false);
-        });
+        .catch(() => setLoading(false));
 
-      // Cargar mensajes no leídos para jugadores
       if (parsedUser.role !== 'admin') {
         loadUnreadCount(parsedUser.username);
       }
-    } catch (err) {
-      console.error('Error parsing user data:', err);
+    } catch {
       router.push('/login');
     }
   }, [slug, router]);
@@ -82,144 +71,186 @@ export default function WikiPage() {
         .select('id')
         .eq('recipient_username', username)
         .eq('read', false);
-
-      if (!error && data) {
-        setUnreadCount(data.length);
-      }
-    } catch (err) {
-      console.error('Error loading unread count:', err);
-    }
+      if (!error && data) setUnreadCount(data.length);
+    } catch {}
   };
 
-  const handleGoBack = () => {
-    if (window.history.length > 1) {
-      router.back();
-    } else {
-      router.push('/wiki');
-    }
+  const handleLogout = () => {
+    localStorage.removeItem('user');
+    router.push('/login');
   };
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 flex items-center justify-center">
-        <div className="text-white text-xl">Cargando...</div>
+      <div style={{ minHeight: '100vh', background: '#050c18', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: '#4d8fd6', fontSize: '16px' }}>Cargando...</div>
       </div>
     );
   }
-  
   if (!page || !user) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900 flex items-center justify-center">
-        <div className="text-white text-xl">Página no encontrada</div>
+      <div style={{ minHeight: '100vh', background: '#050c18', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: '#f87171', fontSize: '16px' }}>Página no encontrada</div>
       </div>
     );
   }
+
+  // Accessible index pages for the sidebar
+  const indexPages = allPages.filter(p => {
+    if (!p.is_index) return false;
+    if (user.role === 'admin') return true;
+    if (p.visibility === 'public') return true;
+    if (p.allowed_users?.includes(user.username)) return true;
+    return false;
+  });
 
   const content = user.role === 'admin' ? page.content_admin : page.content_player;
 
+  // Index and subindex pages use a wider layout to accommodate photo grids.
+  const isPhotoGridPage = page.is_index || page.is_subindex;
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-emerald-800 to-purple-900">
-      {/* Header */}
-      <header className="bg-black/30 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-4">
-              <button
-                onClick={handleGoBack}
-                className="text-emerald-300 hover:text-white transition-colors flex items-center bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg"
-              >
-                <span className="mr-2">←</span>
-                Volver atrás
-              </button>
-              <Link 
-                href="/wiki" 
-                className="text-emerald-300 hover:text-white transition-colors flex items-center"
-              >
-                <span className="mr-2">🏠</span>
-                Índice principal
-              </Link>
-            </div>
-            <div className="text-right">
-              <p className="text-white font-medium">{user.username}</p>
-              <p className="text-emerald-300 text-sm">
-                {user.role === 'admin' ? '👑 DM' : '⚔️ Jugador'}
-              </p>
-            </div>
+    <>
+      <WikiLayout
+        user={user}
+        indexPages={indexPages}
+        onSearch={(term) => {
+          if (term) router.push(`/wiki?q=${encodeURIComponent(term)}`);
+        }}
+        onLogout={handleLogout}
+      >
+        <div style={{ padding: '32px 40px', maxWidth: isPhotoGridPage ? '1200px' : '860px' }}>
+
+          {/* Breadcrumb */}
+          <div style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <button
+              onClick={() => router.back()}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: '#3a5878',
+                fontSize: '13px',
+                cursor: 'pointer',
+                padding: '0',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px',
+              }}
+            >
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              Volver
+            </button>
+            <span style={{ color: '#1a2d40', fontSize: '13px' }}>/</span>
+            <span style={{ color: '#2e4a65', fontSize: '13px' }}>{page.title}</span>
           </div>
+
+          {/* Article */}
+          <article>
+            {/* Title */}
+            <h1 style={{
+              color: '#c8daf0',
+              fontSize: '26px',
+              fontWeight: '700',
+              margin: '0 0 14px',
+              lineHeight: '1.25',
+              textAlign: 'left',
+            }}>
+              {page.title}
+            </h1>
+
+            {/* Badges */}
+            {(page.spoilers || page.visibility === 'private' || page.is_index) && (
+              <div style={{ display: 'flex', gap: '8px', marginBottom: '24px', flexWrap: 'wrap' }}>
+                {page.spoilers && (
+                  <span style={{
+                    background: 'rgba(245,158,11,0.1)',
+                    color: '#f59e0b',
+                    border: '1px solid rgba(245,158,11,0.25)',
+                    borderRadius: '6px',
+                    fontSize: '11.5px',
+                    fontWeight: '600',
+                    padding: '3px 10px',
+                  }}>
+                    Contiene spoilers
+                  </span>
+                )}
+                {page.visibility === 'private' && (
+                  <span style={{
+                    background: 'rgba(239,68,68,0.1)',
+                    color: '#f87171',
+                    border: '1px solid rgba(239,68,68,0.25)',
+                    borderRadius: '6px',
+                    fontSize: '11.5px',
+                    fontWeight: '600',
+                    padding: '3px 10px',
+                  }}>
+                    Contenido privado
+                  </span>
+                )}
+                {page.is_index && (
+                  <span style={{
+                    background: 'rgba(59,130,246,0.1)',
+                    color: '#60a5fa',
+                    border: '1px solid rgba(59,130,246,0.25)',
+                    borderRadius: '6px',
+                    fontSize: '11.5px',
+                    fontWeight: '600',
+                    padding: '3px 10px',
+                  }}>
+                    Página índice
+                  </span>
+                )}
+              </div>
+            )}
+
+            {/* Divider */}
+            <div style={{
+              height: '1px',
+              background: 'linear-gradient(90deg, #122030 0%, transparent 100%)',
+              marginBottom: '28px',
+            }} />
+
+            {/* Wiki content */}
+            <div style={{ color: '#9ab4cc' }}>
+              <WikiContent
+                content={content}
+                allPages={allPages}
+                user={user}
+                currentPage={page}
+              />
+            </div>
+          </article>
         </div>
-      </header>
+      </WikiLayout>
 
-      <div className="container mx-auto px-6 py-8 max-w-5xl">
-        <article className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-lg p-8 shadow-2xl">
-          <h1 className="text-4xl font-bold text-white mb-4 text-center">{page.title}</h1>
-          
-          <div className="flex flex-wrap gap-2 mb-6 justify-center">
-            {page.spoilers && (
-              <span className="bg-yellow-500/20 text-yellow-300 text-sm px-3 py-1 rounded-lg border border-yellow-500/50">
-                ⚠️ Esta página contiene spoilers
-              </span>
-            )}
-            {page.visibility === 'private' && (
-              <span className="bg-red-500/20 text-red-300 text-sm px-3 py-1 rounded-lg border border-red-500/50">
-                🔒 Contenido privado
-              </span>
-            )}
-            {page.is_index && (
-              <span className="bg-blue-500/20 text-blue-300 text-sm px-3 py-1 rounded-lg border border-blue-500/50">
-                📑 Página índice
-              </span>
-            )}
-          </div>
-
-          <div className="text-gray-100">
-            <WikiContent 
-              content={content} 
-              allPages={allPages} 
-              user={user}
-              currentPage={page}
-            />
-          </div>
-        </article>
-      </div>
-
-      {/* Botones flotantes */}
+      {/* Floating buttons */}
       {user.role === 'admin' ? (
-        <>
-          {/* Botón de mensajería DM */}
-          <MessageButton onClick={() => setMessagesOpen(true)} isDM={true} />
-        </>
+        <MessageButton onClick={() => setMessagesOpen(true)} isDM={true} />
       ) : (
         <>
-          {/* Botón de notas para jugadores */}
           <NotesButton onClick={() => setNotesOpen(true)} />
-          {/* Botón de mensajes para jugadores */}
           <MessageButton onClick={() => setMessagesOpen(true)} unreadCount={unreadCount} />
         </>
       )}
 
-      {/* Paneles */}
+      {/* Panels */}
       {user.role === 'admin' ? (
-        <DMMessenger 
-          isOpen={messagesOpen}
-          onClose={() => setMessagesOpen(false)}
-        />
+        <DMMessenger isOpen={messagesOpen} onClose={() => setMessagesOpen(false)} />
       ) : (
         <>
-          <NotesPanel 
+          <NotesPanel username={user.username} isOpen={notesOpen} onClose={() => setNotesOpen(false)} />
+          <PlayerMessenger
             username={user.username}
-            isOpen={notesOpen}
-            onClose={() => setNotesOpen(false)}
+            isOpen={messagesOpen}
+            onClose={() => {
+              setMessagesOpen(false);
+              loadUnreadCount(user.username);
+            }}
           />
-          <PlayerMessenger 
-  username={user.username}
-  isOpen={messagesOpen}
-  onClose={() => {
-    setMessagesOpen(false);
-    loadUnreadCount(user.username);
-  }}
-/>
         </>
       )}
-    </div>
+    </>
   );
 }

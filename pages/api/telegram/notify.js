@@ -1,3 +1,5 @@
+import { supabase } from '../../../lib/supabase';
+
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const DM_TELEGRAM_ID = process.env.DM_TELEGRAM_ID;
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}`;
@@ -27,6 +29,10 @@ async function sendTelegramMessage(chatId, text) {
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  if (!TELEGRAM_BOT_TOKEN || !DM_TELEGRAM_ID) {
+    return res.status(200).json({ ok: true, skipped: 'Telegram is not configured' });
   }
 
   const { senderUsername, recipientUsername, message } = req.body;

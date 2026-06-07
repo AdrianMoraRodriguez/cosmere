@@ -13,51 +13,116 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Centrar contenedores principales */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  max-width: 1400px; /* Ajusta este valor según prefieras */
+/* Subtle scrollbar for sidebar and content */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #122030;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3850;
 }
 
-/* Centrar títulos */
-h1, h2 {
-  text-align: center;
+/* Wiki content typography */
+.prose-invert {
+  color: #8aa8c0;
+}
+.prose-invert h1 {
+  color: #c8daf0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+.prose-invert h2 {
+  color: #4d8fd6;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #122030;
+  padding-bottom: 0.4rem;
+  text-align: left;
+}
+.prose-invert h3 {
+  color: #60a5fa;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+.prose-invert p {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.75;
+}
+.prose-invert strong {
+  color: #f59e0b;
+  font-weight: 600;
+}
+.prose-invert em {
+  color: #93b8d8;
+}
+.prose-invert ul,
+.prose-invert ol {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  padding-left: 1.4rem;
+}
+.prose-invert li {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.6;
+}
+.prose-invert code {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  color: #f59e0b;
+  font-size: 0.88em;
+}
+.prose-invert blockquote {
+  border-left: 3px solid #1e4080;
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: #5a7898;
+}
+.prose-invert hr {
+  border: none;
+  border-top: 1px solid #0f1e30;
+  margin: 1.5rem 0;
 }
 
-/* Centrar el grid de páginas índice */
-.grid {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
+/* Party Principal photo-grid */
+.wiki-party-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin: 24px 0;
 }
 
-/* Centrar la lista de todas las páginas */
-.bg-white\/5 {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px;
+@media (max-width: 900px) {
+  .wiki-party-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/* Centrar artículos individuales */
-article {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-}
-
-/* Centrar el buscador */
-input[type="text"] {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+@media (max-width: 600px) {
+  .wiki-party-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
