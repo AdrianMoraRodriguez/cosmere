@@ -6,20 +6,19 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [focusedField, setFocusedField] = useState(null);
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
     setLoading(true);
-
     try {
       const res = await fetch('/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password })
+        body: JSON.stringify({ username, password }),
       });
-
       if (res.ok) {
         const { user } = await res.json();
         localStorage.setItem('user', JSON.stringify(user));
@@ -27,178 +26,174 @@ export default function Login() {
       } else {
         setError('Credenciales inválidas');
       }
-    } catch (err) {
+    } catch {
       setError('Error al conectar con el servidor');
     } finally {
       setLoading(false);
     }
   };
 
+  const inputStyle = (field) => ({
+    width: '100%',
+    padding: '10px 14px',
+    background: '#080f1e',
+    border: `1px solid ${focusedField === field ? '#2563eb' : '#0f1e30'}`,
+    borderRadius: '8px',
+    color: '#b8ccdf',
+    fontSize: '14px',
+    outline: 'none',
+    transition: 'border-color 0.2s, box-shadow 0.2s',
+    boxShadow: focusedField === field ? '0 0 0 3px rgba(37,99,235,0.15)' : 'none',
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+  });
+
   return (
-    <div className="login-container">
-      <div className="login-box">
-        <h1>📚 Wiki del Cosmere</h1>
-        <p>Archivo de las Tormentas - Campaña RPG</p>
-        
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="username">Usuario</label>
+    <div style={{
+      minHeight: '100vh',
+      background: '#040b14',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      position: 'relative',
+      overflow: 'hidden',
+    }}>
+
+      {/* Background glows */}
+      <div style={{ position:'absolute', inset:0, pointerEvents:'none' }}>
+        <div style={{ position:'absolute', top:'-20%', left:'-10%', width:'60%', height:'60%', background:'radial-gradient(ellipse,rgba(30,58,138,0.18) 0%,transparent 70%)', borderRadius:'50%' }} />
+        <div style={{ position:'absolute', bottom:'-20%', right:'-10%', width:'60%', height:'60%', background:'radial-gradient(ellipse,rgba(5,150,105,0.12) 0%,transparent 70%)', borderRadius:'50%' }} />
+        <div style={{ position:'absolute', top:'40%', right:'5%', width:'35%', height:'35%', background:'radial-gradient(ellipse,rgba(109,28,217,0.08) 0%,transparent 70%)', borderRadius:'50%' }} />
+      </div>
+
+      {/* Card */}
+      <div style={{
+        position: 'relative',
+        background: '#07101f',
+        border: '1px solid #0f1e30',
+        borderRadius: '16px',
+        padding: '40px 36px',
+        width: '100%',
+        maxWidth: '400px',
+        margin: '0 16px',
+        boxShadow: '0 24px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.03)',
+      }}>
+
+        {/* Logo & title */}
+        <div style={{ textAlign:'center', marginBottom:'32px' }}>
+          <div style={{ fontSize:'36px', marginBottom:'12px', lineHeight:1 }}>🌩️</div>
+          <h1 style={{ margin:0, color:'#c8daf0', fontSize:'22px', fontWeight:'700', letterSpacing:'-0.01em' }}>
+            Wiki del Cosmere
+          </h1>
+          <p style={{ margin:'6px 0 0', color:'#2e5272', fontSize:'13px', fontWeight:'500' }}>
+            Archivo de las Tormentas · Campaña RPG
+          </p>
+        </div>
+
+        {/* Form */}
+        <form onSubmit={handleSubmit} style={{ display:'flex', flexDirection:'column', gap:'16px' }}>
+
+          <div style={{ display:'flex', flexDirection:'column', gap:'6px' }}>
+            <label style={{ color:'#4d8fd6', fontSize:'12px', fontWeight:'600', letterSpacing:'0.04em', textTransform:'uppercase' }}>
+              Usuario
+            </label>
             <input
               id="username"
               type="text"
-              placeholder="admin"
+              placeholder="Tu usuario"
               value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={e => setUsername(e.target.value)}
+              onFocus={() => setFocusedField('username')}
+              onBlur={() => setFocusedField(null)}
               disabled={loading}
+              style={inputStyle('username')}
+              autoComplete="username"
             />
           </div>
-          
-          <div className="form-group">
-            <label htmlFor="password">Contraseña</label>
+
+          <div style={{ display:'flex', flexDirection:'column', gap:'6px' }}>
+            <label style={{ color:'#4d8fd6', fontSize:'12px', fontWeight:'600', letterSpacing:'0.04em', textTransform:'uppercase' }}>
+              Contraseña
+            </label>
             <input
               id="password"
               type="password"
               placeholder="••••••••"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
+              onFocus={() => setFocusedField('password')}
+              onBlur={() => setFocusedField(null)}
               disabled={loading}
+              style={inputStyle('password')}
+              autoComplete="current-password"
             />
           </div>
-          
-          <button type="submit" disabled={loading}>
+
+          <button
+            type="submit"
+            disabled={loading || !username || !password}
+            style={{
+              marginTop: '4px',
+              padding: '11px',
+              background: loading || !username || !password
+                ? '#0c1e38'
+                : 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)',
+              border: '1px solid',
+              borderColor: loading || !username || !password ? '#0f2030' : '#2563eb',
+              borderRadius: '8px',
+              color: loading || !username || !password ? '#2e4060' : 'white',
+              fontSize: '14px',
+              fontWeight: '600',
+              cursor: loading || !username || !password ? 'not-allowed' : 'pointer',
+              transition: 'all 0.2s',
+              letterSpacing: '0.02em',
+            }}
+            onMouseEnter={e => {
+              if (!loading && username && password) {
+                e.currentTarget.style.boxShadow = '0 4px 16px rgba(37,99,235,0.4)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+              }
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
+          >
             {loading ? 'Entrando...' : 'Entrar'}
           </button>
-          
-          {error && <p className="error">{error}</p>}
+
+          {error && (
+            <div style={{
+              background: 'rgba(239,68,68,0.1)',
+              border: '1px solid rgba(239,68,68,0.25)',
+              borderRadius: '8px',
+              padding: '10px 14px',
+              color: '#f87171',
+              fontSize: '13px',
+              textAlign: 'center',
+            }}>
+              {error}
+            </div>
+          )}
         </form>
 
-        <div className="oath">
-          <p>Vida antes que Muerte</p>
-          <p>Fuerza antes que Debilidad</p>
-          <p>Viaje antes que Destino</p>
+        {/* Oath */}
+        <div style={{
+          marginTop: '32px',
+          paddingTop: '24px',
+          borderTop: '1px solid #0b1828',
+          textAlign: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '4px',
+        }}>
+          {['Vida antes que Muerte', 'Fuerza antes que Debilidad', 'Viaje antes que Destino'].map(line => (
+            <p key={line} style={{ margin:0, color:'#1e3d5c', fontSize:'12px', fontStyle:'italic', letterSpacing:'0.02em' }}>
+              {line}
+            </p>
+          ))}
         </div>
       </div>
-
-      <style jsx>{`
-        .login-container {
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #7c2d12 100%);
-        }
-        
-        .login-box {
-          background: rgba(255, 255, 255, 0.95);
-          backdrop-filter: blur(10px);
-          padding: 3rem;
-          border-radius: 16px;
-          box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-          max-width: 420px;
-          width: 90%;
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        h1 {
-          margin: 0 0 0.5rem;
-          text-align: center;
-          color: #1e3a8a;
-          font-size: 2rem;
-        }
-        
-        p {
-          text-align: center;
-          color: #059669;
-          margin-bottom: 2rem;
-          font-weight: 500;
-        }
-        
-        form {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-        
-        .form-group {
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-        
-        label {
-          font-weight: 600;
-          color: #1e3a8a;
-          font-size: 0.875rem;
-        }
-        
-        input {
-          padding: 0.75rem;
-          border: 2px solid #d1d5db;
-          border-radius: 8px;
-          font-size: 1rem;
-          transition: all 0.2s;
-          background: white;
-        }
-        
-        input:focus {
-          outline: none;
-          border-color: #059669;
-          box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
-        }
-        
-        input:disabled {
-          background: #f3f4f6;
-          cursor: not-allowed;
-        }
-        
-        button {
-          padding: 0.875rem;
-          background: linear-gradient(135deg, #1e3a8a 0%, #059669 50%, #7c2d12 100%);
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-size: 1rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.2s;
-          margin-top: 0.5rem;
-        }
-        
-        button:hover:not(:disabled) {
-          transform: translateY(-2px);
-          box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        button:active:not(:disabled) {
-          transform: translateY(0);
-        }
-        
-        button:disabled {
-          opacity: 0.6;
-          cursor: not-allowed;
-        }
-        
-        .error {
-          color: #dc2626;
-          text-align: center;
-          margin: 0.5rem 0 0;
-          font-size: 0.875rem;
-          font-weight: 500;
-        }
-        
-        .oath {
-          margin-top: 2rem;
-          padding-top: 1.5rem;
-          border-top: 1px solid #e5e7eb;
-        }
-
-        .oath p {
-          color: #6b7280;
-          font-size: 0.875rem;
-          margin: 0.25rem 0;
-          font-style: italic;
-        }
-      `}</style>
     </div>
   );
 }
