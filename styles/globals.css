@@ -20,37 +20,8 @@ body {
 
 /* ── Theme variables ─────────────────────────────────────────────────────────── */
 
+/* Shared base — all themes use glass panels over gradient background */
 :root {
-  --bg:          #050c18;
-  --bg-panel:    #07101f;
-  --bg-card:     #0a1628;
-  --bg-input:    #0b1628;
-  --bg-hover:    #0c1e38;
-  --bg-active:   #0f2040;
-
-  --border:       #0f1e30;
-  --border-card:  #122030;
-  --border-input: #152030;
-
-  --text-1: #c8daf0;
-  --text-2: #b8ccdf;
-  --text-3: #9ab4cc;
-  --text-4: #5a7898;
-  --text-5: #3a5878;
-  --text-6: #2e4a65;
-  --text-7: #1a2d40;
-
-  --accent:     #2563eb;
-  --accent-2:   #60a5fa;
-  --accent-dim: #1d4ed8;
-  --nav-border: #3b82f6;
-  --logo-color: #4d8fd6;
-
-  --btn-disabled-bg:   #1a2535;
-  --btn-disabled-text: #2e4060;
-}
-
-:root[data-theme="gradient"] {
   --bg:        transparent;
   --bg-panel:  rgba(0,0,0,0.45);
   --bg-card:   rgba(255,255,255,0.07);
@@ -70,6 +41,8 @@ body {
   --text-6: rgba(255,255,255,0.32);
   --text-7: rgba(255,255,255,0.22);
 
+  /* Caminapiedras — default */
+  --body-gradient: linear-gradient(135deg, #1e3a8a 0%, #065f46 50%, #581c87 100%);
   --accent:     #60a5fa;
   --accent-2:   #93c5fd;
   --accent-dim: #3b82f6;
@@ -80,9 +53,59 @@ body {
   --btn-disabled-text: rgba(255,255,255,0.3);
 }
 
-/* Gradient body background */
-body[data-theme="gradient"] {
-  background: linear-gradient(135deg, #1e3a8a 0%, #065f46 50%, #581c87 100%);
+/* Odium — Red, Purple, Gold */
+:root[data-theme="odium"] {
+  --body-gradient: linear-gradient(135deg, #6b0010 0%, #2a0040 50%, #5a4a00 100%);
+  --accent:     #d8c41a;
+  --accent-2:   #f0d840;
+  --accent-dim: #a89015;
+  --nav-border: #d8c41a;
+  --logo-color: #d8c41a;
+}
+
+/* Honor — Blue, White, Gold */
+:root[data-theme="honor"] {
+  --body-gradient: linear-gradient(135deg, #0d4a60 0%, #1a7a96 50%, #5a4800 100%);
+  --accent:     #2a9bbd;
+  --accent-2:   #c6e3e7;
+  --accent-dim: #1a7a96;
+  --nav-border: #2a9bbd;
+  --logo-color: #c6e3e7;
+}
+
+/* Cultivación — Green, Turquoise, Brown */
+:root[data-theme="cultivacion"] {
+  --body-gradient: linear-gradient(135deg, #2a3820 0%, #1a5a56 50%, #4a2a18 100%);
+  --accent:     #287f79;
+  --accent-2:   #3db5ae;
+  --accent-dim: #1d5f5c;
+  --nav-border: #287f79;
+  --logo-color: #3db5ae;
+}
+
+/* Sangre Espectral — Red, Gray */
+:root[data-theme="sangre-espectral"] {
+  --body-gradient: linear-gradient(135deg, #3a0005 0%, #91040a 50%, #4a4a4a 100%);
+  --accent:     #c0202a;
+  --accent-2:   #e05060;
+  --accent-dim: #91040a;
+  --nav-border: #c0202a;
+  --logo-color: #e05060;
+}
+
+/* Ojos de Palah — Green, Gold */
+:root[data-theme="ojos-de-palah"] {
+  --body-gradient: linear-gradient(135deg, #1e4020 0%, #4a7a4e 50%, #6a5530 100%);
+  --accent:     #d0b774;
+  --accent-2:   #e8d090;
+  --accent-dim: #a88a50;
+  --nav-border: #d0b774;
+  --logo-color: #659b69;
+}
+
+/* Single body rule — uses the variable set by whichever theme is active */
+body {
+  background: var(--body-gradient);
   background-attachment: fixed;
   min-height: 100vh;
 }

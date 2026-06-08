@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect, useRef } from 'react';
-import { useTheme } from '../hooks/useTheme';
+import { useTheme, THEMES } from '../hooks/useTheme';
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
 
@@ -205,7 +205,9 @@ function getUserInitials(username) {
 export default function WikiLayout({ user, indexPages = [], allPages = [], children, searchTerm, onSearch, onLogout }) {
   const router = useRouter();
   const isWikiHome = router.pathname === '/wiki';
-  const { theme, toggle } = useTheme();
+  const { theme, setTheme } = useTheme();
+  const [themeOpen, setThemeOpen] = useState(false);
+  const themeRef = useRef(null);
 
   const mainPages = indexPages.filter(isMainIndexPage);
   const morePages  = indexPages.filter(p => !isMainIndexPage(p));
@@ -215,11 +217,22 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const searchWrapRef = useRef(null);
 
-  // Close dropdown on click outside
+  // Close search dropdown on click outside
   useEffect(() => {
     const handler = (e) => {
       if (searchWrapRef.current && !searchWrapRef.current.contains(e.target)) {
         setDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  // Close theme dropdown on click outside
+  useEffect(() => {
+    const handler = (e) => {
+      if (themeRef.current && !themeRef.current.contains(e.target)) {
+        setThemeOpen(false);
       }
     };
     document.addEventListener('mousedown', handler);
@@ -461,29 +474,101 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
 
           <div style={{ flex: 1 }} />
 
-          {/* Theme toggle */}
-          <button
-            onClick={toggle}
-            title={theme === 'dark' ? 'Cambiar a modo gradiente' : 'Cambiar a modo oscuro'}
-            style={{
-              width: '33px', height: '33px',
-              borderRadius: '8px',
-              background: 'var(--bg-hover)',
-              border: '1px solid var(--border-input)',
-              color: 'var(--text-2)',
-              fontSize: '16px',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexShrink: 0,
-              transition: 'background 0.15s, border-color 0.15s',
-            }}
-            onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-active)'}
-            onMouseLeave={e => e.currentTarget.style.background = 'var(--bg-hover)'}
-          >
-            {theme === 'dark' ? '🌙' : '🎨'}
-          </button>
+          {/* Theme picker */}
+          <div ref={themeRef} style={{ position: 'relative', flexShrink: 0 }}>
+            <button
+              onClick={() => setThemeOpen(o => !o)}
+              title="Cambiar tema"
+              style={{
+                height: '33px',
+                padding: '0 10px 0 6px',
+                borderRadius: '8px',
+                background: themeOpen ? 'var(--bg-active)' : 'var(--bg-hover)',
+                border: '1px solid var(--border-input)',
+                color: 'var(--text-2)',
+                fontSize: '12px',
+                fontWeight: '500',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
+                transition: 'background 0.15s',
+              }}
+              onMouseEnter={e => { if (!themeOpen) e.currentTarget.style.background = 'var(--bg-active)'; }}
+              onMouseLeave={e => { if (!themeOpen) e.currentTarget.style.background = 'var(--bg-hover)'; }}
+            >
+              <span style={{
+                width: '16px', height: '16px',
+                borderRadius: '4px',
+                background: THEMES[theme]?.swatchGradient || THEMES.caminapiedras.swatchGradient,
+                flexShrink: 0,
+              }} />
+              <span>{THEMES[theme]?.name || 'Tema'}</span>
+              <svg width="10" height="7" viewBox="0 0 10 7" fill="none" style={{ opacity: 0.6, transition: 'transform 0.15s', transform: themeOpen ? 'rotate(180deg)' : 'none' }}>
+                <path d="M1 1.5L5 5.5L9 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+
+            {themeOpen && (
+              <div style={{
+                position: 'absolute',
+                top: 'calc(100% + 6px)',
+                right: 0,
+                width: '210px',
+                background: 'var(--bg-panel)',
+                border: '1px solid var(--border)',
+                borderRadius: '10px',
+                boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
+                backdropFilter: 'blur(20px)',
+                overflow: 'hidden',
+                zIndex: 300,
+                padding: '4px',
+              }}>
+                {Object.entries(THEMES).map(([key, t]) => (
+                  <button
+                    key={key}
+                    onMouseDown={e => { e.preventDefault(); setTheme(key); setThemeOpen(false); }}
+                    style={{
+                      width: '100%',
+                      padding: '8px 10px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '10px',
+                      background: theme === key ? 'var(--bg-active)' : 'transparent',
+                      border: 'none',
+                      borderRadius: '7px',
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                      transition: 'background 0.1s',
+                    }}
+                    onMouseEnter={e => { if (theme !== key) e.currentTarget.style.background = 'var(--bg-hover)'; }}
+                    onMouseLeave={e => { if (theme !== key) e.currentTarget.style.background = 'transparent'; }}
+                  >
+                    <span style={{
+                      width: '28px', height: '28px',
+                      borderRadius: '6px',
+                      background: t.swatchGradient,
+                      flexShrink: 0,
+                      border: theme === key ? '2px solid var(--accent-2)' : '2px solid rgba(255,255,255,0.15)',
+                    }} />
+                    <span style={{
+                      color: theme === key ? 'var(--text-1)' : 'var(--text-2)',
+                      fontSize: '13px',
+                      fontWeight: theme === key ? '600' : '400',
+                      flex: 1,
+                    }}>
+                      {t.name}
+                    </span>
+                    {theme === key && (
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0 }}>
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="var(--accent-2)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* User */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
