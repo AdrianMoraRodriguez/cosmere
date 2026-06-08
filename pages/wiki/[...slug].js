@@ -69,6 +69,20 @@ function HubCard({ href, icon, label, description, available }) {
 // ─── Stories grid for Short Stories sub-page ─────────────────────────────────
 
 function StoriesGrid({ stories, baseHref }) {
+  if (!stories || stories.length === 0) {
+    return (
+      <div style={{
+        background: '#0a1628', border: '1px solid #122030', borderRadius: '12px',
+        padding: '48px 32px', textAlign: 'center',
+      }}>
+        <div style={{ fontSize: '40px', marginBottom: '14px' }}>✨</div>
+        <div style={{ color: '#2e5272', fontSize: '14px', fontStyle: 'italic' }}>
+          Aún no hay historias disponibles
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{
       display: 'grid',
