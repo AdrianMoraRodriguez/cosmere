@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect, useRef } from 'react';
+import { useTheme } from '../hooks/useTheme';
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
 
@@ -146,7 +147,7 @@ export function encodeWikiSlug(slug) {
 function SectionLabel({ children }) {
   return (
     <div style={{
-      color: '#2e4a65',
+      color: 'var(--text-6)',
       fontSize: '10px',
       fontWeight: '700',
       letterSpacing: '0.12em',
@@ -169,14 +170,14 @@ function NavItem({ href, iconKey, label, active, hasSpoilers }) {
       borderRadius: '6px',
       marginBottom: '1px',
       textDecoration: 'none',
-      color: active ? '#c8daf0' : '#5a7898',
-      background: active ? '#0f2040' : 'transparent',
-      borderLeft: active ? '2px solid #3b82f6' : '2px solid transparent',
+      color: active ? 'var(--text-1)' : 'var(--text-4)',
+      background: active ? 'var(--bg-active)' : 'transparent',
+      borderLeft: active ? '2px solid var(--nav-border)' : '2px solid transparent',
       transition: 'background 0.12s, color 0.12s',
       fontSize: '13px',
       fontWeight: active ? '500' : '400',
     }}>
-      <span style={{ color: active ? '#60a5fa' : '#3a5878', flexShrink: 0 }}>
+      <span style={{ color: active ? 'var(--accent-2)' : 'var(--text-5)', flexShrink: 0 }}>
         <Icon />
       </span>
       <span style={{ flex: 1, lineHeight: 1.3 }}>{label}</span>
@@ -204,6 +205,7 @@ function getUserInitials(username) {
 export default function WikiLayout({ user, indexPages = [], allPages = [], children, searchTerm, onSearch, onLogout }) {
   const router = useRouter();
   const isWikiHome = router.pathname === '/wiki';
+  const { theme, toggle } = useTheme();
 
   const mainPages = indexPages.filter(isMainIndexPage);
   const morePages  = indexPages.filter(p => !isMainIndexPage(p));
@@ -274,7 +276,7 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
       display: 'flex',
       height: '100vh',
       overflow: 'hidden',
-      background: '#050c18',
+      background: 'var(--bg)',
       fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif",
     }}>
 
@@ -282,17 +284,18 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
       <aside style={{
         width: '230px',
         flexShrink: 0,
-        background: '#07101f',
-        borderRight: '1px solid #0f1e30',
+        background: 'var(--bg-panel)',
+        borderRight: '1px solid var(--border)',
         display: 'flex',
         flexDirection: 'column',
         overflow: 'hidden',
+        backdropFilter: 'blur(12px)',
       }}>
         {/* Logo */}
-        <div style={{ padding: '18px 14px 14px', borderBottom: '1px solid #0f1e30' }}>
+        <div style={{ padding: '18px 14px 14px', borderBottom: '1px solid var(--border)' }}>
           <Link href="/wiki" style={{ textDecoration: 'none', display: 'block' }}>
             <div style={{
-              color: '#4d8fd6',
+              color: 'var(--logo-color)',
               fontWeight: '700',
               fontSize: '12.5px',
               letterSpacing: '0.07em',
@@ -300,7 +303,7 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
             }}>
               Wiki del Cosmere
             </div>
-            <div style={{ color: '#243a52', fontSize: '10.5px', marginTop: '3px' }}>
+            <div style={{ color: 'var(--text-7)', fontSize: '10.5px', marginTop: '3px' }}>
               Archivo de las Tormentas · RPG
             </div>
           </Link>
@@ -351,19 +354,20 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
         {/* Topbar */}
         <header style={{
           height: '56px',
-          background: '#07101f',
-          borderBottom: '1px solid #0f1e30',
+          background: 'var(--bg-panel)',
+          borderBottom: '1px solid var(--border)',
           display: 'flex',
           alignItems: 'center',
           padding: '0 24px',
           gap: '16px',
           flexShrink: 0,
+          backdropFilter: 'blur(12px)',
         }}>
 
           {/* Search with dropdown */}
           <div ref={searchWrapRef} style={{ flex: 1, maxWidth: '480px', position: 'relative' }}>
             <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
-              style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: '#2e4a65', pointerEvents: 'none', zIndex: 1 }}>
+              style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-6)', pointerEvents: 'none', zIndex: 1 }}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
@@ -372,21 +376,21 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
               value={localQuery}
               onChange={e => handleQueryChange(e.target.value)}
               onFocus={e => {
-                e.target.style.borderColor = '#2563eb';
+                e.target.style.borderColor = 'var(--accent)';
                 if (localQuery.length >= 2) setDropdownOpen(true);
               }}
-              onBlur={e => { e.target.style.borderColor = '#152030'; }}
+              onBlur={e => { e.target.style.borderColor = 'var(--border-input)'; }}
               onKeyDown={e => {
                 if (e.key === 'Escape') { setDropdownOpen(false); e.target.blur(); }
                 if (e.key === 'Enter' && searchResults.length > 0) goToResult(searchResults[0]);
               }}
               style={{
                 width: '100%',
-                background: '#0b1628',
-                border: '1px solid #152030',
+                background: 'var(--bg-input)',
+                border: '1px solid var(--border-input)',
                 borderRadius: dropdownOpen && searchResults.length > 0 ? '8px 8px 0 0' : '8px',
                 padding: '6px 12px 6px 30px',
-                color: '#b8ccdf',
+                color: 'var(--text-2)',
                 fontSize: '13px',
                 outline: 'none',
                 transition: 'border-color 0.15s',
@@ -399,8 +403,8 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
                 position: 'absolute',
                 top: '100%',
                 left: 0, right: 0,
-                background: '#07101f',
-                border: '1px solid #2563eb',
+                background: 'var(--bg-panel)',
+                border: '1px solid var(--accent)',
                 borderTop: 'none',
                 borderRadius: '0 0 8px 8px',
                 boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
@@ -421,19 +425,19 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
                       gap: '8px',
                       background: 'transparent',
                       border: 'none',
-                      borderBottom: i < searchResults.length - 1 ? '1px solid #0a1828' : 'none',
+                      borderBottom: i < searchResults.length - 1 ? '1px solid var(--bg-card)' : 'none',
                       cursor: 'pointer',
                       textAlign: 'left',
                       transition: 'background 0.1s',
                     }}
-                    onMouseEnter={e => e.currentTarget.style.background = '#0c1e38'}
+                    onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-hover)'}
                     onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
                   >
                     <div style={{ minWidth: 0 }}>
-                      <div style={{ color: '#b8ccdf', fontSize: '13px', fontWeight: '500', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      <div style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         {page.title}
                       </div>
-                      <div style={{ color: '#2e4060', fontSize: '11px', marginTop: '1px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      <div style={{ color: 'var(--text-6)', fontSize: '11px', marginTop: '1px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         {page.slug}
                       </div>
                     </div>
@@ -457,11 +461,35 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
 
           <div style={{ flex: 1 }} />
 
+          {/* Theme toggle */}
+          <button
+            onClick={toggle}
+            title={theme === 'dark' ? 'Cambiar a modo gradiente' : 'Cambiar a modo oscuro'}
+            style={{
+              width: '33px', height: '33px',
+              borderRadius: '8px',
+              background: 'var(--bg-hover)',
+              border: '1px solid var(--border-input)',
+              color: 'var(--text-2)',
+              fontSize: '16px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+              transition: 'background 0.15s, border-color 0.15s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-active)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'var(--bg-hover)'}
+          >
+            {theme === 'dark' ? '🌙' : '🎨'}
+          </button>
+
           {/* User */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <div style={{ textAlign: 'right' }}>
-              <div style={{ color: '#b8ccdf', fontSize: '13px', fontWeight: '500' }}>{user?.username}</div>
-              <div style={{ color: '#2e4a65', fontSize: '11px' }}>
+              <div style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500' }}>{user?.username}</div>
+              <div style={{ color: 'var(--text-6)', fontSize: '11px' }}>
                 {user?.role === 'admin' ? 'Dungeon Master' : 'Jugador'}
               </div>
             </div>
@@ -471,8 +499,8 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
               style={{
                 width: '33px', height: '33px',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #1d4ed8 0%, #1a3a8a 100%)',
-                border: '1.5px solid #2563eb',
+                background: 'linear-gradient(135deg, var(--accent-dim) 0%, #1a3a8a 100%)',
+                border: '1.5px solid var(--accent)',
                 color: '#e2e8f0',
                 fontWeight: '700',
                 fontSize: '12px',
@@ -490,7 +518,7 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
         </header>
 
         {/* Main scrollable content */}
-        <main style={{ flex: 1, overflowY: 'auto', background: '#050c18' }}>
+        <main style={{ flex: 1, overflowY: 'auto', background: 'var(--bg)' }}>
           {children}
         </main>
       </div>

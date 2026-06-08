@@ -6,25 +6,25 @@ const S = {
   overlay: { position:'fixed', inset:0, background:'rgba(0,0,0,0.7)', backdropFilter:'blur(4px)', zIndex:60 },
   panel: {
     position:'fixed', right:0, top:0, height:'100%', width:'min(960px,100%)',
-    background:'#07101f', borderLeft:'1px solid #0f1e30',
+    background:'var(--bg-panel)', borderLeft:'1px solid var(--border)',
     boxShadow:'-8px 0 40px rgba(0,0,0,0.6)', zIndex:70,
     display:'flex', flexDirection:'column', overflow:'hidden',
     fontFamily:"-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
   },
   header: {
-    height:56, background:'#060c18', borderBottom:'1px solid #0f1e30',
+    height:56, background:'var(--bg-panel)', borderBottom:'1px solid var(--border)',
     display:'flex', alignItems:'center', padding:'0 20px', gap:'12px', flexShrink:0,
   },
   headerLeft: { display:'flex', alignItems:'center', gap:'8px', flex:1, minWidth:0 },
   headerIcon: { color:'#10b981', fontSize:'16px', flexShrink:0 },
-  headerTitle: { color:'#b8ccdf', fontWeight:'700', fontSize:'14px', letterSpacing:'0.01em' },
-  saveStatus: { fontSize:'12px', color:'#3a5878', marginLeft:'auto', whiteSpace:'nowrap', flexShrink:0 },
-  closeBtn: { background:'none', border:'none', color:'#3a5878', fontSize:'18px', cursor:'pointer', padding:'6px', borderRadius:'6px', lineHeight:1, transition:'color 0.15s', flexShrink:0 },
-  tabBar: { display:'flex', borderBottom:'1px solid #0f1e30', background:'#060c18', flexShrink:0 },
+  headerTitle: { color:'var(--text-2)', fontWeight:'700', fontSize:'14px', letterSpacing:'0.01em' },
+  saveStatus: { fontSize:'12px', color:'var(--text-5)', marginLeft:'auto', whiteSpace:'nowrap', flexShrink:0 },
+  closeBtn: { background:'none', border:'none', color:'var(--text-5)', fontSize:'18px', cursor:'pointer', padding:'6px', borderRadius:'6px', lineHeight:1, transition:'color 0.15s', flexShrink:0 },
+  tabBar: { display:'flex', borderBottom:'1px solid var(--border)', background:'var(--bg-panel)', flexShrink:0 },
   tab: (active) => ({
     padding:'10px 20px', fontSize:'13px', fontWeight:'600', cursor:'pointer',
     border:'none', background:'transparent',
-    color: active ? '#b8ccdf' : '#3a5878',
+    color: active ? 'var(--text-2)' : 'var(--text-5)',
     borderBottom: active ? '2px solid #10b981' : '2px solid transparent',
     transition:'color 0.15s',
     letterSpacing:'0.02em',
@@ -32,20 +32,20 @@ const S = {
   body: { flex:1, overflow:'hidden', display:'flex', flexDirection:'column' },
   textarea: {
     flex:1, resize:'none', outline:'none', border:'none',
-    background:'#07101f', color:'#b8ccdf', fontSize:'14px',
+    background:'var(--bg-panel)', color:'var(--text-2)', fontSize:'14px',
     padding:'24px 28px', lineHeight:1.75, fontFamily:'inherit',
     caretColor:'#10b981',
   },
   preview: {
     flex:1, overflowY:'auto', padding:'24px 28px',
-    color:'#9ab4cc', fontSize:'14px', lineHeight:1.75,
+    color:'var(--text-3)', fontSize:'14px', lineHeight:1.75,
   },
   footer: {
-    borderTop:'1px solid #0f1e30', padding:'12px 20px',
-    background:'#060c18', display:'flex', gap:'16px', alignItems:'center', flexShrink:0,
+    borderTop:'1px solid var(--border)', padding:'12px 20px',
+    background:'var(--bg-panel)', display:'flex', gap:'16px', alignItems:'center', flexShrink:0,
   },
-  tip: { fontSize:'12px', color:'#2e4060' },
-  tipCode: { background:'#0a1628', border:'1px solid #152030', borderRadius:'4px', padding:'1px 5px', color:'#60a5fa', fontFamily:'monospace', fontSize:'11px' },
+  tip: { fontSize:'12px', color:'var(--text-6)' },
+  tipCode: { background:'var(--bg-card)', border:'1px solid var(--border-input)', borderRadius:'4px', padding:'1px 5px', color:'var(--accent-2)', fontFamily:'monospace', fontSize:'11px' },
 };
 
 // Minimal markdown prose styles for the preview pane
@@ -53,15 +53,15 @@ const previewStyles = `
   .notes-preview p { margin: 0.6rem 0; }
   .notes-preview strong { color: #f59e0b; font-weight: 600; }
   .notes-preview em { color: #93b8d8; font-style: italic; }
-  .notes-preview h1 { color: #c8daf0; font-size: 1.4rem; font-weight: 700; margin: 1.4rem 0 0.5rem; }
-  .notes-preview h2 { color: #4d8fd6; font-size: 1.1rem; font-weight: 600; margin: 1.2rem 0 0.4rem; border-bottom: 1px solid #0f1e30; padding-bottom: 0.3rem; }
-  .notes-preview h3 { color: #60a5fa; font-size: 1rem; font-weight: 600; margin: 1rem 0 0.4rem; }
+  .notes-preview h1 { color: var(--text-1); font-size: 1.4rem; font-weight: 700; margin: 1.4rem 0 0.5rem; }
+  .notes-preview h2 { color: var(--accent-2); font-size: 1.1rem; font-weight: 600; margin: 1.2rem 0 0.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+  .notes-preview h3 { color: var(--accent-2); font-size: 1rem; font-weight: 600; margin: 1rem 0 0.4rem; }
   .notes-preview ul, .notes-preview ol { padding-left: 1.4rem; margin: 0.5rem 0; }
   .notes-preview li { margin: 0.3rem 0; }
   .notes-preview code { background: rgba(255,255,255,0.07); padding: 0.1rem 0.3rem; border-radius: 4px; color: #f59e0b; font-size: 0.88em; }
-  .notes-preview blockquote { border-left: 3px solid #1e4080; padding-left: 1rem; margin-left: 0; font-style: italic; color: #5a7898; }
-  .notes-preview hr { border: none; border-top: 1px solid #0f1e30; margin: 1.2rem 0; }
-  .notes-preview a { color: #4d8fd6; text-decoration: underline; }
+  .notes-preview blockquote { border-left: 3px solid #1e4080; padding-left: 1rem; margin-left: 0; font-style: italic; color: var(--text-4); }
+  .notes-preview hr { border: none; border-top: 1px solid var(--border); margin: 1.2rem 0; }
+  .notes-preview a { color: var(--accent-2); text-decoration: underline; }
 `;
 
 export default function NotesPanel({ username, isOpen, onClose }) {
@@ -123,7 +123,7 @@ export default function NotesPanel({ username, isOpen, onClose }) {
           <div style={S.headerLeft}>
             <span style={S.headerIcon}>📝</span>
             <span style={S.headerTitle}>Mis Notas</span>
-            {isLoading && <span style={{ color:'#2e4060', fontSize:'12px' }}>cargando...</span>}
+            {isLoading && <span style={{ color:'var(--text-6)', fontSize:'12px' }}>cargando...</span>}
           </div>
           <span style={S.saveStatus}>
             {isSaving ? 'Guardando...' : lastSaved ? fmtSaved() : ''}
@@ -131,7 +131,7 @@ export default function NotesPanel({ username, isOpen, onClose }) {
           <button
             style={S.closeBtn} onClick={onClose}
             onMouseEnter={e => e.target.style.color='#f87171'}
-            onMouseLeave={e => e.target.style.color='#3a5878'}
+            onMouseLeave={e => e.target.style.color='var(--text-5)'}
           >✕</button>
         </div>
 
@@ -163,7 +163,7 @@ Se guarda automáticamente."
               {notes.trim() ? (
                 <ReactMarkdown>{notes}</ReactMarkdown>
               ) : (
-                <span style={{ color:'#2e4060', fontStyle:'italic' }}>Nada que previsualizar todavía...</span>
+                <span style={{ color:'var(--text-6)', fontStyle:'italic' }}>Nada que previsualizar todavía...</span>
               )}
             </div>
           )}

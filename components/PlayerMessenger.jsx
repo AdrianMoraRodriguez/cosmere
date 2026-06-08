@@ -5,42 +5,43 @@ const S = {
   overlay: { position:'fixed', inset:0, background:'rgba(0,0,0,0.7)', backdropFilter:'blur(4px)', zIndex:60 },
   panel: {
     position:'fixed', right:0, top:0, height:'100%', width:'min(900px,100%)',
-    background:'#07101f', borderLeft:'1px solid #0f1e30',
+    background:'var(--bg-panel)', borderLeft:'1px solid var(--border)',
     boxShadow:'-8px 0 40px rgba(0,0,0,0.6)', zIndex:70,
     display:'flex', overflow:'hidden',
     fontFamily:"-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    backdropFilter:'blur(16px)',
   },
-  sidebar: { width:240, flexShrink:0, background:'#060c18', borderRight:'1px solid #0f1e30', display:'flex', flexDirection:'column' },
-  sidebarHeader: { padding:'16px', borderBottom:'1px solid #0f1e30', display:'flex', alignItems:'center', justifyContent:'space-between' },
-  sidebarTitle: { color:'#b8ccdf', fontWeight:'700', fontSize:'13px', letterSpacing:'0.06em', textTransform:'uppercase' },
+  sidebar: { width:240, flexShrink:0, background:'var(--bg-panel)', borderRight:'1px solid var(--border)', display:'flex', flexDirection:'column' },
+  sidebarHeader: { padding:'16px', borderBottom:'1px solid var(--border)', display:'flex', alignItems:'center', justifyContent:'space-between' },
+  sidebarTitle: { color:'var(--text-2)', fontWeight:'700', fontSize:'13px', letterSpacing:'0.06em', textTransform:'uppercase' },
   convItem: (active) => ({
-    width:'100%', padding:'12px 14px', borderBottom:'1px solid #0a1828', textAlign:'left',
-    background: active ? '#0f2040' : 'transparent',
-    borderLeft: active ? '2px solid #2563eb' : '2px solid transparent',
+    width:'100%', padding:'12px 14px', borderBottom:'1px solid var(--border)', textAlign:'left',
+    background: active ? 'var(--bg-active)' : 'transparent',
+    borderLeft: active ? '2px solid var(--accent)' : '2px solid transparent',
     cursor:'pointer', transition:'background 0.12s',
   }),
-  convName: { color:'#b8ccdf', fontWeight:'600', fontSize:'13px' },
-  convPreview: { color:'#3a5878', fontSize:'11.5px', marginTop:'3px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', maxWidth:'160px' },
-  convTime: { color:'#2a3d52', fontSize:'10.5px', marginTop:'2px' },
+  convName: { color:'var(--text-2)', fontWeight:'600', fontSize:'13px' },
+  convPreview: { color:'var(--text-5)', fontSize:'11.5px', marginTop:'3px', overflow:'hidden', textOverflow:'ellipsis', whiteSpace:'nowrap', maxWidth:'160px' },
+  convTime: { color:'var(--text-7)', fontSize:'10.5px', marginTop:'2px' },
   unreadBadge: { background:'#f59e0b', color:'#431407', fontSize:'9px', fontWeight:'800', padding:'1px 6px', borderRadius:'99px', letterSpacing:'0.05em' },
-  main: { flex:1, display:'flex', flexDirection:'column', overflow:'hidden', background:'#07101f' },
-  header: { height:56, background:'#060c18', borderBottom:'1px solid #0f1e30', display:'flex', alignItems:'center', padding:'0 16px', gap:'10px', flexShrink:0 },
-  headerTitle: { color:'#b8ccdf', fontWeight:'600', fontSize:'14px', flex:1 },
-  closeBtn: { background:'none', border:'none', color:'#3a5878', fontSize:'18px', cursor:'pointer', padding:'6px', borderRadius:'6px', lineHeight:1, transition:'color 0.15s' },
-  backBtn: { background:'none', border:'none', color:'#3a5878', fontSize:'16px', cursor:'pointer', padding:'4px 8px', borderRadius:'6px', lineHeight:1 },
+  main: { flex:1, display:'flex', flexDirection:'column', overflow:'hidden', background:'var(--bg-panel)' },
+  header: { height:56, background:'var(--bg-panel)', borderBottom:'1px solid var(--border)', display:'flex', alignItems:'center', padding:'0 16px', gap:'10px', flexShrink:0 },
+  headerTitle: { color:'var(--text-2)', fontWeight:'600', fontSize:'14px', flex:1 },
+  closeBtn: { background:'none', border:'none', color:'var(--text-5)', fontSize:'18px', cursor:'pointer', padding:'6px', borderRadius:'6px', lineHeight:1, transition:'color 0.15s' },
+  backBtn: { background:'none', border:'none', color:'var(--text-5)', fontSize:'16px', cursor:'pointer', padding:'4px 8px', borderRadius:'6px', lineHeight:1 },
   messages: { flex:1, overflowY:'auto', padding:'16px', display:'flex', flexDirection:'column', gap:'10px' },
   msgMine: { alignSelf:'flex-end', maxWidth:'70%', background:'linear-gradient(135deg,#1e3a8a,#2563eb)', borderRadius:'12px 12px 2px 12px', padding:'10px 14px' },
-  msgOther: { alignSelf:'flex-start', maxWidth:'70%', background:'#0c1e38', border:'1px solid #0f2a45', borderRadius:'12px 12px 12px 2px', padding:'10px 14px' },
+  msgOther: { alignSelf:'flex-start', maxWidth:'70%', background:'var(--bg-hover)', border:'1px solid #0f2a45', borderRadius:'12px 12px 12px 2px', padding:'10px 14px' },
   msgText: { color:'#e2e8f0', fontSize:'13.5px', whiteSpace:'pre-wrap', lineHeight:1.5 },
   msgTime: { color:'rgba(255,255,255,0.35)', fontSize:'10.5px', marginTop:'4px', textAlign:'right' },
-  inputArea: { borderTop:'1px solid #0f1e30', padding:'12px 16px', display:'flex', gap:'8px', alignItems:'flex-end', background:'#060c18' },
-  textarea: { flex:1, background:'#0b1628', border:'1px solid #152030', borderRadius:'8px', padding:'8px 12px', color:'#b8ccdf', fontSize:'13.5px', resize:'none', outline:'none', fontFamily:'inherit', lineHeight:1.5 },
-  sendBtn: (disabled) => ({ background: disabled ? '#1a2535' : '#2563eb', border:'none', borderRadius:'8px', padding:'8px 16px', color: disabled ? '#2e4060' : 'white', cursor: disabled ? 'not-allowed' : 'pointer', fontSize:'13px', fontWeight:'600', transition:'background 0.15s', whiteSpace:'nowrap' }),
+  inputArea: { borderTop:'1px solid var(--border)', padding:'12px 16px', display:'flex', gap:'8px', alignItems:'flex-end', background:'var(--bg-panel)' },
+  textarea: { flex:1, background:'var(--bg-input)', border:'1px solid var(--border-input)', borderRadius:'8px', padding:'8px 12px', color:'var(--text-2)', fontSize:'13.5px', resize:'none', outline:'none', fontFamily:'inherit', lineHeight:1.5 },
+  sendBtn: (disabled) => ({ background: disabled ? 'var(--btn-disabled-bg)' : 'var(--accent)', border:'none', borderRadius:'8px', padding:'8px 16px', color: disabled ? 'var(--btn-disabled-text)' : 'white', cursor: disabled ? 'not-allowed' : 'pointer', fontSize:'13px', fontWeight:'600', transition:'background 0.15s', whiteSpace:'nowrap' }),
   emptyState: { flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'32px', gap:'16px' },
-  emptyTitle: { color:'#b8ccdf', fontWeight:'600', fontSize:'16px', textAlign:'center' },
-  select: { width:'100%', background:'#0b1628', border:'1px solid #152030', borderRadius:'8px', padding:'9px 12px', color:'#b8ccdf', fontSize:'13.5px', outline:'none', marginBottom:'10px' },
-  bigTextarea: { width:'100%', height:'120px', background:'#0b1628', border:'1px solid #152030', borderRadius:'8px', padding:'10px 12px', color:'#b8ccdf', fontSize:'13.5px', resize:'none', outline:'none', fontFamily:'inherit', lineHeight:1.5, marginBottom:'10px' },
-  bigSendBtn: (disabled) => ({ width:'100%', background: disabled ? '#1a2535' : '#2563eb', border:'none', borderRadius:'8px', padding:'11px', color: disabled ? '#2e4060' : 'white', cursor: disabled ? 'not-allowed' : 'pointer', fontSize:'14px', fontWeight:'600', transition:'background 0.15s' }),
+  emptyTitle: { color:'var(--text-2)', fontWeight:'600', fontSize:'16px', textAlign:'center' },
+  select: { width:'100%', background:'var(--bg-input)', border:'1px solid var(--border-input)', borderRadius:'8px', padding:'9px 12px', color:'var(--text-2)', fontSize:'13.5px', outline:'none', marginBottom:'10px' },
+  bigTextarea: { width:'100%', height:'120px', background:'var(--bg-input)', border:'1px solid var(--border-input)', borderRadius:'8px', padding:'10px 12px', color:'var(--text-2)', fontSize:'13.5px', resize:'none', outline:'none', fontFamily:'inherit', lineHeight:1.5, marginBottom:'10px' },
+  bigSendBtn: (disabled) => ({ width:'100%', background: disabled ? 'var(--btn-disabled-bg)' : 'var(--accent)', border:'none', borderRadius:'8px', padding:'11px', color: disabled ? 'var(--btn-disabled-text)' : 'white', cursor: disabled ? 'not-allowed' : 'pointer', fontSize:'14px', fontWeight:'600', transition:'background 0.15s' }),
 };
 
 export default function PlayerMessenger({ username, isOpen, onClose }) {
@@ -124,11 +125,11 @@ export default function PlayerMessenger({ username, isOpen, onClose }) {
         <div style={S.sidebar}>
           <div style={S.sidebarHeader}>
             <span style={S.sidebarTitle}>Mensajes</span>
-            <span style={{ color:'#2563eb', fontSize:'16px' }}>💬</span>
+            <span style={{ color:'var(--accent)', fontSize:'16px' }}>💬</span>
           </div>
           <div style={{ flex:1, overflowY:'auto' }}>
             {conversations.length === 0 ? (
-              <div style={{ padding:'24px', textAlign:'center', color:'#2e4060', fontSize:'12px' }}>Sin conversaciones</div>
+              <div style={{ padding:'24px', textAlign:'center', color:'var(--text-6)', fontSize:'12px' }}>Sin conversaciones</div>
             ) : conversations.map(c => (
               <button key={c.user} onClick={() => setSelectedConversation(c.user)} style={S.convItem(selectedConversation === c.user)}>
                 <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
@@ -149,7 +150,7 @@ export default function PlayerMessenger({ username, isOpen, onClose }) {
             <span style={S.headerTitle}>
               {selectedConversation ? `${selectedConversation === 'DM' ? '👑 ' : ''}${selectedConversation}` : 'Mensajería'}
             </span>
-            <button style={S.closeBtn} onClick={onClose} onMouseEnter={e => e.target.style.color='#f87171'} onMouseLeave={e => e.target.style.color='#3a5878'}>✕</button>
+            <button style={S.closeBtn} onClick={onClose} onMouseEnter={e => e.target.style.color='#f87171'} onMouseLeave={e => e.target.style.color='var(--text-5)'}>✕</button>
           </div>
 
           {selectedConversation ? (

@@ -73,8 +73,8 @@ function IndexCard({ page }) {
   return (
     <Link href={href} style={{ textDecoration: 'none' }}>
       <div style={{
-        background: '#0a1628',
-        border: '1px solid #122030',
+        background: 'var(--bg-card)',
+        border: '1px solid var(--border-card)',
         borderRadius: '10px',
         padding: '18px 18px 16px',
         cursor: 'pointer',
@@ -85,17 +85,17 @@ function IndexCard({ page }) {
         gap: '10px',
       }}
         onMouseEnter={e => {
-          e.currentTarget.style.borderColor = '#1e4080';
-          e.currentTarget.style.background = '#0c1e38';
+          e.currentTarget.style.borderColor = 'var(--accent-dim)';
+          e.currentTarget.style.background = 'var(--bg-hover)';
         }}
         onMouseLeave={e => {
-          e.currentTarget.style.borderColor = '#122030';
-          e.currentTarget.style.background = '#0a1628';
+          e.currentTarget.style.borderColor = 'var(--border-card)';
+          e.currentTarget.style.background = 'var(--bg-card)';
         }}
       >
         {/* Icon row + spoilers badge */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-          <span style={{ color: '#4d8fd6' }}>{icon}</span>
+          <span style={{ color: 'var(--accent-2)' }}>{icon}</span>
           {page.spoilers && (
             <span style={{
               background: 'rgba(245, 158, 11, 0.12)',
@@ -115,7 +115,7 @@ function IndexCard({ page }) {
         {/* Title + subtitle */}
         <div>
           <div style={{
-            color: '#c8daf0',
+            color: 'var(--text-1)',
             fontWeight: '600',
             fontSize: '14.5px',
             lineHeight: '1.3',
@@ -124,7 +124,7 @@ function IndexCard({ page }) {
             {page.title}
           </div>
           {meta.subtitle && (
-            <div style={{ color: '#3a5878', fontSize: '12px' }}>
+            <div style={{ color: 'var(--text-5)', fontSize: '12px' }}>
               {meta.subtitle}
             </div>
           )}
@@ -142,25 +142,25 @@ function PageRow({ page, isLast }) {
     <Link href={href} style={{ textDecoration: 'none', display: 'block' }}>
       <div style={{
         padding: '12px 16px',
-        borderBottom: isLast ? 'none' : '1px solid #0d1e2e',
+        borderBottom: isLast ? 'none' : '1px solid var(--border)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
         transition: 'background 0.12s',
         cursor: 'pointer',
       }}
-        onMouseEnter={e => { e.currentTarget.style.background = '#0c1c30'; }}
+        onMouseEnter={e => { e.currentTarget.style.background = 'var(--bg-hover)'; }}
         onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
       >
         <div>
-          <div style={{ color: '#b8ccdf', fontSize: '13.5px', fontWeight: '500' }}>{page.title}</div>
-          <div style={{ color: '#263c52', fontSize: '11.5px', marginTop: '2px' }}>{page.slug}</div>
+          <div style={{ color: 'var(--text-2)', fontSize: '13.5px', fontWeight: '500' }}>{page.title}</div>
+          <div style={{ color: 'var(--text-7)', fontSize: '11.5px', marginTop: '2px' }}>{page.slug}</div>
         </div>
         <div style={{ display: 'flex', gap: '6px', flexShrink: 0, marginLeft: '12px' }}>
           {page.is_index && (
             <span style={{
               background: 'rgba(59,130,246,0.12)',
-              color: '#60a5fa',
+              color: 'var(--accent-2)',
               border: '1px solid rgba(59,130,246,0.25)',
               borderRadius: '5px',
               fontSize: '10px',
@@ -255,14 +255,14 @@ export default function WikiIndex() {
   // Loading / error screens (before layout is available)
   if (loading) {
     return (
-      <div style={{ minHeight: '100vh', background: '#050c18', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ color: '#4d8fd6', fontSize: '16px' }}>Cargando...</div>
+      <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: 'var(--accent-2)', fontSize: '16px' }}>Cargando...</div>
       </div>
     );
   }
   if (error) {
     return (
-      <div style={{ minHeight: '100vh', background: '#050c18', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ color: '#f87171', fontSize: '16px' }}>Error: {error}</div>
       </div>
     );
@@ -299,7 +299,7 @@ export default function WikiIndex() {
           {/* Page header */}
           <div style={{ marginBottom: '28px' }}>
             <h1 style={{
-              color: '#c8daf0',
+              color: 'var(--text-1)',
               fontSize: '22px',
               fontWeight: '700',
               letterSpacing: '0.04em',
@@ -310,7 +310,7 @@ export default function WikiIndex() {
             }}>
               Páginas Índice
             </h1>
-            <p style={{ color: '#2e4a65', fontSize: '13px', marginTop: '4px' }}>
+            <p style={{ color: 'var(--text-6)', fontSize: '13px', marginTop: '4px' }}>
               {accessiblePages.length} páginas en total · Archivo de las Tormentas
             </p>
           </div>
@@ -338,7 +338,7 @@ export default function WikiIndex() {
               marginBottom: '12px',
             }}>
               <h2 style={{
-                color: '#3a5878',
+                color: 'var(--text-5)',
                 fontSize: '11px',
                 fontWeight: '700',
                 letterSpacing: '0.12em',
@@ -348,17 +348,17 @@ export default function WikiIndex() {
               }}>
                 {searchTerm ? 'Resultados de búsqueda' : 'Todas las páginas'}
               </h2>
-              <span style={{ color: '#2e4060', fontSize: '11px' }}>({filteredPages.length})</span>
+              <span style={{ color: 'var(--text-6)', fontSize: '11px' }}>({filteredPages.length})</span>
             </div>
 
             <div style={{
-              background: '#0a1628',
-              border: '1px solid #122030',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-card)',
               borderRadius: '10px',
               overflow: 'hidden',
             }}>
               {filteredPages.length === 0 ? (
-                <div style={{ padding: '32px', textAlign: 'center', color: '#2e4a65', fontSize: '14px' }}>
+                <div style={{ padding: '32px', textAlign: 'center', color: 'var(--text-6)', fontSize: '14px' }}>
                   No se encontraron páginas
                 </div>
               ) : (

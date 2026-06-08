@@ -18,8 +18,8 @@ function HubCard({ href, icon, label, description, available }) {
     <Link href={href} style={{ textDecoration: 'none' }}>
       <div
         style={{
-          background: '#0a1628',
-          border: '1px solid #122030',
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border-card)',
           borderRadius: '12px',
           padding: '32px 24px',
           textAlign: 'center',
@@ -34,19 +34,19 @@ function HubCard({ href, icon, label, description, available }) {
         }}
         onMouseEnter={e => {
           if (!available) return;
-          e.currentTarget.style.borderColor = '#2563eb';
+          e.currentTarget.style.borderColor = 'var(--accent)';
           e.currentTarget.style.transform = 'translateY(-3px)';
           e.currentTarget.style.boxShadow = '0 8px 24px rgba(37,99,235,0.15)';
         }}
         onMouseLeave={e => {
-          e.currentTarget.style.borderColor = '#122030';
+          e.currentTarget.style.borderColor = 'var(--border-card)';
           e.currentTarget.style.transform = 'translateY(0)';
           e.currentTarget.style.boxShadow = 'none';
         }}
       >
         <div style={{ fontSize: '44px', lineHeight: 1 }}>{icon}</div>
-        <div style={{ color: '#c8daf0', fontWeight: '700', fontSize: '17px' }}>{label}</div>
-        <div style={{ color: '#3a5878', fontSize: '13px', lineHeight: 1.5 }}>{description}</div>
+        <div style={{ color: 'var(--text-1)', fontWeight: '700', fontSize: '17px' }}>{label}</div>
+        <div style={{ color: 'var(--text-5)', fontSize: '13px', lineHeight: 1.5 }}>{description}</div>
         {!available && (
           <div style={{
             marginTop: '6px',
@@ -54,7 +54,7 @@ function HubCard({ href, icon, label, description, available }) {
             border: '1px solid rgba(59,130,246,0.15)',
             borderRadius: '6px',
             padding: '4px 12px',
-            color: '#2e5272',
+            color: 'var(--text-5)',
             fontSize: '11px',
             fontStyle: 'italic',
           }}>
@@ -72,11 +72,11 @@ function StoriesGrid({ stories, baseHref }) {
   if (!stories || stories.length === 0) {
     return (
       <div style={{
-        background: '#0a1628', border: '1px solid #122030', borderRadius: '12px',
+        background: 'var(--bg-card)', border: '1px solid var(--border-card)', borderRadius: '12px',
         padding: '48px 32px', textAlign: 'center',
       }}>
         <div style={{ fontSize: '40px', marginBottom: '14px' }}>✨</div>
-        <div style={{ color: '#2e5272', fontSize: '14px', fontStyle: 'italic' }}>
+        <div style={{ color: 'var(--text-5)', fontSize: '14px', fontStyle: 'italic' }}>
           Aún no hay historias disponibles
         </div>
       </div>
@@ -97,8 +97,8 @@ function StoriesGrid({ stories, baseHref }) {
         >
           <div
             style={{
-              background: '#0a1628',
-              border: '1px solid #122030',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-card)',
               borderRadius: '8px',
               padding: '14px 12px',
               textAlign: 'center',
@@ -106,18 +106,18 @@ function StoriesGrid({ stories, baseHref }) {
               transition: 'border-color 0.15s, background 0.15s',
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.borderColor = '#1e4080';
-              e.currentTarget.style.background = '#0c1e38';
+              e.currentTarget.style.borderColor = 'var(--accent-dim)';
+              e.currentTarget.style.background = 'var(--bg-hover)';
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.borderColor = '#122030';
-              e.currentTarget.style.background = '#0a1628';
+              e.currentTarget.style.borderColor = 'var(--border-card)';
+              e.currentTarget.style.background = 'var(--bg-card)';
             }}
           >
-            <div style={{ color: '#3a5878', fontSize: '11px', fontWeight: '700', letterSpacing: '0.08em', marginBottom: '4px' }}>
+            <div style={{ color: 'var(--text-5)', fontSize: '11px', fontWeight: '700', letterSpacing: '0.08em', marginBottom: '4px' }}>
               #{story.key}
             </div>
-            <div style={{ color: '#b8ccdf', fontWeight: '600', fontSize: '13px', lineHeight: 1.3 }}>
+            <div style={{ color: 'var(--text-2)', fontWeight: '600', fontSize: '13px', lineHeight: 1.3 }}>
               {story.label}
             </div>
           </div>
@@ -132,18 +132,18 @@ function StoriesGrid({ stories, baseHref }) {
 function PlaceholderContent({ subpage }) {
   return (
     <div style={{
-      background: '#0a1628',
-      border: '1px solid #122030',
+      background: 'var(--bg-card)',
+      border: '1px solid var(--border-card)',
       borderRadius: '12px',
       padding: '64px 32px',
       textAlign: 'center',
       marginTop: '8px',
     }}>
       <div style={{ fontSize: '56px', lineHeight: 1, marginBottom: '20px' }}>{subpage.icon}</div>
-      <div style={{ color: '#4d6a80', fontSize: '20px', fontWeight: '600', marginBottom: '10px' }}>
+      <div style={{ color: 'var(--text-4)', fontSize: '20px', fontWeight: '600', marginBottom: '10px' }}>
         {subpage.label}
       </div>
-      <div style={{ color: '#2e4060', fontSize: '14px', maxWidth: '360px', margin: '0 auto', lineHeight: 1.6 }}>
+      <div style={{ color: 'var(--text-6)', fontSize: '14px', maxWidth: '360px', margin: '0 auto', lineHeight: 1.6 }}>
         {subpage.description}
       </div>
       <div style={{
@@ -153,7 +153,7 @@ function PlaceholderContent({ subpage }) {
         border: '1px solid rgba(59,130,246,0.15)',
         borderRadius: '8px',
         padding: '8px 20px',
-        color: '#2e5272',
+        color: 'var(--text-5)',
         fontSize: '13px',
         fontStyle: 'italic',
       }}>
@@ -259,14 +259,14 @@ export default function WikiPage() {
 
   if (loading) {
     return (
-      <div style={{ minHeight: '100vh', background: '#050c18', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ color: '#4d8fd6', fontSize: '16px' }}>Cargando...</div>
+      <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ color: 'var(--accent-2)', fontSize: '16px' }}>Cargando...</div>
       </div>
     );
   }
   if (!page || !user) {
     return (
-      <div style={{ minHeight: '100vh', background: '#050c18', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ color: '#f87171', fontSize: '16px' }}>Página no encontrada</div>
       </div>
     );
@@ -311,7 +311,7 @@ export default function WikiPage() {
           <div style={{ marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
             <button
               onClick={() => router.back()}
-              style={{ background: 'none', border: 'none', color: '#3a5878', fontSize: '13px', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', gap: '4px' }}
+              style={{ background: 'none', border: 'none', color: 'var(--text-5)', fontSize: '13px', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', gap: '4px' }}
             >
               <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -320,25 +320,25 @@ export default function WikiPage() {
             </button>
             {virtualSubpage && (
               <>
-                <span style={{ color: '#1a2d40', fontSize: '13px' }}>/</span>
+                <span style={{ color: 'var(--text-7)', fontSize: '13px' }}>/</span>
                 <Link
                   href={`/wiki/${encodeWikiSlug(virtualSubpage.hubSlug)}`}
-                  style={{ color: '#3a5878', fontSize: '13px', textDecoration: 'none' }}
-                  onMouseEnter={e => e.target.style.color = '#60a5fa'}
-                  onMouseLeave={e => e.target.style.color = '#3a5878'}
+                  style={{ color: 'var(--text-5)', fontSize: '13px', textDecoration: 'none' }}
+                  onMouseEnter={e => e.target.style.color = 'var(--accent-2)'}
+                  onMouseLeave={e => e.target.style.color = 'var(--text-5)'}
                 >
                   {page.title}
                 </Link>
               </>
             )}
-            <span style={{ color: '#1a2d40', fontSize: '13px' }}>/</span>
-            <span style={{ color: '#2e4a65', fontSize: '13px' }}>{displayTitle}</span>
+            <span style={{ color: 'var(--text-7)', fontSize: '13px' }}>/</span>
+            <span style={{ color: 'var(--text-6)', fontSize: '13px' }}>{displayTitle}</span>
           </div>
 
           {/* Article */}
           <article>
             {/* Title */}
-            <h1 style={{ color: '#c8daf0', fontSize: '26px', fontWeight: '700', margin: '0 0 14px', lineHeight: '1.25', textAlign: 'left' }}>
+            <h1 style={{ color: 'var(--text-1)', fontSize: '26px', fontWeight: '700', margin: '0 0 14px', lineHeight: '1.25', textAlign: 'left' }}>
               {displayTitle}
             </h1>
 
@@ -356,7 +356,7 @@ export default function WikiPage() {
                   </span>
                 )}
                 {displayPage.is_index && (
-                  <span style={{ background: 'rgba(59,130,246,0.1)', color: '#60a5fa', border: '1px solid rgba(59,130,246,0.25)', borderRadius: '6px', fontSize: '11.5px', fontWeight: '600', padding: '3px 10px' }}>
+                  <span style={{ background: 'rgba(59,130,246,0.1)', color: 'var(--accent-2)', border: '1px solid rgba(59,130,246,0.25)', borderRadius: '6px', fontSize: '11.5px', fontWeight: '600', padding: '3px 10px' }}>
                     Página índice
                   </span>
                 )}
@@ -364,7 +364,7 @@ export default function WikiPage() {
             )}
 
             {/* Divider */}
-            <div style={{ height: '1px', background: 'linear-gradient(90deg, #122030 0%, transparent 100%)', marginBottom: '28px' }} />
+            <div style={{ height: '1px', background: 'linear-gradient(90deg, var(--border-card) 0%, transparent 100%)', marginBottom: '28px' }} />
 
             {/* Content: hub cards / virtual subpage / normal */}
             {isHubPage ? (
@@ -381,7 +381,7 @@ export default function WikiPage() {
                         objectFit: 'cover',
                         objectPosition: 'top center',
                         borderRadius: '10px',
-                        border: '1px solid #122030',
+                        border: '1px solid var(--border-card)',
                         display: 'block',
                       }}
                     />
@@ -403,7 +403,7 @@ export default function WikiPage() {
               </div>
             ) : virtualSubpage ? (
               virtualSubpage.subpage.contentSource === 'parent' ? (
-                <div style={{ color: '#9ab4cc' }}>
+                <div style={{ color: 'var(--text-3)' }}>
                   <WikiContent content={content} allPages={allPages} user={user} currentPage={page} />
                 </div>
               ) : virtualSubpage.subpage.contentSource === 'stories' ? (
@@ -415,7 +415,7 @@ export default function WikiPage() {
                 <PlaceholderContent subpage={virtualSubpage.subpage} />
               )
             ) : (
-              <div style={{ color: '#9ab4cc' }}>
+              <div style={{ color: 'var(--text-3)' }}>
                 <WikiContent content={content} allPages={allPages} user={user} currentPage={page} />
               </div>
             )}

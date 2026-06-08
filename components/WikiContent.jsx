@@ -26,8 +26,8 @@ function PhotoCard({ href, children, imageUrl, spoilers, isPrivate }) {
     <Link href={href} style={{ textDecoration: 'none', display: 'block' }}>
       <div
         style={{
-          background: '#0a1628',
-          border: '1px solid #122030',
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border-card)',
           borderRadius: '10px',
           overflow: 'hidden',
           transition: 'border-color 0.2s, transform 0.2s',
@@ -35,11 +35,11 @@ function PhotoCard({ href, children, imageUrl, spoilers, isPrivate }) {
           height: '100%',
         }}
         onMouseEnter={e => {
-          e.currentTarget.style.borderColor = '#2563eb';
+          e.currentTarget.style.borderColor = 'var(--accent)';
           e.currentTarget.style.transform = 'translateY(-2px)';
         }}
         onMouseLeave={e => {
-          e.currentTarget.style.borderColor = '#122030';
+          e.currentTarget.style.borderColor = 'var(--border-card)';
           e.currentTarget.style.transform = 'translateY(0)';
         }}
       >
@@ -59,18 +59,18 @@ function PhotoCard({ href, children, imageUrl, spoilers, isPrivate }) {
           <div style={{
             width: '100%',
             height: '190px',
-            background: 'linear-gradient(135deg, #0d1e33 0%, #0a1628 100%)',
+            background: 'linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card) 100%)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-            <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="#1e3a5f" strokeWidth="1">
+            <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="var(--accent-dim)" strokeWidth="1">
               <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
           </div>
         )}
         <div style={{ padding: '10px 12px 12px' }}>
-          <div style={{ color: '#b8ccdf', fontWeight: '600', fontSize: '13px', lineHeight: '1.3' }}>
+          <div style={{ color: 'var(--text-2)', fontWeight: '600', fontSize: '13px', lineHeight: '1.3' }}>
             {children}
           </div>
           {(spoilers || isPrivate) && (
@@ -95,10 +95,10 @@ function PhotoCard({ href, children, imageUrl, spoilers, isPrivate }) {
 
 export default function WikiContent({ content, allPages, user, currentPage }) {
   if (!content) {
-    return <div style={{ padding: '16px', color: '#5a7898' }}>No hay contenido disponible</div>;
+    return <div style={{ padding: '16px', color: 'var(--text-4)' }}>No hay contenido disponible</div>;
   }
   if (!allPages || !Array.isArray(allPages)) {
-    return <div style={{ padding: '16px', color: '#5a7898' }}>Error cargando páginas</div>;
+    return <div style={{ padding: '16px', color: 'var(--text-4)' }}>Error cargando páginas</div>;
   }
 
   const isIndexOrSubindex = currentPage?.is_index || currentPage?.is_subindex;
@@ -108,7 +108,7 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
     /!\[(.*?)\]\(\/([^)]+)\)/g,
     (_match, alt, imagePath) => {
       const fullPath = `/content/public/${imagePath}`;
-      return `\n\n<img src="${fullPath}" alt="${alt}" style="max-width:100%;height:auto;border-radius:8px;margin:24px 0;border:1px solid #122030;" />\n\n`;
+      return `\n\n<img src="${fullPath}" alt="${alt}" style="max-width:100%;height:auto;border-radius:8px;margin:24px 0;border:1px solid var(--border-card);" />\n\n`;
     }
   );
 
@@ -221,7 +221,7 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
                   </svg>
                   Información DM
                 </div>
-                <div style={{ color: '#9ab4cc' }}>{children}</div>
+                <div style={{ color: 'var(--text-3)' }}>{children}</div>
               </div>
             );
           },
@@ -251,8 +251,8 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
               <div style={{ display: 'flex', justifyContent: 'center', margin: '8px 0' }}>
                 <Link href={href} style={{
                   display: 'inline-block',
-                  background: '#0a1628',
-                  border: '1px solid #122030',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-card)',
                   borderRadius: '8px',
                   padding: '10px 24px',
                   minWidth: '180px',
@@ -260,10 +260,10 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
                   textDecoration: 'none',
                   transition: 'border-color 0.15s, background 0.15s',
                 }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = '#1e4080'; e.currentTarget.style.background = '#0c1e38'; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = '#122030'; e.currentTarget.style.background = '#0a1628'; }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent-dim)'; e.currentTarget.style.background = 'var(--bg-hover)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-card)'; e.currentTarget.style.background = 'var(--bg-card)'; }}
                 >
-                  <span style={{ color: '#b8ccdf', fontWeight: '600', fontSize: '14px', display: 'block' }}>{children}</span>
+                  <span style={{ color: 'var(--text-2)', fontWeight: '600', fontSize: '14px', display: 'block' }}>{children}</span>
                   <div style={{ display: 'flex', justifyContent: 'center', gap: '6px', marginTop: '6px' }}>
                     {spoilers === 'true' && (
                       <span style={{ background: 'rgba(245,158,11,0.12)', color: '#f59e0b', border: '1px solid rgba(245,158,11,0.25)', borderRadius: '4px', fontSize: '10px', fontWeight: '600', padding: '1px 6px' }}>
@@ -285,13 +285,13 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
           a: ({ href, children }) => {
             if (href?.startsWith('/wiki/')) {
               return (
-                <Link href={href} style={{ color: '#4d8fd6', textDecoration: 'underline', textDecorationColor: 'rgba(77,143,214,0.4)' }}>
+                <Link href={href} style={{ color: 'var(--accent-2)', textDecoration: 'underline', textDecorationColor: 'rgba(77,143,214,0.4)' }}>
                   {children}
                 </Link>
               );
             }
             return (
-              <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: '#60a5fa', textDecoration: 'underline', textDecorationColor: 'rgba(96,165,250,0.4)' }}>
+              <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-2)', textDecoration: 'underline', textDecorationColor: 'rgba(96,165,250,0.4)' }}>
                 {children}
               </a>
             );
