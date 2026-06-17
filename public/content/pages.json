@@ -119,14 +119,6 @@
         "text": "Mraize"
       },
       {
-        "target": "Calki",
-        "text": "Calki"
-      },
-      {
-        "target": "Sidoa Damoi",
-        "text": "Sidoa Damoi"
-      },
-      {
         "target": "Adolin",
         "text": "Adolin"
       },
@@ -147,8 +139,8 @@
         "text": "Valisha"
       }
     ],
-    "content_admin": "## Símbolo Principal\n![](/Pasted image 20260409153238.png)\n## Organización\n### Líder\n[[Mraize]]\n### Miembros conocidos\n[[Calki]]\n[[Sidoa Damoi]]\n## Apariciones en la Historia\n[[Adolin]] les dice a la [[Party Principal]] que hay una organización secreta que está intentando interferir en la política planetaria de Roshar por lo que les manda a intentar descubrir algo de ellos. Tras encontrar una de sus sede, los personajes se adentran en ella hasta que, en cierto punto se encuentran con Mraize que dice saber todo de ellos y que les dará un regalo a cada uno de ellos si es que se unen a la organización, aceptando [[Calki]] y [[Sidoa Damoi]]. Aquí también se revela que [[Valisha]] fue torturada y secuestrada desde pequeña después de que los sangre espectral matasen a toda su familia, aunque también se revela que no mataron a la familia sino que fingieron haberlos matados.",
-    "content_player": "## Símbolo Principal\n![](/Pasted image 20260409153238.png)\n## Organización\n### Líder\n[[Mraize]]\n### Miembros conocidos\n[[Calki]]\n[[Sidoa Damoi]]\n## Apariciones en la Historia\n[[Adolin]] les dice a la [[Party Principal]] que hay una organización secreta que está intentando interferir en la política planetaria de Roshar por lo que les manda a intentar descubrir algo de ellos. Tras encontrar una de sus sede, los personajes se adentran en ella hasta que, en cierto punto se encuentran con Mraize que dice saber todo de ellos y que les dará un regalo a cada uno de ellos si es que se unen a la organización, aceptando [[Calki]] y [[Sidoa Damoi]]. Aquí también se revela que [[Valisha]] fue torturada y secuestrada desde pequeña después de que los sangre espectral matasen a toda su familia, aunque también se revela que no mataron a la familia sino que fingieron haberlos matados.",
+    "content_admin": "## Símbolo Principal\n![](/Pasted image 20260409153238.png)\n## Organización\n### Líder\n[[Mraize]]\n### Miembros conocidos\n## Apariciones en la Historia\n[[Adolin]] les dice a la [[Party Principal]] que hay una organización secreta que está intentando interferir en la política planetaria de Roshar por lo que les manda a intentar descubrir algo de ellos. Tras encontrar una de sus sede, los personajes se adentran en ella hasta que, en cierto punto se encuentran con Mraize que dice saber todo de ellos y que les dará un regalo a cada uno de ellos si es que se unen a la organización, aceptando [[Calki]] y [[Sidoa Damoi]]. Aquí también se revela que [[Valisha]] fue torturada y secuestrada desde pequeña después de que los sangre espectral matasen a toda su familia, aunque también se revela que no mataron a la familia sino que fingieron haberlos matados.",
+    "content_player": "## Símbolo Principal\n![](/Pasted image 20260409153238.png)\n## Organización\n### Líder\n[[Mraize]]\n### Miembros conocidos\n## Apariciones en la Historia\n[[Adolin]] les dice a la [[Party Principal]] que hay una organización secreta que está intentando interferir en la política planetaria de Roshar por lo que les manda a intentar descubrir algo de ellos. Tras encontrar una de sus sede, los personajes se adentran en ella hasta que, en cierto punto se encuentran con Mraize que dice saber todo de ellos y que les dará un regalo a cada uno de ellos si es que se unen a la organización, aceptando [[Calki]] y [[Sidoa Damoi]]. Aquí también se revela que [[Valisha]] fue torturada y secuestrada desde pequeña después de que los sangre espectral matasen a toda su familia, aunque también se revela que no mataron a la familia sino que fingieron haberlos matados.",
     "frontmatter": {
       "title": "Sangre Espectral",
       "visibility": "public",
@@ -3782,6 +3774,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131455.png",
+        "text": "Pasted image 20260617131455.png"
+      },
+      {
         "target": "Pasted image 20260225174018.png",
         "text": "Pasted image 20260225174018.png"
       },
@@ -3790,8 +3786,8 @@
         "text": "Pasted image 20260225174038.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174018.png)\n![](/Pasted image 20260225174038.png)",
-    "content_player": "![](/Pasted image 20260225174018.png)\n![](/Pasted image 20260225174038.png)",
+    "content_admin": "![](/Pasted image 20260617131455.png)\n![](/Pasted image 20260225174018.png)\n![](/Pasted image 20260225174038.png)",
+    "content_player": "![](/Pasted image 20260617131455.png)\n![](/Pasted image 20260225174018.png)\n![](/Pasted image 20260225174038.png)",
     "frontmatter": {
       "title": "Cohesión",
       "visibility": "private",
@@ -3812,6 +3808,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131656.png",
+        "text": "Pasted image 20260617131656.png"
+      },
+      {
         "target": "Pasted image 20260225174838.png",
         "text": "Pasted image 20260225174838.png"
       },
@@ -3824,8 +3824,8 @@
         "text": "Pasted image 20260225174920.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174838.png)\n![](/Pasted image 20260225174859.png)\n![](/Pasted image 20260225174920.png)",
-    "content_player": "![](/Pasted image 20260225174838.png)\n![](/Pasted image 20260225174859.png)\n![](/Pasted image 20260225174920.png)",
+    "content_admin": "![](/Pasted image 20260617131656.png)\n![](/Pasted image 20260225174838.png)\n![](/Pasted image 20260225174859.png)\n![](/Pasted image 20260225174920.png)",
+    "content_player": "![](/Pasted image 20260617131656.png)\n![](/Pasted image 20260225174838.png)\n![](/Pasted image 20260225174859.png)\n![](/Pasted image 20260225174920.png)",
     "frontmatter": {
       "title": "Transformación",
       "visibility": "private",
@@ -3845,6 +3845,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131415.png",
+        "text": "Pasted image 20260617131415.png"
+      },
+      {
         "target": "Pasted image 20260225173754.png",
         "text": "Pasted image 20260225173754.png"
       },
@@ -3857,8 +3861,8 @@
         "text": "Pasted image 20260225173828.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225173754.png)\n![](/Pasted image 20260225173811.png)\n![](/Pasted image 20260225173828.png)",
-    "content_player": "![](/Pasted image 20260225173754.png)\n![](/Pasted image 20260225173811.png)\n![](/Pasted image 20260225173828.png)",
+    "content_admin": "![](/Pasted image 20260617131415.png)\n![](/Pasted image 20260225173754.png)\n![](/Pasted image 20260225173811.png)\n![](/Pasted image 20260225173828.png)",
+    "content_player": "![](/Pasted image 20260617131415.png)\n![](/Pasted image 20260225173754.png)\n![](/Pasted image 20260225173811.png)\n![](/Pasted image 20260225173828.png)",
     "frontmatter": {
       "title": "Abrasión",
       "visibility": "private",
@@ -3878,6 +3882,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131433.png",
+        "text": "Pasted image 20260617131433.png"
+      },
+      {
         "target": "Pasted image 20260225173852.png",
         "text": "Pasted image 20260225173852.png"
       },
@@ -3886,8 +3894,8 @@
         "text": "Pasted image 20260225173925.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225173852.png)\n![](/Pasted image 20260225173925.png)",
-    "content_player": "![](/Pasted image 20260225173852.png)\n![](/Pasted image 20260225173925.png)",
+    "content_admin": "![](/Pasted image 20260617131433.png)\n![](/Pasted image 20260225173852.png)\n![](/Pasted image 20260225173925.png)",
+    "content_player": "![](/Pasted image 20260617131433.png)\n![](/Pasted image 20260225173852.png)\n![](/Pasted image 20260225173925.png)",
     "frontmatter": {
       "title": "Adhesión",
       "visibility": "private",
@@ -3908,6 +3916,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131858.png",
+        "text": "Pasted image 20260617131858.png"
+      },
+      {
         "target": "Pasted image 20260225175010.png",
         "text": "Pasted image 20260225175010.png"
       },
@@ -3920,8 +3932,8 @@
         "text": "Pasted image 20260225175042.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225175010.png)\n![](/Pasted image 20260225175025.png)\n![](/Pasted image 20260225175042.png)",
-    "content_player": "![](/Pasted image 20260225175010.png)\n![](/Pasted image 20260225175025.png)\n![](/Pasted image 20260225175042.png)",
+    "content_admin": "![](/Pasted image 20260617131858.png)\n![](/Pasted image 20260225175010.png)\n![](/Pasted image 20260225175025.png)\n![](/Pasted image 20260225175042.png)",
+    "content_player": "![](/Pasted image 20260617131858.png)\n![](/Pasted image 20260225175010.png)\n![](/Pasted image 20260225175025.png)\n![](/Pasted image 20260225175042.png)",
     "frontmatter": {
       "title": "Transportación",
       "visibility": "private",
@@ -3942,6 +3954,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131947.png",
+        "text": "Pasted image 20260617131947.png"
+      },
+      {
         "target": "Pasted image 20260225174625.png",
         "text": "Pasted image 20260225174625.png"
       },
@@ -3950,8 +3966,8 @@
         "text": "Pasted image 20260225174643.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174625.png)\n![](/Pasted image 20260225174643.png)",
-    "content_player": "![](/Pasted image 20260225174625.png)\n![](/Pasted image 20260225174643.png)",
+    "content_admin": "![](/Pasted image 20260617131947.png)\n![](/Pasted image 20260225174625.png)\n![](/Pasted image 20260225174643.png)",
+    "content_player": "![](/Pasted image 20260617131947.png)\n![](/Pasted image 20260225174625.png)\n![](/Pasted image 20260225174643.png)",
     "frontmatter": {
       "title": "Progresión",
       "visibility": "private",
@@ -3972,6 +3988,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131508.png",
+        "text": "Pasted image 20260617131508.png"
+      },
+      {
         "target": "Pasted image 20260225174151.png",
         "text": "Pasted image 20260225174151.png"
       },
@@ -3984,8 +4004,8 @@
         "text": "Pasted image 20260225174131.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174151.png)\n![](/Pasted image 20260225174204.png)\n![](/Pasted image 20260225174131.png)",
-    "content_player": "![](/Pasted image 20260225174151.png)\n![](/Pasted image 20260225174204.png)\n![](/Pasted image 20260225174131.png)",
+    "content_admin": "![](/Pasted image 20260617131508.png)\n![](/Pasted image 20260225174151.png)\n![](/Pasted image 20260225174204.png)\n![](/Pasted image 20260225174131.png)",
+    "content_player": "![](/Pasted image 20260617131508.png)\n![](/Pasted image 20260225174151.png)\n![](/Pasted image 20260225174204.png)\n![](/Pasted image 20260225174131.png)",
     "frontmatter": {
       "title": "División",
       "visibility": "private",
@@ -4006,6 +4026,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131548.png",
+        "text": "Pasted image 20260617131548.png"
+      },
+      {
         "target": "Pasted image 20260225174322.png",
         "text": "Pasted image 20260225174322.png"
       },
@@ -4018,8 +4042,8 @@
         "text": "Pasted image 20260225174358.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174322.png)\n![](/Pasted image 20260225174340.png)\n![](/Pasted image 20260225174358.png)",
-    "content_player": "![](/Pasted image 20260225174322.png)\n![](/Pasted image 20260225174340.png)\n![](/Pasted image 20260225174358.png)",
+    "content_admin": "![](/Pasted image 20260617131548.png)\n![](/Pasted image 20260225174322.png)\n![](/Pasted image 20260225174340.png)\n![](/Pasted image 20260225174358.png)",
+    "content_player": "![](/Pasted image 20260617131548.png)\n![](/Pasted image 20260225174322.png)\n![](/Pasted image 20260225174340.png)\n![](/Pasted image 20260225174358.png)",
     "frontmatter": {
       "title": "Gravitación",
       "visibility": "private",
@@ -4041,6 +4065,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131604.png",
+        "text": "Pasted image 20260617131604.png"
+      },
+      {
         "target": "Pasted image 20260225174434.png",
         "text": "Pasted image 20260225174434.png"
       },
@@ -4053,8 +4081,8 @@
         "text": "Pasted image 20260225174509.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174434.png)\n![](/Pasted image 20260225174448.png)\n![](/Pasted image 20260225174509.png)",
-    "content_player": "![](/Pasted image 20260225174434.png)\n![](/Pasted image 20260225174448.png)\n![](/Pasted image 20260225174509.png)",
+    "content_admin": "![](/Pasted image 20260617131604.png)\n![](/Pasted image 20260225174434.png)\n![](/Pasted image 20260225174448.png)\n![](/Pasted image 20260225174509.png)",
+    "content_player": "![](/Pasted image 20260617131604.png)\n![](/Pasted image 20260225174434.png)\n![](/Pasted image 20260225174448.png)\n![](/Pasted image 20260225174509.png)",
     "frontmatter": {
       "title": "Iluminación",
       "visibility": "private",
@@ -4074,6 +4102,10 @@
     "is_subindex": false,
     "internal_links": [
       {
+        "target": "Pasted image 20260617131629.png",
+        "text": "Pasted image 20260617131629.png"
+      },
+      {
         "target": "Pasted image 20260225174703.png",
         "text": "Pasted image 20260225174703.png"
       },
@@ -4086,8 +4118,8 @@
         "text": "Pasted image 20260225174755.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260225174703.png)\n![](/Pasted image 20260225174726.png)\n![](/Pasted image 20260225174755.png)",
-    "content_player": "![](/Pasted image 20260225174703.png)\n![](/Pasted image 20260225174726.png)\n![](/Pasted image 20260225174755.png)",
+    "content_admin": "![](/Pasted image 20260617131629.png)\n![](/Pasted image 20260225174703.png)\n![](/Pasted image 20260225174726.png)\n![](/Pasted image 20260225174755.png)",
+    "content_player": "![](/Pasted image 20260617131629.png)\n![](/Pasted image 20260225174703.png)\n![](/Pasted image 20260225174726.png)\n![](/Pasted image 20260225174755.png)",
     "frontmatter": {
       "title": "Tensión",
       "visibility": "private",
