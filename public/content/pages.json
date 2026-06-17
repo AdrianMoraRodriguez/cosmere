@@ -1158,7 +1158,7 @@
   {
     "slug": "Caminapiedras/Personajes/Sprens/Pulso",
     "title": "Pulso",
-    "visibility": "private",
+    "visibility": "public",
     "allowed_users": [],
     "spoilers": false,
     "is_index": false,
@@ -1173,7 +1173,7 @@
     "content_player": "![](/Pasted image 20260310171237.png)",
     "frontmatter": {
       "title": "Pulso",
-      "visibility": "private",
+      "visibility": "public",
       "spoilers": false
     }
   },
