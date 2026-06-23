@@ -178,6 +178,7 @@ export default function WikiPage() {
   const { slug } = router.query;
 
   useEffect(() => {
+    if (!router.isReady) return;
     const userData = localStorage.getItem('user');
     if (!userData) { router.push('/login'); return; }
 
