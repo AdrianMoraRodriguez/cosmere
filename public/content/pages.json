@@ -1442,10 +1442,14 @@
       {
         "target": "Teryn",
         "text": "Teryn"
+      },
+      {
+        "target": "Vanzi",
+        "text": "Vanzi"
       }
     ],
-    "content_admin": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]\n[[Adolin]]\n[[Ryvlk]]\n[[Teryn]]",
-    "content_player": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]\n[[Adolin]]\n[[Ryvlk]]\n[[Teryn]]",
+    "content_admin": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]\n[[Adolin]]\n[[Ryvlk]]\n[[Teryn]]\n[[Vanzi]]",
+    "content_player": "[[Ralanat (Brillante Señora)]]\n[[Resi (Brillante Señor)]]\n[[Veth]]\n[[Bordin]]\n[[Taln]]\n[[Adolin]]\n[[Ryvlk]]\n[[Teryn]]\n[[Vanzi]]",
     "frontmatter": {
       "title": "Personajes Secundarios",
       "visibility": "public",
@@ -1522,6 +1526,28 @@
     "content_player": "![](/Pasted image 20260205202950.png)\nHumano alezi de ojos oscuros, tiene el pelo oscuro y corto, cejas pronunciadas y viste el azul de los Kholin.\n## Sucesos en la campaña\nBordin es el líder de las caravanas en la encrucijada del Concilio. Les permite a la [[Party Principal]] estar en las caravanas y viajar con ellos. \nAl llegar a las llanuras les paga todo el alojamiento y arrenda a la [[Party Principal]] una reunión con el Alto Principe Dalinar Kholin",
     "frontmatter": {
       "title": "Bordin",
+      "visibility": "public",
+      "spoilers": false
+    }
+  },
+  {
+    "slug": "Caminapiedras/Personajes/Secundarios/Vanzi",
+    "title": "Vanzi",
+    "visibility": "public",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260624000558.png",
+        "text": "Pasted image 20260624000558.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260624000558.png)",
+    "content_player": "![](/Pasted image 20260624000558.png)",
+    "frontmatter": {
+      "title": "Vanzi",
       "visibility": "public",
       "spoilers": false
     }
@@ -2011,6 +2037,40 @@
     }
   },
   {
+    "slug": "Caminapiedras/Enemigos/¿Dalinar?",
+    "title": "¿Dalinar?",
+    "visibility": "private",
+    "allowed_users": [],
+    "spoilers": false,
+    "is_index": false,
+    "is_subindex": false,
+    "internal_links": [
+      {
+        "target": "Pasted image 20260623234726.png",
+        "text": "Pasted image 20260623234726.png"
+      },
+      {
+        "target": "Pasted image 20260623234714.png",
+        "text": "Pasted image 20260623234714.png"
+      },
+      {
+        "target": "Pasted image 20260623234748.png",
+        "text": "Pasted image 20260623234748.png"
+      },
+      {
+        "target": "Pasted image 20260623234805.png",
+        "text": "Pasted image 20260623234805.png"
+      }
+    ],
+    "content_admin": "![](/Pasted image 20260623234726.png)\n![](/Pasted image 20260623234714.png)\n<dm-section>![](/Pasted image 20260623234748.png)\n![](/Pasted image 20260623234805.png)</dm-section>",
+    "content_player": "![](/Pasted image 20260623234726.png)\n![](/Pasted image 20260623234714.png)\n",
+    "frontmatter": {
+      "title": "¿Dalinar?",
+      "visibility": "private",
+      "spoilers": false
+    }
+  },
+  {
     "slug": "Caminapiedras/Enemigos/Anguila Aérea",
     "title": "Anguila Aérea",
     "visibility": "public",
@@ -2318,10 +2378,14 @@
       {
         "target": "Lancero",
         "text": "Lancero"
+      },
+      {
+        "target": "¿Dalinar?",
+        "text": "¿Dalinar?"
       }
     ],
-    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]\n[[Fanático]]\n[[Ladrón]]\n[[Agentes de los Ojos de Palah]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Kaiana|Kaiana]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Ylt|Ylt]]\n[[Regio en forma tormenta]]\n[[Maestro lancero]]\n[[Lancero]]",
-    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]\n[[Fanático]]\n[[Ladrón]]\n[[Agentes de los Ojos de Palah]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Kaiana|Kaiana]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Ylt|Ylt]]\n[[Regio en forma tormenta]]\n[[Maestro lancero]]\n[[Lancero]]",
+    "content_admin": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]\n[[Fanático]]\n[[Ladrón]]\n[[Agentes de los Ojos de Palah]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Kaiana|Kaiana]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Ylt|Ylt]]\n[[Regio en forma tormenta]]\n[[Maestro lancero]]\n[[Lancero]]\n[[¿Dalinar?]]",
+    "content_player": "[[Sabueso-Hacha]]\n[[Bandidos]]\n[[Portador de Esquirlada de Élite|Portador de Esquirlada]]\n[[Arqueros]]\n[[Soldados de la Emoción|Soldados]]\n[[Veth (boss)|Veth]]\n[[Parshendi en forma de guerra y diestra]]\n[[Espinablanca]]\n[[Guardias]]\n[[Brillante Señor Amaram]]\n[[Fanático]]\n[[Ladrón]]\n[[Agentes de los Ojos de Palah]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Kaiana|Kaiana]]\n[[Repo/Archivo/Caminapiedras/Enemigos/Jefes/Ylt|Ylt]]\n[[Regio en forma tormenta]]\n[[Maestro lancero]]\n[[Lancero]]\n[[¿Dalinar?]]",
     "frontmatter": {
       "title": "Enemigos",
       "visibility": "public",
@@ -2640,10 +2704,74 @@
       {
         "target": "Pasted image 20260623222058.png",
         "text": "Pasted image 20260623222058.png"
+      },
+      {
+        "target": "Valisha",
+        "text": "Valisha"
+      },
+      {
+        "target": "Yara Elorin",
+        "text": "Yara"
+      },
+      {
+        "target": "Bokao Nel",
+        "text": "Bokao"
+      },
+      {
+        "target": "Dyr Dyu",
+        "text": "Dyr"
+      },
+      {
+        "target": "Sidoa Damoi",
+        "text": "Sidoa"
+      },
+      {
+        "target": "Calki",
+        "text": "Calki"
+      },
+      {
+        "target": "Día 10 El juez y su torre#La curiosidad de muchos",
+        "text": "la curiosidad de muchos"
+      },
+      {
+        "target": "Vanzi",
+        "text": "Vanzi"
+      },
+      {
+        "target": "9",
+        "text": "9"
+      },
+      {
+        "target": "Rompedores del Cielo",
+        "text": "rompedora del cielo"
+      },
+      {
+        "target": "Ojos de Palah",
+        "text": "Ojos de Palah"
+      },
+      {
+        "target": "Party Principal",
+        "text": "Party Principal"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      },
+      {
+        "target": "Adolin",
+        "text": "Adolin"
+      },
+      {
+        "target": "Corredores del Viento",
+        "text": "Corredores del Viento"
+      },
+      {
+        "target": "¿Dalinar?",
+        "text": "¿Dalinar?"
       }
     ],
-    "content_admin": "![](/Pasted image 20260623222058.png)\n# Historia Esperada",
-    "content_player": "![](/Pasted image 20260623222058.png)\n# Historia Esperada",
+    "content_admin": "![](/Pasted image 20260623222058.png)\n# Historia Esperada\nEl día comienza con un flashback de la conversación de [[Valisha]] y [[Yara Elorin|Yara]]. Mientras ocurre esto, [[Bokao Nel|Bokao]] y [[Dyr Dyu|Dyr]] estaban creando fabriales y [[Sidoa Damoi|Sidoa]] intentaba dormir, [[Calki]] se ve atacado en el encuentro [[Día 10 El juez y su torre#La curiosidad de muchos|la curiosidad de muchos]].\n\nTras acabar este flashback volvemos al momento dónde lo dejamos En el que Nale les mira y habla con frialdad: \"No es que tenga mucha paciencia estos días, tengo que llevar a cabo una ejecución así que decidme, cuál es vuestro propósito aquí y qué queréis de mí\". Cuando dice lo de la ejecución se fijan en que al lado suyo hay un hombre emuli llamado [[Vanzi]] encadenado. Aquí sucede una conversación con Nale, él intentará resistirse a toda influencia y cualquier intento de engaño tiene un <dm-section>CD 19</dm-section> a no ser que sea de legislatura <dm-section>que entonces será un CD 30</dm-section>. Esta conversación puede acabar de tres maneras: Convencer a Nale de liberar a Vanzi a cambio de la daga (más dificil), No liberan a Vanzi pero no tienen problemas con Nale (más probable), molestar a Nale por lo que combate con ellos (Esto está escrito dos días antes de la sesión, por favor chicos, no quiero hacer TPK, no lo hagan y pórtense bien). Durante la conversación aparece [[9]] y habla con Nale dando a entender que ha preparado a Valisha para ser una gran [[Rompedores del Cielo|rompedora del cielo]] y que está lista para jurar el ideal de la dedicación a lo que Nale responde que si lo desea, puede seguirle a él, la máxima expresión de la ley y así continuar en su camino radiante, en caso de negarse, Nale no le reprocha y de hecho le apoya diciendo que espera que pronto encuentre su ley ideal.\n\nAl acabar la conversación Nale les indica dónde se encuentra Palah y por lo cual, dónde estarán los ojos de Palah, de hecho, es su base, la ciudad de Rall Elorim, allí es dónde acabará su plan, y si le piden ayuda con el asunto les dice que la causa es justa y que Ylt parece un asesino y un ladrón, sin embargo tiene otras batallas que librar, la tormenta eterna ha traído una nueva desolación pero también ha reparado una injusticia, por lo que le necesitan para defender las leyes más antiguas de este mundo. Dicho todo esto también les dice que les llevan días de distancia, y que la única manera de recortar distancia es ir a Azimir, ellos estarán en Rall Elorim en nada, gracias a métodos no lícitos (perpendicularidades), por lo que para alcanzarles deberán ir a la ciudad de los radiantes y de ahí ir a Kurth, desde ahí, debería llevarles sólo un par días llegar a la ciudad, más o menos a la vez que los [[Ojos de Palah]].  \n\nEl camino a Azimir, es un camino tranquilo en el que los personajes pueden hablar de sus pensamientos, de hecho, van en una caravana y el conductor poco a poco les va preguntando:\n◆ Si Taszo estuviera aquí, ¿qué creéis que diría sobre todo\nlo sucedido hasta ahora?\n◆ ¿Cómo os sentisteis al conocer a los Heraldos Nale y\nTaln, que parecen sacados de las leyendas?\n◆ ¿Hicimos bien en dejar el cuchillo de raysio con Nale?\n◆ ¿Qué opináis de las visiones en la arboleda?\n◆ ¿Qué está planeando Ylt?\n◆ ¿Habéis cumplido con las expectativas de vuestros juramentos\nRadiantes?\n◆ ¿Es el aparente regreso de los Caballeros Radiantes\nalgo positivo?\n◆ ¿Qué significa la nueva realidad de la tormenta eterna\npara el grupo? ¿Qué significa para Roshar?\nDespués de un par de días, llegan a Azimir dónde la vida parece continuar normal, en la ciudad hay numerosos mercaderes, bibliotecas, tabernas y todo lo necesario para que la [[Party Principal]] consigan suministros. Otra pregunta que les hace es cómo van a entrar en la torre si Dalinar les prohibió la entrada a sus dominios, si no se les ocurre alguno de los sprens podría aparecer y decir que Valisha podría hablar con [[Adolin]]. Si lo hacen, en el mensaje pone que Adolin no está, que está escribiendo su esposa y que no se preocupase, que ella se encargaría de ello.  \n\nEn Azimir, mientras está por la calle, Calki vuelve a tener otra visión igual, en la que, esta vez, aparece Adolin con una gema morada en la mano, se la clava en el pecho y empieza a mutar en una masa amorfa de sombras y dos pilares surgen del suelo con dos gemas iguales, el combate sólo se acaba si se rompen las dos gemas. Cuando vuelve a la realidad todo el mundo les mira con cara rara como si estuvieran viendo a un loco. Cuando llegan a la puerta jurada, ven que está activada pero que tienen que pedir una solicitud (hay guardias rodeándola), tienen la opción de ir a pedir una cita que entonces tendrán que ir al juzgado a pedir una cita previa, que les desviarán a otro juzgado para pedir un documento de entrada al sistema judicial, que les manda a otro que les pide residencia por lo que les pedirá ir a otro para empadronarse. Es por esto que si escogen esta opción todos acaban exhaustos y pierden 3 puntos de concentración. La otra opción es colarse, deberán elegir la manera de hacerlo mediante un diagrama y preparar la infiltración, deberán realizar un plan de acceso lo suficientemente bueno para entrar, si lo logran se dan cuenta de que para activarla hay una ranura para introducir una espada, pero no hay ningún radiante, de repente, escuchan unos gritos y ven a un hombre corriendo y como empiezan a sonar rayos y truenos cuando de repente se activa la puerta jurada y aparecen en una cúpula con Dalinar al lado desmayado.  \n\nCuando salen, pueden ver una gran plaza llena de puestos y de gente moviéndose de un lado para otro, escuadrones de soldados corriendo, otros volando, otros deslizándose, cuando alguien mira en el interior de la cúpula llama a refuerzos para aprisionarlos, sienten un golpe fuerte en la cabeza y cuando se despiertan están sin sus armas, esposados en una celda, y por fuera [[Adolin]], que les dice: ¿Por qué cada vez que aparecen ustedes, siempre hay problemas a su alrededor?, les dice que están aprisionados por seguridad hasta que su padre se despierte y que no se preocuparan, que si son inocentes, su padre les dirá la verdad. Pasan unas horas y unos guardias les liberan y les dicen que son libres de irse. Si preguntan por ahí que cuál es la puerta de Kurth les dicen que todavía no está abierta pero que se dice que hay unos [[Corredores del Viento]] que fueron a abrirla, por lo que en uno o dos días debería estar abierta pero que casualmente les vendría bien un grupo con fuerza y cabeza.\n## Encuentros\n### La curiosidad de muchos\nMientras Calki tiene una visión (Urithiru llena de sombras), ve como de la propia vidriera empieza a salir una masa viscosa que empieza a tomar la forma de Dalinar y empieza a atacarle (1x[[¿Dalinar?]]) a la vez que todo el lugar parece oscurecerse, este encuentro no finaliza hasta que Calki decida atacar, entonces de repente volvemos a la realidad dónde todos se preguntan a qué estaba atacando Calki.",
+    "content_player": "![](/Pasted image 20260623222058.png)\n# Historia Esperada\nEl día comienza con un flashback de la conversación de [[Valisha]] y [[Yara Elorin|Yara]]. Mientras ocurre esto, [[Bokao Nel|Bokao]] y [[Dyr Dyu|Dyr]] estaban creando fabriales y [[Sidoa Damoi|Sidoa]] intentaba dormir, [[Calki]] se ve atacado en el encuentro [[Día 10 El juez y su torre#La curiosidad de muchos|la curiosidad de muchos]].\n\nTras acabar este flashback volvemos al momento dónde lo dejamos En el que Nale les mira y habla con frialdad: \"No es que tenga mucha paciencia estos días, tengo que llevar a cabo una ejecución así que decidme, cuál es vuestro propósito aquí y qué queréis de mí\". Cuando dice lo de la ejecución se fijan en que al lado suyo hay un hombre emuli llamado [[Vanzi]] encadenado. Aquí sucede una conversación con Nale, él intentará resistirse a toda influencia y cualquier intento de engaño tiene un  a no ser que sea de legislatura . Esta conversación puede acabar de tres maneras: Convencer a Nale de liberar a Vanzi a cambio de la daga (más dificil), No liberan a Vanzi pero no tienen problemas con Nale (más probable), molestar a Nale por lo que combate con ellos (Esto está escrito dos días antes de la sesión, por favor chicos, no quiero hacer TPK, no lo hagan y pórtense bien). Durante la conversación aparece [[9]] y habla con Nale dando a entender que ha preparado a Valisha para ser una gran [[Rompedores del Cielo|rompedora del cielo]] y que está lista para jurar el ideal de la dedicación a lo que Nale responde que si lo desea, puede seguirle a él, la máxima expresión de la ley y así continuar en su camino radiante, en caso de negarse, Nale no le reprocha y de hecho le apoya diciendo que espera que pronto encuentre su ley ideal.\n\nAl acabar la conversación Nale les indica dónde se encuentra Palah y por lo cual, dónde estarán los ojos de Palah, de hecho, es su base, la ciudad de Rall Elorim, allí es dónde acabará su plan, y si le piden ayuda con el asunto les dice que la causa es justa y que Ylt parece un asesino y un ladrón, sin embargo tiene otras batallas que librar, la tormenta eterna ha traído una nueva desolación pero también ha reparado una injusticia, por lo que le necesitan para defender las leyes más antiguas de este mundo. Dicho todo esto también les dice que les llevan días de distancia, y que la única manera de recortar distancia es ir a Azimir, ellos estarán en Rall Elorim en nada, gracias a métodos no lícitos (perpendicularidades), por lo que para alcanzarles deberán ir a la ciudad de los radiantes y de ahí ir a Kurth, desde ahí, debería llevarles sólo un par días llegar a la ciudad, más o menos a la vez que los [[Ojos de Palah]].  \n\nEl camino a Azimir, es un camino tranquilo en el que los personajes pueden hablar de sus pensamientos, de hecho, van en una caravana y el conductor poco a poco les va preguntando:\n◆ Si Taszo estuviera aquí, ¿qué creéis que diría sobre todo\nlo sucedido hasta ahora?\n◆ ¿Cómo os sentisteis al conocer a los Heraldos Nale y\nTaln, que parecen sacados de las leyendas?\n◆ ¿Hicimos bien en dejar el cuchillo de raysio con Nale?\n◆ ¿Qué opináis de las visiones en la arboleda?\n◆ ¿Qué está planeando Ylt?\n◆ ¿Habéis cumplido con las expectativas de vuestros juramentos\nRadiantes?\n◆ ¿Es el aparente regreso de los Caballeros Radiantes\nalgo positivo?\n◆ ¿Qué significa la nueva realidad de la tormenta eterna\npara el grupo? ¿Qué significa para Roshar?\nDespués de un par de días, llegan a Azimir dónde la vida parece continuar normal, en la ciudad hay numerosos mercaderes, bibliotecas, tabernas y todo lo necesario para que la [[Party Principal]] consigan suministros. Otra pregunta que les hace es cómo van a entrar en la torre si Dalinar les prohibió la entrada a sus dominios, si no se les ocurre alguno de los sprens podría aparecer y decir que Valisha podría hablar con [[Adolin]]. Si lo hacen, en el mensaje pone que Adolin no está, que está escribiendo su esposa y que no se preocupase, que ella se encargaría de ello.  \n\nEn Azimir, mientras está por la calle, Calki vuelve a tener otra visión igual, en la que, esta vez, aparece Adolin con una gema morada en la mano, se la clava en el pecho y empieza a mutar en una masa amorfa de sombras y dos pilares surgen del suelo con dos gemas iguales, el combate sólo se acaba si se rompen las dos gemas. Cuando vuelve a la realidad todo el mundo les mira con cara rara como si estuvieran viendo a un loco. Cuando llegan a la puerta jurada, ven que está activada pero que tienen que pedir una solicitud (hay guardias rodeándola), tienen la opción de ir a pedir una cita que entonces tendrán que ir al juzgado a pedir una cita previa, que les desviarán a otro juzgado para pedir un documento de entrada al sistema judicial, que les manda a otro que les pide residencia por lo que les pedirá ir a otro para empadronarse. Es por esto que si escogen esta opción todos acaban exhaustos y pierden 3 puntos de concentración. La otra opción es colarse, deberán elegir la manera de hacerlo mediante un diagrama y preparar la infiltración, deberán realizar un plan de acceso lo suficientemente bueno para entrar, si lo logran se dan cuenta de que para activarla hay una ranura para introducir una espada, pero no hay ningún radiante, de repente, escuchan unos gritos y ven a un hombre corriendo y como empiezan a sonar rayos y truenos cuando de repente se activa la puerta jurada y aparecen en una cúpula con Dalinar al lado desmayado.  \n\nCuando salen, pueden ver una gran plaza llena de puestos y de gente moviéndose de un lado para otro, escuadrones de soldados corriendo, otros volando, otros deslizándose, cuando alguien mira en el interior de la cúpula llama a refuerzos para aprisionarlos, sienten un golpe fuerte en la cabeza y cuando se despiertan están sin sus armas, esposados en una celda, y por fuera [[Adolin]], que les dice: ¿Por qué cada vez que aparecen ustedes, siempre hay problemas a su alrededor?, les dice que están aprisionados por seguridad hasta que su padre se despierte y que no se preocuparan, que si son inocentes, su padre les dirá la verdad. Pasan unas horas y unos guardias les liberan y les dicen que son libres de irse. Si preguntan por ahí que cuál es la puerta de Kurth les dicen que todavía no está abierta pero que se dice que hay unos [[Corredores del Viento]] que fueron a abrirla, por lo que en uno o dos días debería estar abierta pero que casualmente les vendría bien un grupo con fuerza y cabeza.\n## Encuentros\n### La curiosidad de muchos\nMientras Calki tiene una visión (Urithiru llena de sombras), ve como de la propia vidriera empieza a salir una masa viscosa que empieza a tomar la forma de Dalinar y empieza a atacarle (1x[[¿Dalinar?]]) a la vez que todo el lugar parece oscurecerse, este encuentro no finaliza hasta que Calki decida atacar, entonces de repente volvemos a la realidad dónde todos se preguntan a qué estaba atacando Calki.",
     "frontmatter": {
       "title": "Día 10 El juez y su torre",
       "visibility": "private",
@@ -3673,7 +3801,10 @@
     "slug": "Sistemas/Fabriales/Aliento de Condenación",
     "title": "Aliento de Condenación",
     "visibility": "private",
-    "allowed_users": [],
+    "allowed_users": [
+      "Iker",
+      "Nico"
+    ],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
@@ -3693,7 +3824,7 @@
       "title": "Aliento de Condenación",
       "visibility": "private",
       "spoilers": false,
-      "allowed_users": null
+      "allowed_users": "[Iker,Nico]"
     }
   },
   {
@@ -3736,7 +3867,9 @@
     "slug": "Sistemas/Fabriales/Danza de la tormenta",
     "title": "Danza de la tormenta",
     "visibility": "private",
-    "allowed_users": [],
+    "allowed_users": [
+      "Nico"
+    ],
     "spoilers": false,
     "is_index": false,
     "is_subindex": false,
@@ -3756,7 +3889,7 @@
       "title": "Danza de la tormenta",
       "visibility": "private",
       "spoilers": false,
-      "allowed_users": null
+      "allowed_users": "[Nico]"
     }
   },
   {
