@@ -711,14 +711,6 @@ function NavItem({ href, iconKey, label, active, hasSpoilers }) {
         <Icon />
       </span>
       <span style={{ flex: 1, lineHeight: 1.3 }}>{label}</span>
-      {hasSpoilers && (
-        <span style={{
-          width: '6px', height: '6px',
-          borderRadius: '50%',
-          background: '#f59e0b',
-          flexShrink: 0,
-        }} />
-      )}
     </Link>
   );
 }
@@ -738,6 +730,7 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
   const { theme, setTheme } = useTheme();
   const [themeOpen, setThemeOpen] = useState(false);
   const themeRef = useRef(null);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const mainPages = indexPages.filter(isMainIndexPage);
   const morePages  = indexPages.filter(p => !isMainIndexPage(p));
@@ -824,7 +817,7 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
     }}>
 
       {/* ── Sidebar ─────────────────────────────────────────────────────────── */}
-      <aside style={{
+      {sidebarOpen && <aside style={{
         width: '230px',
         flexShrink: 0,
         background: 'var(--bg-panel)',
@@ -889,7 +882,7 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
             </>
           )}
         </nav>
-      </aside>
+      </aside>}
 
       {/* ── Right side ──────────────────────────────────────────────────────── */}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
@@ -906,6 +899,33 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
           flexShrink: 0,
           backdropFilter: 'blur(12px)',
         }}>
+
+          {/* Sidebar toggle */}
+          <button
+            onClick={() => setSidebarOpen(o => !o)}
+            title={sidebarOpen ? 'Ocultar barra lateral' : 'Mostrar barra lateral'}
+            style={{
+              width: '33px', height: '33px',
+              borderRadius: '8px',
+              background: 'var(--bg-hover)',
+              border: '1px solid var(--border-input)',
+              color: 'var(--text-3)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+              transition: 'background 0.15s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'var(--bg-active)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'var(--bg-hover)'}
+          >
+            <svg width="15" height="13" viewBox="0 0 15 13" fill="none">
+              <rect x="0" y="0" width="15" height="2" rx="1" fill="currentColor"/>
+              <rect x="0" y="5.5" width="15" height="2" rx="1" fill="currentColor"/>
+              <rect x="0" y="11" width="15" height="2" rx="1" fill="currentColor"/>
+            </svg>
+          </button>
 
           {/* Search with dropdown */}
           <div ref={searchWrapRef} style={{ flex: 1, maxWidth: '480px', position: 'relative' }}>
