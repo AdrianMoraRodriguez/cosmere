@@ -85,7 +85,7 @@ body {
 
 /* Sangre Espectral — Red, Gray */
 :root[data-theme="sangre-espectral"] {
-  --body-gradient: linear-gradient(135deg, #3a0005 0%, #91040a 50%, #4a4a4a 100%);
+  --body-gradient: linear-gradient(135deg, #c2000a 0%, #570004 40%, #909090 100%);
   --accent:     #c0202a;
   --accent-2:   #e05060;
   --accent-dim: #91040a;

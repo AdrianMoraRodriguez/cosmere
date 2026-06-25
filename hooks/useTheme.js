@@ -19,7 +19,7 @@ export const THEMES = {
   },
   'sangre-espectral': {
     name: 'Sangre Espectral',
-    swatchGradient: 'linear-gradient(135deg, #550004, #909090)',
+    swatchGradient: 'linear-gradient(135deg, #c2000a, #570004, #909090)',
   },
   'ojos-de-palah': {
     name: 'Ojos de Palah',
