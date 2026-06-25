@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import Link from 'next/link';
+import { useState } from 'react';
 
 // Extract the first image URL from a page's markdown content
 function extractFirstImage(page, userRole) {
@@ -18,6 +19,30 @@ function hrefToSlug(href) {
     .split('/')
     .map(s => { try { return decodeURIComponent(s); } catch { return s; } })
     .join('/');
+}
+
+// Convertir tabla Markdown a tarjetas HTML
+function markdownTableToCards(content) {
+  const tableRegex = /\|(.+)\n\|[-:\s|]+\n((?:\|.+\n?)*)/g;
+  
+  return content.replace(tableRegex, (match, headerLine, bodyLines) => {
+    const headers = headerLine.split('|').map(h => h.trim()).filter(h => h);
+    const rows = bodyLines.trim().split('\n').map(row => 
+      row.split('|').map(cell => cell.trim()).filter(cell => cell)
+    );
+
+    if (rows.length === 0) return match;
+
+    const cardsHtml = rows.map(row => {
+      const cardContent = headers
+        .map((header, i) => `<div style="margin-bottom: 8px;"><span style="color: rgba(59, 130, 246, 0.8); font-weight: 600; font-size: 12px;">${header}</span><div style="color: var(--text-2); margin-top: 2px;">${row[i] || '-'}</div></div>`)
+        .join('');
+
+      return `<div style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 8px; padding: 16px; margin: 12px 0; transition: all 0.2s;" class="card-item">${cardContent}</div>`;
+    }).join('');
+
+    return `<div style="margin: 24px 0;">${cardsHtml}</div>`;
+  });
 }
 
 // Photo card shared between photo-grid pages
@@ -103,8 +128,11 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
 
   const isIndexOrSubindex = currentPage?.is_index || currentPage?.is_subindex;
 
-  // ── Step 1: images ──────────────────────────────────────────────────────────
-  let processedContent = content.replace(
+  // ── Step 1: Convertir tablas Markdown a tarjetas ────────────────────────────
+  let processedContent = markdownTableToCards(content);
+
+  // ── Step 2: images ──────────────────────────────────────────────────────────
+  processedContent = processedContent.replace(
     /!\[(.*?)\]\(\/([^)]+)\)/g,
     (_match, alt, imagePath) => {
       const fullPath = `/content/public/${imagePath}`;
@@ -112,7 +140,7 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
     }
   );
 
-  // ── Step 2: internal [[links]] ──────────────────────────────────────────────
+  // ── Step 3: internal [[links]] ──────────────────────────────────────────────
   // Also collect slugs of resolved index-link targets to detect photo-grid later
   const resolvedIndexTargets = [];
 
@@ -158,12 +186,12 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
     }
   );
 
-  // ── Step 3: dm-section block spacing ───────────────────────────────────────
+  // ── Step 4: dm-section block spacing ───────────────────────────────────────
   processedContent = processedContent
     .replace(/<dm-section>/g, '\n\n<dm-section>\n\n')
     .replace(/<\/dm-section>/g, '\n\n</dm-section>\n\n');
 
-  // ── Step 4: auto-detect photo-grid ─────────────────────────────────────────
+  // ── Step 5: auto-detect photo-grid ─────────────────────────────────────────
   // Use photo-grid if this is an index/subindex page AND at least one linked
   // subpage has an image in its content (i.e. it's a character/entity page).
   const isPhotoGridPage = isIndexOrSubindex &&
@@ -200,10 +228,26 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
   // ── Render ──────────────────────────────────────────────────────────────────
   return (
     <div className="prose prose-invert prose-lg max-w-none">
+      <style>{`
+        .card-item {
+          background: var(--bg-card);
+          border: 1px solid var(--border-card);
+          border-radius: 8px;
+          padding: 16px;
+          margin: 12px 0;
+          transition: all 0.2s ease;
+        }
+
+        .card-item:hover {
+          border-color: var(--accent-dim);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+      `}</style>
+
       <ReactMarkdown
         rehypePlugins={[rehypeRaw]}
         components={{
-
           // DM-only section
           'dm-section': ({ children }) => {
             if (user?.role !== 'admin') return null;
