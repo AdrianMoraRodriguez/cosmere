@@ -2756,10 +2756,18 @@
       {
         "target": "Día 10 El juez y su tribunal",
         "text": "Día 10 El juez y su tribunal"
+      },
+      {
+        "target": "Día 11, 12 y 13 La Sombra de Urithiru",
+        "text": "Día 11, 12 y 13 La Sombra de Urithiru"
+      },
+      {
+        "target": "Día 14 y 15 La tormenta que se avecina",
+        "text": "Día 14 y 15 La tormenta que se avecina"
       }
     ],
-    "content_admin": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]\n[[Día 8 Jugadores de un juego que no sabían que jugaban]]\n[[Día 9 Noticias y reencuentros]]\n[[Día 10 El juez y su tribunal]]",
-    "content_player": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]\n[[Día 8 Jugadores de un juego que no sabían que jugaban]]\n[[Día 9 Noticias y reencuentros]]\n[[Día 10 El juez y su tribunal]]",
+    "content_admin": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]\n[[Día 8 Jugadores de un juego que no sabían que jugaban]]\n[[Día 9 Noticias y reencuentros]]\n[[Día 10 El juez y su tribunal]]\n[[Día 11, 12 y 13 La Sombra de Urithiru]]\n[[Día 14 y 15 La tormenta que se avecina]]",
+    "content_player": "[[Día 1 El asalto a las caravanas]]\n[[Día 2 Honor más allá de la tormenta]]\n[[Día 3 La Radiancia]]\n[[Día 4 Tras la Pista de Doliente]]\n[[Día 5 La Propuesta]]\n[[Día 6 Viva la revolución]]\n[[Día 7 Poderes Superiores]]\n[[Día 8 Jugadores de un juego que no sabían que jugaban]]\n[[Día 9 Noticias y reencuentros]]\n[[Día 10 El juez y su tribunal]]\n[[Día 11, 12 y 13 La Sombra de Urithiru]]\n[[Día 14 y 15 La tormenta que se avecina]]",
     "frontmatter": {
       "title": "Historia",
       "visibility": "public",
