@@ -1,0 +1,12 @@
+[
+  {
+    "id": "archivo",
+    "icon": "/content/images/question.png",
+    "enabled": true
+  },
+  {
+    "id": "mistborn",
+    "icon": "/content/images/mistborn.png",
+    "enabled": false
+  }
+]

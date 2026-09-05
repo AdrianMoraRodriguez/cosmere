@@ -186,10 +186,11 @@ export default function WikiPage() {
       const parsedUser = JSON.parse(userData);
       setUser(parsedUser);
 
-      fetch('/content/pages.json')
-        .then(res => res.json())
-        .then(data => {
-          setAllPages(data);
+      const campaign = typeof window !== 'undefined' ? localStorage.getItem('currentCampaign') || 'archivo' : 'archivo';
+
+      fetch(`/content/${campaign}/pages.json`)
+      .then(res => res.json())
+      .then(data => {
 
           const fullSlug = Array.isArray(slug)
             ? slug.map(part => decodeURIComponent(part)).join('/')
@@ -242,7 +243,7 @@ export default function WikiPage() {
     } catch {
       router.push('/login');
     }
-  }, [slug, router]);
+  }, [slug, router, router.isReady]);
 
   const loadUnreadCount = async (username) => {
     try {

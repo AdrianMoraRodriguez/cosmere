@@ -61,7 +61,8 @@ export default function DMMessenger({ isOpen, onClose }) {
 
   const loadUsers = async () => {
     try {
-      const pages = await fetch('/content/pages.json').then(r => r.json());
+      const campaign = typeof window !== 'undefined' ? localStorage.getItem('currentCampaign') || 'archivo' : 'archivo';
+      const pages = await fetch(`/content/${campaign}/pages.json`).then(r => r.json());
       const all = new Set();
       pages.forEach(p => p.allowed_users?.forEach(u => all.add(u)));
       setUsers(Array.from(all).sort());

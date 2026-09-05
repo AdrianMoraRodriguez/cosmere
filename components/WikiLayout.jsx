@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect, useRef } from 'react';
 import { useTheme, THEMES } from '../hooks/useTheme';
+import CampaignSelector from './CampaignSelector';
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
 
@@ -895,16 +896,16 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
         {/* Topbar */}
-        <header style={{
-          height: '56px',
-          background: 'var(--bg-panel)',
-          borderBottom: '1px solid var(--border)',
+        <header style={{ 
           display: 'flex',
           alignItems: 'center',
-          padding: '0 24px',
-          gap: '16px',
-          flexShrink: 0,
-          backdropFilter: 'blur(12px)',
+          gap: '12px',
+          background: 'var(--bg-header)',
+          borderBottom: '1px solid var(--border-card)',
+          padding: '8px 16px',
+          position: 'sticky',
+          top: 0,
+          zIndex: '50',
         }}>
 
           {/* Search with dropdown */}
@@ -1003,6 +1004,10 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
           </div>
 
           <div style={{ flex: 1 }} />
+
+          {/* Selector de Campañas */}
+          <CampaignSelector />
+
 
           {/* Theme picker */}
           <div ref={themeRef} style={{ position: 'relative', flexShrink: 0 }}>

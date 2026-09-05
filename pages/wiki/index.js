@@ -721,7 +721,8 @@ export default function WikiIndex() {
       const parsedUser = JSON.parse(userData);
       setUser(parsedUser);
 
-      fetch('/content/pages.json')
+      const campaign = typeof window !== 'undefined' ? localStorage.getItem('currentCampaign') || 'archivo' : 'archivo';
+      fetch(`/content/${campaign}/pages.json`)
         .then(res => res.json())
         .then(data => {
           setPages(data);
