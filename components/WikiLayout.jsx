@@ -1008,6 +1008,36 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
           {/* Selector de Campañas */}
           <CampaignSelector />
 
+                    {/* Botón de Fichas */}
+          {(
+            <Link href="/fichas" style={{ textDecoration: 'none' }}>
+              <button
+                title="Mis fichas de personaje"
+                style={{
+                  height: '33px',
+                  padding: '0 12px',
+                  borderRadius: '8px',
+                  background: router.pathname === '/fichas' ? 'var(--bg-active)' : 'var(--bg-hover)',
+                  border: '1px solid var(--border-input)',
+                  color: 'var(--text-2)',
+                  fontSize: '12px',
+                  fontWeight: '500',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  transition: 'background 0.15s',
+                  whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={e => { if (router.pathname !== '/fichas') e.currentTarget.style.background = 'var(--bg-active)'; }}
+                onMouseLeave={e => { if (router.pathname !== '/fichas') e.currentTarget.style.background = 'var(--bg-hover)'; }}
+              >
+                <span>📋</span>
+                <span>Fichas</span>
+              </button>
+            </Link>
+          )}
+
 
           {/* Theme picker */}
           <div ref={themeRef} style={{ position: 'relative', flexShrink: 0 }}>

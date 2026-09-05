@@ -5445,10 +5445,22 @@
       {
         "target": "Pasted image 20260202181916.png",
         "text": "Pasted image 20260202181916.png"
+      },
+      {
+        "target": "Pasted image 20260905015516.png",
+        "text": "Pasted image 20260905015516.png"
+      },
+      {
+        "target": "Pasted image 20260905015529.png",
+        "text": "Pasted image 20260905015529.png"
+      },
+      {
+        "target": "Pasted image 20260905015453.png",
+        "text": "Pasted image 20260905015453.png"
       }
     ],
-    "content_admin": "![](/Pasted image 20260202181916.png)",
-    "content_player": "![](/Pasted image 20260202181916.png)",
+    "content_admin": "![](/Pasted image 20260202181916.png)\n![](/Pasted image 20260905015516.png)\n![](/Pasted image 20260905015529.png)\n![](/Pasted image 20260905015453.png)",
+    "content_player": "![](/Pasted image 20260202181916.png)\n![](/Pasted image 20260905015516.png)\n![](/Pasted image 20260905015529.png)\n![](/Pasted image 20260905015453.png)",
     "frontmatter": {
       "title": "Subir de Nivel",
       "visibility": "public",

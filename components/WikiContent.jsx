@@ -8,7 +8,8 @@ function extractFirstImage(page, userRole) {
   const content = userRole === 'admin' ? page?.content_admin : page?.content_player;
   if (!content) return null;
   const match = content.match(/!\[.*?\]\(\/([^)]+)\)/);
-  return match ? `/content/public/${match[1]}` : null;
+  const campaign = typeof window !== 'undefined' ? localStorage.getItem('currentCampaign') || 'archivo' : 'archivo';
+  return match ? `/content/${campaign}/public/${match[1]}` : null;
 }
 
 // Decode a wiki href like "/wiki/A/B%20C" → slug "A/B C"
@@ -118,7 +119,7 @@ function PhotoCard({ href, children, imageUrl, spoilers, isPrivate }) {
   );
 }
 
-export default function WikiContent({ content, allPages, user, currentPage }) {
+export default function WikiContent({ content, allPages, user, currentPage, campaign= 'archivo' }) {
   if (!content) {
     return <div style={{ padding: '16px', color: 'var(--text-4)' }}>No hay contenido disponible</div>;
   }
@@ -135,13 +136,12 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
   processedContent = processedContent.replace(
     /!\[(.*?)\]\(\/([^)]+)\)/g,
     (_match, alt, imagePath) => {
-      const fullPath = `/content/public/${imagePath}`;
+      const fullPath = `/content/${campaign}/public/${imagePath}`;
       return `\n\n<img src="${fullPath}" alt="${alt}" style="max-width:100%;height:auto;border-radius:8px;margin:24px 0;border:1px solid var(--border-card);" />\n\n`;
     }
   );
 
-  // ── Step 3: internal [[links]] ──────────────────────────────────────────────
-  // Also collect slugs of resolved index-link targets to detect photo-grid later
+    // ── Step 3: internal [[links]] ──────────────────────────────────────────────
   const resolvedIndexTargets = [];
 
   processedContent = processedContent.replace(
@@ -179,9 +179,11 @@ export default function WikiContent({ content, allPages, user, currentPage }) {
 
       if (isIndexOrSubindex) {
         resolvedIndexTargets.push(targetPage);
+        // Usar <index-link> para que se renderice correctamente
         return `<index-link href="/wiki/${encodedSlug}${anchorPart}" spoilers="${targetPage.spoilers || false}" private="${targetPage.visibility === 'private'}">${text}</index-link>`;
       }
 
+      // Links normales no en índice
       return `[${text}](/wiki/${encodedSlug}${anchorPart})`;
     }
   );
