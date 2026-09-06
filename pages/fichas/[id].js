@@ -80,7 +80,6 @@ export default function FichaDetalladaPage() {
 
       if (error) throw error;
       
-      // Si no tiene habilidades, crear todas automáticamente
       let fichaData = data;
       if (!fichaData.habilidades || fichaData.habilidades.length === 0) {
         const allSkills = [
@@ -123,15 +122,31 @@ export default function FichaDetalladaPage() {
     setFormData({ ...formData, [field]: value });
   };
 
+  const handleQuickSave = async (field, value) => {
+    try {
+      const updateData = { ...formData, [field]: value };
+      const { error } = await supabase
+        .from('character_sheets')
+        .update({ [field]: value })
+        .eq('id', id);
+
+      if (error) throw error;
+      setFormData(updateData);
+    } catch (err) {
+      console.error('Error:', err);
+      alert(`Error al guardar: ${err.message}`);
+    }
+  };
+
   const handleSkillChange = (index, field, value) => {
     const newSkills = [...formData.habilidades];
     newSkills[index] = { ...newSkills[index], [field]: value };
     setFormData({ ...formData, habilidades: newSkills });
   };
 
-  const handleAddPotencia = () => {
+  const handleAddPotencia = (nombre = '', base = '') => {
     const newPotencias = [...(formData.potencias || [])];
-    newPotencias.push({ nombre: '', base: '', puntos: 0 });
+    newPotencias.push({ nombre, base, puntos: 0 });
     setFormData({ ...formData, potencias: newPotencias });
   };
 
@@ -291,28 +306,175 @@ export default function FichaDetalladaPage() {
           </div>
         </div>
 
-        {/* Atributos */}
+        {/* Atributos Base */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '24px', marginBottom: '32px' }}>
           <Section title="Atributos Físicos">
             <AttributeRow label="Fuerza" value={formData.fuerza} onChange={(v) => handleFieldChange('fuerza', v)} editMode={editMode} />
-            <AttributeRow label="Defensa Física" value={formData.defensa_fisica} onChange={(v) => handleFieldChange('defensa_fisica', v)} editMode={editMode} />
             <AttributeRow label="Velocidad" value={formData.velocidad} onChange={(v) => handleFieldChange('velocidad', v)} editMode={editMode} />
-            <AttributeRow label="Salud Máxima" value={formData.salud_maxima} onChange={(v) => handleFieldChange('salud_maxima', v)} editMode={editMode} />
-            <AttributeRow label="Desvío" value={formData.desvio} onChange={(v) => handleFieldChange('desvio', v)} editMode={editMode} />
           </Section>
 
           <Section title="Atributos Cognitivos">
             <AttributeRow label="Intelecto" value={formData.intelecto} onChange={(v) => handleFieldChange('intelecto', v)} editMode={editMode} />
-            <AttributeRow label="Defensa Cognitiva" value={formData.defensa_cognitiva} onChange={(v) => handleFieldChange('defensa_cognitiva', v)} editMode={editMode} />
             <AttributeRow label="Voluntad" value={formData.voluntad} onChange={(v) => handleFieldChange('voluntad', v)} editMode={editMode} />
-            <AttributeRow label="Concentración Máxima" value={formData.concentracion_maxima} onChange={(v) => handleFieldChange('concentracion_maxima', v)} editMode={editMode} />
           </Section>
 
           <Section title="Atributos Espirituales">
             <AttributeRow label="Discernimiento" value={formData.discernimiento} onChange={(v) => handleFieldChange('discernimiento', v)} editMode={editMode} />
-            <AttributeRow label="Defensa Espiritual" value={formData.defensa_espiritual} onChange={(v) => handleFieldChange('defensa_espiritual', v)} editMode={editMode} />
             <AttributeRow label="Presencia" value={formData.presencia} onChange={(v) => handleFieldChange('presencia', v)} editMode={editMode} />
-            <AttributeRow label="Investidura Máxima" value={formData.investidura_maxima} onChange={(v) => handleFieldChange('investidura_maxima', v)} editMode={editMode} />
+          </Section>
+        </div>
+
+        {/* Defensas */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '24px', marginBottom: '32px' }}>
+          <Section title="🛡️ Defensas">
+            <AttributeRow label="Defensa Física" value={formData.defensa_fisica} onChange={(v) => handleFieldChange('defensa_fisica', v)} editMode={editMode} />
+            <AttributeRow label="Defensa Cognitiva" value={formData.defensa_cognitiva} onChange={(v) => handleFieldChange('defensa_cognitiva', v)} editMode={editMode} />
+            <AttributeRow label="Defensa Espiritual" value={formData.defensa_espiritual} onChange={(v) => handleFieldChange('defensa_espiritual', v)} editMode={editMode} />
+          </Section>
+
+          <Section title="💚 Salud">
+            <div style={{ marginBottom: '12px' }}>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <div style={{ flex: 1 }}>
+                  <label style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', marginBottom: '4px', display: 'block' }}>Máxima</label>
+                  {editMode ? (
+                    <input
+                      type="number"
+                      value={formData.salud_maxima || ''}
+                      onChange={(e) => handleFieldChange('salud_maxima', e.target.value ? parseInt(e.target.value) : null)}
+                      style={{
+                        width: '100%',
+                        background: 'var(--bg-input)',
+                        border: '1px solid var(--border-input)',
+                        borderRadius: '6px',
+                        padding: '6px 10px',
+                        color: 'var(--text-2)',
+                        fontSize: '13px',
+                      }}
+                    />
+                  ) : (
+                    <span style={{ color: 'var(--text-1)', fontWeight: '700', fontSize: '14px' }}>{formData.salud_maxima || '—'}</span>
+                  )}
+                </div>
+                <div style={{ flex: 1 }}>
+                  <label style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', marginBottom: '4px', display: 'block' }}>Actual</label>
+                  <input
+                    type="number"
+                    value={formData.salud_actual || 0}
+                    onChange={(e) => handleQuickSave('salud_actual', parseInt(e.target.value) || 0)}
+                    style={{
+                      width: '100%',
+                      background: 'var(--bg-input)',
+                      border: '1px solid var(--border-input)',
+                      borderRadius: '6px',
+                      padding: '6px 10px',
+                      color: 'var(--text-2)',
+                      fontSize: '13px',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </Section>
+
+          <Section title="🧠 Concentración">
+            <div style={{ marginBottom: '12px' }}>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <div style={{ flex: 1 }}>
+                  <label style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', marginBottom: '4px', display: 'block' }}>Máxima</label>
+                  {editMode ? (
+                    <input
+                      type="number"
+                      value={formData.concentracion_maxima || ''}
+                      onChange={(e) => handleFieldChange('concentracion_maxima', e.target.value ? parseInt(e.target.value) : null)}
+                      style={{
+                        width: '100%',
+                        background: 'var(--bg-input)',
+                        border: '1px solid var(--border-input)',
+                        borderRadius: '6px',
+                        padding: '6px 10px',
+                        color: 'var(--text-2)',
+                        fontSize: '13px',
+                      }}
+                    />
+                  ) : (
+                    <span style={{ color: 'var(--text-1)', fontWeight: '700', fontSize: '14px' }}>{formData.concentracion_maxima || '—'}</span>
+                  )}
+                </div>
+                <div style={{ flex: 1 }}>
+                  <label style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', marginBottom: '4px', display: 'block' }}>Actual</label>
+                  <input
+                    type="number"
+                    value={formData.concentracion_actual || 0}
+                    onChange={(e) => handleQuickSave('concentracion_actual', parseInt(e.target.value) || 0)}
+                    style={{
+                      width: '100%',
+                      background: 'var(--bg-input)',
+                      border: '1px solid var(--border-input)',
+                      borderRadius: '6px',
+                      padding: '6px 10px',
+                      color: 'var(--text-2)',
+                      fontSize: '13px',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </Section>
+        </div>
+
+        {/* Desvío e Investidura */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '32px' }}>
+          <Section title="↩️ Desvío">
+            <AttributeRow label="Desvío" value={formData.desvio} onChange={(v) => handleFieldChange('desvio', v)} editMode={editMode} />
+          </Section>
+
+          <Section title="✨ Investidura">
+            <div style={{ marginBottom: '12px' }}>
+              <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <div style={{ flex: 1 }}>
+                  <label style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', marginBottom: '4px', display: 'block' }}>Máxima</label>
+                  {editMode ? (
+                    <input
+                      type="number"
+                      value={formData.investidura_maxima || ''}
+                      onChange={(e) => handleFieldChange('investidura_maxima', e.target.value ? parseInt(e.target.value) : null)}
+                      style={{
+                        width: '100%',
+                        background: 'var(--bg-input)',
+                        border: '1px solid var(--border-input)',
+                        borderRadius: '6px',
+                        padding: '6px 10px',
+                        color: 'var(--text-2)',
+                        fontSize: '13px',
+                      }}
+                    />
+                  ) : (
+                    <span style={{ color: 'var(--text-1)', fontWeight: '700', fontSize: '14px' }}>{formData.investidura_maxima || '—'}</span>
+                  )}
+                </div>
+                <div style={{ flex: 1 }}>
+                  <label style={{ color: 'var(--text-2)', fontSize: '13px', fontWeight: '500', marginBottom: '4px', display: 'block' }}>Actual</label>
+                  <input
+                    type="number"
+                    value={formData.investidura_actual || 0}
+                    onChange={(e) => handleQuickSave('investidura_actual', parseInt(e.target.value) || 0)}
+                    style={{
+                      width: '100%',
+                      background: 'var(--bg-input)',
+                      border: '1px solid var(--border-input)',
+                      borderRadius: '6px',
+                      padding: '6px 10px',
+                      color: 'var(--text-2)',
+                      fontSize: '13px',
+                      cursor: 'pointer',
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
           </Section>
         </div>
 
@@ -355,6 +517,7 @@ export default function FichaDetalladaPage() {
               items={physicalSkills}
               onChange={(i, k, v) => handleSkillChange(formData.habilidades.indexOf(physicalSkills[i]), k, v)}
               editMode={editMode}
+              formData={formData}
             />
           </Section>
 
@@ -363,6 +526,7 @@ export default function FichaDetalladaPage() {
               items={cognitiveSkills}
               onChange={(i, k, v) => handleSkillChange(formData.habilidades.indexOf(cognitiveSkills[i]), k, v)}
               editMode={editMode}
+              formData={formData}
             />
           </Section>
 
@@ -371,6 +535,7 @@ export default function FichaDetalladaPage() {
               items={spiritualSkills}
               onChange={(i, k, v) => handleSkillChange(formData.habilidades.indexOf(spiritualSkills[i]), k, v)}
               editMode={editMode}
+              formData={formData}
             />
           </Section>
         </div>
@@ -385,12 +550,22 @@ export default function FichaDetalladaPage() {
               onChange={handlePotenciaChange}
               editMode={editMode}
               availablePotencias={POTENCIAS_DATA}
+              formData={formData}
             />
           </Section>
         </div>
 
         {/* Listas */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '32px' }}>
+          <DynamicListSection
+            title="Talentos"
+            items={formData.talentos || []}
+            onAdd={() => handleAddItem('talentos')}
+            onRemove={(i) => handleRemoveItem('talentos', i)}
+            onChange={(i, k, v) => handleItemChange('talentos', i, k, v)}
+            editMode={editMode}
+            fields={['nombre', 'descripcion']}
+          />
 
           <DynamicListSection
             title="Armas"
@@ -399,7 +574,7 @@ export default function FichaDetalladaPage() {
             onRemove={(i) => handleRemoveItem('armas', i)}
             onChange={(i, k, v) => handleItemChange('armas', i, k, v)}
             editMode={editMode}
-            fields={['Nombre', 'Descripción']}
+            fields={['nombre', 'descripcion']}
           />
 
           <DynamicListSection
@@ -409,38 +584,21 @@ export default function FichaDetalladaPage() {
             onRemove={(i) => handleRemoveItem('pericias', i)}
             onChange={(i, k, v) => handleItemChange('pericias', i, k, v)}
             editMode={editMode}
-            fields={['Nombre', 'Nivel']}
+            fields={['nombre', 'nivel']}
             fieldTypes={{ nivel: 'number' }}
           />
 
-        </div>
-
-        <DynamicListSection
-            title="Talentos"
-            items={formData.talentos || []}
-            onAdd={() => handleAddItem('talentos')}
-            onRemove={(i) => handleRemoveItem('talentos', i)}
-            onChange={(i, k, v) => handleItemChange('talentos', i, k, v)}
-            editMode={editMode}
-            fields={['Nombre', 'Descripción']}
-            style={{ marginTop: '16px',
-            marginBottom: '32px'
-            }}
-          />
-
-        <DynamicListSection
+          <DynamicListSection
             title="Metas"
             items={formData.metas || []}
             onAdd={() => handleAddItem('metas')}
             onRemove={(i) => handleRemoveItem('metas', i)}
             onChange={(i, k, v) => handleItemChange('metas', i, k, v)}
             editMode={editMode}
-            fields={['Descripción', 'Completada']}
+            fields={['descripcion', 'completada']}
             fieldTypes={{ completada: 'checkbox' }}
-            style={{ marginTop: '16px',
-            marginBottom: '32px'
-            }}
           />
+        </div>
 
         {/* Notas */}
         <Section title="Notas y Conexiones">
@@ -557,136 +715,249 @@ function TextAreaField({ label, value, onChange, editMode, style }) {
   );
 }
 
-function SkillsList({ items, onChange, editMode }) {
+function SkillsList({ items, onChange, editMode, formData }) {
+  const getAttributeValue = (baseAttr) => {
+    const attrMap = {
+      'FUE': formData.fuerza || 0,
+      'VEL': formData.velocidad || 0,
+      'INT': formData.intelecto || 0,
+      'VOL': formData.voluntad || 0,
+      'DIS': formData.discernimiento || 0,
+      'PRE': formData.presencia || 0,
+    };
+    return attrMap[baseAttr] || 0;
+  };
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-      {items.map((item, index) => (
-        <div
-          key={index}
-          style={{
-            background: 'var(--bg-hover)',
-            border: '1px solid var(--border-card)',
-            borderRadius: '8px',
-            padding: '12px',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '8px',
-          }}
-        >
-          <div style={{ color: 'var(--text-2)', fontWeight: '700', fontSize: '13px' }}>
-            {item.nombre} ({item.base})
-          </div>
-          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            <span style={{ color: 'var(--text-4)', fontSize: '12px' }}>Puntos:</span>
-            {editMode ? (
-              <input
-                type="number"
-                min="0"
-                value={item.puntos || 0}
-                onChange={(e) => onChange(index, 'puntos', parseInt(e.target.value) || 0)}
-                style={{
-                  width: '60px',
-                  background: 'var(--bg-input)',
-                  border: '1px solid var(--border-input)',
-                  borderRadius: '6px',
-                  padding: '4px 8px',
-                  color: 'var(--text-2)',
-                  fontSize: '13px',
-                }}
-              />
-            ) : (
-              <span style={{ color: 'var(--text-1)', fontWeight: '700' }}>
-                {item.puntos || 0}
-              </span>
+      {items.map((item, index) => {
+        const baseValue = getAttributeValue(item.base);
+        const totalValue = baseValue + (item.puntos || 0);
+
+        return (
+          <div
+            key={index}
+            style={{
+              background: 'var(--bg-hover)',
+              border: '1px solid var(--border-card)',
+              borderRadius: '8px',
+              padding: '12px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div>
+                <div style={{ color: 'var(--text-2)', fontWeight: '700', fontSize: '13px' }}>
+                  {item.nombre}
+                </div>
+                <div style={{ color: 'var(--text-4)', fontSize: '11px', marginTop: '2px' }}>
+                  {item.base}: {baseValue}
+                </div>
+              </div>
+              <div style={{ textAlign: 'right' }}>
+                <div style={{ color: 'var(--text-1)', fontWeight: '700', fontSize: '16px' }}>
+                  {totalValue}
+                </div>
+                <div style={{ color: 'var(--text-4)', fontSize: '11px' }}>
+                  Total
+                </div>
+              </div>
+            </div>
+
+            {/* Checkboxes - SOLO EN MODO EDICIÓN */}
+            {editMode && (
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {[0, 1, 2, 3, 4].map((checkIndex) => (
+                  <label
+                    key={checkIndex}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={(item.puntos || 0) > checkIndex}
+                      onChange={(e) => {
+                        const newPoints = e.target.checked ? checkIndex + 1 : checkIndex;
+                        onChange(index, 'puntos', newPoints);
+                      }}
+                      style={{
+                        cursor: 'pointer',
+                        width: '16px',
+                        height: '16px',
+                      }}
+                    />
+                  </label>
+                ))}
+              </div>
             )}
-            <span style={{ color: 'var(--text-4)', fontSize: '12px', marginLeft: 'auto' }}>
-              ⭐ +{item.puntos || 0}
-            </span>
+
+            {/* Círculos - SOLO EN MODO LECTURA */}
+            {!editMode && (
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {[0, 1, 2, 3, 4].map((circleIndex) => {
+                  const isMarked = (item.puntos || 0) > circleIndex;
+                  return (
+                    <span
+                      key={circleIndex}
+                      style={{
+                        fontSize: '18px',
+                        color: isMarked ? '#22c55e' : 'var(--text-4)',
+                      }}
+                    >
+                      {isMarked ? '●' : '○'}
+                    </span>
+                  );
+                })}
+              </div>
+            )}
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
 
-function PotenciasList({ items, onAdd, onRemove, onChange, editMode, availablePotencias }) {
+function PotenciasList({ items, onAdd, onRemove, onChange, editMode, availablePotencias, formData }) {
+  const getAttributeValue = (baseAttr) => {
+    const attrMap = {
+      'FUE': formData.fuerza || 0,
+      'VEL': formData.velocidad || 0,
+      'INT': formData.intelecto || 0,
+      'VOL': formData.voluntad || 0,
+      'DIS': formData.discernimiento || 0,
+      'PRE': formData.presencia || 0,
+    };
+    return attrMap[baseAttr] || 0;
+  };
+
   const usedPotencias = items.map(p => p.nombre);
   const availableToAdd = availablePotencias.filter(p => !usedPotencias.includes(p.nombre));
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-      {items.map((item, index) => (
-        <div
-          key={index}
-          style={{
-            background: 'var(--bg-hover)',
-            border: '1px solid var(--border-card)',
-            borderRadius: '8px',
-            padding: '12px',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '8px',
-          }}
-        >
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ color: 'var(--text-2)', fontWeight: '700', fontSize: '13px' }}>
-              {item.nombre} ({item.base})
+      {items.map((item, index) => {
+        const baseValue = getAttributeValue(item.base);
+        const totalValue = baseValue + (item.puntos || 0);
+
+        return (
+          <div
+            key={index}
+            style={{
+              background: 'var(--bg-hover)',
+              border: '1px solid var(--border-card)',
+              borderRadius: '8px',
+              padding: '12px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '8px',
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                <div>
+                  <div style={{ color: 'var(--text-2)', fontWeight: '700', fontSize: '13px' }}>
+                    {item.nombre}
+                  </div>
+                  <div style={{ color: 'var(--text-4)', fontSize: '11px', marginTop: '2px' }}>
+                    {item.base}: {baseValue}
+                  </div>
+                </div>
+                <div style={{ textAlign: 'right' }}>
+                  <div style={{ color: 'var(--text-1)', fontWeight: '700', fontSize: '16px' }}>
+                    {totalValue}
+                  </div>
+                  <div style={{ color: 'var(--text-4)', fontSize: '11px' }}>
+                    Total
+                  </div>
+                </div>
+              </div>
+              {editMode && (
+                <button
+                  onClick={() => onRemove(index)}
+                  style={{
+                    background: 'rgba(239, 68, 68, 0.1)',
+                    color: '#f87171',
+                    border: 'none',
+                    borderRadius: '6px',
+                    padding: '4px 8px',
+                    fontSize: '12px',
+                    cursor: 'pointer',
+                    marginLeft: '12px',
+                    flexShrink: 0,
+                  }}
+                >
+                  🗑️
+                </button>
+              )}
             </div>
+
+            {/* Checkboxes - SOLO EN MODO EDICIÓN */}
             {editMode && (
-              <button
-                onClick={() => onRemove(index)}
-                style={{
-                  background: 'rgba(239, 68, 68, 0.1)',
-                  color: '#f87171',
-                  border: 'none',
-                  borderRadius: '6px',
-                  padding: '4px 8px',
-                  fontSize: '12px',
-                  cursor: 'pointer',
-                }}
-              >
-                🗑️
-              </button>
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {[0, 1, 2, 3, 4].map((checkIndex) => (
+                  <label
+                    key={checkIndex}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={(item.puntos || 0) > checkIndex}
+                      onChange={(e) => {
+                        const newPoints = e.target.checked ? checkIndex + 1 : checkIndex;
+                        onChange(index, 'puntos', newPoints);
+                      }}
+                      style={{
+                        cursor: 'pointer',
+                        width: '16px',
+                        height: '16px',
+                      }}
+                    />
+                  </label>
+                ))}
+              </div>
+            )}
+
+            {/* Círculos - SOLO EN MODO LECTURA */}
+            {!editMode && (
+              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                {[0, 1, 2, 3, 4].map((circleIndex) => {
+                  const isMarked = (item.puntos || 0) > circleIndex;
+                  return (
+                    <span
+                      key={circleIndex}
+                      style={{
+                        fontSize: '18px',
+                        color: isMarked ? '#22c55e' : 'var(--text-4)',
+                      }}
+                    >
+                      {isMarked ? '●' : '○'}
+                    </span>
+                  );
+                })}
+              </div>
             )}
           </div>
-          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            <span style={{ color: 'var(--text-4)', fontSize: '12px' }}>Puntos:</span>
-            {editMode ? (
-              <input
-                type="number"
-                min="0"
-                value={item.puntos || 0}
-                onChange={(e) => onChange(index, 'puntos', parseInt(e.target.value) || 0)}
-                style={{
-                  width: '60px',
-                  background: 'var(--bg-input)',
-                  border: '1px solid var(--border-input)',
-                  borderRadius: '6px',
-                  padding: '4px 8px',
-                  color: 'var(--text-2)',
-                  fontSize: '13px',
-                }}
-              />
-            ) : (
-              <span style={{ color: 'var(--text-1)', fontWeight: '700' }}>
-                {item.puntos || 0}
-              </span>
-            )}
-            <span style={{ color: 'var(--text-4)', fontSize: '12px', marginLeft: 'auto' }}>
-              ⭐ +{item.puntos || 0}
-            </span>
-          </div>
-        </div>
-      ))}
+        );
+      })}
 
       {editMode && availableToAdd.length > 0 && (
         <select
           onChange={(e) => {
             if (e.target.value) {
               const selected = availablePotencias.find(p => p.nombre === e.target.value);
-              onAdd();
-              onChange(items.length, 'nombre', selected.nombre);
-              onChange(items.length, 'base', selected.base);
+              // Usar el handler que recibe nombre y base
+              onAdd(selected.nombre, selected.base);
             }
             e.target.value = '';
           }}
@@ -719,9 +990,6 @@ function DynamicListSection({ title, items, onAdd, onRemove, onChange, editMode,
       border: '1px solid var(--border-card)',
       borderRadius: '10px',
       padding: '20px',
-      marginBottom: '32px',
-      marginTop: '16px',
-      
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
         <h3 style={{ color: 'var(--text-1)', fontSize: '16px', fontWeight: '700', margin: 0 }}>
