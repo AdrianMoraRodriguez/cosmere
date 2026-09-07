@@ -12,7 +12,7 @@ import { getHubConfig, getVirtualSubpage } from '../../lib/characterHubs';
 import { supabase } from '../../lib/supabase';
 
 // ─── Hub card (shown on hub pages instead of content) ─────────────────────────
-
+const campaign = typeof window !== 'undefined' ? localStorage.getItem('currentCampaign') || 'archivo' : 'archivo';
 function HubCard({ href, icon, label, description, available }) {
   return (
     <Link href={href} style={{ textDecoration: 'none' }}>
@@ -186,14 +186,17 @@ export default function WikiPage() {
       const parsedUser = JSON.parse(userData);
       setUser(parsedUser);
 
-      fetch('/content/pages.json')
-        .then(res => res.json())
-        .then(data => {
-          setAllPages(data);
+      const campaign = typeof window !== 'undefined' ? localStorage.getItem('currentCampaign') || 'archivo' : 'archivo';
+
+      fetch(`/content/${campaign}/pages.json`)
+      .then(res => res.json())
+      .then(data => {
 
           const fullSlug = Array.isArray(slug)
             ? slug.map(part => decodeURIComponent(part)).join('/')
             : decodeURIComponent(slug || '');
+
+          setAllPages(data);
 
           const currentPage = data.find(p => p.slug === fullSlug);
 
@@ -290,7 +293,7 @@ export default function WikiPage() {
   // Extract portrait image for hub pages (same regex as WikiContent)
   const hubImageUrl = isHubPage ? (() => {
     const match = content?.match(/!\[.*?\]\(\/([^)]+)\)/);
-    return match ? `/content/public/${match[1]}` : null;
+    return match ? `/content/${campaign}/public/${match[1]}` : null;
   })() : null;
   const isPhotoGridPage = !virtualSubpage && !isHubPage && (page.is_index || page.is_subindex);
 
@@ -405,7 +408,13 @@ export default function WikiPage() {
             ) : virtualSubpage ? (
               virtualSubpage.subpage.contentSource === 'parent' ? (
                 <div style={{ color: 'var(--text-3)' }}>
-                  <WikiContent content={content} allPages={allPages} user={user} currentPage={page} />
+                  <WikiContent 
+                  content={content} 
+                  allPages={allPages} 
+                  user={user} 
+                  currentPage={page}
+                  campaign={campaign}
+                />
                 </div>
               ) : virtualSubpage.subpage.contentSource === 'stories' ? (
                 <StoriesGrid
@@ -417,7 +426,13 @@ export default function WikiPage() {
               )
             ) : (
               <div style={{ color: 'var(--text-3)' }}>
-                <WikiContent content={content} allPages={allPages} user={user} currentPage={page} />
+                <WikiContent 
+                  content={content} 
+                  allPages={allPages} 
+                  user={user} 
+                  currentPage={page}
+                  campaign={campaign}
+                />
               </div>
             )}
           </article>

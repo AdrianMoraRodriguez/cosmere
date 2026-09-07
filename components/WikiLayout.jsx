@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect, useRef } from 'react';
 import { useTheme, THEMES } from '../hooks/useTheme';
+import CampaignSelector from './CampaignSelector';
 
 // ─── SVG Icons ───────────────────────────────────────────────────────────────
 
@@ -888,16 +889,16 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
         {/* Topbar */}
-        <header style={{
-          height: '56px',
-          background: 'var(--bg-panel)',
-          borderBottom: '1px solid var(--border)',
+        <header style={{ 
           display: 'flex',
           alignItems: 'center',
-          padding: '0 24px',
-          gap: '16px',
-          flexShrink: 0,
-          backdropFilter: 'blur(12px)',
+          gap: '12px',
+          background: 'var(--bg-header)',
+          borderBottom: '1px solid var(--border-card)',
+          padding: '8px 16px',
+          position: 'sticky',
+          top: 0,
+          zIndex: '50',
         }}>
 
           {/* Sidebar toggle */}
@@ -1023,6 +1024,40 @@ export default function WikiLayout({ user, indexPages = [], allPages = [], child
           </div>
 
           <div style={{ flex: 1 }} />
+
+          {/* Selector de Campañas */}
+          <CampaignSelector />
+
+                    {/* Botón de Fichas */}
+          {(
+            <Link href="/fichas" style={{ textDecoration: 'none' }}>
+              <button
+                title="Mis fichas de personaje"
+                style={{
+                  height: '33px',
+                  padding: '0 12px',
+                  borderRadius: '8px',
+                  background: router.pathname === '/fichas' ? 'var(--bg-active)' : 'var(--bg-hover)',
+                  border: '1px solid var(--border-input)',
+                  color: 'var(--text-2)',
+                  fontSize: '12px',
+                  fontWeight: '500',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  transition: 'background 0.15s',
+                  whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={e => { if (router.pathname !== '/fichas') e.currentTarget.style.background = 'var(--bg-active)'; }}
+                onMouseLeave={e => { if (router.pathname !== '/fichas') e.currentTarget.style.background = 'var(--bg-hover)'; }}
+              >
+                <span>📋</span>
+                <span>Fichas</span>
+              </button>
+            </Link>
+          )}
+
 
           {/* Theme picker */}
           <div ref={themeRef} style={{ position: 'relative', flexShrink: 0 }}>

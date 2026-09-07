@@ -9,17 +9,21 @@ import json
 # CONFIGURACIÓN - EDITA ESTAS RUTAS SEGÚN TU PROYECTO
 # ============================================================================
 
-SOURCE_DIR = "/Users/adrian/Documents/Obsidian Vault/Repo/Archivo"      # Carpeta con tus notas .md
-OUTPUT_DIR = "./public/content"              # Carpeta donde se generará la salida
+REPO_DIR = "/Users/adrian/Documents/Obsidian Vault/Repo"              # Carpeta raíz con subcarpetas de campañas
+OUTPUT_DIR = "./public/content"              # Carpeta donde se generarán las salidas
 IMAGES_DIR = "/Users/adrian/Documents/Obsidian Vault/Repo/Multimedia"       # Carpeta donde buscar imágenes
+
+# Campañas (debe haber carpetas con estos nombres en REPO_DIR)
+CAMPAIGNS = ['Archivo', 'Mistborn']
 
 # ============================================================================
 
 class ObsidianWikiGenerator:
-    def __init__(self, source_dir, output_dir, images_dir):
+    def __init__(self, source_dir, output_dir, images_dir, campaign_name):
         self.source_dir = Path(source_dir)
-        self.output_dir = Path(output_dir)
+        self.output_dir = Path(output_dir) / campaign_name.lower()
         self.images_dir = Path(images_dir)
+        self.campaign_name = campaign_name
         self.copied_images = set()
         self.pages_index = []
         
@@ -53,20 +57,18 @@ class ObsidianWikiGenerator:
         # Si ya es una lista, devolverla
         if isinstance(allowed_users_str, list):
             return allowed_users_str
-        print("No es una lista")
 
         # Eliminar corchetes y espacios
         cleaned = allowed_users_str.strip('[]').strip()
 
         if not cleaned:
             return []
-        print("Ha sido limpiada")
+
         # Separar por comas y limpiar cada usuario
         users = [user.strip() for user in cleaned.split(',')]
 
         # Filtrar usuarios vacíos
         users = [user for user in users if user]
-        print(users)
 
         return users
     
@@ -90,18 +92,13 @@ class ObsidianWikiGenerator:
     
     def extract_dm_sections(self, content):
       """Extrae y marca las secciones DM"""
-      # Patrón que captura:
-      # 1. <!--DM contenido --> 
-      # 2. <!-- contenido --> (cualquier comentario HTML)
-      # El \s* permite espacios opcionales, \n? permite salto de línea opcional
       pattern = r'<!--\s*(?:DM\s*)?(.*?)-->'
 
       def replacer(match):
           dm_content = match.group(1).strip()
-          # Solo convertir si tiene contenido
           if dm_content:
               return f'<dm-section>{dm_content}</dm-section>'
-          return ''  # Eliminar comentarios vacíos
+          return ''
 
       return re.sub(pattern, replacer, content, flags=re.DOTALL | re.IGNORECASE)
     
@@ -205,20 +202,13 @@ class ObsidianWikiGenerator:
             visibility = self.get_visibility(frontmatter)
             is_index = frontmatter.get('is_index', False)
             
-            # Extraer enlaces internos (siempre, se usarán en el frontend)
             internal_links = self.extract_internal_links(body)
-            
-            # Actualizar referencias a imágenes
             body = self.update_image_references(body)
-            
-            # Generar versiones del contenido
             content_versions = self.generate_content_versions(body, visibility)
             
-            # Calcular slug/ruta
             rel_path = file_path.relative_to(self.source_dir)
             slug = str(rel_path.with_suffix('')).replace('\\', '/')
             
-            # Crear entrada para el índice
             page_data = {
                 'slug': slug,
                 'title': frontmatter.get('title', rel_path.stem),
@@ -234,7 +224,6 @@ class ObsidianWikiGenerator:
             }
             
             self.pages_index.append(page_data)
-            
             return True
             
         except Exception as e:
@@ -243,22 +232,20 @@ class ObsidianWikiGenerator:
     
     def generate(self):
         """Genera la estructura de datos para la web"""
-        print("="*60)
-        print("🌟 GENERADOR DE WIKI DEL COSMERE")
-        print("="*60)
+        print(f"\n{'='*60}")
+        print(f"🎯 CAMPAÑA: {self.campaign_name}")
+        print(f"{'='*60}")
         print(f"📁 Directorio fuente:   {self.source_dir.absolute()}")
-        print(f"📁 Directorio imágenes: {self.images_dir.absolute()}")
         print(f"📁 Directorio salida:   {self.output_dir.absolute()}")
         print()
         
-        # Verificar que existan los directorios
+        # Verificar que exista el directorio
         if not self.source_dir.exists():
-            print(f"❌ Error: El directorio fuente no existe: {self.source_dir}")
+            print(f"❌ Error: El directorio no existe: {self.source_dir}")
             return False
         
         if not self.images_dir.exists():
-            print(f"❌ Error: El directorio de imágenes no existe: {self.images_dir}")
-            return False
+            print(f"⚠️  Aviso: El directorio de imágenes no existe: {self.images_dir}")
         
         # Limpiar directorio de salida
         if self.output_dir.exists():
@@ -284,7 +271,6 @@ class ObsidianWikiGenerator:
                         processed += 1
                         rel_path = file_path.relative_to(self.source_dir)
                         
-                        # Verificar si es índice
                         page_data = self.pages_index[-1]
                         if page_data['is_index']:
                             index_count += 1
@@ -298,26 +284,46 @@ class ObsidianWikiGenerator:
             json.dump(self.pages_index, f, ensure_ascii=False, indent=2)
         
         print(f"\n{'='*60}")
-        print(f"✅ GENERACIÓN COMPLETADA")
+        print(f"✅ {self.campaign_name.upper()} - GENERACIÓN COMPLETADA")
         print(f"{'='*60}")
         print(f"📄 Archivos procesados: {processed}")
         print(f"📑 Páginas índice:      {index_count}")
         print(f"🖼️  Imágenes copiadas:   {len(self.copied_images)}")
-        print(f"📦 Salida en:           {self.output_dir.absolute()}")
-        print(f"{'='*60}\n")
+        print(f"{'='*60}")
         
         return True
 
 
 if __name__ == "__main__":
-    generator = ObsidianWikiGenerator(
-        source_dir=SOURCE_DIR,
-        output_dir=OUTPUT_DIR,
-        images_dir=IMAGES_DIR
-    )
+    print("\n" + "="*60)
+    print("🌟 GENERADOR DE WIKI DEL COSMERE - MULTIPLES CAMPAÑAS")
+    print("="*60)
     
-    success = generator.generate()
+    all_success = True
     
-    if not success:
-        print("\n⚠️  La generación falló. Revisa los errores anteriores.")
+    for campaign in CAMPAIGNS:
+        campaign_source = Path(REPO_DIR) / campaign
+        
+        if not campaign_source.exists():
+            print(f"\n⚠️  Carpeta de {campaign} no encontrada en {campaign_source}")
+            continue
+        
+        generator = ObsidianWikiGenerator(
+            source_dir=campaign_source,
+            output_dir=OUTPUT_DIR,
+            images_dir=IMAGES_DIR,
+            campaign_name=campaign
+        )
+        
+        if not generator.generate():
+            all_success = False
+    
+    print("\n" + "="*60)
+    if all_success:
+        print("✅ TODAS LAS CAMPAÑAS GENERADAS EXITOSAMENTE")
+    else:
+        print("⚠️  ALGUNAS CAMPAÑAS TUVIERON ERRORES")
+    print("="*60 + "\n")
+    
+    if not all_success:
         exit(1)
